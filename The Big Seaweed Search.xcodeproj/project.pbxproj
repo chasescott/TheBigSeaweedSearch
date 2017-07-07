@@ -25,9 +25,13 @@
 		ABE3B9B81F0D94580079B099 /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3B9B71F0D94580079B099 /* FancyField.swift */; };
 		ABE3B9BA1F0D94650079B099 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3B9B91F0D94650079B099 /* FancyButton.swift */; };
 		ABE3B9BC1F0D94750079B099 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3B9BB1F0D94750079B099 /* CircleView.swift */; };
+		ABE3B9BE1F0F7D2D0079B099 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABE3B9BD1F0F7D2D0079B099 /* GoogleService-Info.plist */; };
+		D87AA3B09C66E592607BAEE9 /* Pods_The_Big_Seaweed_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C763B25A60E0A4A9FCE2869 /* Pods_The_Big_Seaweed_Search.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		155C308B9E86F40B5E65DB0E /* Pods-The Big Seaweed Search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Big Seaweed Search.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Big Seaweed Search/Pods-The Big Seaweed Search.release.xcconfig"; sourceTree = "<group>"; };
+		9C763B25A60E0A4A9FCE2869 /* Pods_The_Big_Seaweed_Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Big_Seaweed_Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE3B9891F0D4C480079B099 /* The Big Seaweed Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Big Seaweed Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE3B98C1F0D4C480079B099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE3B98E1F0D4C480079B099 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -48,6 +52,8 @@
 		ABE3B9B71F0D94580079B099 /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
 		ABE3B9B91F0D94650079B099 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		ABE3B9BB1F0D94750079B099 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		ABE3B9BD1F0F7D2D0079B099 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FBBAE56731BCD05EE24F1BF1 /* Pods-The Big Seaweed Search.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Big Seaweed Search.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Big Seaweed Search/Pods-The Big Seaweed Search.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,17 +61,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D87AA3B09C66E592607BAEE9 /* Pods_The_Big_Seaweed_Search.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C9969D6CA14C3D545519AC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBBAE56731BCD05EE24F1BF1 /* Pods-The Big Seaweed Search.debug.xcconfig */,
+				155C308B9E86F40B5E65DB0E /* Pods-The Big Seaweed Search.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ABE3B9801F0D4C480079B099 = {
 			isa = PBXGroup;
 			children = (
 				ABE3B98B1F0D4C480079B099 /* The Big Seaweed Search */,
 				ABE3B98A1F0D4C480079B099 /* Products */,
+				6C9969D6CA14C3D545519AC3 /* Pods */,
+				C81FEDAAE340A767E1072540 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,13 +100,14 @@
 			children = (
 				ABE3B9AB1F0D93070079B099 /* Services */,
 				ABE3B9AC1F0D93160079B099 /* Util */,
-				ABE3B9A01F0D4CB50079B099 /* Controller */,
-				ABE3B99F1F0D4CAA0079B099 /* View */,
 				ABE3B99E1F0D4C780079B099 /* Model */,
+				ABE3B99F1F0D4CAA0079B099 /* View */,
+				ABE3B9A01F0D4CB50079B099 /* Controller */,
 				ABE3B9901F0D4C480079B099 /* Main.storyboard */,
 				ABE3B9931F0D4C480079B099 /* Assets.xcassets */,
 				ABE3B9951F0D4C480079B099 /* LaunchScreen.storyboard */,
 				ABE3B9981F0D4C480079B099 /* Info.plist */,
+				ABE3B9BD1F0F7D2D0079B099 /* GoogleService-Info.plist */,
 			);
 			path = "The Big Seaweed Search";
 			sourceTree = "<group>";
@@ -116,7 +135,6 @@
 		ABE3B9A01F0D4CB50079B099 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				ABE3B98C1F0D4C480079B099 /* AppDelegate.swift */,
 				ABE3B98E1F0D4C480079B099 /* LoginVC.swift */,
 				ABE3B9A11F0D6AAF0079B099 /* MainVC.swift */,
 				ABE3B9A31F0D6B220079B099 /* EditProfileVC.swift */,
@@ -130,6 +148,7 @@
 		ABE3B9AB1F0D93070079B099 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				ABE3B98C1F0D4C480079B099 /* AppDelegate.swift */,
 				ABE3B9AF1F0D937C0079B099 /* DataService.swift */,
 			);
 			name = Services;
@@ -143,6 +162,14 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		C81FEDAAE340A767E1072540 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C763B25A60E0A4A9FCE2869 /* Pods_The_Big_Seaweed_Search.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABE3B99B1F0D4C480079B099 /* Build configuration list for PBXNativeTarget "The Big Seaweed Search" */;
 			buildPhases = (
+				63AC0011662ED35AEBD38897 /* [CP] Check Pods Manifest.lock */,
 				ABE3B9851F0D4C480079B099 /* Sources */,
 				ABE3B9861F0D4C480079B099 /* Frameworks */,
 				ABE3B9871F0D4C480079B099 /* Resources */,
+				397BD97B20B3E6D0E62D7C1C /* [CP] Embed Pods Frameworks */,
+				4D483DF36EB2C1104EBE3F93 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -204,12 +234,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABE3B9971F0D4C480079B099 /* LaunchScreen.storyboard in Resources */,
+				ABE3B9BE1F0F7D2D0079B099 /* GoogleService-Info.plist in Resources */,
 				ABE3B9941F0D4C480079B099 /* Assets.xcassets in Resources */,
 				ABE3B9921F0D4C480079B099 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		397BD97B20B3E6D0E62D7C1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Big Seaweed Search/Pods-The Big Seaweed Search-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D483DF36EB2C1104EBE3F93 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Big Seaweed Search/Pods-The Big Seaweed Search-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63AC0011662ED35AEBD38897 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ABE3B9851F0D4C480079B099 /* Sources */ = {
@@ -353,6 +432,7 @@
 		};
 		ABE3B99C1F0D4C480079B099 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBBAE56731BCD05EE24F1BF1 /* Pods-The Big Seaweed Search.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DZZAG8AQ89;
@@ -366,6 +446,7 @@
 		};
 		ABE3B99D1F0D4C480079B099 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 155C308B9E86F40B5E65DB0E /* Pods-The Big Seaweed Search.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DZZAG8AQ89;
@@ -396,6 +477,7 @@
 				ABE3B99D1F0D4C480079B099 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

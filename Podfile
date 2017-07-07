@@ -6,5 +6,9 @@ target 'The Big Seaweed Search' do
   use_frameworks!
 
   # Pods for The Big Seaweed Search
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/Storage'
 
 end
