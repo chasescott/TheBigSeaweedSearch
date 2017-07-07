@@ -55,31 +55,31 @@ class LoginVC: UIViewController {
     
     //CHASE:  Code to run when sign in button is hit...
     @IBAction func signInTapped(_ sender: Any) {
-//        if let email = emailField.text, let pwd = pwdField.text {
-//            FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
-//                if error == nil {
-//                    print("CHASE: Email user Authenticated with Firebase")
+        if let email = emailField.text, let pwd = pwdField.text {
+            FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
+                if error == nil {
+                    print("CHASE: Email user Authenticated with Firebase")
 //                    if let user = user {
 //                        let userData = ["provider": user.providerID]
 //                        self.completeSignIn(id: user.uid, userData: userData)
 //                        self.performSegue(withIdentifier: "goToMain", sender: nil)
 //                    }
-//                } else {
-//                    FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
-//                        if error != nil {
-//                            print("CHASE: Unable to authenticate with Firebase using email")
-//                        } else {
-//                            print("CHASE: Successfully authenticated with Firebase")
+                } else {
+                    FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
+                        if error != nil {
+                            print("CHASE: Unable to authenticate with Firebase using email")
+                        } else {
+                            print("CHASE: Successfully authenticated with Firebase")
 //                            if let user = user {
 //                                let userData = ["provider": user.providerID]
 //                                self.completeSignIn(id: user.uid, userData: userData)
 //                                self.performSegue(withIdentifier: "goToSetUp", sender: nil)
 //                            }
-//                        }
-//                    })
-//                }
-//            })
-//        }
+                        }
+                    })
+                }
+            })
+        }
     }
     
     
