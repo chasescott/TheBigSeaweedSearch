@@ -51,12 +51,22 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="W56-mc-iVb">
-                                <rect key="frame" x="36.5" y="393" width="302" height="135"/>
+                                <rect key="frame" x="36.5" y="335" width="302" height="190"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E7Q-Li-6dh" customClass="FancyField" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Or" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Z4-Fh-UCw">
                                         <rect key="frame" x="0.0" y="0.0" width="302" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="3DG-8V-eST"/>
+                                            <constraint firstAttribute="height" constant="30" id="FWt-M8-M0e"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="cIv-OF-i8s"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E7Q-Li-6dh" customClass="FancyField" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="45" width="302" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="3DG-8V-eST"/>
                                             <constraint firstAttribute="width" constant="302" id="Kwq-KI-dkK"/>
                                         </constraints>
                                         <nil key="textColor"/>
@@ -64,9 +74,9 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBd-03-Am3" customClass="FancyField" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="45" width="302" height="30"/>
+                                        <rect key="frame" x="0.0" y="95" width="302" height="35"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="T8I-GX-Pja"/>
+                                            <constraint firstAttribute="height" constant="35" id="T8I-GX-Pja"/>
                                             <constraint firstAttribute="width" constant="302" id="VZw-CD-Obf"/>
                                         </constraints>
                                         <nil key="textColor"/>
@@ -74,7 +84,7 @@
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1C-Qo-yRt" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="90" width="302" height="45"/>
+                                        <rect key="frame" x="0.0" y="145" width="302" height="45"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="302" id="CyY-dZ-BqT"/>
@@ -88,22 +98,17 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vyt-Lx-vwp">
-                                <rect key="frame" x="30" y="227" width="315" height="150"/>
+                                <rect key="frame" x="137.5" y="227" width="100" height="100"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1499292229_1" translatesAutoresizingMaskIntoConstraints="NO" id="KNG-xq-7mE">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9N-gB-3tA" customClass="RoundButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <color key="backgroundColor" red="0.31972724200000002" green="0.44525283580000002" blue="0.70251744989999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="PER-Da-wo3"/>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="kN1-kN-sfJ"/>
+                                            <constraint firstAttribute="width" constant="100" id="7Yu-CB-OXD"/>
+                                            <constraint firstAttribute="height" constant="100" id="LJA-m2-KD5"/>
                                         </constraints>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1499292240_14" translatesAutoresizingMaskIntoConstraints="NO" id="Dge-N0-hLG">
-                                        <rect key="frame" x="165" y="0.0" width="150" height="150"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="F12-IM-ga7"/>
-                                            <constraint firstAttribute="height" constant="150" id="Q5L-vY-cef"/>
-                                        </constraints>
-                                    </imageView>
+                                        <state key="normal" image="f"/>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Select a sign in method" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b6-k0-tya">
@@ -128,7 +133,7 @@
                             <constraint firstItem="vyt-Lx-vwp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pqg-DN-YNv"/>
                             <constraint firstItem="2Qv-vk-Opu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="c8v-I7-abV"/>
                             <constraint firstAttribute="trailing" secondItem="EBl-u5-kn7" secondAttribute="trailing" id="lE3-4p-Xz4"/>
-                            <constraint firstItem="W56-mc-iVb" firstAttribute="top" secondItem="vyt-Lx-vwp" secondAttribute="bottom" constant="16" id="pCX-Bj-4M9"/>
+                            <constraint firstItem="W56-mc-iVb" firstAttribute="top" secondItem="vyt-Lx-vwp" secondAttribute="bottom" constant="8" id="pCX-Bj-4M9"/>
                             <constraint firstItem="W56-mc-iVb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qud-9T-elf"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EBl-u5-kn7" secondAttribute="bottom" id="xJC-HE-pVg"/>
                             <constraint firstItem="2Qv-vk-Opu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xea-ce-xmp"/>
@@ -596,15 +601,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1499292229_1" width="256" height="256"/>
-        <image name="1499292240_14" width="256" height="256"/>
         <image name="Logo-smaller" width="603" height="194"/>
+        <image name="f" width="352" height="328"/>
         <image name="info" width="189" height="189"/>
         <image name="safety" width="189" height="189"/>
         <image name="user1" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IFU-qf-dC2"/>
+        <segue reference="EnJ-aU-BaS"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
