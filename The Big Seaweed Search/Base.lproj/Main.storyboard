@@ -94,6 +94,9 @@
                                         <state key="normal" title="Sign In">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3yH-4W-Mt8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -108,6 +111,9 @@
                                             <constraint firstAttribute="height" constant="100" id="LJA-m2-KD5"/>
                                         </constraints>
                                         <state key="normal" image="f"/>
+                                        <connections>
+                                            <action selector="fbBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vDl-bu-gZe"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -140,6 +146,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailField" destination="E7Q-Li-6dh" id="aUi-ME-iGY"/>
+                        <outlet property="pwdField" destination="yBd-03-Am3" id="Ibb-4a-VTv"/>
                         <segue destination="0sf-Ja-TYP" kind="show" identifier="goToSetUp" id="jrJ-AN-N2v"/>
                         <segue destination="GZ3-kx-Gtz" kind="show" identifier="goToMain" id="EnJ-aU-BaS"/>
                     </connections>
