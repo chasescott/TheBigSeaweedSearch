@@ -10,16 +10,28 @@ import UIKit
 import FBSDKCoreKit
 import Firebase
 import FBSDKLoginKit
+import SwiftKeychainWrapper
 
 class LoginVC: UIViewController {
 
     @IBOutlet weak var emailField: FancyField!
     @IBOutlet weak var pwdField: FancyField!
     
+    //Constant Firebase reference to plain profile image used to set up profile - just in case user opts not to upload own photo
+    let plainProfileImg = "https://firebasestorage.googleapis.com/v0/b/seaweed-b955e.appspot.com/o/profile-pics%2Fuser1.jpg?alt=media&token=7abad0cb-2597-4ba0-ae2a-eca299b29f92"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        //checks if key exists in keychain, then do foo
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            print("CHASE: ID found in keychain")
+            performSegue(withIdentifier: "goToMain", sender: nil)
+        }
+    }
+    
     //CHASE:  Facebook log in action
     @IBAction func fbBtnTapped(_ sender: Any) {
         
@@ -45,10 +57,18 @@ class LoginVC: UIViewController {
                 print("CHASE:  Unable to authenticate with Firebase - \(String(describing: error))")
             } else {
                 print("CHASE:  Successfully authenticated with Firebase")
-//                if let user = user {
-//                    let userData = ["provider": credential.provider]
-//                    self.completeSignIn(id: user.uid, userData: userData)
-//                }
+                if let user = user {
+                    let userData = ["provider": credential.provider]
+                    self.completeSignIn(id: user.uid, userData: userData)
+                    //get & insert profile data
+                    let profileData = ["username:": user.email as AnyObject,
+                        "location": "To be confirmed" as AnyObject,
+                        "photoURL": self.plainProfileImg as AnyObject
+                    ]
+                    self.createUserProfile(id: user.uid, profileData: profileData)
+                    //perform segue
+                    self.performSegue(withIdentifier: "goToMain", sender: nil)
+                }
             }
         })
     }
@@ -59,22 +79,36 @@ class LoginVC: UIViewController {
             FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
                 if error == nil {
                     print("CHASE: Email user Authenticated with Firebase")
-//                    if let user = user {
-//                        let userData = ["provider": user.providerID]
-//                        self.completeSignIn(id: user.uid, userData: userData)
-//                        self.performSegue(withIdentifier: "goToMain", sender: nil)
-//                    }
+                    if let user = user {
+                        let userData = ["provider": user.providerID]
+                        self.completeSignIn(id: user.uid, userData: userData)
+                        //get & insert profile data
+                        let profileData = ["username:": user.email as AnyObject,
+                                           "location": "To be confirmed" as AnyObject,
+                                           "photoURL": self.plainProfileImg as AnyObject
+                        ]
+                        self.createUserProfile(id: user.uid, profileData: profileData)
+                        //perform segue
+                        self.performSegue(withIdentifier: "goToMain", sender: nil)
+                    }
                 } else {
                     FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
                         if error != nil {
                             print("CHASE: Unable to authenticate with Firebase using email")
                         } else {
                             print("CHASE: Successfully authenticated with Firebase")
-//                            if let user = user {
-//                                let userData = ["provider": user.providerID]
-//                                self.completeSignIn(id: user.uid, userData: userData)
-//                                self.performSegue(withIdentifier: "goToSetUp", sender: nil)
-//                            }
+                            if let user = user {
+                                let userData = ["provider": user.providerID]
+                                self.completeSignIn(id: user.uid, userData: userData)
+                                //get & insert profile data
+                                let profileData = ["username:": user.email as AnyObject,
+                                                   "location": "To be confirmed" as AnyObject,
+                                                   "photoURL": self.plainProfileImg as AnyObject
+                                ]
+                                self.createUserProfile(id: user.uid, profileData: profileData)
+                                //perform segue
+                                self.performSegue(withIdentifier: "goToSetUp", sender: nil)
+                            }
                         }
                     })
                 }
@@ -82,14 +116,17 @@ class LoginVC: UIViewController {
         }
     }
     
-    
-    
     //CHASE:  Complete the sign in process method for use in above methods...
-//    func completeSignIn(id: String, userData: Dictionary<String, String>) {
-//        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
-//        let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
-//        print("CHASE: Data saved to keychain \(keychainResult)")
-//    }
+    func completeSignIn(id: String, userData: Dictionary<String, String>) {
+        DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
+        let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
+        print("CHASE: Data saved to keychain \(keychainResult)")
+    }
 
+    //Automatically create user profile based upon
+    func createUserProfile(id: String, profileData: Dictionary<String, AnyObject>) {
+        DataService.ds.createFirebaseDBUserProfile(uid: id, profileData: profileData)
+        print("CHASE: User Profile Created")
+    }
 }
 

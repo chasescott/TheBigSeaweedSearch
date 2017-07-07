@@ -279,24 +279,24 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cO3-Fd-oZt">
-                                <rect key="frame" x="97" y="185" width="181" height="440"/>
+                                <rect key="frame" x="97" y="185" width="181" height="360"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QE-Mr-c1U">
-                                        <rect key="frame" x="40.5" y="0.0" width="100" height="100"/>
+                                        <rect key="frame" x="50.5" y="0.0" width="80" height="80"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="UCQ-xy-LET"/>
-                                            <constraint firstAttribute="height" constant="100" id="uLm-7c-UVh"/>
+                                            <constraint firstAttribute="width" constant="80" id="UCQ-xy-LET"/>
+                                            <constraint firstAttribute="height" constant="80" id="uLm-7c-UVh"/>
                                         </constraints>
                                         <state key="normal" image="safety">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Wp-yK-J1s" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="108" width="181" height="50"/>
+                                        <rect key="frame" x="0.0" y="88" width="181" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="181" id="BK5-Mz-eWi"/>
-                                            <constraint firstAttribute="height" constant="50" id="rK3-hV-gE9"/>
+                                            <constraint firstAttribute="height" constant="40" id="rK3-hV-gE9"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
                                         <state key="normal" title="Add Data">
@@ -304,11 +304,11 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQy-uC-pOm" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="166" width="181" height="50"/>
+                                        <rect key="frame" x="0.0" y="136" width="181" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="181" id="aH2-Jq-3Br"/>
-                                            <constraint firstAttribute="height" constant="50" id="cbX-68-MU7"/>
+                                            <constraint firstAttribute="height" constant="40" id="cbX-68-MU7"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
                                         <state key="normal" title="Browse Data">
@@ -316,11 +316,11 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34V-dg-nSg" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="224" width="181" height="50"/>
+                                        <rect key="frame" x="0.0" y="184" width="181" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="181" id="m1N-1d-fjf"/>
-                                            <constraint firstAttribute="height" constant="50" id="vQe-By-G4I"/>
+                                            <constraint firstAttribute="height" constant="40" id="vQe-By-G4I"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
                                         <state key="normal" title="Edit Profile">
@@ -328,10 +328,10 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZU-sd-p02" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="282" width="181" height="50"/>
+                                        <rect key="frame" x="0.0" y="232" width="181" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="KkW-DF-UhK"/>
+                                            <constraint firstAttribute="height" constant="40" id="KkW-DF-UhK"/>
                                             <constraint firstAttribute="width" constant="181" id="l3n-H1-5aa"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
@@ -340,10 +340,10 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNv-Zm-vwa">
-                                        <rect key="frame" x="40.5" y="340" width="100" height="100"/>
+                                        <rect key="frame" x="50.5" y="280" width="80" height="80"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="McD-KW-GVQ"/>
-                                            <constraint firstAttribute="height" constant="100" id="OyV-Ht-rti"/>
+                                            <constraint firstAttribute="width" constant="80" id="McD-KW-GVQ"/>
+                                            <constraint firstAttribute="height" constant="80" id="OyV-Ht-rti"/>
                                         </constraints>
                                         <state key="normal" image="info">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -351,14 +351,40 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tew-Xa-d2I" customClass="FancyView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="592" width="375" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWU-ZV-X5F" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                        <rect key="frame" x="150" y="9" width="75" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="GP3-eu-5ZK"/>
+                                            <constraint firstAttribute="height" constant="50" id="kiQ-d4-Pac"/>
+                                        </constraints>
+                                        <state key="normal" image="sign-out"/>
+                                        <connections>
+                                            <action selector="signOutTapped:" destination="GZ3-kx-Gtz" eventType="touchUpInside" id="qLp-VR-sIz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="dWU-ZV-X5F" secondAttribute="bottom" constant="16" id="HVp-KO-9Sw"/>
+                                    <constraint firstItem="dWU-ZV-X5F" firstAttribute="centerX" secondItem="tew-Xa-d2I" secondAttribute="centerX" id="cm6-7A-FVu"/>
+                                    <constraint firstAttribute="height" constant="75" id="uaJ-7V-EKD"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="cO3-Fd-oZt" secondAttribute="trailing" constant="81" id="1JG-VV-q6P"/>
+                            <constraint firstItem="Lry-8b-6yt" firstAttribute="top" secondItem="tew-Xa-d2I" secondAttribute="bottom" id="6GI-Mj-IXZ"/>
                             <constraint firstItem="cO3-Fd-oZt" firstAttribute="top" secondItem="E78-UO-kDn" secondAttribute="bottom" constant="8" id="6Uz-E1-nXn"/>
+                            <constraint firstAttribute="trailing" secondItem="tew-Xa-d2I" secondAttribute="trailing" id="7nM-Aq-zTW"/>
                             <constraint firstItem="E78-UO-kDn" firstAttribute="leading" secondItem="EDH-Sb-YlK" secondAttribute="leadingMargin" id="Cr0-gw-q0S"/>
                             <constraint firstItem="E78-UO-kDn" firstAttribute="top" secondItem="yFV-Hn-nur" secondAttribute="bottom" constant="8" id="JLC-qr-JfL"/>
                             <constraint firstItem="cO3-Fd-oZt" firstAttribute="leading" secondItem="EDH-Sb-YlK" secondAttribute="leadingMargin" constant="81" id="KbZ-op-PoX"/>
+                            <constraint firstItem="tew-Xa-d2I" firstAttribute="centerX" secondItem="EDH-Sb-YlK" secondAttribute="centerX" id="MYe-Ph-vjq"/>
+                            <constraint firstItem="tew-Xa-d2I" firstAttribute="leading" secondItem="EDH-Sb-YlK" secondAttribute="leading" id="bAj-Nb-osG"/>
                             <constraint firstItem="cO3-Fd-oZt" firstAttribute="centerX" secondItem="EDH-Sb-YlK" secondAttribute="centerX" id="fk7-df-Z2z"/>
                             <constraint firstItem="E78-UO-kDn" firstAttribute="trailing" secondItem="EDH-Sb-YlK" secondAttribute="trailingMargin" id="pRn-OK-1vi"/>
                         </constraints>
@@ -366,6 +392,7 @@
                     <connections>
                         <segue destination="peW-mg-OnI" kind="show" identifier="goToSafety" id="iyg-cT-VtJ"/>
                         <segue destination="r2Q-AM-flM" kind="show" identifier="goToInfo" id="Zqa-Uo-83B"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignOut" id="XBl-DS-GAt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CgV-Pn-gGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -416,7 +443,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="inG-iL-Zgt">
-                                <rect key="frame" x="16" y="367" width="343" height="122"/>
+                                <rect key="frame" x="16" y="370" width="343" height="122"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Please enter your name:" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krm-6g-6cU">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="31"/>
@@ -460,10 +487,10 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5O7-xW-ovb" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="89.5" y="298" width="196" height="37"/>
+                                <rect key="frame" x="89.5" y="298" width="196" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="1S6-Mi-h47"/>
+                                    <constraint firstAttribute="height" constant="40" id="1S6-Mi-h47"/>
                                     <constraint firstAttribute="width" constant="196" id="5LB-9W-74W"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
@@ -472,10 +499,10 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRM-r7-gzH" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="16" y="595" width="343" height="48"/>
+                                <rect key="frame" x="16" y="598" width="343" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="qBL-aE-9aT"/>
+                                    <constraint firstAttribute="height" constant="45" id="qBL-aE-9aT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
                                 <state key="normal" title="Save Profile">
@@ -530,13 +557,12 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKo-u2-qdo" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="97" y="597" width="181" height="50"/>
+                                <rect key="frame" x="97" y="607" width="181" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="181" id="6Qt-RM-kOn"/>
                                     <constraint firstAttribute="width" constant="181" id="LOU-Pf-7C1"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="M46-nx-hks"/>
-                                    <constraint firstAttribute="height" constant="50" id="sL1-s7-XdC"/>
+                                    <constraint firstAttribute="height" constant="40" id="M46-nx-hks"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
                                 <state key="normal" title="Back">
@@ -544,14 +570,14 @@
                                 </state>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ufu-me-L4b">
-                                <rect key="frame" x="97" y="201" width="181" height="166"/>
+                                <rect key="frame" x="97" y="201" width="181" height="136"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRG-WO-xFL" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="181" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="181" id="8Kb-22-YPJ"/>
-                                            <constraint firstAttribute="height" constant="50" id="OrR-ni-a1G"/>
+                                            <constraint firstAttribute="height" constant="40" id="OrR-ni-a1G"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
                                         <state key="normal" title="Instructions">
@@ -559,11 +585,11 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yw0-0Z-7A0" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="58" width="181" height="50"/>
+                                        <rect key="frame" x="0.0" y="48" width="181" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="181" id="adf-a4-SJg"/>
-                                            <constraint firstAttribute="height" constant="50" id="ogT-NE-uhX"/>
+                                            <constraint firstAttribute="height" constant="40" id="ogT-NE-uhX"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
                                         <state key="normal" title="Project Info">
@@ -571,10 +597,10 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6JR-bh-imh" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="116" width="181" height="50"/>
+                                        <rect key="frame" x="0.0" y="96" width="181" height="40"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="kaQ-ye-6tL"/>
+                                            <constraint firstAttribute="height" constant="40" id="kaQ-ye-6tL"/>
                                             <constraint firstAttribute="width" constant="181" id="xlU-4u-gsv"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
@@ -613,10 +639,11 @@
         <image name="f" width="352" height="328"/>
         <image name="info" width="189" height="189"/>
         <image name="safety" width="189" height="189"/>
+        <image name="sign-out" width="92" height="65"/>
         <image name="user1" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EnJ-aU-BaS"/>
+        <segue reference="lb5-vS-HRn"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>
