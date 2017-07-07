@@ -15,6 +15,11 @@ class SetUpProfileVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden = true
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

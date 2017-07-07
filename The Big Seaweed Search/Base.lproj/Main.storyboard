@@ -25,7 +25,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBl-u5-kn7" customClass="FancyView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="567" width="375" height="100"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="If you haven't signed in before, an account will be automatically created for you." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R29-yg-rlc">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="If you haven't signed in before, an account will be automatically created for you." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R29-yg-rlc">
                                         <rect key="frame" x="8" y="14" width="359" height="73"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="73" id="gAD-7T-271"/>
@@ -145,18 +145,19 @@
                             <constraint firstItem="2Qv-vk-Opu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xea-ce-xmp"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="emailField" destination="E7Q-Li-6dh" id="aUi-ME-iGY"/>
                         <outlet property="pwdField" destination="yBd-03-Am3" id="Ibb-4a-VTv"/>
                         <segue destination="0sf-Ja-TYP" kind="show" identifier="goToSetUp" id="jrJ-AN-N2v"/>
-                        <segue destination="GZ3-kx-Gtz" kind="show" identifier="goToMain" id="EnJ-aU-BaS"/>
+                        <segue destination="Mvz-X8-qcu" kind="show" identifier="goToMain" id="EnJ-aU-BaS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="31.884057971014496" y="36.684782608695656"/>
         </scene>
-        <!--SafetyVC-->
+        <!--SAFETY -->
         <scene sceneID="jME-Sg-icK">
             <objects>
                 <viewController id="peW-mg-OnI" customClass="SafetyVC" customModule="The_Big_Seaweed_Search" customModuleProvider="target" sceneMemberID="viewController">
@@ -168,52 +169,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8N-FA-PXw" customClass="FancyView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="IMPORTANT" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LTo-uX-07s">
-                                        <rect key="frame" x="16" y="35" width="343" height="30"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Y1v-xd-dsr"/>
-                                            <constraint firstAttribute="height" constant="30" id="jHG-43-eq0"/>
-                                        </constraints>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="36"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3FA-iX-AZP">
-                                        <rect key="frame" x="26" y="21" width="39" height="47"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                        <state key="normal" title="&lt;"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="LTo-uX-07s" firstAttribute="centerX" secondItem="k8N-FA-PXw" secondAttribute="centerX" id="5aG-2g-AdV"/>
-                                    <constraint firstItem="LTo-uX-07s" firstAttribute="centerX" secondItem="k8N-FA-PXw" secondAttribute="centerX" id="CiB-JG-tdE"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="FUC-Jw-OcR"/>
-                                    <constraint firstItem="LTo-uX-07s" firstAttribute="leading" secondItem="k8N-FA-PXw" secondAttribute="leading" constant="16" id="NRG-5L-3k5"/>
-                                    <constraint firstItem="LTo-uX-07s" firstAttribute="top" secondItem="k8N-FA-PXw" secondAttribute="top" constant="35" id="PtH-8C-f78"/>
-                                    <constraint firstAttribute="height" constant="100" id="Q5K-yx-T8m"/>
-                                    <constraint firstAttribute="trailing" secondItem="LTo-uX-07s" secondAttribute="trailing" constant="16" id="hjC-ys-aug"/>
-                                    <constraint firstAttribute="trailing" secondItem="LTo-uX-07s" secondAttribute="trailing" constant="16" id="kpg-hT-OTg"/>
-                                    <constraint firstItem="LTo-uX-07s" firstAttribute="leading" secondItem="k8N-FA-PXw" secondAttribute="leading" constant="16" id="z2i-f2-qFb"/>
-                                </constraints>
-                            </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="SAFETY NOTE" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZV-ov-34y">
-                                <rect key="frame" x="67" y="108" width="240" height="54"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="54" id="wem-1C-maI"/>
-                                </constraints>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="33"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGv-ik-tBZ">
-                                <rect key="frame" x="16" y="170" width="343" height="477"/>
+                                <rect key="frame" x="16" y="192" width="343" height="455"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Staying safe on the seashore:
 
@@ -234,33 +191,45 @@
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="IMPORTANT SAFETY NOTICE" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFX-5g-j60">
+                                <rect key="frame" x="16" y="72" width="343" height="112"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112" id="caR-yD-Eoo"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="32"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="CoC-Qm-Frx" firstAttribute="top" secondItem="mGv-ik-tBZ" secondAttribute="bottom" constant="20" id="0M9-zl-385"/>
-                            <constraint firstItem="mGv-ik-tBZ" firstAttribute="trailing" secondItem="Nm3-H2-aKR" secondAttribute="trailingMargin" id="4ZQ-JQ-Zfb"/>
-                            <constraint firstItem="k8N-FA-PXw" firstAttribute="centerX" secondItem="Nm3-H2-aKR" secondAttribute="centerX" id="5dW-40-dCA"/>
-                            <constraint firstItem="mGv-ik-tBZ" firstAttribute="top" secondItem="LZV-ov-34y" secondAttribute="bottom" constant="8" id="8Xb-Cc-YM3"/>
-                            <constraint firstItem="LZV-ov-34y" firstAttribute="centerX" secondItem="Nm3-H2-aKR" secondAttribute="centerX" id="Mev-DT-VWN"/>
-                            <constraint firstAttribute="trailing" secondItem="k8N-FA-PXw" secondAttribute="trailing" id="Rdp-2N-35y"/>
-                            <constraint firstItem="mGv-ik-tBZ" firstAttribute="centerX" secondItem="Nm3-H2-aKR" secondAttribute="centerX" id="WbD-Rp-0rY"/>
-                            <constraint firstItem="k8N-FA-PXw" firstAttribute="top" secondItem="Nm3-H2-aKR" secondAttribute="top" id="Wo1-yq-wvq"/>
-                            <constraint firstItem="k8N-FA-PXw" firstAttribute="leading" secondItem="Nm3-H2-aKR" secondAttribute="leading" id="eML-Ej-uCp"/>
-                            <constraint firstItem="LZV-ov-34y" firstAttribute="leading" secondItem="Nm3-H2-aKR" secondAttribute="leadingMargin" constant="51" id="hRl-5Z-pYW"/>
-                            <constraint firstItem="mGv-ik-tBZ" firstAttribute="leading" secondItem="Nm3-H2-aKR" secondAttribute="leadingMargin" id="i67-VB-jsf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="LZV-ov-34y" secondAttribute="trailing" constant="52" id="mY7-9k-a5H"/>
-                            <constraint firstItem="LZV-ov-34y" firstAttribute="top" secondItem="k8N-FA-PXw" secondAttribute="bottom" constant="8" id="nUH-Gi-vBQ"/>
+                            <constraint firstItem="QFX-5g-j60" firstAttribute="trailing" secondItem="Nm3-H2-aKR" secondAttribute="trailingMargin" id="1wE-zW-NAx"/>
+                            <constraint firstItem="QFX-5g-j60" firstAttribute="top" secondItem="8KQ-H4-Okd" secondAttribute="bottom" constant="8" id="5cS-6j-vTE"/>
+                            <constraint firstItem="mGv-ik-tBZ" firstAttribute="centerX" secondItem="Nm3-H2-aKR" secondAttribute="centerX" id="RsJ-Ra-8kj"/>
+                            <constraint firstItem="mGv-ik-tBZ" firstAttribute="leading" secondItem="Nm3-H2-aKR" secondAttribute="leadingMargin" id="SjM-9w-RLX"/>
+                            <constraint firstItem="mGv-ik-tBZ" firstAttribute="top" secondItem="QFX-5g-j60" secondAttribute="bottom" constant="8" id="UXw-7b-en5"/>
+                            <constraint firstItem="QFX-5g-j60" firstAttribute="leading" secondItem="Nm3-H2-aKR" secondAttribute="leadingMargin" id="chL-kd-2vF"/>
+                            <constraint firstItem="QFX-5g-j60" firstAttribute="centerX" secondItem="Nm3-H2-aKR" secondAttribute="centerX" id="f3k-6J-wTc"/>
+                            <constraint firstItem="mGv-ik-tBZ" firstAttribute="trailing" secondItem="Nm3-H2-aKR" secondAttribute="trailingMargin" id="xz3-3Z-a08"/>
+                            <constraint firstItem="CoC-Qm-Frx" firstAttribute="top" secondItem="mGv-ik-tBZ" secondAttribute="bottom" constant="20" id="yOo-kP-Quw"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="GZ3-kx-Gtz" kind="show" identifier="safetyToMain" id="IFU-qf-dC2"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="SAFETY " id="eSx-5y-7Oi">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" style="plain" id="fW1-Pe-TDf">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backBtnTapped:" destination="peW-mg-OnI" id="bHe-F2-I9R"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Geo-IT-L1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="808.79999999999995" y="-685.00749625187416"/>
         </scene>
-        <!--MainVC-->
+        <!--The Big Seaweed Search-->
         <scene sceneID="7lp-B8-XwD">
             <objects>
                 <viewController id="GZ3-kx-Gtz" customClass="MainVC" customModule="The_Big_Seaweed_Search" customModuleProvider="target" sceneMemberID="viewController">
@@ -269,17 +238,17 @@
                         <viewControllerLayoutGuide type="bottom" id="Lry-8b-6yt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EDH-Sb-YlK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-smaller" translatesAutoresizingMaskIntoConstraints="NO" id="E78-UO-kDn">
-                                <rect key="frame" x="16" y="28" width="343" height="149"/>
+                                <rect key="frame" x="16" y="8" width="343" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="149" id="NgN-4V-nJ2"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cO3-Fd-oZt">
-                                <rect key="frame" x="97" y="185" width="181" height="360"/>
+                                <rect key="frame" x="97" y="165" width="181" height="360"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QE-Mr-c1U">
                                         <rect key="frame" x="50.5" y="0.0" width="80" height="80"/>
@@ -290,6 +259,9 @@
                                         <state key="normal" image="safety">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="safetyButtonTapped:" destination="GZ3-kx-Gtz" eventType="touchUpInside" id="C2D-nT-tR6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Wp-yK-J1s" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="88" width="181" height="40"/>
@@ -348,11 +320,14 @@
                                         <state key="normal" image="info">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="infoBtnTapped:" destination="GZ3-kx-Gtz" eventType="touchUpInside" id="qId-wY-zw4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tew-Xa-d2I" customClass="FancyView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="592" width="375" height="75"/>
+                                <rect key="frame" x="0.0" y="528" width="375" height="75"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWU-ZV-X5F" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="150" y="9" width="75" height="50"/>
@@ -389,7 +364,10 @@
                             <constraint firstItem="E78-UO-kDn" firstAttribute="trailing" secondItem="EDH-Sb-YlK" secondAttribute="trailingMargin" id="pRn-OK-1vi"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="The Big Seaweed Search" id="3Mh-Zb-9XN"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="safetyBtnTapped" destination="1QE-Mr-c1U" id="hjD-SC-LhS"/>
                         <segue destination="peW-mg-OnI" kind="show" identifier="goToSafety" id="iyg-cT-VtJ"/>
                         <segue destination="r2Q-AM-flM" kind="show" identifier="goToInfo" id="Zqa-Uo-83B"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignOut" id="XBl-DS-GAt"/>
@@ -397,7 +375,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CgV-Pn-gGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="808.79999999999995" y="35.532233883058474"/>
+            <point key="canvasLocation" x="1748" y="35.532233883058474"/>
         </scene>
         <!--Set Up ProfileVC-->
         <scene sceneID="YMG-5H-hIj">
@@ -414,7 +392,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZCh-8C-32P" customClass="FancyView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Profile Set Up" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yyw-5R-BoI">
+                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Profile Set Up" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yyw-5R-BoI">
                                         <rect key="frame" x="16" y="35" width="343" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -529,15 +507,16 @@
                             <constraint firstItem="ZCh-8C-32P" firstAttribute="top" secondItem="U6I-Ds-ber" secondAttribute="top" id="yDz-hJ-OJ9"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <segue destination="GZ3-kx-Gtz" kind="show" identifier="setUpToMain" id="9qv-sm-tIH"/>
+                        <segue destination="Mvz-X8-qcu" kind="show" identifier="setUpToMain" id="9qv-sm-tIH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="liQ-qf-Iqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="29.600000000000001" y="775.86206896551732"/>
         </scene>
-        <!--InfoVC-->
+        <!--Information-->
         <scene sceneID="p9L-OI-acu">
             <objects>
                 <viewController id="r2Q-AM-flM" customClass="InfoVC" customModule="The_Big_Seaweed_Search" customModuleProvider="target" sceneMemberID="viewController">
@@ -550,27 +529,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-smaller" translatesAutoresizingMaskIntoConstraints="NO" id="LyI-P4-2bj">
-                                <rect key="frame" x="16" y="28" width="343" height="149"/>
+                                <rect key="frame" x="16" y="72" width="343" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="149" id="dlN-VU-itX"/>
                                     <constraint firstAttribute="height" constant="149" id="gC3-PC-t85"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKo-u2-qdo" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="97" y="607" width="181" height="40"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="181" id="6Qt-RM-kOn"/>
-                                    <constraint firstAttribute="width" constant="181" id="LOU-Pf-7C1"/>
-                                    <constraint firstAttribute="height" constant="40" id="M46-nx-hks"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ufu-me-L4b">
-                                <rect key="frame" x="97" y="201" width="181" height="136"/>
+                                <rect key="frame" x="97" y="245" width="181" height="136"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRG-WO-xFL" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="181" height="40"/>
@@ -614,24 +580,46 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="LyI-P4-2bj" firstAttribute="trailing" secondItem="OQ0-Nt-RHj" secondAttribute="trailingMargin" id="0an-UI-CtK"/>
-                            <constraint firstItem="S0h-C7-pnL" firstAttribute="top" secondItem="TKo-u2-qdo" secondAttribute="bottom" constant="20" id="3Hb-6i-ews"/>
                             <constraint firstItem="Ufu-me-L4b" firstAttribute="centerX" secondItem="OQ0-Nt-RHj" secondAttribute="centerX" id="5yV-7C-tiH"/>
                             <constraint firstItem="LyI-P4-2bj" firstAttribute="top" secondItem="sfY-ds-2ek" secondAttribute="bottom" constant="8" id="P0A-Ag-gjR"/>
                             <constraint firstItem="Ufu-me-L4b" firstAttribute="top" secondItem="LyI-P4-2bj" secondAttribute="bottom" constant="24" id="aiL-WG-qdf"/>
-                            <constraint firstItem="TKo-u2-qdo" firstAttribute="centerX" secondItem="OQ0-Nt-RHj" secondAttribute="centerX" id="hFT-6y-jmT"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ufu-me-L4b" secondAttribute="trailing" constant="81" id="izL-SW-vVX"/>
                             <constraint firstItem="LyI-P4-2bj" firstAttribute="leading" secondItem="OQ0-Nt-RHj" secondAttribute="leadingMargin" id="jqB-Ga-O16"/>
                             <constraint firstItem="Ufu-me-L4b" firstAttribute="leading" secondItem="OQ0-Nt-RHj" secondAttribute="leadingMargin" constant="81" id="r2c-te-CLF"/>
                             <constraint firstItem="LyI-P4-2bj" firstAttribute="centerX" secondItem="OQ0-Nt-RHj" secondAttribute="centerX" id="ty0-rj-gbu"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="GZ3-kx-Gtz" kind="show" identifier="infoToMain" id="lb5-vS-HRn"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Information" id="0QV-F3-1gE">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" style="plain" id="HJS-NV-oWB">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backBtn:" destination="r2Q-AM-flM" id="HGq-7F-Nqf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CfG-BI-4hr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="809" y="776"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Y1G-oB-cVe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mvz-X8-qcu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uPc-d9-4Pw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="GZ3-kx-Gtz" kind="relationship" relationship="rootViewController" id="JU9-K3-Gcc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l0Q-5v-qe0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808.79999999999995" y="35.532233883058474"/>
         </scene>
     </scenes>
     <resources>
@@ -643,7 +631,7 @@
         <image name="user1" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="lb5-vS-HRn"/>
+        <segue reference="EnJ-aU-BaS"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

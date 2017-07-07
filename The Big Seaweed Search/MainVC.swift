@@ -16,6 +16,15 @@ class MainVC: UIViewController {
         super.viewDidLoad()
     }
 
+    @IBAction func infoBtnTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToInfo", sender: nil)
+    }
+    
+    @IBOutlet weak var safetyBtnTapped: UIButton!
+    
+    @IBAction func safetyButtonTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToSafety", sender: nil)
+    }
     
     @IBAction func signOutTapped(_ sender: Any) {
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
