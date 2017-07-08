@@ -26,6 +26,12 @@ class MainVC: UIViewController {
         performSegue(withIdentifier: "goToSafety", sender: nil)
     }
     
+    
+    @IBAction func ProfileBtnTapped(_ sender: Any) {
+        performSegue(withIdentifier: "mainToProfileOptions", sender: nil)
+        
+    }
+    
     @IBAction func signOutTapped(_ sender: Any) {
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         print("CHASE: ID removed from keychain \(keychainResult)")

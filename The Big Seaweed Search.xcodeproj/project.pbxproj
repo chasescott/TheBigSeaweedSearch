@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AB57F9141F10DCF900CFB504 /* FancyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB57F9131F10DCF900CFB504 /* FancyImageView.swift */; };
+		AB57F9161F11097900CFB504 /* InstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB57F9151F11097900CFB504 /* InstructionsVC.swift */; };
+		AB57F9181F1109A400CFB504 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB57F9171F1109A400CFB504 /* AboutVC.swift */; };
+		AB57F91A1F1109C000CFB504 /* PrivacyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB57F9191F1109C000CFB504 /* PrivacyVC.swift */; };
+		AB57F91C1F111AAB00CFB504 /* ProfileOptionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB57F91B1F111AAB00CFB504 /* ProfileOptionsVC.swift */; };
 		ABE3B98D1F0D4C480079B099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3B98C1F0D4C480079B099 /* AppDelegate.swift */; };
 		ABE3B98F1F0D4C480079B099 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3B98E1F0D4C480079B099 /* LoginVC.swift */; };
 		ABE3B9921F0D4C480079B099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE3B9901F0D4C480079B099 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 		155C308B9E86F40B5E65DB0E /* Pods-The Big Seaweed Search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Big Seaweed Search.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Big Seaweed Search/Pods-The Big Seaweed Search.release.xcconfig"; sourceTree = "<group>"; };
 		9C763B25A60E0A4A9FCE2869 /* Pods_The_Big_Seaweed_Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Big_Seaweed_Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB57F9131F10DCF900CFB504 /* FancyImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyImageView.swift; sourceTree = "<group>"; };
+		AB57F9151F11097900CFB504 /* InstructionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsVC.swift; sourceTree = "<group>"; };
+		AB57F9171F1109A400CFB504 /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		AB57F9191F1109C000CFB504 /* PrivacyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyVC.swift; sourceTree = "<group>"; };
+		AB57F91B1F111AAB00CFB504 /* ProfileOptionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileOptionsVC.swift; sourceTree = "<group>"; };
 		ABE3B9891F0D4C480079B099 /* The Big Seaweed Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Big Seaweed Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE3B98C1F0D4C480079B099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE3B98E1F0D4C480079B099 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -144,6 +152,10 @@
 				ABE3B9A51F0D724A0079B099 /* SetUpProfileVC.swift */,
 				ABE3B9A71F0D8A280079B099 /* InfoVC.swift */,
 				ABE3B9A91F0D8A410079B099 /* SafetyVC.swift */,
+				AB57F9151F11097900CFB504 /* InstructionsVC.swift */,
+				AB57F9171F1109A400CFB504 /* AboutVC.swift */,
+				AB57F9191F1109C000CFB504 /* PrivacyVC.swift */,
+				AB57F91B1F111AAB00CFB504 /* ProfileOptionsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -302,8 +314,11 @@
 				ABE3B9B01F0D937C0079B099 /* DataService.swift in Sources */,
 				ABE3B9AA1F0D8A410079B099 /* SafetyVC.swift in Sources */,
 				ABE3B9BA1F0D94650079B099 /* FancyButton.swift in Sources */,
+				AB57F9161F11097900CFB504 /* InstructionsVC.swift in Sources */,
 				ABE3B98F1F0D4C480079B099 /* LoginVC.swift in Sources */,
 				ABE3B9A61F0D724A0079B099 /* SetUpProfileVC.swift in Sources */,
+				AB57F91C1F111AAB00CFB504 /* ProfileOptionsVC.swift in Sources */,
+				AB57F91A1F1109C000CFB504 /* PrivacyVC.swift in Sources */,
 				ABE3B9BC1F0D94750079B099 /* CircleView.swift in Sources */,
 				ABE3B9B81F0D94580079B099 /* FancyField.swift in Sources */,
 				ABE3B9B21F0D93FC0079B099 /* CustomTextField.swift in Sources */,
@@ -311,6 +326,7 @@
 				ABE3B9B41F0D94380079B099 /* FancyView.swift in Sources */,
 				ABE3B9A41F0D6B220079B099 /* EditProfileVC.swift in Sources */,
 				ABE3B9A81F0D8A280079B099 /* InfoVC.swift in Sources */,
+				AB57F9181F1109A400CFB504 /* AboutVC.swift in Sources */,
 				ABE3B98D1F0D4C480079B099 /* AppDelegate.swift in Sources */,
 				AB57F9141F10DCF900CFB504 /* FancyImageView.swift in Sources */,
 				ABE3B9AE1F0D93540079B099 /* Constants.swift in Sources */,

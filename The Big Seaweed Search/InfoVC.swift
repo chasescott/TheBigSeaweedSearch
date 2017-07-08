@@ -19,5 +19,16 @@ class InfoVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func instructionsBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: "infoToInstructions", sender: nil)
+    }
     
+    @IBAction func aboutBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: "infoToAbout", sender: nil)
+    }
+    
+    @IBOutlet weak var privacyBtnPressed: FancyButton!
+    
+    @IBAction func privacyPressed(_ sender: Any) { performSegue(withIdentifier: "infoToPrivacy", sender: nil)
+    }
 }
