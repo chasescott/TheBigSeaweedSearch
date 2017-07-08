@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB57F9141F10DCF900CFB504 /* FancyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB57F9131F10DCF900CFB504 /* FancyImageView.swift */; };
 		ABE3B98D1F0D4C480079B099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3B98C1F0D4C480079B099 /* AppDelegate.swift */; };
 		ABE3B98F1F0D4C480079B099 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3B98E1F0D4C480079B099 /* LoginVC.swift */; };
 		ABE3B9921F0D4C480079B099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE3B9901F0D4C480079B099 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		155C308B9E86F40B5E65DB0E /* Pods-The Big Seaweed Search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Big Seaweed Search.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Big Seaweed Search/Pods-The Big Seaweed Search.release.xcconfig"; sourceTree = "<group>"; };
 		9C763B25A60E0A4A9FCE2869 /* Pods_The_Big_Seaweed_Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Big_Seaweed_Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB57F9131F10DCF900CFB504 /* FancyImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyImageView.swift; sourceTree = "<group>"; };
 		ABE3B9891F0D4C480079B099 /* The Big Seaweed Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Big Seaweed Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE3B98C1F0D4C480079B099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE3B98E1F0D4C480079B099 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				ABE3B9B91F0D94650079B099 /* FancyButton.swift */,
 				ABE3B9B31F0D94380079B099 /* FancyView.swift */,
 				ABE3B9B51F0D944C0079B099 /* RoundButton.swift */,
+				AB57F9131F10DCF900CFB504 /* FancyImageView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				ABE3B9A41F0D6B220079B099 /* EditProfileVC.swift in Sources */,
 				ABE3B9A81F0D8A280079B099 /* InfoVC.swift in Sources */,
 				ABE3B98D1F0D4C480079B099 /* AppDelegate.swift in Sources */,
+				AB57F9141F10DCF900CFB504 /* FancyImageView.swift in Sources */,
 				ABE3B9AE1F0D93540079B099 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

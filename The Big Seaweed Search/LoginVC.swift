@@ -102,7 +102,7 @@ class LoginVC: UIViewController {
                                 let userData = ["provider": user.providerID]
                                 self.completeSignIn(id: user.uid, userData: userData)
                                 //get & insert profile data
-                                let profileData = ["username:": user.email as AnyObject,
+                                let profileData = ["username": user.email as AnyObject,
                                                    "location": "To be confirmed" as AnyObject,
                                                    "photoURL": self.plainProfileImg as AnyObject
                                 ]

@@ -85,7 +85,7 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1C-Qo-yRt" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="145" width="302" height="45"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.87599315068493133" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="302" id="CyY-dZ-BqT"/>
                                             <constraint firstAttribute="height" constant="45" id="Nq5-FD-aIr"/>
@@ -191,7 +191,7 @@
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="IMPORTANT SAFETY NOTICE" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFX-5g-j60">
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="IMPORTANT SAFETY NOTICE" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFX-5g-j60">
                                 <rect key="frame" x="16" y="72" width="343" height="112"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -216,7 +216,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="SAFETY " id="eSx-5y-7Oi">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;" style="plain" id="fW1-Pe-TDf">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="fW1-Pe-TDf">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="backBtnTapped:" destination="peW-mg-OnI" id="bHe-F2-I9R"/>
@@ -393,10 +393,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Profile Set Up" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yyw-5R-BoI">
-                                        <rect key="frame" x="16" y="35" width="343" height="30"/>
+                                        <rect key="frame" x="16" y="25" width="343" height="50"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="hte-iX-szM"/>
+                                            <constraint firstAttribute="height" constant="50" id="hte-iX-szM"/>
                                         </constraints>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="36"/>
@@ -405,58 +405,46 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="7V3-UJ-NLU"/>
-                                    <constraint firstItem="yyw-5R-BoI" firstAttribute="leading" secondItem="ZCh-8C-32P" secondAttribute="leading" constant="16" id="9Tb-fR-WfT"/>
-                                    <constraint firstItem="yyw-5R-BoI" firstAttribute="top" secondItem="ZCh-8C-32P" secondAttribute="top" constant="35" id="Kl3-EV-c3s"/>
-                                    <constraint firstAttribute="trailing" secondItem="yyw-5R-BoI" secondAttribute="trailing" constant="16" id="TZo-7O-682"/>
-                                    <constraint firstItem="yyw-5R-BoI" firstAttribute="centerX" secondItem="ZCh-8C-32P" secondAttribute="centerX" id="nGH-RE-CyW"/>
+                                    <constraint firstItem="yyw-5R-BoI" firstAttribute="top" secondItem="ZCh-8C-32P" secondAttribute="top" constant="25" id="9fK-QX-g33"/>
+                                    <constraint firstItem="yyw-5R-BoI" firstAttribute="leading" secondItem="ZCh-8C-32P" secondAttribute="leading" constant="16" id="Mru-Ud-Md4"/>
+                                    <constraint firstAttribute="height" constant="100" id="X7W-EE-X2y"/>
+                                    <constraint firstAttribute="trailing" secondItem="yyw-5R-BoI" secondAttribute="trailing" constant="16" id="XV7-A6-icg"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="kaR-00-doh">
-                                <rect key="frame" x="112" y="124" width="150" height="150"/>
-                                <color key="backgroundColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="6XZ-mm-DuF"/>
-                                    <constraint firstAttribute="height" constant="150" id="pQx-h4-BU8"/>
-                                </constraints>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="inG-iL-Zgt">
-                                <rect key="frame" x="16" y="370" width="343" height="122"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="inG-iL-Zgt">
+                                <rect key="frame" x="16" y="325" width="343" height="164"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Please enter your name:" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krm-6g-6cU">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="35"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="31" id="oUJ-n4-QfF"/>
+                                            <constraint firstAttribute="height" constant="35" id="oUJ-n4-QfF"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="I.e. John Smith" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s3A-tV-yxl" customClass="FancyField" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="31" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="43" width="343" height="35"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="6pd-Tb-LPF"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Fdg-Um-cVO"/>
+                                            <constraint firstAttribute="height" constant="35" id="Fdg-Um-cVO"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Please enter your town/county:" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnx-k8-YMX">
-                                        <rect key="frame" x="0.0" y="61" width="343" height="31"/>
+                                        <rect key="frame" x="0.0" y="86" width="343" height="35"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="31" id="0Ol-Ax-bdZ"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="p6V-3h-QCu"/>
+                                            <constraint firstAttribute="height" constant="35" id="p6V-3h-QCu"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="I.e. Portsmouth, Hampshire" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TWS-Rz-HD9" customClass="FancyField" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="129" width="343" height="35"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="9tj-KD-m8L"/>
-                                            <constraint firstAttribute="height" constant="30" id="ybP-hv-ubC"/>
+                                            <constraint firstAttribute="height" constant="35" id="9tj-KD-m8L"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
@@ -464,55 +452,76 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5O7-xW-ovb" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="89.5" y="298" width="196" height="40"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="1S6-Mi-h47"/>
-                                    <constraint firstAttribute="width" constant="196" id="5LB-9W-74W"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
-                                <state key="normal" title="Upload Profile Photo">
-                                    <color key="titleColor" red="0.99019607840000001" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRM-r7-gzH" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="16" y="598" width="343" height="45"/>
+                                <rect key="frame" x="97" y="598" width="181" height="45"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="181" id="NcS-nw-rKQ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="PPU-1W-Muf"/>
                                     <constraint firstAttribute="height" constant="45" id="qBL-aE-9aT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
                                 <state key="normal" title="Save Profile">
                                     <color key="titleColor" red="0.99019607843137258" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="postBtnTapped:" destination="0sf-Ja-TYP" eventType="touchUpInside" id="ni0-Ye-380"/>
+                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Please upload a profile image" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gM6-z6-lDP">
+                                <rect key="frame" x="16" y="108" width="343" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="HJ9-hr-LQL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="kaR-00-doh" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                <rect key="frame" x="112" y="151" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.87374571919999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="PtH-a6-iYD"/>
+                                    <constraint firstAttribute="height" constant="150" id="jJt-dR-sDA"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="OEK-4N-aZR" appends="YES" id="XcN-YN-6SL"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ZCh-8C-32P" secondAttribute="trailing" id="2ii-fM-J0g"/>
-                            <constraint firstItem="ZCh-8C-32P" firstAttribute="centerX" secondItem="U6I-Ds-ber" secondAttribute="centerX" id="32F-GQ-GO0"/>
-                            <constraint firstItem="inG-iL-Zgt" firstAttribute="trailing" secondItem="U6I-Ds-ber" secondAttribute="trailingMargin" id="Alh-KH-4sa"/>
-                            <constraint firstItem="YRM-r7-gzH" firstAttribute="leading" secondItem="U6I-Ds-ber" secondAttribute="leadingMargin" id="EUS-3C-PKG"/>
-                            <constraint firstItem="inG-iL-Zgt" firstAttribute="leading" secondItem="U6I-Ds-ber" secondAttribute="leadingMargin" id="FrW-Ac-zSt"/>
-                            <constraint firstItem="5O7-xW-ovb" firstAttribute="centerX" secondItem="U6I-Ds-ber" secondAttribute="centerX" id="M7F-sB-WMW"/>
-                            <constraint firstItem="5O7-xW-ovb" firstAttribute="top" secondItem="kaR-00-doh" secondAttribute="bottom" constant="24" id="RNI-nT-Yld"/>
-                            <constraint firstItem="kaR-00-doh" firstAttribute="centerX" secondItem="U6I-Ds-ber" secondAttribute="centerX" id="Rh1-GZ-tZT"/>
-                            <constraint firstItem="inG-iL-Zgt" firstAttribute="centerX" secondItem="U6I-Ds-ber" secondAttribute="centerX" id="ce8-IP-FZm"/>
-                            <constraint firstItem="inG-iL-Zgt" firstAttribute="top" secondItem="5O7-xW-ovb" secondAttribute="bottom" constant="32" id="ctq-5Q-NkY"/>
-                            <constraint firstItem="YRM-r7-gzH" firstAttribute="trailing" secondItem="U6I-Ds-ber" secondAttribute="trailingMargin" id="hVl-PC-EdH"/>
-                            <constraint firstItem="WNw-oN-RM9" firstAttribute="top" secondItem="YRM-r7-gzH" secondAttribute="bottom" constant="24" id="j0Q-xn-SIf"/>
-                            <constraint firstItem="ZCh-8C-32P" firstAttribute="leading" secondItem="U6I-Ds-ber" secondAttribute="leading" id="un4-SB-Dg8"/>
-                            <constraint firstItem="kaR-00-doh" firstAttribute="top" secondItem="ZCh-8C-32P" secondAttribute="bottom" constant="24" id="wZF-3w-Mbn"/>
-                            <constraint firstItem="ZCh-8C-32P" firstAttribute="top" secondItem="U6I-Ds-ber" secondAttribute="top" id="yDz-hJ-OJ9"/>
+                            <constraint firstItem="gM6-z6-lDP" firstAttribute="leading" secondItem="U6I-Ds-ber" secondAttribute="leadingMargin" id="CKO-OA-Swb"/>
+                            <constraint firstAttribute="trailing" secondItem="ZCh-8C-32P" secondAttribute="trailing" id="DDR-OM-cMa"/>
+                            <constraint firstItem="gM6-z6-lDP" firstAttribute="trailing" secondItem="U6I-Ds-ber" secondAttribute="trailingMargin" id="Dsy-rC-tbT"/>
+                            <constraint firstItem="gM6-z6-lDP" firstAttribute="top" secondItem="ZCh-8C-32P" secondAttribute="bottom" constant="8" id="U0T-oL-iIo"/>
+                            <constraint firstItem="gM6-z6-lDP" firstAttribute="centerX" secondItem="U6I-Ds-ber" secondAttribute="centerX" id="XJG-tX-Gqm"/>
+                            <constraint firstItem="inG-iL-Zgt" firstAttribute="leading" secondItem="U6I-Ds-ber" secondAttribute="leadingMargin" id="aA0-3V-anh"/>
+                            <constraint firstItem="WNw-oN-RM9" firstAttribute="top" secondItem="YRM-r7-gzH" secondAttribute="bottom" constant="24" id="feF-YR-pzD"/>
+                            <constraint firstItem="kaR-00-doh" firstAttribute="centerX" secondItem="U6I-Ds-ber" secondAttribute="centerX" id="hYd-0y-uf0"/>
+                            <constraint firstItem="kaR-00-doh" firstAttribute="top" secondItem="gM6-z6-lDP" secondAttribute="bottom" constant="8" id="knL-WV-ZBI"/>
+                            <constraint firstItem="ZCh-8C-32P" firstAttribute="top" secondItem="U6I-Ds-ber" secondAttribute="top" id="mO2-xH-128"/>
+                            <constraint firstItem="inG-iL-Zgt" firstAttribute="top" secondItem="kaR-00-doh" secondAttribute="bottom" constant="24" id="rlo-yZ-W7w"/>
+                            <constraint firstItem="YRM-r7-gzH" firstAttribute="centerX" secondItem="U6I-Ds-ber" secondAttribute="centerX" id="uKr-T7-O74"/>
+                            <constraint firstItem="inG-iL-Zgt" firstAttribute="trailing" secondItem="U6I-Ds-ber" secondAttribute="trailingMargin" id="v8X-oN-uO3"/>
+                            <constraint firstItem="ZCh-8C-32P" firstAttribute="leading" secondItem="U6I-Ds-ber" secondAttribute="leading" id="wYr-uW-l5B"/>
                         </constraints>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="imageAdd" destination="kaR-00-doh" id="PYH-4z-sq9"/>
+                        <outlet property="locationField" destination="TWS-Rz-HD9" id="aD1-GH-0Di"/>
+                        <outlet property="nameField" destination="s3A-tV-yxl" id="Spb-eZ-HR9"/>
                         <segue destination="Mvz-X8-qcu" kind="show" identifier="setUpToMain" id="9qv-sm-tIH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="liQ-qf-Iqz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="OEK-4N-aZR">
+                    <connections>
+                        <action selector="addImageTapped:" destination="0sf-Ja-TYP" id="uka-kP-EuY"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="29.600000000000001" y="775.86206896551732"/>
         </scene>
@@ -590,7 +599,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Information" id="0QV-F3-1gE">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;" style="plain" id="HJS-NV-oWB">
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" title="&lt;" id="HJS-NV-oWB">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="backBtn:" destination="r2Q-AM-flM" id="HGq-7F-Nqf"/>
@@ -624,14 +633,14 @@
     </scenes>
     <resources>
         <image name="Logo-smaller" width="603" height="194"/>
+        <image name="add-image" width="88" height="88"/>
         <image name="f" width="352" height="328"/>
         <image name="info" width="189" height="189"/>
         <image name="safety" width="189" height="189"/>
         <image name="sign-out" width="92" height="65"/>
-        <image name="user1" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EnJ-aU-BaS"/>
+        <segue reference="9qv-sm-tIH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

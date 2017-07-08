@@ -68,4 +68,8 @@ class DataService {
         REF_USERS.child(uid).child("profile").updateChildValues(profileData)
     }
     
+    func updateFirebaseDBUserProfile(uid: String, profileData: Dictionary<String, AnyObject>) {
+        REF_USERS.child(uid).child("profile").updateChildValues(profileData)
+    }
+    
 }
