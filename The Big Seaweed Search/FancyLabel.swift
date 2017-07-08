@@ -6,4 +6,10 @@
 //  Copyright © 2017 Chase Scott-Pearson. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class FancyLabel: UILabel {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+}

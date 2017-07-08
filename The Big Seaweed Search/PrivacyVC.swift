@@ -18,4 +18,6 @@ class PrivacyVC: UIViewController {
         _ = navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }
+    
+    
 }

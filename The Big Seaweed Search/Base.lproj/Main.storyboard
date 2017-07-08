@@ -157,6 +157,93 @@
             </objects>
             <point key="canvasLocation" x="31.884057971014496" y="36.684782608695656"/>
         </scene>
+        <!--View Profile-->
+        <scene sceneID="BzW-3E-tAA">
+            <objects>
+                <viewController id="kaJ-in-h6h" customClass="ViewProfileVC" customModule="The_Big_Seaweed_Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="s8Q-xw-d0a"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ua4-D1-jtt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4RV-9b-SH9">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F0F-t8-WHu">
+                                <rect key="frame" x="16" y="16" width="343" height="346"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="qWc-w7-8bu">
+                                        <rect key="frame" x="96.5" y="0.0" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="ZUf-b5-z2S"/>
+                                            <constraint firstAttribute="width" constant="150" id="k2T-7Q-cUy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E97-ac-skd">
+                                        <rect key="frame" x="111.5" y="158" width="120" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="lMI-gf-aSt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqv-mS-cCD">
+                                        <rect key="frame" x="117" y="207" width="109.5" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="YBp-Lw-eX7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                                        <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWF-Mi-RFg">
+                                        <rect key="frame" x="120" y="256" width="103" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="5Ic-66-S4R"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2o-zk-mEc">
+                                        <rect key="frame" x="117" y="305" width="109.5" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="60S-Hq-Wcs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                                        <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F0F-t8-WHu" firstAttribute="top" secondItem="s8Q-xw-d0a" secondAttribute="bottom" constant="16" id="5m6-x4-X2S"/>
+                            <constraint firstItem="F0F-t8-WHu" firstAttribute="leading" secondItem="4RV-9b-SH9" secondAttribute="leadingMargin" id="QQx-ij-Ohm"/>
+                            <constraint firstItem="F0F-t8-WHu" firstAttribute="centerX" secondItem="4RV-9b-SH9" secondAttribute="centerX" id="f2H-9d-ghZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F0F-t8-WHu" secondAttribute="trailing" id="nbb-bx-2J9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="View Profile" id="xud-pp-Lde">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="ljE-6J-VGY">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backBtnPressed:" destination="kaJ-in-h6h" id="WcG-bM-K8j"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="profileImg" destination="qWc-w7-8bu" id="R7K-SV-PTX"/>
+                        <outlet property="profileLocation" destination="A2o-zk-mEc" id="FQs-PE-X5r"/>
+                        <outlet property="profileUsername" destination="wqv-mS-cCD" id="qRK-FX-s7y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mmT-Ku-rFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="-1450.5247376311845"/>
+        </scene>
         <!--SAFETY -->
         <scene sceneID="jME-Sg-icK">
             <objects>
@@ -261,6 +348,9 @@
                                 <state key="normal" title="View Profile">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="viewProfileBtnPressed:" destination="iem-Qi-bz3" eventType="touchUpInside" id="TIz-Ix-dk3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BC-h7-fv1" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                 <rect key="frame" x="97" y="221" width="181" height="40"/>
@@ -275,6 +365,9 @@
                                 <state key="normal" title="Edit Profile">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="editProfileBtnPressed:" destination="iem-Qi-bz3" eventType="touchUpInside" id="5aP-3j-Y1H"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -293,10 +386,13 @@
                         <barButtonItem key="leftBarButtonItem" title="&lt;" id="59o-g0-z2W">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="backBtnTapped:" destination="peW-mg-OnI" id="xdh-6K-889"/>
+                                <action selector="backBtnPressed:" destination="iem-Qi-bz3" id="ppX-Ev-cks"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="kaJ-in-h6h" kind="show" identifier="optionsToViewProfile" id="txY-oI-5a3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="icy-b4-qg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -629,7 +725,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Instructions" id="EuF-Ik-IZo">
-                        <barButtonItem key="leftBarButtonItem" enabled="NO" title="&lt;" id="isD-sc-JoA">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="isD-sc-JoA">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="backBtnPressed:" destination="dV0-P5-erj" id="dCO-Tz-KVm"/>
@@ -978,7 +1074,7 @@ Cg
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About The Big Seaweed Search" id="bNe-5z-3be">
-                        <barButtonItem key="leftBarButtonItem" enabled="NO" title="&lt;" id="ZSq-VB-WBn">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="ZSq-VB-WBn">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="backBtnPressed:" destination="UOv-on-aaE" id="vLp-oy-i4e"/>
@@ -1007,7 +1103,7 @@ Cg
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment>
-                                        <mutableString key="content">This privacy policy sets out how 'The Big Seaweed Search' uses and protects any information that you give 'The Big Seaweed Search' when you use this app.
+                                        <string key="content">This privacy policy sets out how 'The Big Seaweed Search' uses and protects any information that you give 'The Big Seaweed Search' when you use this app.
 
 'The Big Seaweed Search' is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement.
 
@@ -1036,7 +1132,7 @@ We will not sell, distribute or lease your personal information to third parties
 
 You may request details of personal information which we hold about you under the Data Protection Act 1998. A small fee will be payable. If you would like a copy of the information held on you please email us.
 
-</mutableString>
+</string>
                                         <attributes>
                                             <font key="NSFont" size="14" name="Avenir-Book"/>
                                         </attributes>
@@ -1061,7 +1157,7 @@ You may request details of personal information which we hold about you under th
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Privacy" id="A54-hG-S2k">
-                        <barButtonItem key="leftBarButtonItem" enabled="NO" title="&lt;" id="rZm-76-IpI">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="rZm-76-IpI">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="backBtnPressed:" destination="18T-Wd-NxN" id="bhX-YS-Lh0"/>
@@ -1156,10 +1252,10 @@ You may request details of personal information which we hold about you under th
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Information" id="0QV-F3-1gE">
-                        <barButtonItem key="leftBarButtonItem" enabled="NO" title="&lt;" id="HJS-NV-oWB">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="HJS-NV-oWB">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="backBtn:" destination="r2Q-AM-flM" id="HGq-7F-Nqf"/>
+                                <action selector="backBtn:" destination="r2Q-AM-flM" id="wa4-0I-pj1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1202,6 +1298,7 @@ You may request details of personal information which we hold about you under th
         <image name="info" width="189" height="189"/>
         <image name="safety" width="189" height="189"/>
         <image name="sign-out" width="92" height="65"/>
+        <image name="user1" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="9qv-sm-tIH"/>
