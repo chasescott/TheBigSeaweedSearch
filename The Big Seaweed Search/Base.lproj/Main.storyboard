@@ -145,7 +145,6 @@
                             <constraint firstItem="2Qv-vk-Opu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xea-ce-xmp"/>
                         </constraints>
                     </view>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="emailField" destination="E7Q-Li-6dh" id="aUi-ME-iGY"/>
                         <outlet property="pwdField" destination="yBd-03-Am3" id="Ibb-4a-VTv"/>
@@ -166,18 +165,18 @@
                         <viewControllerLayoutGuide type="bottom" id="Ua4-D1-jtt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4RV-9b-SH9">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-small" translatesAutoresizingMaskIntoConstraints="NO" id="vgC-9p-GTP">
-                                <rect key="frame" x="108" y="0.0" width="158" height="100"/>
+                                <rect key="frame" x="108" y="64" width="158" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="158" id="5lw-u5-gJT"/>
                                     <constraint firstAttribute="height" constant="100" id="Kcy-t8-TY9"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGG-JZ-0TE" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="97" y="547" width="181" height="40"/>
+                                <rect key="frame" x="97" y="611" width="181" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="181" id="1x3-17-ckV"/>
@@ -200,7 +199,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F0F-t8-WHu">
-                                <rect key="frame" x="16" y="108" width="343" height="346"/>
+                                <rect key="frame" x="16" y="172" width="343" height="346"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="qWc-w7-8bu">
                                         <rect key="frame" x="96.5" y="0.0" width="150" height="150"/>
@@ -291,11 +290,11 @@
                         <viewControllerLayoutGuide type="bottom" id="8v0-b3-Erh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iw0-DJ-Frb">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-small" translatesAutoresizingMaskIntoConstraints="NO" id="VwW-RB-YPQ">
-                                <rect key="frame" x="108" y="0.0" width="158" height="100"/>
+                                <rect key="frame" x="108" y="64" width="158" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="158" id="9an-P6-jK0"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Ey2-Y6-5c8"/>
@@ -304,7 +303,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Esi-hv-7jf">
-                                <rect key="frame" x="32.5" y="108" width="310.5" height="395"/>
+                                <rect key="frame" x="32.5" y="172" width="310.5" height="395"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap image to edit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4u-Z4-D9N">
                                         <rect key="frame" x="83.5" y="0.0" width="143.5" height="35"/>
@@ -405,7 +404,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l17-oW-uII" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="97" y="547" width="181" height="40"/>
+                                <rect key="frame" x="97" y="611" width="181" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="181" id="5U4-po-gmI"/>
@@ -459,7 +458,7 @@
             </objects>
             <point key="canvasLocation" x="808.79999999999995" y="-1451.4242878560722"/>
         </scene>
-        <!--SAFETY -->
+        <!--Safety Notice-->
         <scene sceneID="jME-Sg-icK">
             <objects>
                 <viewController id="peW-mg-OnI" customClass="SafetyVC" customModule="The_Big_Seaweed_Search" customModuleProvider="target" sceneMemberID="viewController">
@@ -517,7 +516,7 @@
                             <constraint firstItem="CoC-Qm-Frx" firstAttribute="top" secondItem="mGv-ik-tBZ" secondAttribute="bottom" constant="20" id="yOo-kP-Quw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="SAFETY " id="eSx-5y-7Oi">
+                    <navigationItem key="navigationItem" title="Safety Notice" id="eSx-5y-7Oi">
                         <barButtonItem key="leftBarButtonItem" title="&lt;" id="fW1-Pe-TDf">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -525,7 +524,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Geo-IT-L1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -540,18 +538,18 @@
                         <viewControllerLayoutGuide type="bottom" id="f3s-3i-vMz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oc7-4e-a0u">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-smaller" translatesAutoresizingMaskIntoConstraints="NO" id="jLH-Ry-1JG">
-                                <rect key="frame" x="16" y="8" width="343" height="149"/>
+                                <rect key="frame" x="16" y="72" width="343" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="149" id="2rL-ab-ugA"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="149" id="Pl1-c4-wu4"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEz-qd-p6l" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="97" y="165" width="181" height="40"/>
+                                <rect key="frame" x="97" y="229" width="181" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="3Ar-V7-oBv"/>
@@ -568,7 +566,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BC-h7-fv1" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="97" y="221" width="181" height="40"/>
+                                <rect key="frame" x="97" y="277" width="181" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="181" id="F4F-0y-zgX"/>
@@ -594,7 +592,7 @@
                         <constraints>
                             <constraint firstItem="jLH-Ry-1JG" firstAttribute="centerX" secondItem="oc7-4e-a0u" secondAttribute="centerX" id="2X0-tj-ekb"/>
                             <constraint firstItem="jLH-Ry-1JG" firstAttribute="top" secondItem="vW9-lc-iMZ" secondAttribute="bottom" constant="8" id="M3R-c3-mPd"/>
-                            <constraint firstItem="7BC-h7-fv1" firstAttribute="top" secondItem="ZEz-qd-p6l" secondAttribute="bottom" constant="16" id="Wfg-X6-FD3"/>
+                            <constraint firstItem="7BC-h7-fv1" firstAttribute="top" secondItem="ZEz-qd-p6l" secondAttribute="bottom" constant="8" id="Wfg-X6-FD3"/>
                             <constraint firstItem="jLH-Ry-1JG" firstAttribute="trailing" secondItem="oc7-4e-a0u" secondAttribute="trailingMargin" id="aLr-zL-AZR"/>
                             <constraint firstItem="ZEz-qd-p6l" firstAttribute="centerX" secondItem="oc7-4e-a0u" secondAttribute="centerX" id="bs0-a0-uc7"/>
                             <constraint firstItem="jLH-Ry-1JG" firstAttribute="leading" secondItem="oc7-4e-a0u" secondAttribute="leadingMargin" id="iyZ-ef-iFm"/>
@@ -620,6 +618,127 @@
             </objects>
             <point key="canvasLocation" x="809" y="-717"/>
         </scene>
+        <!--Add Data Menu-->
+        <scene sceneID="v82-Oh-hU0">
+            <objects>
+                <viewController id="pvS-uj-2jn" customClass="AddMenuVC" customModule="The_Big_Seaweed_Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lW3-wM-ztq"/>
+                        <viewControllerLayoutGuide type="bottom" id="c1q-6f-OEI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="68d-XL-8OK" customClass="A">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-smaller" translatesAutoresizingMaskIntoConstraints="NO" id="4rz-Wc-vLk">
+                                <rect key="frame" x="12.5" y="64" width="350" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="149" id="DJ9-Sh-V5O"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="149" id="IUz-P6-GD7"/>
+                                    <constraint firstAttribute="width" constant="350" id="no5-AW-4UE"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9x-J8-nlR" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                <rect key="frame" x="38" y="221" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Rjr-7z-YQv"/>
+                                    <constraint firstAttribute="height" constant="40" id="UK2-Ve-Pwk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                <state key="normal" title="Start New Session">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startNewSessionPressed:" destination="pvS-uj-2jn" eventType="touchUpInside" id="vzp-FB-3s9"/>
+                                    <action selector="viewProfileBtnPressed:" destination="iem-Qi-bz3" eventType="touchUpInside" id="eFt-2H-ULa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIL-Kk-4Dn" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                <rect key="frame" x="38" y="269" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="EIS-IT-i6F"/>
+                                    <constraint firstAttribute="width" constant="300" id="WIb-k8-kvF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                <state key="normal" title="Continue Previous Session">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="continuePrevSessionPressed:" destination="pvS-uj-2jn" eventType="touchUpInside" id="5TL-x2-OjJ"/>
+                                    <action selector="editProfileBtnPressed:" destination="iem-Qi-bz3" eventType="touchUpInside" id="uvh-cg-ge8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please read the safety notice and instructions before continuing." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9i-wb-xcK">
+                                <rect key="frame" x="38" y="325" width="299" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="299" id="7JV-Sq-cqb"/>
+                                    <constraint firstAttribute="height" constant="58" id="F4f-7L-ELk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="8MW-G0-7c2">
+                                <rect key="frame" x="71.5" y="391" width="232" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBq-sY-9qJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="ClT-1z-K4U"/>
+                                            <constraint firstAttribute="height" constant="100" id="KKW-xo-HCd"/>
+                                        </constraints>
+                                        <state key="normal" image="safety"/>
+                                        <connections>
+                                            <action selector="safetyBtnPressed:" destination="pvS-uj-2jn" eventType="touchUpInside" id="4Jr-yC-PSg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYv-mC-lpQ">
+                                        <rect key="frame" x="132" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="d0P-Ln-dR9"/>
+                                            <constraint firstAttribute="height" constant="100" id="sgr-uN-4x2"/>
+                                        </constraints>
+                                        <state key="normal" image="info"/>
+                                        <connections>
+                                            <action selector="infoBtnPressed:" destination="pvS-uj-2jn" eventType="touchUpInside" id="XGQ-VI-8Ea"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZIL-Kk-4Dn" firstAttribute="top" secondItem="f9x-J8-nlR" secondAttribute="bottom" constant="8" id="88L-J1-S3b"/>
+                            <constraint firstItem="8MW-G0-7c2" firstAttribute="centerX" secondItem="68d-XL-8OK" secondAttribute="centerX" id="NLU-dJ-Uix"/>
+                            <constraint firstItem="f9x-J8-nlR" firstAttribute="top" secondItem="4rz-Wc-vLk" secondAttribute="bottom" constant="8" id="Nmp-ax-0Yr"/>
+                            <constraint firstItem="ZIL-Kk-4Dn" firstAttribute="centerX" secondItem="68d-XL-8OK" secondAttribute="centerX" id="TbW-XI-D3g"/>
+                            <constraint firstItem="M9i-wb-xcK" firstAttribute="centerX" secondItem="68d-XL-8OK" secondAttribute="centerX" id="XhU-w2-7KG"/>
+                            <constraint firstItem="4rz-Wc-vLk" firstAttribute="top" secondItem="lW3-wM-ztq" secondAttribute="bottom" id="Zb7-wx-7DD"/>
+                            <constraint firstItem="8MW-G0-7c2" firstAttribute="top" secondItem="M9i-wb-xcK" secondAttribute="bottom" constant="8" id="lUe-d6-YjI"/>
+                            <constraint firstItem="f9x-J8-nlR" firstAttribute="centerX" secondItem="68d-XL-8OK" secondAttribute="centerX" id="oED-Dw-UJO"/>
+                            <constraint firstItem="M9i-wb-xcK" firstAttribute="top" secondItem="ZIL-Kk-4Dn" secondAttribute="bottom" constant="16" id="qBQ-c8-TgT"/>
+                            <constraint firstItem="4rz-Wc-vLk" firstAttribute="centerX" secondItem="68d-XL-8OK" secondAttribute="centerX" id="xOW-7e-f9J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Data Menu" id="4bk-77-182">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="zdh-nt-glk">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backBtnPressed:" destination="pvS-uj-2jn" id="Oh6-JS-wWm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="peW-mg-OnI" kind="show" identifier="dataToSafety" id="eCs-qk-gOp"/>
+                        <segue destination="r2Q-AM-flM" kind="show" identifier="dataToInfo" id="YBn-WX-fdq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4rr-5F-58b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672.8" y="-716.49175412293857"/>
+        </scene>
         <!--The Big Seaweed Search-->
         <scene sceneID="7lp-B8-XwD">
             <objects>
@@ -629,17 +748,17 @@
                         <viewControllerLayoutGuide type="bottom" id="Lry-8b-6yt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="EDH-Sb-YlK">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-smaller" translatesAutoresizingMaskIntoConstraints="NO" id="E78-UO-kDn">
-                                <rect key="frame" x="16" y="8" width="343" height="149"/>
+                                <rect key="frame" x="16" y="72" width="343" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="149" id="NgN-4V-nJ2"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cO3-Fd-oZt">
-                                <rect key="frame" x="97" y="165" width="181" height="360"/>
+                                <rect key="frame" x="97" y="229" width="181" height="360"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QE-Mr-c1U">
                                         <rect key="frame" x="50.5" y="0.0" width="80" height="80"/>
@@ -665,6 +784,9 @@
                                         <state key="normal" title="Add Data">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addDataButtonPressed:" destination="GZ3-kx-Gtz" eventType="touchUpInside" id="fza-5v-uFt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQy-uC-pOm" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="136" width="181" height="40"/>
@@ -721,7 +843,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tew-Xa-d2I" customClass="FancyView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="528" width="375" height="75"/>
+                                <rect key="frame" x="0.0" y="592" width="375" height="75"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWU-ZV-X5F" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="150" y="9" width="75" height="50"/>
@@ -759,18 +881,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="The Big Seaweed Search" id="3Mh-Zb-9XN"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="addDataBtnPressed" destination="3Wp-yK-J1s" id="rVM-IJ-tWb"/>
                         <outlet property="safetyBtnTapped" destination="1QE-Mr-c1U" id="hjD-SC-LhS"/>
                         <segue destination="peW-mg-OnI" kind="show" identifier="goToSafety" id="iyg-cT-VtJ"/>
                         <segue destination="r2Q-AM-flM" kind="show" identifier="goToInfo" id="Zqa-Uo-83B"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignOut" id="XBl-DS-GAt"/>
                         <segue destination="iem-Qi-bz3" kind="show" identifier="mainToProfileOptions" id="Dfs-7Q-3SV"/>
+                        <segue destination="pvS-uj-2jn" kind="show" identifier="mainToAddData" id="ZhN-qB-KPB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CgV-Pn-gGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1748" y="35.532233883058474"/>
+            <point key="canvasLocation" x="1673" y="36"/>
         </scene>
         <!--Set Up ProfileVC-->
         <scene sceneID="YMG-5H-hIj">
@@ -903,7 +1026,6 @@
                             <constraint firstItem="ZCh-8C-32P" firstAttribute="leading" secondItem="U6I-Ds-ber" secondAttribute="leading" id="wYr-uW-l5B"/>
                         </constraints>
                     </view>
-                    <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="imageAdd" destination="kaR-00-doh" id="PYH-4z-sq9"/>
                         <outlet property="locationField" destination="TWS-Rz-HD9" id="aD1-GH-0Di"/>
@@ -1481,7 +1603,6 @@ You may request details of personal information which we hold about you under th
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="privacyBtnPressed" destination="6JR-bh-imh" id="0gs-d3-d9e"/>
                         <segue destination="dV0-P5-erj" kind="show" identifier="infoToInstructions" id="5iq-rU-iQW"/>
@@ -1528,6 +1649,8 @@ You may request details of personal information which we hold about you under th
         <segue reference="aec-GQ-K6C"/>
         <segue reference="Dfs-7Q-3SV"/>
         <segue reference="tUs-dE-eRa"/>
+        <segue reference="YBn-WX-fdq"/>
+        <segue reference="eCs-qk-gOp"/>
         <segue reference="9qv-sm-tIH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

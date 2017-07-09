@@ -39,6 +39,10 @@ class MainVC: UIViewController {
         performSegue(withIdentifier: "goToSignOut", sender: nil)
     }
     
-//    @IBAction func unwindToVC1(segue:UIStoryboardSegue) { }
+    @IBOutlet weak var addDataBtnPressed: FancyButton!
+
+    @IBAction func addDataButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "mainToAddData", sender: nil)
+    }
     
 }
