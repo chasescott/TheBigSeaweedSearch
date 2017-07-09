@@ -30,7 +30,7 @@ class CustomTextField: UITextField {
     
     
     // MARK: - Properties
-    var textFont = UIFont(name: "Helvetica Neue", size: 14.0)
+    var textFont = UIFont(name: "Avenir", size: 14.0)
     
     override func draw(_ rect: CGRect) {
         self.layer.masksToBounds = false
@@ -48,7 +48,7 @@ class CustomTextField: UITextField {
         if let fnt = textFont {
             self.font = fnt
         } else {
-            self.font = UIFont(name: "Helvetica Neue", size: 14.0)
+            self.font = UIFont(name: "Avenir", size: 14.0)
         }
     }
     

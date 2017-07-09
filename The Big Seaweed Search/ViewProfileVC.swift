@@ -17,13 +17,11 @@ class ViewProfileVC: UIViewController {
     @IBOutlet weak var profileLocation: UILabel!
     
     static var imageCache: NSCache<NSString, UIImage> = NSCache()
-    var profile: UserProfile!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         applyFirebaseUserInfo()
     }
-    
     
     @IBAction func backBtnPressed(_ sender: Any) {
         _ = navigationController?.popViewController(animated: true)
@@ -33,7 +31,7 @@ class ViewProfileVC: UIViewController {
     func applyFirebaseUserInfo(img: UIImage? = nil) {
         let uid = FIRAuth.auth()?.currentUser?.uid
         DataService.ds.REF_USERS.child(uid!).child("profile").observeSingleEvent(of: .value, with: { (snapshot) in
-            
+        //DataService.ds.REF_USERS.child(uid!).child("Profile").observe(.value, with: { (snapshot) in
             let value = snapshot.value as? NSDictionary
             let usernam = value?["username"] as? String ?? ""
             let locat = value?["location"] as? String ?? ""
@@ -65,7 +63,12 @@ class ViewProfileVC: UIViewController {
             print(error.localizedDescription)
         }
         }
-    
+
+    @IBAction func editBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: "viewToEdit", sender: nil)
+    }
     
 
 }
+
+

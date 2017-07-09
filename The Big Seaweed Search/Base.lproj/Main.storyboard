@@ -169,8 +169,38 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-small" translatesAutoresizingMaskIntoConstraints="NO" id="vgC-9p-GTP">
+                                <rect key="frame" x="108" y="0.0" width="158" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="5lw-u5-gJT"/>
+                                    <constraint firstAttribute="height" constant="100" id="Kcy-t8-TY9"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGG-JZ-0TE" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                <rect key="frame" x="97" y="547" width="181" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="181" id="1x3-17-ckV"/>
+                                    <constraint firstAttribute="height" constant="40" id="3jZ-NB-VEN"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="181" id="4cB-cc-v7k"/>
+                                    <constraint firstAttribute="width" constant="181" id="9eY-JK-n3h"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Ytj-Cd-LYA"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="43" id="eRT-ri-Zg4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="181" id="l32-Vn-reP"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="43" id="nku-py-4lE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                <state key="normal" title="Edit Profile">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="editBtnPressed:" destination="kaJ-in-h6h" eventType="touchUpInside" id="h4O-Se-OR2"/>
+                                    <action selector="saveBtnPressed:" destination="iHN-eh-C8x" eventType="touchUpInside" id="WzT-rM-wla"/>
+                                    <action selector="viewProfileBtnPressed:" destination="iem-Qi-bz3" eventType="touchUpInside" id="cat-nh-DZb"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F0F-t8-WHu">
-                                <rect key="frame" x="16" y="16" width="343" height="346"/>
+                                <rect key="frame" x="16" y="108" width="343" height="346"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="qWc-w7-8bu">
                                         <rect key="frame" x="96.5" y="0.0" width="150" height="150"/>
@@ -216,14 +246,21 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="OWY-74-0AN"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="F0F-t8-WHu" firstAttribute="top" secondItem="s8Q-xw-d0a" secondAttribute="bottom" constant="16" id="5m6-x4-X2S"/>
+                            <constraint firstItem="SGG-JZ-0TE" firstAttribute="centerX" secondItem="4RV-9b-SH9" secondAttribute="centerX" id="4gP-TO-hU3"/>
+                            <constraint firstItem="F0F-t8-WHu" firstAttribute="top" secondItem="vgC-9p-GTP" secondAttribute="bottom" constant="8" id="JOE-pV-T26"/>
+                            <constraint firstItem="vgC-9p-GTP" firstAttribute="centerX" secondItem="4RV-9b-SH9" secondAttribute="centerX" id="KxB-oS-eJ4"/>
                             <constraint firstItem="F0F-t8-WHu" firstAttribute="leading" secondItem="4RV-9b-SH9" secondAttribute="leadingMargin" id="QQx-ij-Ohm"/>
                             <constraint firstItem="F0F-t8-WHu" firstAttribute="centerX" secondItem="4RV-9b-SH9" secondAttribute="centerX" id="f2H-9d-ghZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="F0F-t8-WHu" secondAttribute="trailing" id="nbb-bx-2J9"/>
+                            <constraint firstItem="vgC-9p-GTP" firstAttribute="top" secondItem="s8Q-xw-d0a" secondAttribute="bottom" id="u3D-dB-Ajl"/>
+                            <constraint firstItem="Ua4-D1-jtt" firstAttribute="top" secondItem="SGG-JZ-0TE" secondAttribute="bottom" constant="16" id="vYt-3O-yzq"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="View Profile" id="xud-pp-Lde">
@@ -238,11 +275,189 @@
                         <outlet property="profileImg" destination="qWc-w7-8bu" id="R7K-SV-PTX"/>
                         <outlet property="profileLocation" destination="A2o-zk-mEc" id="FQs-PE-X5r"/>
                         <outlet property="profileUsername" destination="wqv-mS-cCD" id="qRK-FX-s7y"/>
+                        <segue destination="iHN-eh-C8x" kind="show" identifier="viewToEdit" id="wJO-md-pD8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mmT-Ku-rFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="40.799999999999997" y="-1450.5247376311845"/>
+        </scene>
+        <!--Edit Profile-->
+        <scene sceneID="Lhi-my-Oeq">
+            <objects>
+                <viewController id="iHN-eh-C8x" customClass="EditProfileVC" customModule="The_Big_Seaweed_Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XQj-7b-qZD"/>
+                        <viewControllerLayoutGuide type="bottom" id="8v0-b3-Erh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iw0-DJ-Frb">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-small" translatesAutoresizingMaskIntoConstraints="NO" id="VwW-RB-YPQ">
+                                <rect key="frame" x="108" y="0.0" width="158" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="9an-P6-jK0"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Ey2-Y6-5c8"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="158" id="JIA-fW-tq6"/>
+                                    <constraint firstAttribute="height" constant="100" id="qMx-7K-meA"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Esi-hv-7jf">
+                                <rect key="frame" x="32.5" y="108" width="310.5" height="395"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap image to edit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4u-Z4-D9N">
+                                        <rect key="frame" x="83.5" y="0.0" width="143.5" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="vlw-OJ-gaX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="jS1-Gj-5ye">
+                                        <rect key="frame" x="80" y="43" width="150.5" height="150"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="150" id="841-zI-2qW"/>
+                                            <constraint firstAttribute="height" constant="150" id="E8x-qq-sNC"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="JUb-dg-JZk"/>
+                                            <constraint firstAttribute="width" constant="150" id="UUw-P4-F6b"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="xEW-aC-0IF" appends="YES" id="und-8H-qMl"/>
+                                        </connections>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4k7-oY-qEb">
+                                        <rect key="frame" x="95.5" y="201" width="120" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="O1O-Ba-jVT"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="rPo-Hz-mJ4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Xdl-72-Wh9">
+                                        <rect key="frame" x="0.5" y="250" width="310" height="44"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lE5-2S-EML" customClass="FancyField" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="250" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="TFG-VU-B0U"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="U5y-LI-y2D"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="809-a4-2Fp">
+                                                <rect key="frame" x="266" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="hry-CK-6sA"/>
+                                                    <constraint firstAttribute="width" constant="44" id="wTy-JJ-oRw"/>
+                                                </constraints>
+                                                <state key="normal" image="editable"/>
+                                                <connections>
+                                                    <action selector="editNameTapped:" destination="iHN-eh-C8x" eventType="touchUpInside" id="NJU-SI-ZGj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rfl-ME-eHK">
+                                        <rect key="frame" x="104" y="302" width="103" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="VTL-ZG-ovJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="81O-Eh-xID">
+                                        <rect key="frame" x="0.0" y="351" width="310.5" height="44"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xcW-o8-bJ2" customClass="FancyField" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="250.5" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="Hui-i4-rEW"/>
+                                                    <constraint firstAttribute="height" constant="44" id="fda-Nv-w1H"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcS-z0-WxQ">
+                                                <rect key="frame" x="266.5" y="0.0" width="44" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="44" id="kTf-qj-eAL"/>
+                                                    <constraint firstAttribute="height" constant="44" id="vBz-Tr-nnl"/>
+                                                </constraints>
+                                                <state key="normal" image="editable"/>
+                                                <connections>
+                                                    <action selector="editLocationTapped:" destination="iHN-eh-C8x" eventType="touchUpInside" id="Gsh-Lv-jgC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="MjB-P5-caX"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l17-oW-uII" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                <rect key="frame" x="97" y="547" width="181" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="181" id="5U4-po-gmI"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="181" id="6ui-08-hiy"/>
+                                    <constraint firstAttribute="height" constant="40" id="DYa-y6-Ohg"/>
+                                    <constraint firstAttribute="width" constant="181" id="TxX-KJ-Vdy"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="43" id="Yj6-cI-SGl"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="dvu-tg-s7d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                <state key="normal" title="Save Profile">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveBtnPressed:" destination="iHN-eh-C8x" eventType="touchUpInside" id="QZ1-fe-THE"/>
+                                    <action selector="viewProfileBtnPressed:" destination="iem-Qi-bz3" eventType="touchUpInside" id="mN3-6q-RwD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Esi-hv-7jf" firstAttribute="centerX" secondItem="iw0-DJ-Frb" secondAttribute="centerX" id="Hbe-Lh-Bwm"/>
+                            <constraint firstItem="l17-oW-uII" firstAttribute="centerX" secondItem="iw0-DJ-Frb" secondAttribute="centerX" id="QkF-R2-plh"/>
+                            <constraint firstItem="8v0-b3-Erh" firstAttribute="top" secondItem="l17-oW-uII" secondAttribute="bottom" constant="16" id="hJR-LW-oJm"/>
+                            <constraint firstItem="Esi-hv-7jf" firstAttribute="top" secondItem="VwW-RB-YPQ" secondAttribute="bottom" constant="8" id="nW6-Yi-IjT"/>
+                            <constraint firstItem="VwW-RB-YPQ" firstAttribute="top" secondItem="XQj-7b-qZD" secondAttribute="bottom" id="ne4-6R-jW1"/>
+                            <constraint firstItem="VwW-RB-YPQ" firstAttribute="centerX" secondItem="iw0-DJ-Frb" secondAttribute="centerX" id="nfz-as-Ona"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Profile" id="j6i-O0-qbl">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="UAk-24-Xq8">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backBtnPressed:" destination="iHN-eh-C8x" id="z7a-Tn-Nit"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageAdd" destination="jS1-Gj-5ye" id="ZhF-a4-geD"/>
+                        <outlet property="locationField" destination="xcW-o8-bJ2" id="wy2-R7-8B0"/>
+                        <outlet property="userField" destination="lE5-2S-EML" id="2tZ-IX-tSg"/>
+                        <segue destination="iem-Qi-bz3" kind="show" identifier="editToOptions" id="FVd-cj-ub6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Dj-z8-fgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="xEW-aC-0IF">
+                    <connections>
+                        <action selector="photoTapped:" destination="iHN-eh-C8x" id="wsm-1t-KVa"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="808.79999999999995" y="-1451.4242878560722"/>
         </scene>
         <!--SAFETY -->
         <scene sceneID="jME-Sg-icK">
@@ -369,6 +584,11 @@
                                     <action selector="editProfileBtnPressed:" destination="iem-Qi-bz3" eventType="touchUpInside" id="5aP-3j-Y1H"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2l-bw-2BM">
+                                <rect key="frame" x="164" y="553" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -392,6 +612,8 @@
                     </navigationItem>
                     <connections>
                         <segue destination="kaJ-in-h6h" kind="show" identifier="optionsToViewProfile" id="txY-oI-5a3"/>
+                        <segue destination="iHN-eh-C8x" kind="show" identifier="optionsToEditProfile" id="tUs-dE-eRa"/>
+                        <segue destination="GZ3-kx-Gtz" kind="show" identifier="optionsToMain" id="aec-GQ-K6C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="icy-b4-qg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -479,7 +701,7 @@
                                             <constraint firstAttribute="width" constant="181" id="l3n-H1-5aa"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
-                                        <state key="normal" title="Leaderboard">
+                                        <state key="normal" title="Rankings">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                     </button>
@@ -1291,9 +1513,11 @@ You may request details of personal information which we hold about you under th
         </scene>
     </scenes>
     <resources>
+        <image name="Logo-small" width="603" height="194"/>
         <image name="Logo-smaller" width="603" height="194"/>
         <image name="Untitled" width="542" height="472"/>
         <image name="add-image" width="88" height="88"/>
+        <image name="editable" width="128" height="128"/>
         <image name="f" width="352" height="328"/>
         <image name="info" width="189" height="189"/>
         <image name="safety" width="189" height="189"/>
@@ -1301,6 +1525,9 @@ You may request details of personal information which we hold about you under th
         <image name="user1" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="aec-GQ-K6C"/>
+        <segue reference="Dfs-7Q-3SV"/>
+        <segue reference="tUs-dE-eRa"/>
         <segue reference="9qv-sm-tIH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

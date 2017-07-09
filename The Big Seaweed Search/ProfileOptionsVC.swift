@@ -15,11 +15,12 @@ class ProfileOptionsVC: UIViewController {
     }
 
     @IBAction func backBtnPressed(_ sender: Any) {
-        _ = navigationController?.popViewController(animated: true)
-        dismiss(animated: true, completion: nil)
+//        _ = navigationController?.popViewController(animated: true)
+//        dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: "optionsToMain", sender: nil)
     }
 
-    @IBAction func editProfileBtnPressed(_ sender: Any) {
+    @IBAction func editProfileBtnPressed(_ sender: Any) { performSegue(withIdentifier: "optionsToEditProfile", sender: nil)
     }
     
     @IBAction func viewProfileBtnPressed(_ sender: Any) {

@@ -37,6 +37,7 @@ class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavi
             imageAdd.image = image
             imageSelected = true
         } else {
+            userAlertDoMore(alert: "A valid image was not selected.  Please try again")
             print("CHASE: A valid image wasn't selected")
         }
         //once image selected, dismiss picker view
@@ -49,14 +50,17 @@ class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavi
     
     @IBAction func postBtnTapped(_ sender: Any) {
         guard let name = nameField.text, name != "" else {
-            print("CHASE: Caption must be entered")
+            userAlertDoMore(alert: "Please enter a username")
+            print("CHASE: Name must be entered")
             return
         }
         guard let location = locationField.text , location != "" else {
+            userAlertDoMore(alert: "Please enter your location")
             print("CHASE:  Location must be entered")
             return
         }
         guard let img = imageAdd.image, imageSelected == true else {
+            userAlertDoMore(alert: "Please select a profile image")
             print("CHASE: An image must be selected")
             return
         }
@@ -71,6 +75,7 @@ class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavi
             
             DataService.ds.REF_PROFILE_IMAGES.child(imgUid).put(imgData, metadata: metadata) { (metadata, error) in
                 if error != nil {
+                    self.userAlertDoMore(alert: "Unable to upload image.  Please try again")
                     print("CHASE: Unable to upload image to Firebase Storage")
                 } else {
                     print("CHASE: Successfully uploaded image to Firebase Storage")
@@ -82,7 +87,7 @@ class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavi
             }
         }
         //Pass user through to main menu screen
-        performSegue(withIdentifier: "setUpToMain", sender: nil)
+        //performSegue(withIdentifier: "setUpToMain", sender: nil)
     }
     
     func postToFirebase(imgUrl: String) {
@@ -93,8 +98,37 @@ class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavi
             "photoURL": imgUrl as AnyObject
         ]
       DataService.ds.updateFirebaseDBUserProfile(uid: userId, profileData: profileData)
+        userAlert(alert: "Thank you.  Your profile has been updated")
         print("CHASE: User Profile Updated")
         }
     }
     
-}
+    //User alert windows to warn of issue that needs attention before proceeding
+    func userAlertDoMore (alert: String) {
+        let alertController = UIAlertController(title: "The Big SeaWeed Search", message: alert, preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil))
+        
+        let alertWindow = UIWindow(frame: UIScreen.main.bounds)
+        alertWindow.rootViewController = UIViewController()
+        alertWindow.windowLevel = UIWindowLevelAlert + 1;
+        alertWindow.makeKeyAndVisible()
+        alertWindow.rootViewController?.present(alertController, animated: true, completion: nil)
+    }
+
+    //User alert to advise of success and perform segue to next screen
+    func userAlert (alert: String) {
+        let alertController = UIAlertController(title: "The Big SeaWeed Search", message: alert, preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: {
+            action in self.performSegue(withIdentifier: "setUpToMain", sender: nil)
+        }))
+        
+        let alertWindow = UIWindow(frame: UIScreen.main.bounds)
+        alertWindow.rootViewController = UIViewController()
+        alertWindow.windowLevel = UIWindowLevelAlert + 1;
+        alertWindow.makeKeyAndVisible()
+        alertWindow.rootViewController?.present(alertController, animated: true, completion: nil)
+    }
+    
+    }
+    
+
