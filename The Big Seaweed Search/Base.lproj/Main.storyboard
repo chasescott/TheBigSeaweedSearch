@@ -458,6 +458,178 @@
             </objects>
             <point key="canvasLocation" x="808.79999999999995" y="-1451.4242878560722"/>
         </scene>
+        <!--Start New Session-->
+        <scene sceneID="l25-zs-l4n">
+            <objects>
+                <viewController id="ryt-fd-H64" customClass="NewSessionVC" customModule="The_Big_Seaweed_Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ld4-Co-aUJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="f1Y-ds-C65"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fnk-Xq-7Eb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach" translatesAutoresizingMaskIntoConstraints="NO" id="Ck2-mO-cEh" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                <rect key="frame" x="112" y="72" width="150" height="112.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="112.5" id="oeq-qn-rjn"/>
+                                    <constraint firstAttribute="width" constant="150" id="s3b-Sp-7fv"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0l-6u-fBv" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                <rect key="frame" x="56" y="192" width="262" height="37"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="262" id="enI-ql-NZM"/>
+                                    <constraint firstAttribute="height" constant="37" id="u9r-pu-cMI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="Take a photo of the beach">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveBtnPressed:" destination="iHN-eh-C8x" eventType="touchUpInside" id="fwD-4A-tfo"/>
+                                    <action selector="takePhoto:" destination="ryt-fd-H64" eventType="touchUpInside" id="ESu-NJ-Jfd"/>
+                                    <action selector="viewProfileBtnPressed:" destination="iem-Qi-bz3" eventType="touchUpInside" id="6Rc-6g-kha"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date &amp; Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTX-Qk-9Kj">
+                                <rect key="frame" x="16" y="237" width="343" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="1iJ-K2-cih"/>
+                                    <constraint firstAttribute="height" constant="24" id="ome-fX-CBg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPS co-ordinates:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCS-60-cya">
+                                <rect key="frame" x="16" y="269" width="343" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="0HT-sV-IoM"/>
+                                    <constraint firstAttribute="width" constant="343" id="FVL-CH-g7j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who are you with?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zV9-06-G1X">
+                                <rect key="frame" x="16" y="301" width="343" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="QGY-wP-LUM"/>
+                                    <constraint firstAttribute="width" constant="343" id="yTo-bf-LWN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l97-zO-83C" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                <rect key="frame" x="56" y="622" width="262" height="37"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="262" id="cGE-Rg-eCy"/>
+                                    <constraint firstAttribute="height" constant="37" id="jXG-ju-zGx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                <state key="normal" title="Start Collecting Data!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartCollectingDataPressed:" destination="ryt-fd-H64" eventType="touchUpInside" id="muj-JX-OIl"/>
+                                    <action selector="saveBtnPressed:" destination="iHN-eh-C8x" eventType="touchUpInside" id="Rat-Lk-MdJ"/>
+                                    <action selector="viewProfileBtnPressed:" destination="iem-Qi-bz3" eventType="touchUpInside" id="LFx-cU-rwb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the beach gradient?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mO-Cb-NXB">
+                                <rect key="frame" x="16" y="509" width="343" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="BYc-vQ-PCY"/>
+                                    <constraint firstAttribute="height" constant="24" id="ExT-YS-Scv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fP8-Fe-t9R">
+                                <rect key="frame" x="0.0" y="333" width="375" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="n01-gW-BcA"/>
+                                    <constraint firstAttribute="height" constant="64" id="u4M-7K-ORG"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the type of beach?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdt-dA-ztu">
+                                <rect key="frame" x="16" y="405" width="343" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="8FO-a6-ZKd"/>
+                                    <constraint firstAttribute="height" constant="24" id="gmC-4l-HpB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qz9-rU-I7n">
+                                <rect key="frame" x="0.0" y="437" width="375" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="68c-Le-4sL"/>
+                                    <constraint firstAttribute="width" constant="375" id="eXK-OC-yXi"/>
+                                </constraints>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JrF-CI-Uc7">
+                                <rect key="frame" x="0.0" y="541" width="375" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="iCD-vx-RDH"/>
+                                    <constraint firstAttribute="width" constant="375" id="uJC-w2-Pk3"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fP8-Fe-t9R" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="3tz-lg-gj0"/>
+                            <constraint firstItem="Xdt-dA-ztu" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="3xx-es-6D4"/>
+                            <constraint firstItem="iCS-60-cya" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="5v8-Kx-Gm9"/>
+                            <constraint firstItem="f1Y-ds-C65" firstAttribute="top" secondItem="l97-zO-83C" secondAttribute="bottom" constant="8" id="8l7-N3-OiM"/>
+                            <constraint firstItem="5mO-Cb-NXB" firstAttribute="top" secondItem="qz9-rU-I7n" secondAttribute="bottom" constant="8" id="9v7-3B-YHl"/>
+                            <constraint firstItem="JrF-CI-Uc7" firstAttribute="top" secondItem="5mO-Cb-NXB" secondAttribute="bottom" constant="8" id="FeO-tW-CRG"/>
+                            <constraint firstItem="Ck2-mO-cEh" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="Olp-Hb-kWt"/>
+                            <constraint firstItem="zV9-06-G1X" firstAttribute="top" secondItem="iCS-60-cya" secondAttribute="bottom" constant="8" id="PNv-M5-UJd"/>
+                            <constraint firstItem="zV9-06-G1X" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="Qlr-QB-bA4"/>
+                            <constraint firstItem="iCS-60-cya" firstAttribute="top" secondItem="yTX-Qk-9Kj" secondAttribute="bottom" constant="8" id="T91-N7-d1v"/>
+                            <constraint firstItem="o0l-6u-fBv" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="Uf8-Qb-Yux"/>
+                            <constraint firstItem="5mO-Cb-NXB" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="XCJ-nO-z8u"/>
+                            <constraint firstItem="qz9-rU-I7n" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="bBa-0I-DQw"/>
+                            <constraint firstItem="JrF-CI-Uc7" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="hDe-1N-ceR"/>
+                            <constraint firstItem="qz9-rU-I7n" firstAttribute="top" secondItem="Xdt-dA-ztu" secondAttribute="bottom" constant="8" id="hTi-ka-U7Q"/>
+                            <constraint firstItem="fP8-Fe-t9R" firstAttribute="top" secondItem="zV9-06-G1X" secondAttribute="bottom" constant="8" id="hcc-td-JbH"/>
+                            <constraint firstItem="yTX-Qk-9Kj" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="iUc-HR-eWs"/>
+                            <constraint firstItem="o0l-6u-fBv" firstAttribute="top" secondItem="Ck2-mO-cEh" secondAttribute="bottom" constant="8" id="iVL-ys-Khh"/>
+                            <constraint firstItem="yTX-Qk-9Kj" firstAttribute="top" secondItem="o0l-6u-fBv" secondAttribute="bottom" constant="8" id="lb0-qB-oWs"/>
+                            <constraint firstItem="Xdt-dA-ztu" firstAttribute="top" secondItem="fP8-Fe-t9R" secondAttribute="bottom" constant="8" id="mRM-ro-SnI"/>
+                            <constraint firstItem="l97-zO-83C" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="t62-wM-v2r"/>
+                            <constraint firstItem="Ck2-mO-cEh" firstAttribute="top" secondItem="Ld4-Co-aUJ" secondAttribute="bottom" constant="8" id="wfP-mf-B0b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Start New Session" id="gCi-1d-GVt">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="WX7-eg-TSf">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backPressed:" destination="ryt-fd-H64" id="3iM-r1-0Lo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="beachImage" destination="Ck2-mO-cEh" id="TCe-ne-452"/>
+                        <outlet property="beachPicker" destination="qz9-rU-I7n" id="nF3-gu-LOh"/>
+                        <outlet property="dateTimeLbl" destination="yTX-Qk-9Kj" id="EjG-7Q-w94"/>
+                        <outlet property="gradientPicker" destination="JrF-CI-Uc7" id="mOL-98-SDg"/>
+                        <outlet property="locationLbl" destination="iCS-60-cya" id="NWV-Sg-JY1"/>
+                        <outlet property="whoPicker" destination="fP8-Fe-t9R" id="IaG-Z5-ZjD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qfq-mK-RCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672.8" y="-1451.4242878560722"/>
+        </scene>
         <!--Safety Notice-->
         <scene sceneID="jME-Sg-icK">
             <objects>
@@ -733,11 +905,12 @@
                     <connections>
                         <segue destination="peW-mg-OnI" kind="show" identifier="dataToSafety" id="eCs-qk-gOp"/>
                         <segue destination="r2Q-AM-flM" kind="show" identifier="dataToInfo" id="YBn-WX-fdq"/>
+                        <segue destination="ryt-fd-H64" kind="show" identifier="addDataToNewSession" id="OGN-Pr-p8W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4rr-5F-58b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1672.8" y="-716.49175412293857"/>
+            <point key="canvasLocation" x="1673" y="-717"/>
         </scene>
         <!--The Big Seaweed Search-->
         <scene sceneID="7lp-B8-XwD">
@@ -1638,6 +1811,7 @@ You may request details of personal information which we hold about you under th
         <image name="Logo-smaller" width="603" height="194"/>
         <image name="Untitled" width="542" height="472"/>
         <image name="add-image" width="88" height="88"/>
+        <image name="beach" width="400" height="300"/>
         <image name="editable" width="128" height="128"/>
         <image name="f" width="352" height="328"/>
         <image name="info" width="189" height="189"/>
@@ -1647,10 +1821,10 @@ You may request details of personal information which we hold about you under th
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="aec-GQ-K6C"/>
-        <segue reference="Dfs-7Q-3SV"/>
+        <segue reference="FVd-cj-ub6"/>
         <segue reference="tUs-dE-eRa"/>
-        <segue reference="YBn-WX-fdq"/>
         <segue reference="eCs-qk-gOp"/>
+        <segue reference="YBn-WX-fdq"/>
         <segue reference="9qv-sm-tIH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

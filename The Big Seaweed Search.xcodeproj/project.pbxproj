@@ -16,6 +16,7 @@
 		AB57F9201F11226B00CFB504 /* FancyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB57F91F1F11226B00CFB504 /* FancyLabel.swift */; };
 		AB57F9221F11263900CFB504 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB57F9211F11263900CFB504 /* UserProfile.swift */; };
 		AB6EADB61F128B3D00E2AACB /* AddMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EADB51F128B3D00E2AACB /* AddMenuVC.swift */; };
+		AB6EADB81F1295A000E2AACB /* NewSessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EADB71F1295A000E2AACB /* NewSessionVC.swift */; };
 		ABE3B98D1F0D4C480079B099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3B98C1F0D4C480079B099 /* AppDelegate.swift */; };
 		ABE3B98F1F0D4C480079B099 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3B98E1F0D4C480079B099 /* LoginVC.swift */; };
 		ABE3B9921F0D4C480079B099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE3B9901F0D4C480079B099 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 		AB57F91F1F11226B00CFB504 /* FancyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyLabel.swift; sourceTree = "<group>"; };
 		AB57F9211F11263900CFB504 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		AB6EADB51F128B3D00E2AACB /* AddMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMenuVC.swift; sourceTree = "<group>"; };
+		AB6EADB71F1295A000E2AACB /* NewSessionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSessionVC.swift; sourceTree = "<group>"; };
 		ABE3B9891F0D4C480079B099 /* The Big Seaweed Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Big Seaweed Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE3B98C1F0D4C480079B099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE3B98E1F0D4C480079B099 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				AB57F91B1F111AAB00CFB504 /* ProfileOptionsVC.swift */,
 				AB57F91D1F11215E00CFB504 /* ViewProfileVC.swift */,
 				AB6EADB51F128B3D00E2AACB /* AddMenuVC.swift */,
+				AB6EADB71F1295A000E2AACB /* NewSessionVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				ABE3B9A61F0D724A0079B099 /* SetUpProfileVC.swift in Sources */,
 				AB57F91C1F111AAB00CFB504 /* ProfileOptionsVC.swift in Sources */,
 				AB57F91E1F11215E00CFB504 /* ViewProfileVC.swift in Sources */,
+				AB6EADB81F1295A000E2AACB /* NewSessionVC.swift in Sources */,
 				AB57F91A1F1109C000CFB504 /* PrivacyVC.swift in Sources */,
 				ABE3B9BC1F0D94750079B099 /* CircleView.swift in Sources */,
 				ABE3B9B81F0D94580079B099 /* FancyField.swift in Sources */,

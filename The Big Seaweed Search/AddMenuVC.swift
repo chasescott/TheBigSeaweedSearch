@@ -20,6 +20,7 @@ class AddMenuVC: UIViewController {
     }
 
     @IBAction func startNewSessionPressed(_ sender: Any) {
+        performSegue(withIdentifier: "addDataToNewSession", sender: nil)
     }
     
     @IBAction func continuePrevSessionPressed(_ sender: Any) {
