@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
-class EditProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class EditProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var userField: FancyField!
     @IBOutlet weak var locationField: FancyField!
@@ -27,8 +27,16 @@ class EditProfileVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         imagePicker.allowsEditing = true
         imagePicker.delegate = self
         applyFirebaseUserInfo()
+        userField.delegate = self
+        locationField.delegate = self
     }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        userField.resignFirstResponder()
+        locationField.resignFirstResponder()
+        return false
+    }
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             imageAdd.image = image

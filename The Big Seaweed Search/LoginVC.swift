@@ -12,10 +12,11 @@ import Firebase
 import FBSDKLoginKit
 import SwiftKeychainWrapper
 
-class LoginVC: UIViewController {
+class LoginVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailField: FancyField!
     @IBOutlet weak var pwdField: FancyField!
+    @IBOutlet weak var signInTapBtn: FancyButton!
     
     //Constant Firebase reference to plain profile image used to set up profile - just in case user opts not to upload own photo
     let plainProfileImg = "https://firebasestorage.googleapis.com/v0/b/seaweed-b955e.appspot.com/o/profile-pics%2Fuser1.jpg?alt=media&token=7abad0cb-2597-4ba0-ae2a-eca299b29f92"
@@ -23,8 +24,26 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
+        
+        emailField.delegate = self
+        pwdField.delegate = self
     }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        emailField.resignFirstResponder()
+        pwdField.resignFirstResponder()
+        return false
+    }
+    
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
+//        if textField == self.emailField {
+//            self.pwdField.becomeFirstResponder()
+//        }else{
+//            self.signInTapBtn.becomeFirstResponder()
+//        }
+//        return true
+//    }
+    
     override func viewDidAppear(_ animated: Bool) {
         //checks if key exists in keychain, then do foo
         if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {

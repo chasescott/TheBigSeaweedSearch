@@ -25,7 +25,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBl-u5-kn7" customClass="FancyView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="567" width="375" height="100"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="If you haven't signed in before, an account will be automatically created for you." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R29-yg-rlc">
+                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="If you haven't signed in before, an account will be automatically created for you." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R29-yg-rlc">
                                         <rect key="frame" x="8" y="14" width="359" height="73"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="73" id="gAD-7T-271"/>
@@ -53,7 +53,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="W56-mc-iVb">
                                 <rect key="frame" x="36.5" y="335" width="302" height="190"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Or" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Z4-Fh-UCw">
+                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Or" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Z4-Fh-UCw">
                                         <rect key="frame" x="0.0" y="0.0" width="302" height="30"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -71,7 +71,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBd-03-Am3" customClass="FancyField" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="95" width="302" height="35"/>
@@ -81,7 +81,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S1C-Qo-yRt" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="145" width="302" height="45"/>
@@ -117,7 +117,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Select a sign in method" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b6-k0-tya">
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Select a sign in method" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b6-k0-tya">
                                 <rect key="frame" x="79.5" y="184" width="216" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -148,6 +148,7 @@
                     <connections>
                         <outlet property="emailField" destination="E7Q-Li-6dh" id="aUi-ME-iGY"/>
                         <outlet property="pwdField" destination="yBd-03-Am3" id="Ibb-4a-VTv"/>
+                        <outlet property="signInTapBtn" destination="S1C-Qo-yRt" id="hyi-5G-bbw"/>
                         <segue destination="0sf-Ja-TYP" kind="show" identifier="goToSetUp" id="jrJ-AN-N2v"/>
                         <segue destination="Mvz-X8-qcu" kind="show" identifier="goToMain" id="EnJ-aU-BaS"/>
                     </connections>
@@ -169,7 +170,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-small" translatesAutoresizingMaskIntoConstraints="NO" id="vgC-9p-GTP">
-                                <rect key="frame" x="108" y="64" width="158" height="100"/>
+                                <rect key="frame" x="108" y="20" width="158" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="158" id="5lw-u5-gJT"/>
                                     <constraint firstAttribute="height" constant="100" id="Kcy-t8-TY9"/>
@@ -199,7 +200,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F0F-t8-WHu">
-                                <rect key="frame" x="16" y="172" width="343" height="346"/>
+                                <rect key="frame" x="16" y="128" width="343" height="346"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="qWc-w7-8bu">
                                         <rect key="frame" x="96.5" y="0.0" width="150" height="150"/>
@@ -294,7 +295,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-small" translatesAutoresizingMaskIntoConstraints="NO" id="VwW-RB-YPQ">
-                                <rect key="frame" x="108" y="64" width="158" height="100"/>
+                                <rect key="frame" x="108" y="20" width="158" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="158" id="9an-P6-jK0"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Ey2-Y6-5c8"/>
@@ -303,7 +304,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Esi-hv-7jf">
-                                <rect key="frame" x="32.5" y="172" width="310.5" height="395"/>
+                                <rect key="frame" x="32.5" y="128" width="310.5" height="395"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap image to edit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4u-Z4-D9N">
                                         <rect key="frame" x="83.5" y="0.0" width="143.5" height="35"/>
@@ -348,7 +349,7 @@
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
-                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="809-a4-2Fp">
                                                 <rect key="frame" x="266" y="0.0" width="44" height="44"/>
@@ -383,7 +384,7 @@
                                                 </constraints>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="26"/>
-                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KcS-z0-WxQ">
                                                 <rect key="frame" x="266.5" y="0.0" width="44" height="44"/>
@@ -471,56 +472,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach" translatesAutoresizingMaskIntoConstraints="NO" id="Ck2-mO-cEh" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="112" y="72" width="150" height="112.5"/>
+                                <rect key="frame" x="112" y="60" width="150" height="112.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="112.5" id="oeq-qn-rjn"/>
+                                    <constraint firstAttribute="height" constant="112.5" id="IQd-UA-N0c"/>
                                     <constraint firstAttribute="width" constant="150" id="s3b-Sp-7fv"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0l-6u-fBv" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="56" y="192" width="262" height="37"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="262" id="enI-ql-NZM"/>
-                                    <constraint firstAttribute="height" constant="37" id="u9r-pu-cMI"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
-                                <state key="normal" title="Take a photo of the beach">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="saveBtnPressed:" destination="iHN-eh-C8x" eventType="touchUpInside" id="fwD-4A-tfo"/>
-                                    <action selector="takePhoto:" destination="ryt-fd-H64" eventType="touchUpInside" id="ESu-NJ-Jfd"/>
-                                    <action selector="viewProfileBtnPressed:" destination="iem-Qi-bz3" eventType="touchUpInside" id="6Rc-6g-kha"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date &amp; Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTX-Qk-9Kj">
-                                <rect key="frame" x="16" y="237" width="343" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date &amp; Time:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTX-Qk-9Kj">
+                                <rect key="frame" x="16" y="218" width="343" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="1iJ-K2-cih"/>
                                     <constraint firstAttribute="height" constant="24" id="ome-fX-CBg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPS co-ordinates:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCS-60-cya">
-                                <rect key="frame" x="16" y="269" width="343" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPS co-ordinates:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCS-60-cya">
+                                <rect key="frame" x="16" y="250" width="343" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="0HT-sV-IoM"/>
                                     <constraint firstAttribute="width" constant="343" id="FVL-CH-g7j"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who are you with?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zV9-06-G1X">
-                                <rect key="frame" x="16" y="301" width="343" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who are you with?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zV9-06-G1X">
+                                <rect key="frame" x="16" y="282" width="343" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="QGY-wP-LUM"/>
                                     <constraint firstAttribute="width" constant="343" id="yTo-bf-LWN"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -541,72 +525,119 @@
                                     <action selector="viewProfileBtnPressed:" destination="iem-Qi-bz3" eventType="touchUpInside" id="LFx-cU-rwb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the beach gradient?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mO-Cb-NXB">
-                                <rect key="frame" x="16" y="509" width="343" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the beach gradient?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mO-Cb-NXB">
+                                <rect key="frame" x="16" y="490" width="343" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="BYc-vQ-PCY"/>
                                     <constraint firstAttribute="height" constant="24" id="ExT-YS-Scv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fP8-Fe-t9R">
-                                <rect key="frame" x="0.0" y="333" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="314" width="375" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="n01-gW-BcA"/>
                                     <constraint firstAttribute="height" constant="64" id="u4M-7K-ORG"/>
                                 </constraints>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the type of beach?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdt-dA-ztu">
-                                <rect key="frame" x="16" y="405" width="343" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the type of beach?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdt-dA-ztu">
+                                <rect key="frame" x="16" y="386" width="343" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="8FO-a6-ZKd"/>
                                     <constraint firstAttribute="height" constant="24" id="gmC-4l-HpB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qz9-rU-I7n">
-                                <rect key="frame" x="0.0" y="437" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="418" width="375" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="68c-Le-4sL"/>
                                     <constraint firstAttribute="width" constant="375" id="eXK-OC-yXi"/>
                                 </constraints>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JrF-CI-Uc7">
-                                <rect key="frame" x="0.0" y="541" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="522" width="375" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="iCD-vx-RDH"/>
                                     <constraint firstAttribute="width" constant="375" id="uJC-w2-Pk3"/>
                                 </constraints>
                             </pickerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="MvQ-jG-Ckg">
+                                <rect key="frame" x="21.5" y="180" width="332" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0l-6u-fBv" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="enI-ql-NZM"/>
+                                            <constraint firstAttribute="height" constant="30" id="u9r-pu-cMI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                        <state key="normal" title="Open Camera">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="prepareToTakePhoto:" destination="ryt-fd-H64" eventType="touchUpInside" id="7sz-IA-qRx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zS-Ng-NnQ" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                        <rect key="frame" x="182" y="0.0" width="150" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Z88-Ap-CMu"/>
+                                            <constraint firstAttribute="width" constant="150" id="bgP-dN-hyu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                        <state key="normal" title="Open Library">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="openLibrary:" destination="ryt-fd-H64" eventType="touchUpInside" id="xdh-eI-nYP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please photo the survey area of beach" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hal-Oc-Ajb">
+                                <rect key="frame" x="16" y="28" width="343" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Xok-JQ-COO"/>
+                                    <constraint firstAttribute="width" constant="343" id="pns-OL-eUA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Ck2-mO-cEh" firstAttribute="top" secondItem="Hal-Oc-Ajb" secondAttribute="bottom" constant="8" id="0Dl-OI-s0P"/>
                             <constraint firstItem="fP8-Fe-t9R" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="3tz-lg-gj0"/>
                             <constraint firstItem="Xdt-dA-ztu" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="3xx-es-6D4"/>
                             <constraint firstItem="iCS-60-cya" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="5v8-Kx-Gm9"/>
+                            <constraint firstItem="MvQ-jG-Ckg" firstAttribute="top" secondItem="Ck2-mO-cEh" secondAttribute="bottom" constant="8" id="8XP-4O-Jzx"/>
                             <constraint firstItem="f1Y-ds-C65" firstAttribute="top" secondItem="l97-zO-83C" secondAttribute="bottom" constant="8" id="8l7-N3-OiM"/>
                             <constraint firstItem="5mO-Cb-NXB" firstAttribute="top" secondItem="qz9-rU-I7n" secondAttribute="bottom" constant="8" id="9v7-3B-YHl"/>
                             <constraint firstItem="JrF-CI-Uc7" firstAttribute="top" secondItem="5mO-Cb-NXB" secondAttribute="bottom" constant="8" id="FeO-tW-CRG"/>
-                            <constraint firstItem="Ck2-mO-cEh" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="Olp-Hb-kWt"/>
                             <constraint firstItem="zV9-06-G1X" firstAttribute="top" secondItem="iCS-60-cya" secondAttribute="bottom" constant="8" id="PNv-M5-UJd"/>
                             <constraint firstItem="zV9-06-G1X" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="Qlr-QB-bA4"/>
                             <constraint firstItem="iCS-60-cya" firstAttribute="top" secondItem="yTX-Qk-9Kj" secondAttribute="bottom" constant="8" id="T91-N7-d1v"/>
-                            <constraint firstItem="o0l-6u-fBv" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="Uf8-Qb-Yux"/>
+                            <constraint firstItem="MvQ-jG-Ckg" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="VsO-Zz-R9e"/>
                             <constraint firstItem="5mO-Cb-NXB" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="XCJ-nO-z8u"/>
                             <constraint firstItem="qz9-rU-I7n" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="bBa-0I-DQw"/>
+                            <constraint firstItem="Hal-Oc-Ajb" firstAttribute="top" secondItem="Ld4-Co-aUJ" secondAttribute="bottom" constant="8" id="bbK-J3-OhJ"/>
+                            <constraint firstItem="Ck2-mO-cEh" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="bkC-3Q-kDs"/>
                             <constraint firstItem="JrF-CI-Uc7" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="hDe-1N-ceR"/>
                             <constraint firstItem="qz9-rU-I7n" firstAttribute="top" secondItem="Xdt-dA-ztu" secondAttribute="bottom" constant="8" id="hTi-ka-U7Q"/>
                             <constraint firstItem="fP8-Fe-t9R" firstAttribute="top" secondItem="zV9-06-G1X" secondAttribute="bottom" constant="8" id="hcc-td-JbH"/>
                             <constraint firstItem="yTX-Qk-9Kj" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="iUc-HR-eWs"/>
-                            <constraint firstItem="o0l-6u-fBv" firstAttribute="top" secondItem="Ck2-mO-cEh" secondAttribute="bottom" constant="8" id="iVL-ys-Khh"/>
-                            <constraint firstItem="yTX-Qk-9Kj" firstAttribute="top" secondItem="o0l-6u-fBv" secondAttribute="bottom" constant="8" id="lb0-qB-oWs"/>
+                            <constraint firstItem="Hal-Oc-Ajb" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="k8L-ev-Fad"/>
                             <constraint firstItem="Xdt-dA-ztu" firstAttribute="top" secondItem="fP8-Fe-t9R" secondAttribute="bottom" constant="8" id="mRM-ro-SnI"/>
                             <constraint firstItem="l97-zO-83C" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="t62-wM-v2r"/>
-                            <constraint firstItem="Ck2-mO-cEh" firstAttribute="top" secondItem="Ld4-Co-aUJ" secondAttribute="bottom" constant="8" id="wfP-mf-B0b"/>
+                            <constraint firstItem="yTX-Qk-9Kj" firstAttribute="top" secondItem="MvQ-jG-Ckg" secondAttribute="bottom" constant="8" id="vWN-mC-8fO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Start New Session" id="gCi-1d-GVt">
@@ -643,7 +674,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGv-ik-tBZ">
-                                <rect key="frame" x="16" y="192" width="343" height="455"/>
+                                <rect key="frame" x="16" y="148" width="343" height="499"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Staying safe on the seashore:
 
@@ -664,8 +695,8 @@
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="IMPORTANT SAFETY NOTICE" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFX-5g-j60">
-                                <rect key="frame" x="16" y="72" width="343" height="112"/>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="IMPORTANT SAFETY NOTICE" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFX-5g-j60">
+                                <rect key="frame" x="16" y="28" width="343" height="112"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="112" id="caR-yD-Eoo"/>
@@ -714,14 +745,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-smaller" translatesAutoresizingMaskIntoConstraints="NO" id="jLH-Ry-1JG">
-                                <rect key="frame" x="16" y="72" width="343" height="149"/>
+                                <rect key="frame" x="16" y="28" width="343" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="149" id="2rL-ab-ugA"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="149" id="Pl1-c4-wu4"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEz-qd-p6l" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="97" y="229" width="181" height="40"/>
+                                <rect key="frame" x="97" y="185" width="181" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="3Ar-V7-oBv"/>
@@ -738,7 +769,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BC-h7-fv1" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="97" y="277" width="181" height="40"/>
+                                <rect key="frame" x="97" y="233" width="181" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="181" id="F4F-0y-zgX"/>
@@ -803,7 +834,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-smaller" translatesAutoresizingMaskIntoConstraints="NO" id="4rz-Wc-vLk">
-                                <rect key="frame" x="12.5" y="64" width="350" height="149"/>
+                                <rect key="frame" x="12.5" y="20" width="350" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="149" id="DJ9-Sh-V5O"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="149" id="IUz-P6-GD7"/>
@@ -811,7 +842,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9x-J8-nlR" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="38" y="221" width="300" height="40"/>
+                                <rect key="frame" x="38" y="177" width="300" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Rjr-7z-YQv"/>
@@ -827,7 +858,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIL-Kk-4Dn" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="38" y="269" width="300" height="40"/>
+                                <rect key="frame" x="38" y="225" width="300" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="EIS-IT-i6F"/>
@@ -843,7 +874,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please read the safety notice and instructions before continuing." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9i-wb-xcK">
-                                <rect key="frame" x="38" y="325" width="299" height="58"/>
+                                <rect key="frame" x="38" y="281" width="299" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="299" id="7JV-Sq-cqb"/>
                                     <constraint firstAttribute="height" constant="58" id="F4f-7L-ELk"/>
@@ -853,7 +884,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="8MW-G0-7c2">
-                                <rect key="frame" x="71.5" y="391" width="232" height="100"/>
+                                <rect key="frame" x="71.5" y="347" width="232" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBq-sY-9qJ">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -925,13 +956,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-smaller" translatesAutoresizingMaskIntoConstraints="NO" id="E78-UO-kDn">
-                                <rect key="frame" x="16" y="72" width="343" height="149"/>
+                                <rect key="frame" x="16" y="28" width="343" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="149" id="NgN-4V-nJ2"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cO3-Fd-oZt">
-                                <rect key="frame" x="97" y="229" width="181" height="360"/>
+                                <rect key="frame" x="97" y="185" width="181" height="360"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QE-Mr-c1U">
                                         <rect key="frame" x="50.5" y="0.0" width="80" height="80"/>
@@ -1105,7 +1136,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="inG-iL-Zgt">
                                 <rect key="frame" x="16" y="325" width="343" height="164"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Please enter your name:" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krm-6g-6cU">
+                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Please enter your name:" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krm-6g-6cU">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="35"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -1121,9 +1152,9 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
                                     </textField>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Please enter your town/county:" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnx-k8-YMX">
+                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Please enter your town/county:" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnx-k8-YMX">
                                         <rect key="frame" x="0.0" y="86" width="343" height="35"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -1139,7 +1170,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -1159,7 +1190,7 @@
                                     <action selector="postBtnTapped:" destination="0sf-Ja-TYP" eventType="touchUpInside" id="ni0-Ye-380"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Please upload a profile image" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gM6-z6-lDP">
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Please upload a profile image" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gM6-z6-lDP">
                                 <rect key="frame" x="16" y="108" width="343" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -1228,7 +1259,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled" translatesAutoresizingMaskIntoConstraints="NO" id="xyy-Xi-Oin">
-                                <rect key="frame" x="0.0" y="72" width="375" height="205"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="205"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="205" id="Ary-Lm-N19"/>
                                 </constraints>
@@ -1267,7 +1298,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E2E-yB-bDN">
-                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="639"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="The Big Seaweed Search">
@@ -1616,7 +1647,7 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVK-wX-8f4">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -1699,14 +1730,14 @@ You may request details of personal information which we hold about you under th
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-smaller" translatesAutoresizingMaskIntoConstraints="NO" id="LyI-P4-2bj">
-                                <rect key="frame" x="16" y="72" width="343" height="149"/>
+                                <rect key="frame" x="16" y="28" width="343" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="149" id="dlN-VU-itX"/>
                                     <constraint firstAttribute="height" constant="149" id="gC3-PC-t85"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Ufu-me-L4b">
-                                <rect key="frame" x="97" y="245" width="181" height="136"/>
+                                <rect key="frame" x="97" y="201" width="181" height="136"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRG-WO-xFL" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="181" height="40"/>
@@ -1820,12 +1851,12 @@ You may request details of personal information which we hold about you under th
         <image name="user1" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="9qv-sm-tIH"/>
         <segue reference="aec-GQ-K6C"/>
         <segue reference="FVd-cj-ub6"/>
-        <segue reference="tUs-dE-eRa"/>
+        <segue reference="wJO-md-pD8"/>
         <segue reference="eCs-qk-gOp"/>
         <segue reference="YBn-WX-fdq"/>
-        <segue reference="9qv-sm-tIH"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

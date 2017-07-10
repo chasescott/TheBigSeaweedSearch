@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
-class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var imageAdd: FancyImageView!
     @IBOutlet weak var nameField: FancyField!
@@ -25,12 +25,21 @@ class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavi
         imagePicker = UIImagePickerController()
         imagePicker.allowsEditing = true
         imagePicker.delegate = self
+        nameField.delegate = self
+        locationField.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        nameField.resignFirstResponder()
+        locationField.resignFirstResponder()
+        return false
+    }
+
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
