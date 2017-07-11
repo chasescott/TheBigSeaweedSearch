@@ -36,6 +36,11 @@
 		ABE3B9BA1F0D94650079B099 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3B9B91F0D94650079B099 /* FancyButton.swift */; };
 		ABE3B9BC1F0D94750079B099 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3B9BB1F0D94750079B099 /* CircleView.swift */; };
 		ABE3B9BE1F0F7D2D0079B099 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABE3B9BD1F0F7D2D0079B099 /* GoogleService-Info.plist */; };
+		ABECB1CA1F15211700C09DB7 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = ABECB1C11F15211700C09DB7 /* GeoFire.m */; };
+		ABECB1CB1F15211700C09DB7 /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = ABECB1C31F15211700C09DB7 /* GFBase32Utils.m */; };
+		ABECB1CC1F15211700C09DB7 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = ABECB1C51F15211700C09DB7 /* GFGeoHash.m */; };
+		ABECB1CD1F15211700C09DB7 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = ABECB1C71F15211700C09DB7 /* GFGeoHashQuery.m */; };
+		ABECB1CE1F15211700C09DB7 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = ABECB1C91F15211700C09DB7 /* GFQuery.m */; };
 		D87AA3B09C66E592607BAEE9 /* Pods_The_Big_Seaweed_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C763B25A60E0A4A9FCE2869 /* Pods_The_Big_Seaweed_Search.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +78,22 @@
 		ABE3B9B91F0D94650079B099 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		ABE3B9BB1F0D94750079B099 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		ABE3B9BD1F0F7D2D0079B099 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ABECB1BA1F15211700C09DB7 /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
+		ABECB1BB1F15211700C09DB7 /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
+		ABECB1BC1F15211700C09DB7 /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
+		ABECB1BD1F15211700C09DB7 /* GFRegionQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRegionQuery.h; sourceTree = "<group>"; };
+		ABECB1BE1F15211700C09DB7 /* GeoFire-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire-Prefix.pch"; sourceTree = "<group>"; };
+		ABECB1C01F15211700C09DB7 /* GeoFire+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire+Private.h"; sourceTree = "<group>"; };
+		ABECB1C11F15211700C09DB7 /* GeoFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoFire.m; sourceTree = "<group>"; };
+		ABECB1C21F15211700C09DB7 /* GFBase32Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBase32Utils.h; sourceTree = "<group>"; };
+		ABECB1C31F15211700C09DB7 /* GFBase32Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBase32Utils.m; sourceTree = "<group>"; };
+		ABECB1C41F15211700C09DB7 /* GFGeoHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHash.h; sourceTree = "<group>"; };
+		ABECB1C51F15211700C09DB7 /* GFGeoHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHash.m; sourceTree = "<group>"; };
+		ABECB1C61F15211700C09DB7 /* GFGeoHashQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHashQuery.h; sourceTree = "<group>"; };
+		ABECB1C71F15211700C09DB7 /* GFGeoHashQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHashQuery.m; sourceTree = "<group>"; };
+		ABECB1C81F15211700C09DB7 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
+		ABECB1C91F15211700C09DB7 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
+		ABECB1CF1F15228600C09DB7 /* Seaweed-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Seaweed-Bridging-Header.h"; sourceTree = "<group>"; };
 		FBBAE56731BCD05EE24F1BF1 /* Pods-The Big Seaweed Search.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Big Seaweed Search.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Big Seaweed Search/Pods-The Big Seaweed Search.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +139,7 @@
 		ABE3B98B1F0D4C480079B099 /* The Big Seaweed Search */ = {
 			isa = PBXGroup;
 			children = (
+				ABECB1B81F15211700C09DB7 /* GeoFire */,
 				ABE3B9AB1F0D93070079B099 /* Services */,
 				ABE3B9AC1F0D93160079B099 /* Util */,
 				ABE3B99E1F0D4C780079B099 /* Model */,
@@ -128,6 +150,7 @@
 				ABE3B9951F0D4C480079B099 /* LaunchScreen.storyboard */,
 				ABE3B9981F0D4C480079B099 /* Info.plist */,
 				ABE3B9BD1F0F7D2D0079B099 /* GoogleService-Info.plist */,
+				ABECB1CF1F15228600C09DB7 /* Seaweed-Bridging-Header.h */,
 			);
 			path = "The Big Seaweed Search";
 			sourceTree = "<group>";
@@ -190,6 +213,44 @@
 				ABE3B9AD1F0D93540079B099 /* Constants.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		ABECB1B81F15211700C09DB7 /* GeoFire */ = {
+			isa = PBXGroup;
+			children = (
+				ABECB1B91F15211700C09DB7 /* API */,
+				ABECB1BE1F15211700C09DB7 /* GeoFire-Prefix.pch */,
+				ABECB1BF1F15211700C09DB7 /* Implementation */,
+			);
+			path = GeoFire;
+			sourceTree = "<group>";
+		};
+		ABECB1B91F15211700C09DB7 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ABECB1BA1F15211700C09DB7 /* GeoFire.h */,
+				ABECB1BB1F15211700C09DB7 /* GFCircleQuery.h */,
+				ABECB1BC1F15211700C09DB7 /* GFQuery.h */,
+				ABECB1BD1F15211700C09DB7 /* GFRegionQuery.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		ABECB1BF1F15211700C09DB7 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				ABECB1C01F15211700C09DB7 /* GeoFire+Private.h */,
+				ABECB1C11F15211700C09DB7 /* GeoFire.m */,
+				ABECB1C21F15211700C09DB7 /* GFBase32Utils.h */,
+				ABECB1C31F15211700C09DB7 /* GFBase32Utils.m */,
+				ABECB1C41F15211700C09DB7 /* GFGeoHash.h */,
+				ABECB1C51F15211700C09DB7 /* GFGeoHash.m */,
+				ABECB1C61F15211700C09DB7 /* GFGeoHashQuery.h */,
+				ABECB1C71F15211700C09DB7 /* GFGeoHashQuery.m */,
+				ABECB1C81F15211700C09DB7 /* GFQuery+Private.h */,
+				ABECB1C91F15211700C09DB7 /* GFQuery.m */,
+			);
+			path = Implementation;
 			sourceTree = "<group>";
 		};
 		C81FEDAAE340A767E1072540 /* Frameworks */ = {
@@ -326,7 +387,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABE3B9B61F0D944C0079B099 /* RoundButton.swift in Sources */,
+				ABECB1CD1F15211700C09DB7 /* GFGeoHashQuery.m in Sources */,
 				AB6EADB61F128B3D00E2AACB /* AddMenuVC.swift in Sources */,
+				ABECB1CE1F15211700C09DB7 /* GFQuery.m in Sources */,
 				ABE3B9B01F0D937C0079B099 /* DataService.swift in Sources */,
 				ABE3B9AA1F0D8A410079B099 /* SafetyVC.swift in Sources */,
 				ABE3B9BA1F0D94650079B099 /* FancyButton.swift in Sources */,
@@ -336,6 +399,7 @@
 				ABE3B9A61F0D724A0079B099 /* SetUpProfileVC.swift in Sources */,
 				AB57F91C1F111AAB00CFB504 /* ProfileOptionsVC.swift in Sources */,
 				AB57F91E1F11215E00CFB504 /* ViewProfileVC.swift in Sources */,
+				ABECB1CA1F15211700C09DB7 /* GeoFire.m in Sources */,
 				AB6EADB81F1295A000E2AACB /* NewSessionVC.swift in Sources */,
 				AB57F91A1F1109C000CFB504 /* PrivacyVC.swift in Sources */,
 				ABE3B9BC1F0D94750079B099 /* CircleView.swift in Sources */,
@@ -350,6 +414,8 @@
 				AB57F9141F10DCF900CFB504 /* FancyImageView.swift in Sources */,
 				AB57F9201F11226B00CFB504 /* FancyLabel.swift in Sources */,
 				ABE3B9AE1F0D93540079B099 /* Constants.swift in Sources */,
+				ABECB1CC1F15211700C09DB7 /* GFGeoHash.m in Sources */,
+				ABECB1CB1F15211700C09DB7 /* GFBase32Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +546,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CLAOS.The-Big-Seaweed-Search";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "The Big Seaweed Search/Seaweed-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -494,6 +561,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "CLAOS.The-Big-Seaweed-Search";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "The Big Seaweed Search/Seaweed-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

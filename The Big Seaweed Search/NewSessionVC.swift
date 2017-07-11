@@ -32,7 +32,7 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     var beachSelected: String!
     var gradientSelected: String!
     var whoSelected: String!
-    
+    var geoFire: GeoFire!
     
     let gradient = ["Flat","Gently Sloping","Steep"]
     let beach = ["Mostly sand","Mostly rock","Mixture"]
