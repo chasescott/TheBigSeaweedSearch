@@ -44,6 +44,7 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     var session: Session!
     var sessionId: String!
     
+    //picker view arrays for selection
     let gradient = ["Flat","Gently Sloping","Steep"]
     let beach = ["Mostly sand","Mostly rock","Mixture"]
     let whoP = ["Just me","Family/friends (adults only)", "Family/friends (including children)", "Primary School", "Secondary School", "College/University", "Other youth group", "Adult volunteer group", "Other"]
@@ -162,7 +163,7 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     }
     
     func postToFirebase(imgUrl: String) {
-        let geoFire = GeoFire(firebaseRef: ref.child("location"))
+        let geoFire = GeoFire(firebaseRef: ref.child("location").child("sessions"))
         if let userId = FIRAuth.auth()?.currentUser?.uid{
             let sessionData: Dictionary<String,AnyObject> = [
                 "userid": userId as AnyObject,
