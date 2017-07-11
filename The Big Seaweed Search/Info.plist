@@ -65,5 +65,7 @@
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Please allow access to your photos so you can upload a photo</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Please allow access to your GPS to record the data location</string>
 </dict>
 </plist>

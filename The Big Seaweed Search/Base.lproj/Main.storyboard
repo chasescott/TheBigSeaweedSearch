@@ -478,7 +478,7 @@
                                     <constraint firstAttribute="width" constant="150" id="s3b-Sp-7fv"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date &amp; Time:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTX-Qk-9Kj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTX-Qk-9Kj">
                                 <rect key="frame" x="16" y="218" width="343" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="1iJ-K2-cih"/>

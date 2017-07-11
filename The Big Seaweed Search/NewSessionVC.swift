@@ -13,9 +13,8 @@ import MapKit
 import AVFoundation
 
 
-class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate {
 
-    
     @IBOutlet weak var beachImage: FancyImageView!
     @IBOutlet weak var dateTimeLbl: UILabel!
     @IBOutlet weak var locationLbl: UILabel!
@@ -23,9 +22,17 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     @IBOutlet weak var beachPicker: UIPickerView!
     @IBOutlet weak var whoPicker: UIPickerView!
     
+    let locationManager = CLLocationManager()
     var imagePicker: UIImagePickerController!
     static var imageCache: NSCache<NSString, UIImage> = NSCache()
     var imageSelected = false
+    let date = NSDate()
+    let formatter = DateFormatter()
+    var beachLocation = CLLocation()
+    var beachSelected: String!
+    var gradientSelected: String!
+    var whoSelected: String!
+    
     
     let gradient = ["Flat","Gently Sloping","Steep"]
     let beach = ["Mostly sand","Mostly rock","Mixture"]
@@ -42,8 +49,48 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         imagePicker = UIImagePickerController()
         imagePicker.allowsEditing = true
         imagePicker.delegate = self
+        formatter.dateFormat = "dd/MM/yyyy"
+        let dateString = "Session Date: \(formatter.string(from: date as Date))"
+        dateTimeLbl.text = String(dateString)
+        }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        locationAuthStatus()
     }
     
+    func locationAuthStatus() {
+        //Only let location be collated when app is in use, not in the background as that will drain the battery life quickly.
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+            if CLLocationManager.locationServicesEnabled() {
+                locationManager.delegate = self
+                locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+                locationManager.startUpdatingLocation()
+            }
+        } else {
+            locationManager.requestWhenInUseAuthorization()
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+            locationLbl.text = ("locations = \(locValue.latitude) \(locValue.longitude)")
+            beachLocation = CLLocation()
+            locationManager.stopUpdatingLocation()
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == CLAuthorizationStatus.authorizedWhenInUse {
+            let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+            locationLbl.text = ("locations = \(locValue.latitude) \(locValue.longitude)")
+            beachLocation = CLLocation()
+            locationManager.stopUpdatingLocation()
+        }
+    }
+    
+    //CHASE:  Camera Function
     @IBAction func prepareToTakePhoto(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
             imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
@@ -51,6 +98,7 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         }
     }
     
+    //CHASE:  Library access function
     @IBAction func openLibrary(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) {
             imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary;
@@ -58,6 +106,7 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         }
     }
     
+    //CHASE:  Select Image function
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             beachImage.image = image
@@ -70,9 +119,65 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         imagePicker.dismiss(animated: true, completion: nil)
     }
     
-    
     @IBAction func StartCollectingDataPressed(_ sender: Any) {
-        //userAlertSuccess(alert: "Your session has now been activated.  Please proceed to collect data")
+        guard let img = beachImage.image, imageSelected == true else {
+            userAlertDoMore(alert: "Please upload an image of the beach area you are surveying")
+            print("CHASE: An image must be selected")
+            return
+        }
+        if let imgData = UIImageJPEGRepresentation(img, 0.2) {
+            
+            //creates a string to unique identify items
+            let imgUid = NSUUID().uuidString
+            
+            let metadata = FIRStorageMetadata()
+            metadata.contentType = "image/jpeg"
+            
+            //Attempts to upload image to firebase and store URL link in variable
+            DataService.ds.REF_SESSION_IMAGES.child(imgUid).put(imgData, metadata: metadata) { (metadata, error) in
+                if error != nil {
+                    self.userAlertDoMore(alert: "Unable to upload image.  Please try again")
+                    print("CHASE: Unable to upload image to Firebase Storage")
+                } else {
+                    print("CHASE: Successfully uploaded image to Firebase Storage")
+                    let downloadURL = metadata?.downloadURL()?.absoluteString
+                    if let url = downloadURL {
+                        self.postToFirebase(imgUrl: url)
+                    }
+                }
+            }
+        }
+    }
+    
+    func postToFirebase(imgUrl: String) {
+        if let userId = FIRAuth.auth()?.currentUser?.uid{
+            let sessionData: Dictionary<String,AnyObject> = [
+                "userid": userId as AnyObject,
+                "date": "\(formatter.string(from: date as Date))" as AnyObject, //work on this!
+                "whoWith": whoSelected as AnyObject,
+                "beachType": beachSelected as AnyObject,
+                "beachGradient": gradientSelected as AnyObject,
+                "photoURL": imgUrl as AnyObject
+                
+            ]
+            //generates an auto ID and then inserts post object above into Firebase
+            let firebasePost = DataService.ds.REF_SESSIONS.childByAutoId()
+            firebasePost.setValue(sessionData)
+            
+            //takes the firebasePost key and stores in firebaseKey constant
+            let firebaseKey = firebasePost.key
+            
+            //stores key in user section of firebase under 'sessions'
+            FIRDatabase.database().reference().child("users/\(userId)/sessions").child(firebaseKey).setValue(true)
+            
+            //Store CL coordinates in firebase...
+            
+            
+            imageSelected = false
+            beachImage.image = UIImage(named: "beach")
+            userAlertSuccess(alert: "Your session has now been activated.  Please continue to collect data")
+            print("CHASE: New Session Activated")
+        }
     }
     
     //User alert windows to warn of issue that needs attention before proceeding
@@ -90,9 +195,11 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     //User alert to advise of success and perform segue to next screen
     func userAlertSuccess (alert: String) {
         let alertController = UIAlertController(title: "Success!", message: alert, preferredStyle: UIAlertControllerStyle.alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: {
-            action in self.performSegue(withIdentifier: "", sender: nil)
-        }))
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil
+//            {
+//            action in self.performSegue(withIdentifier: "", sender: nil)
+//        }
+        ))
         
         let alertWindow = UIWindow(frame: UIScreen.main.bounds)
         alertWindow.rootViewController = UIViewController()
@@ -135,12 +242,19 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         return ""
     }
     
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if pickerView == gradientPicker {
+            gradientSelected = gradient[row] as String
+        } else if pickerView == beachPicker {
+            beachSelected = beach[row] as String
+        } else if pickerView == whoPicker {
+            whoSelected = whoP[row] as String
+        }
+    }
+    
     @IBAction func backPressed(_ sender: Any) {
         _ = navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)
     }
-    
-    
-    
     
    }

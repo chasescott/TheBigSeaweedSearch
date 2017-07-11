@@ -16,7 +16,6 @@ class EditProfileVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
     @IBOutlet weak var locationField: FancyField!
     @IBOutlet weak var imageAdd: UIImageView!
     
-    
     var imagePicker: UIImagePickerController!
     static var imageCache: NSCache<NSString, UIImage> = NSCache()
     var imageSelected = false

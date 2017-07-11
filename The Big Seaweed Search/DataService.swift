@@ -22,10 +22,12 @@ class DataService {
     private var _REF_POSTS = DB_BASE.child("posts")
     private var _REF_USERS = DB_BASE.child("users")
     private var _REF_USERS_PROFILE = DB_BASE.child("users").child("profile")
+    private var _REF_SESSIONS = DB_BASE.child("sessions")
     
     //Storage references
     private var _REF_POST_IMAGES = STORAGE_BASE.child("post-pics")
     private var _REF_PROFILE_IMAGES = STORAGE_BASE.child("profile-pics")
+    private var _REF_SESSION_IMAGE = STORAGE_BASE.child("session-pics")
     
     //the following public variables used as getters for the private variables above prevent anyone else referencing the private variables.
     
@@ -45,9 +47,12 @@ class DataService {
         return _REF_USERS_PROFILE
     }
     
+    var REF_SESSIONS: FIRDatabaseReference {
+        return _REF_SESSIONS
+    }
+    
     var REF_USER_CURRENT: FIRDatabaseReference {
         let uid = KeychainWrapper.standard.string(forKey: KEY_UID)
-        // depreciated version : - let uid = KeychainWrapper.defaultKeychainWrapper.string(forKey: KEY_UID)
         let user = REF_USERS.child(uid!)
         return user
     }
@@ -58,6 +63,14 @@ class DataService {
     
     var REF_PROFILE_IMAGES: FIRStorageReference {
         return _REF_PROFILE_IMAGES
+    }
+    
+    var REF_SESSION_IMAGES: FIRStorageReference {
+        return _REF_PROFILE_IMAGES
+    }
+    
+    func createFirebaseDataSession(sessionid: String, userData: Dictionary<String,String>) {
+        REF_SESSIONS.child(sessionid).updateChildValues(userData)
     }
     
     func createFirebaseDBUser(uid: String, userData: Dictionary<String, String>) {
