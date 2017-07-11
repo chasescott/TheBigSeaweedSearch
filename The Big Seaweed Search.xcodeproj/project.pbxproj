@@ -36,11 +36,13 @@
 		ABE3B9BA1F0D94650079B099 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3B9B91F0D94650079B099 /* FancyButton.swift */; };
 		ABE3B9BC1F0D94750079B099 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3B9BB1F0D94750079B099 /* CircleView.swift */; };
 		ABE3B9BE1F0F7D2D0079B099 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABE3B9BD1F0F7D2D0079B099 /* GoogleService-Info.plist */; };
-		ABECB1CA1F15211700C09DB7 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = ABECB1C11F15211700C09DB7 /* GeoFire.m */; };
+		ABECB1CA1F15211700C09DB7 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = ABECB1C11F15211700C09DB7 /* GeoFire.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		ABECB1CB1F15211700C09DB7 /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = ABECB1C31F15211700C09DB7 /* GFBase32Utils.m */; };
 		ABECB1CC1F15211700C09DB7 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = ABECB1C51F15211700C09DB7 /* GFGeoHash.m */; };
 		ABECB1CD1F15211700C09DB7 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = ABECB1C71F15211700C09DB7 /* GFGeoHashQuery.m */; };
 		ABECB1CE1F15211700C09DB7 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = ABECB1C91F15211700C09DB7 /* GFQuery.m */; };
+		ABECB1D11F1532E500C09DB7 /* AddDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECB1D01F1532E500C09DB7 /* AddDataVC.swift */; };
+		ABECB1D31F1533AF00C09DB7 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECB1D21F1533AF00C09DB7 /* Session.swift */; };
 		D87AA3B09C66E592607BAEE9 /* Pods_The_Big_Seaweed_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C763B25A60E0A4A9FCE2869 /* Pods_The_Big_Seaweed_Search.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +96,8 @@
 		ABECB1C81F15211700C09DB7 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		ABECB1C91F15211700C09DB7 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		ABECB1CF1F15228600C09DB7 /* Seaweed-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Seaweed-Bridging-Header.h"; sourceTree = "<group>"; };
+		ABECB1D01F1532E500C09DB7 /* AddDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDataVC.swift; sourceTree = "<group>"; };
+		ABECB1D21F1533AF00C09DB7 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		FBBAE56731BCD05EE24F1BF1 /* Pods-The Big Seaweed Search.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Big Seaweed Search.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Big Seaweed Search/Pods-The Big Seaweed Search.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				AB57F9211F11263900CFB504 /* UserProfile.swift */,
+				ABECB1D21F1533AF00C09DB7 /* Session.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 				AB57F91D1F11215E00CFB504 /* ViewProfileVC.swift */,
 				AB6EADB51F128B3D00E2AACB /* AddMenuVC.swift */,
 				AB6EADB71F1295A000E2AACB /* NewSessionVC.swift */,
+				ABECB1D01F1532E500C09DB7 /* AddDataVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -387,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABE3B9B61F0D944C0079B099 /* RoundButton.swift in Sources */,
+				ABECB1D11F1532E500C09DB7 /* AddDataVC.swift in Sources */,
 				ABECB1CD1F15211700C09DB7 /* GFGeoHashQuery.m in Sources */,
 				AB6EADB61F128B3D00E2AACB /* AddMenuVC.swift in Sources */,
 				ABECB1CE1F15211700C09DB7 /* GFQuery.m in Sources */,
@@ -397,6 +404,7 @@
 				ABE3B98F1F0D4C480079B099 /* LoginVC.swift in Sources */,
 				AB57F9221F11263900CFB504 /* UserProfile.swift in Sources */,
 				ABE3B9A61F0D724A0079B099 /* SetUpProfileVC.swift in Sources */,
+				ABECB1D31F1533AF00C09DB7 /* Session.swift in Sources */,
 				AB57F91C1F111AAB00CFB504 /* ProfileOptionsVC.swift in Sources */,
 				AB57F91E1F11215E00CFB504 /* ViewProfileVC.swift in Sources */,
 				ABECB1CA1F15211700C09DB7 /* GeoFire.m in Sources */,

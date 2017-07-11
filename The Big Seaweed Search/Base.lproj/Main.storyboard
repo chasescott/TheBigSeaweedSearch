@@ -45,13 +45,13 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-smaller" translatesAutoresizingMaskIntoConstraints="NO" id="2Qv-vk-Opu">
-                                <rect key="frame" x="16" y="28" width="343" height="148"/>
+                                <rect key="frame" x="16" y="72" width="343" height="148"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="148" id="BiJ-Uo-xCV"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="W56-mc-iVb">
-                                <rect key="frame" x="36.5" y="335" width="302" height="190"/>
+                                <rect key="frame" x="36.5" y="379" width="302" height="190"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Or" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Z4-Fh-UCw">
                                         <rect key="frame" x="0.0" y="0.0" width="302" height="30"/>
@@ -101,7 +101,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vyt-Lx-vwp">
-                                <rect key="frame" x="137.5" y="227" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="271" width="100" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9N-gB-3tA" customClass="RoundButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -118,7 +118,7 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Select a sign in method" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b6-k0-tya">
-                                <rect key="frame" x="79.5" y="184" width="216" height="35"/>
+                                <rect key="frame" x="79.5" y="228" width="216" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="gSx-PM-tx9"/>
@@ -655,11 +655,38 @@
                         <outlet property="gradientPicker" destination="JrF-CI-Uc7" id="mOL-98-SDg"/>
                         <outlet property="locationLbl" destination="iCS-60-cya" id="NWV-Sg-JY1"/>
                         <outlet property="whoPicker" destination="fP8-Fe-t9R" id="IaG-Z5-ZjD"/>
+                        <segue destination="ZOx-sf-1H7" kind="show" identifier="sessionToAdd" id="ye2-P7-JYl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfq-mK-RCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1672.8" y="-1451.4242878560722"/>
+        </scene>
+        <!--Add Data-->
+        <scene sceneID="WYt-LJ-s3V">
+            <objects>
+                <viewController id="ZOx-sf-1H7" customClass="AddDataVC" customModule="The_Big_Seaweed_Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c2b-iy-FNL"/>
+                        <viewControllerLayoutGuide type="bottom" id="r1N-zx-tFz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Me-Nv-ZGk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Data" id="W1A-gm-piW">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="VIY-px-ygv">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backBtnPressed:" destination="ZOx-sf-1H7" id="9ei-Eo-0B5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nR8-wx-EDl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2526" y="-1451"/>
         </scene>
         <!--Safety Notice-->
         <scene sceneID="jME-Sg-icK">
@@ -674,7 +701,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGv-ik-tBZ">
-                                <rect key="frame" x="16" y="148" width="343" height="499"/>
+                                <rect key="frame" x="16" y="192" width="343" height="455"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Staying safe on the seashore:
 
@@ -696,7 +723,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="IMPORTANT SAFETY NOTICE" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFX-5g-j60">
-                                <rect key="frame" x="16" y="28" width="343" height="112"/>
+                                <rect key="frame" x="16" y="72" width="343" height="112"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="112" id="caR-yD-Eoo"/>
@@ -1298,7 +1325,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E2E-yB-bDN">
-                                <rect key="frame" x="0.0" y="28" width="375" height="639"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="The Big Seaweed Search">
@@ -1647,7 +1674,7 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVK-wX-8f4">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -1852,11 +1879,11 @@ You may request details of personal information which we hold about you under th
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="9qv-sm-tIH"/>
-        <segue reference="aec-GQ-K6C"/>
-        <segue reference="FVd-cj-ub6"/>
-        <segue reference="wJO-md-pD8"/>
+        <segue reference="JU9-K3-Gcc"/>
         <segue reference="eCs-qk-gOp"/>
         <segue reference="YBn-WX-fdq"/>
+        <segue reference="FVd-cj-ub6"/>
+        <segue reference="wJO-md-pD8"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

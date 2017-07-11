@@ -12,7 +12,6 @@ import SwiftKeychainWrapper
 import MapKit
 import AVFoundation
 
-
 class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var beachImage: FancyImageView!
@@ -22,17 +21,28 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     @IBOutlet weak var beachPicker: UIPickerView!
     @IBOutlet weak var whoPicker: UIPickerView!
     
-    let locationManager = CLLocationManager()
+    //Camera & picker view variables
     var imagePicker: UIImagePickerController!
     static var imageCache: NSCache<NSString, UIImage> = NSCache()
     var imageSelected = false
+    //Date constants
     let date = NSDate()
     let formatter = DateFormatter()
+    var dateAsString: String!
+    //GPS location storage variables
+    let locationManager = CLLocationManager()
     var beachLocation = CLLocation()
+    //picker view value storage variables
     var beachSelected: String!
     var gradientSelected: String!
     var whoSelected: String!
+    //Geofire variables
     var geoFire: GeoFire!
+    let ref = FIRDatabase.database().reference()
+    //Session object
+    var imageLink: String!
+    var session: Session!
+    var sessionId: String!
     
     let gradient = ["Flat","Gently Sloping","Steep"]
     let beach = ["Mostly sand","Mostly rock","Mixture"]
@@ -52,6 +62,7 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         formatter.dateFormat = "dd/MM/yyyy"
         let dateString = "Session Date: \(formatter.string(from: date as Date))"
         dateTimeLbl.text = String(dateString)
+        dateAsString = formatter.string(from: date as Date)
         }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -142,6 +153,7 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
                     print("CHASE: Successfully uploaded image to Firebase Storage")
                     let downloadURL = metadata?.downloadURL()?.absoluteString
                     if let url = downloadURL {
+                        self.imageLink = url
                         self.postToFirebase(imgUrl: url)
                     }
                 }
@@ -150,35 +162,49 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     }
     
     func postToFirebase(imgUrl: String) {
+        let geoFire = GeoFire(firebaseRef: ref.child("location"))
         if let userId = FIRAuth.auth()?.currentUser?.uid{
             let sessionData: Dictionary<String,AnyObject> = [
                 "userid": userId as AnyObject,
-                "date": "\(formatter.string(from: date as Date))" as AnyObject, //work on this!
+                "date": "\(formatter.string(from: date as Date))" as AnyObject, //store date as string in Firebase
                 "whoWith": whoSelected as AnyObject,
                 "beachType": beachSelected as AnyObject,
                 "beachGradient": gradientSelected as AnyObject,
                 "photoURL": imgUrl as AnyObject
-                
             ]
+            
             //generates an auto ID and then inserts post object above into Firebase
             let firebasePost = DataService.ds.REF_SESSIONS.childByAutoId()
             firebasePost.setValue(sessionData)
             
             //takes the firebasePost key and stores in firebaseKey constant
             let firebaseKey = firebasePost.key
+            sessionId = firebaseKey
             
             //stores key in user section of firebase under 'sessions'
             FIRDatabase.database().reference().child("users/\(userId)/sessions").child(firebaseKey).setValue(true)
             
             //Store CL coordinates in firebase...
-            
+            geoFire!.setLocation(beachLocation, forKey: firebaseKey)
             
             imageSelected = false
-            beachImage.image = UIImage(named: "beach")
+            //beachImage.image = UIImage(named: "beach")
             userAlertSuccess(alert: "Your session has now been activated.  Please continue to collect data")
             print("CHASE: New Session Activated")
         }
     }
+    
+    //Pass through session object containing session data to add data VC
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //Store variables in session object to pass through
+        let userId = FIRAuth.auth()?.currentUser?.uid
+        let newSession = Session(sessionId: sessionId, imgURL: imageLink, userId: userId!, date: dateAsString, whoWith: whoSelected, beachType: beachSelected, beachGradient: gradientSelected)
+        //Pass session object via segue to new AddDataVC
+        if let destinationVC = segue.destination as?
+            AddDataVC{
+            destinationVC.currentSession = newSession
+            }
+        }
     
     //User alert windows to warn of issue that needs attention before proceeding
     func userAlertDoMore (alert: String) {
@@ -195,10 +221,10 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     //User alert to advise of success and perform segue to next screen
     func userAlertSuccess (alert: String) {
         let alertController = UIAlertController(title: "Success!", message: alert, preferredStyle: UIAlertControllerStyle.alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil
-//            {
-//            action in self.performSegue(withIdentifier: "", sender: nil)
-//        }
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler:
+            {
+            action in self.performSegue(withIdentifier: "sessionToAdd", sender: nil)
+        }
         ))
         
         let alertWindow = UIWindow(frame: UIScreen.main.bounds)
