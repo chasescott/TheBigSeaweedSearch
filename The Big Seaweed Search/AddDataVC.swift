@@ -198,7 +198,7 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
                 DataService.ds.REF_LEADERBOARD.child(userId).child("numberOfPosts").setValue(numbOfPosts)
             })
             
-            //8. Reset form
+            //7. Reset form
             imageSelected = false
             imageAdd.image = UIImage(named: "add-image")
             print("CHASE: New Post Successful")

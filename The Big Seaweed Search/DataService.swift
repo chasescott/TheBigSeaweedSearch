@@ -94,6 +94,10 @@ class DataService {
         REF_USERS.child(uid).child("numberOfPosts").setValue(0)
     }
     
+    func SetUpFirebaseNumberOfSessions(uid:String) {
+        REF_USERS.child(uid).child("numberOfSessions").setValue(0)
+    }
+    
     func setUpUserOnLeaderboard(uid: String, userData: Dictionary<String, AnyObject>) {
         REF_LEADERBOARD.child(uid).updateChildValues(userData)
     }

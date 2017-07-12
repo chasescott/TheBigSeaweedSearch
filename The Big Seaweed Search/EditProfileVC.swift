@@ -117,8 +117,13 @@ class EditProfileVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
                 "photoURL": imgUrl as AnyObject
             ]
             DataService.ds.updateFirebaseDBUserProfile(uid: userId, profileData: profileData)
-            userAlert(alert: "Thank you.  Your profile has been updated")
             print("CHASE: User Profile Updated")
+            //Then update fields on leaderboard database too...
+            DataService.ds.REF_LEADERBOARD.child(userId).child("location").setValue(locationField.text)
+            DataService.ds.REF_LEADERBOARD.child(userId).child("username").setValue(userField.text)
+            DataService.ds.REF_LEADERBOARD.child(userId).child("photoURL").setValue(imgUrl)
+            print("CHASE: Leaderboard Profile Updated")
+            userAlert(alert: "Thank you.  Your profile has been updated")
         }
     }
 

@@ -188,6 +188,18 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
             //Store CL coordinates in firebase...
             geoFire!.setLocation(beachLocation, forKey: firebaseKey)
             
+            //Increase by 1 the number of sessions the user has created against the User node in Firebase
+            DataService.ds.REF_USERS.child(userId).observeSingleEvent(of: .value, with: { (snapshot) in
+                let value = snapshot.value as? NSDictionary
+                var numbOfSessions = value?["numberOfSessions"] as! Int
+                print("The number of posts is: \(numbOfSessions)")
+                numbOfSessions = numbOfSessions + 1
+                DataService.ds.REF_USERS.child(userId).child("numberOfSessions").setValue(numbOfSessions)
+                //Upload number of posts to Leaderboard FB nodes
+                DataService.ds.REF_LEADERBOARD.child(userId).child("numberOfSessions").setValue(numbOfSessions)
+            })
+
+            
             imageSelected = false
             //beachImage.image = UIImage(named: "beach")
             userAlertSuccess(alert: "Your session has now been activated.  Please continue to collect data")
