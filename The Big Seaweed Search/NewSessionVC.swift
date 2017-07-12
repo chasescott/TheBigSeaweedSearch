@@ -33,15 +33,15 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     let locationManager = CLLocationManager()
     var beachLocation = CLLocation()
     //picker view value storage variables
-    var beachSelected: String!
-    var gradientSelected: String!
-    var whoSelected: String!
+    var beachSelected: String = "Mostly Sand"
+    var gradientSelected: String = "Flat"
+    var whoSelected: String = "Just me"
     //Geofire variables
     var geoFire: GeoFire!
     let ref = FIRDatabase.database().reference()
     //Session object
     var imageLink: String!
-    var session: Session!
+//    var session: Session!
     var sessionId: String!
     
     //picker view arrays for selection

@@ -1,5 +1,5 @@
 //
-//  Post.swift
+//  AddData.swift
 //  The Big Seaweed Search
 //
 //  Created by Chase Scott-Pearson on 11/07/2017.
@@ -9,7 +9,7 @@
 import Foundation
 import Firebase
 
-class Post {
+class AddData {
     private var _postRef: FIRDatabaseReference!
     private var _postKey: String!
     private var _userId: String!
@@ -100,6 +100,37 @@ class Post {
         
         _postRef = DataService.ds.REF_POSTS.child(_postKey)
     }
+    
+    
+    init(postKey: String, postData: Dictionary<String, AnyObject>) {
+        self._postKey = postKey
+        if let seaweedType = postData["seaweedType"] as? String {
+            self._seaweedType = seaweedType
+        }
+        
+        if let imageURL = postData["photoURL"] as? String {
+            self._imageURL = imageURL
+        }
+        
+        if let date = postData["date"] as? String {
+            self._date = date
+        }
+        
+        if let sessionId = postData["sessionid"] as? String {
+            self._sessionId = sessionId
+        }
+        
+        if let userId = postData["userid"] as? String {
+            self._userId = userId
+        }
+        
+        if let likes = postData["likes"] as? Int {
+            self._likes = likes
+        }
+        
+        _postRef = DataService.ds.REF_POSTS.child(_postKey)
+    }
+    
     
     func adjustLikes(addLike: Bool) {
         if addLike {

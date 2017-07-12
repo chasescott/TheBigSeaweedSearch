@@ -107,6 +107,14 @@ class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavi
             "photoURL": imgUrl as AnyObject
         ]
       DataService.ds.updateFirebaseDBUserProfile(uid: userId, profileData: profileData)
+      DataService.ds.SetUpFirebaseNumberOfPosts(uid: userId)
+            let userData: Dictionary<String,AnyObject> = [
+                "username": nameField.text! as AnyObject,
+                "location": locationField.text! as AnyObject,
+                "numberOfPosts": 0 as AnyObject,
+                "photoURL": imgUrl as AnyObject
+            ]
+        DataService.ds.setUpUserOnLeaderboard(uid: userId, userData: userData)
         userAlert(alert: "Thank you.  Your profile has been updated")
         print("CHASE: User Profile Updated")
         }

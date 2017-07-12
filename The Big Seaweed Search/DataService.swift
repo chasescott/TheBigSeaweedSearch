@@ -21,6 +21,7 @@ class DataService {
     private var _REF_BASE = DB_BASE
     private var _REF_POSTS = DB_BASE.child("posts")
     private var _REF_USERS = DB_BASE.child("users")
+    private var _REF_LEADERBOARD = DB_BASE.child("leaderboard")
     private var _REF_USERS_PROFILE = DB_BASE.child("users").child("profile")
     private var _REF_SESSIONS = DB_BASE.child("sessions")
     
@@ -41,6 +42,10 @@ class DataService {
     
     var REF_USERS: FIRDatabaseReference {
         return _REF_USERS
+    }
+    
+    var REF_LEADERBOARD: FIRDatabaseReference {
+        return _REF_LEADERBOARD
     }
     
     var REF_USERS_PROFILE: FIRDatabaseReference {
@@ -85,6 +90,11 @@ class DataService {
         REF_USERS.child(uid).child("profile").updateChildValues(profileData)
     }
     
+    func SetUpFirebaseNumberOfPosts(uid:String) {
+        REF_USERS.child(uid).child("numberOfPosts").setValue(0)
+    }
     
-    
+    func setUpUserOnLeaderboard(uid: String, userData: Dictionary<String, AnyObject>) {
+        REF_LEADERBOARD.child(uid).updateChildValues(userData)
+    }
 }

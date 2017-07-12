@@ -32,7 +32,7 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
     let locationManager = CLLocationManager()
     var beachLocation = CLLocation()
     //picker view value storage variables
-    var seaweedType: String!
+    var seaweedType: String = "Dabberlocks  - (native)"
     //Geofire variables
     var geoFire: GeoFire!
     let ref = FIRDatabase.database().reference()
@@ -40,6 +40,9 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
     var imageLink: String!
     var postId: String!
     var sessionId: String!
+    //Firebase reference
+    var postsRef: FIRDatabaseReference!
+    var numberOfPosts: Int!
     
     //picker view array for selection
     let seaweed = ["Dabberlocks  - (native)", "Sugar Kelp  - (native)", "Serrated Wrack  - (native)", "Bladder Wrack  - (native)", "Knotted Wrack  - (native)", "Spiral Wrack  - (native)", "Channelled Wrack  - (native)", "Thongweed  - (native)", "Wireweed - (non-native)", "Wakame  - (non-native)", "Harpoon Weed - (non-native)", "Bonnemaison's Hook - (non-native)"]
@@ -184,14 +187,36 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
             //5. Store CL coordinates for post in firebase...
             geoFire!.setLocation(beachLocation, forKey: firebaseKey)
             
-            //6. Run code to count number of posts user has created
-        
-            //7. Reset form
+            //6. Run code to increase by 1 the number of posts the user has created against the USER node in Firebase
+            DataService.ds.REF_USERS.child(userId).observeSingleEvent(of: .value, with: { (snapshot) in
+                let value = snapshot.value as? NSDictionary
+                var numbOfPosts = value?["numberOfPosts"] as! Int
+                print("The number of posts is: \(numbOfPosts)")
+                numbOfPosts = numbOfPosts + 1
+                DataService.ds.REF_USERS.child(userId).child("numberOfPosts").setValue(numbOfPosts)
+                //Upload number of posts to Leaderboard FB nodes
+                DataService.ds.REF_LEADERBOARD.child(userId).child("numberOfPosts").setValue(numbOfPosts)
+            })
+            
+            //8. Reset form
             imageSelected = false
             imageAdd.image = UIImage(named: "add-image")
             print("CHASE: New Post Successful")
         }
     }
+    
+    func adjustNumberOfPosts(addPost:Bool){
+        if let userId = FIRAuth.auth()?.currentUser?.uid {
+        if addPost {
+            numberOfPosts = numberOfPosts + 1
+        } else {
+            numberOfPosts = numberOfPosts - 1
+        }
+        DataService.ds.REF_USERS.child(userId).child("numberOfPosts").setValue(numberOfPosts)
+            print("CHASE: number of posts should increase")
+    }
+}
+
     
     @IBAction func endSessionBtnPressed(_ sender: Any) {
         guard let img = imageAdd.image, imageSelected == true else {
