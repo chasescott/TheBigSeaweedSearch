@@ -250,7 +250,7 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
     }
     
     @IBAction func helpBtnPressed(_ sender: Any) {
-        //TBC pop over window
+        performSegue(withIdentifier: "showSeaweedTypes", sender: nil)
     }
     
     //User alert windows to warn of issue that needs attention before proceeding

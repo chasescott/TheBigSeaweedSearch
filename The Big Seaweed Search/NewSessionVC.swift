@@ -88,7 +88,7 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
-            locationLbl.text = ("locations = \(locValue.latitude) \(locValue.longitude)")
+            locationLbl.text = ("Latitude: \(locValue.latitude) - Longitude: \(locValue.longitude)")
             beachLocation = CLLocation()
             locationManager.stopUpdatingLocation()
     }

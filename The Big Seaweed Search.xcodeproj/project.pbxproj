@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB4A71A81F17B0980016ED2D /* SeaweedTypesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A71A71F17B0980016ED2D /* SeaweedTypesVC.swift */; };
+		AB4A71AA1F17D77D0016ED2D /* AlphaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A71A91F17D77D0016ED2D /* AlphaView.swift */; };
 		AB57F9141F10DCF900CFB504 /* FancyImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB57F9131F10DCF900CFB504 /* FancyImageView.swift */; };
 		AB57F9161F11097900CFB504 /* InstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB57F9151F11097900CFB504 /* InstructionsVC.swift */; };
 		AB57F9181F1109A400CFB504 /* AboutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB57F9171F1109A400CFB504 /* AboutVC.swift */; };
@@ -50,6 +52,8 @@
 /* Begin PBXFileReference section */
 		155C308B9E86F40B5E65DB0E /* Pods-The Big Seaweed Search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Big Seaweed Search.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Big Seaweed Search/Pods-The Big Seaweed Search.release.xcconfig"; sourceTree = "<group>"; };
 		9C763B25A60E0A4A9FCE2869 /* Pods_The_Big_Seaweed_Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Big_Seaweed_Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB4A71A71F17B0980016ED2D /* SeaweedTypesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeaweedTypesVC.swift; sourceTree = "<group>"; };
+		AB4A71A91F17D77D0016ED2D /* AlphaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaView.swift; sourceTree = "<group>"; };
 		AB57F9131F10DCF900CFB504 /* FancyImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyImageView.swift; sourceTree = "<group>"; };
 		AB57F9151F11097900CFB504 /* InstructionsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionsVC.swift; sourceTree = "<group>"; };
 		AB57F9171F1109A400CFB504 /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
@@ -182,6 +186,7 @@
 				ABE3B9B51F0D944C0079B099 /* RoundButton.swift */,
 				AB57F9131F10DCF900CFB504 /* FancyImageView.swift */,
 				AB57F91F1F11226B00CFB504 /* FancyLabel.swift */,
+				AB4A71A91F17D77D0016ED2D /* AlphaView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 				AB6EADB51F128B3D00E2AACB /* AddMenuVC.swift */,
 				AB6EADB71F1295A000E2AACB /* NewSessionVC.swift */,
 				ABECB1D01F1532E500C09DB7 /* AddDataVC.swift */,
+				AB4A71A71F17B0980016ED2D /* SeaweedTypesVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -410,6 +416,7 @@
 				ABECB1D51F15774900C09DB7 /* AddData.swift in Sources */,
 				ABECB1D31F1533AF00C09DB7 /* Session.swift in Sources */,
 				AB57F91C1F111AAB00CFB504 /* ProfileOptionsVC.swift in Sources */,
+				AB4A71A81F17B0980016ED2D /* SeaweedTypesVC.swift in Sources */,
 				AB57F91E1F11215E00CFB504 /* ViewProfileVC.swift in Sources */,
 				ABECB1CA1F15211700C09DB7 /* GeoFire.m in Sources */,
 				AB6EADB81F1295A000E2AACB /* NewSessionVC.swift in Sources */,
@@ -428,6 +435,7 @@
 				ABE3B9AE1F0D93540079B099 /* Constants.swift in Sources */,
 				ABECB1CC1F15211700C09DB7 /* GFGeoHash.m in Sources */,
 				ABECB1CB1F15211700C09DB7 /* GFBase32Utils.m in Sources */,
+				AB4A71AA1F17D77D0016ED2D /* AlphaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
