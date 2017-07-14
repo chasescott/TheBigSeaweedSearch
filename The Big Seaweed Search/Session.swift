@@ -16,7 +16,9 @@ class Session {
     private var _whoWith: String!
     private var _beachType: String!
     private var _beachGradient: String!
+    private var _sessionName: String!
     private var _sessionId: String! //i.e. session key
+    private var _numberOfPosts: Int!
     private var _sessionRef: FIRDatabaseReference!
     
     var imgURL: String {
@@ -27,27 +29,35 @@ class Session {
         return _userId
     }
     
-    var date: String! {
+    var date: String {
         return _date
     }
     
-    var whoWith: String! {
+    var whoWith: String {
         return _whoWith
     }
     
-    var beachType: String! {
+    var beachType: String {
         return _beachType
     }
     
-    var beachGradient: String! {
+    var beachGradient: String {
         return _beachGradient
     }
     
-    var sessionId: String! {
+    var sessionId: String {
         return _sessionId
     }
     
-    init(sessionId: String, imgURL: String, userId: String, date: String, whoWith: String, beachType: String, beachGradient: String)
+    var sessionName: String {
+        return _sessionName
+    }
+    
+    var numberOfPosts: Int {
+        return _numberOfPosts
+    }
+    
+    init(sessionId: String, imgURL: String, userId: String, date: String, whoWith: String, beachType: String, beachGradient: String, numberOfPosts: Int, sessionName: String)
     {
         self._sessionId = sessionId
         self._imgURL = imgURL
@@ -56,6 +66,8 @@ class Session {
         self._whoWith = whoWith
         self._beachType = beachType
         self._beachGradient = beachGradient
+        self._numberOfPosts = numberOfPosts
+        self._sessionName = sessionName
     }
     
     init(sessionId: String, sessionData:Dictionary<String, AnyObject>) {
@@ -83,6 +95,15 @@ class Session {
         
         if let beachGradient = sessionData["beachGradient"] as? String {
             self._beachGradient = beachGradient
+        }
+        
+        if let sessionName = sessionData["sessionName"] as? String {
+            self._sessionName = sessionName
+        }
+
+        
+        if let numberOfPosts = sessionData["numberOfPosts"] as? Int {
+            self._numberOfPosts = numberOfPosts
         }
         _sessionRef = DataService.ds.REF_SESSIONS.child(_sessionId)
     }

@@ -15,8 +15,7 @@ class AddMenuVC: UIViewController {
     }
 
     @IBAction func backBtnPressed(_ sender: Any) {
-        _ = navigationController?.popViewController(animated: true)
-        dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: "addDataMenuToMainMenu", sender: nil)
     }
 
     @IBAction func startNewSessionPressed(_ sender: Any) {
@@ -24,6 +23,7 @@ class AddMenuVC: UIViewController {
     }
     
     @IBAction func continuePrevSessionPressed(_ sender: Any) {
+        performSegue(withIdentifier: "addMenuToContinueSession", sender: nil)
     }
     
     @IBAction func safetyBtnPressed(_ sender: Any) {

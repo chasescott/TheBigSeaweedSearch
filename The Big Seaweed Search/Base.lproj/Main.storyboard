@@ -170,7 +170,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-small" translatesAutoresizingMaskIntoConstraints="NO" id="vgC-9p-GTP">
-                                <rect key="frame" x="108" y="20" width="158" height="100"/>
+                                <rect key="frame" x="108" y="64" width="158" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="158" id="5lw-u5-gJT"/>
                                     <constraint firstAttribute="height" constant="100" id="Kcy-t8-TY9"/>
@@ -194,7 +194,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F0F-t8-WHu">
-                                <rect key="frame" x="16" y="128" width="343" height="346"/>
+                                <rect key="frame" x="16" y="172" width="343" height="346"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="qWc-w7-8bu">
                                         <rect key="frame" x="96.5" y="0.0" width="150" height="150"/>
@@ -289,7 +289,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-small" translatesAutoresizingMaskIntoConstraints="NO" id="VwW-RB-YPQ">
-                                <rect key="frame" x="108" y="20" width="158" height="100"/>
+                                <rect key="frame" x="108" y="64" width="158" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="158" id="9an-P6-jK0"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Ey2-Y6-5c8"/>
@@ -298,7 +298,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Esi-hv-7jf">
-                                <rect key="frame" x="32.5" y="128" width="310.5" height="395"/>
+                                <rect key="frame" x="32.5" y="172" width="310.5" height="395"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap image to edit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4u-Z4-D9N">
                                         <rect key="frame" x="83.5" y="0.0" width="143.5" height="35"/>
@@ -461,35 +461,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach" translatesAutoresizingMaskIntoConstraints="NO" id="Ck2-mO-cEh" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="112" y="51" width="150" height="112.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Hwq-ud-zk1">
+                                <rect key="frame" x="25.5" y="95" width="324" height="112.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach" translatesAutoresizingMaskIntoConstraints="NO" id="Ck2-mO-cEh" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="112.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="112.5" id="IQd-UA-N0c"/>
+                                            <constraint firstAttribute="width" constant="150" id="s3b-Sp-7fv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="MvQ-jG-Ckg">
+                                        <rect key="frame" x="174" y="0.0" width="150" height="112.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0l-6u-fBv" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="44.5"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="enI-ql-NZM"/>
+                                                    <constraint firstAttribute="height" constant="44" id="u9r-pu-cMI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                                <state key="normal" title="Open Camera">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="prepareToTakePhoto:" destination="ryt-fd-H64" eventType="touchUpInside" id="7sz-IA-qRx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zS-Ng-NnQ" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="68.5" width="150" height="44"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="Z88-Ap-CMu"/>
+                                                    <constraint firstAttribute="width" constant="150" id="bgP-dN-hyu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                                <state key="normal" title="Open Library">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="openLibrary:" destination="ryt-fd-H64" eventType="touchUpInside" id="xdh-eI-nYP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="a77-Tn-0Q5"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="112.5" id="IQd-UA-N0c"/>
-                                    <constraint firstAttribute="width" constant="150" id="s3b-Sp-7fv"/>
+                                    <constraint firstAttribute="height" constant="112.5" id="og6-Dz-DG2"/>
                                 </constraints>
-                            </imageView>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a session name (i.e. Beachy Head)" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RGF-n9-scp" customClass="FancyField" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                <rect key="frame" x="22.5" y="223.5" width="330" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="deX-0B-Nmy"/>
+                                    <constraint firstAttribute="width" constant="330" id="fvZ-Av-Ylv"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTX-Qk-9Kj">
-                                <rect key="frame" x="16" y="223" width="343" height="20"/>
+                                <rect key="frame" x="16" y="266.5" width="343" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="1iJ-K2-cih"/>
                                     <constraint firstAttribute="height" constant="20" id="ome-fX-CBg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPS co-ordinates:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCS-60-cya">
-                                <rect key="frame" x="16" y="251" width="343" height="20"/>
+                                <rect key="frame" x="16" y="294.5" width="343" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="0HT-sV-IoM"/>
                                     <constraint firstAttribute="width" constant="343" id="FVL-CH-g7j"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who are you with?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zV9-06-G1X">
-                                <rect key="frame" x="16" y="279" width="343" height="15"/>
+                                <rect key="frame" x="16" y="322.5" width="343" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="QGY-wP-LUM"/>
                                     <constraint firstAttribute="width" constant="343" id="yTo-bf-LWN"/>
@@ -499,7 +555,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l97-zO-83C" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="56" y="564" width="262" height="44"/>
+                                <rect key="frame" x="56" y="607.5" width="262" height="44"/>
                                 <color key="backgroundColor" red="0.30955404043197632" green="0.56216949224472046" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="262" id="cGE-Rg-eCy"/>
@@ -516,7 +572,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the beach gradient?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mO-Cb-NXB">
-                                <rect key="frame" x="16" y="469" width="343" height="15"/>
+                                <rect key="frame" x="16" y="512.5" width="343" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="BYc-vQ-PCY"/>
                                     <constraint firstAttribute="height" constant="15" id="ExT-YS-Scv"/>
@@ -526,14 +582,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fP8-Fe-t9R">
-                                <rect key="frame" x="0.0" y="302" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="345.5" width="375" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="n01-gW-BcA"/>
                                     <constraint firstAttribute="height" constant="64" id="u4M-7K-ORG"/>
                                 </constraints>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the type of beach?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdt-dA-ztu">
-                                <rect key="frame" x="16" y="374" width="343" height="15"/>
+                                <rect key="frame" x="16" y="417.5" width="343" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="8FO-a6-ZKd"/>
                                     <constraint firstAttribute="height" constant="15" id="gmC-4l-HpB"/>
@@ -543,56 +599,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qz9-rU-I7n">
-                                <rect key="frame" x="0.0" y="397" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="440.5" width="375" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="68c-Le-4sL"/>
                                     <constraint firstAttribute="width" constant="375" id="eXK-OC-yXi"/>
                                 </constraints>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JrF-CI-Uc7">
-                                <rect key="frame" x="0.0" y="492" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="535.5" width="375" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="iCD-vx-RDH"/>
                                     <constraint firstAttribute="width" constant="375" id="uJC-w2-Pk3"/>
                                 </constraints>
                             </pickerView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="MvQ-jG-Ckg">
-                                <rect key="frame" x="21.5" y="171" width="332" height="44"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0l-6u-fBv" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="44"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="enI-ql-NZM"/>
-                                            <constraint firstAttribute="height" constant="44" id="u9r-pu-cMI"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
-                                        <state key="normal" title="Open Camera">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="prepareToTakePhoto:" destination="ryt-fd-H64" eventType="touchUpInside" id="7sz-IA-qRx"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zS-Ng-NnQ" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                        <rect key="frame" x="182" y="0.0" width="150" height="44"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="Z88-Ap-CMu"/>
-                                            <constraint firstAttribute="width" constant="150" id="bgP-dN-hyu"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
-                                        <state key="normal" title="Open Library">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="openLibrary:" destination="ryt-fd-H64" eventType="touchUpInside" id="xdh-eI-nYP"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please photo the survey area of beach" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hal-Oc-Ajb">
-                                <rect key="frame" x="16" y="28" width="343" height="15"/>
+                                <rect key="frame" x="16" y="72" width="343" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="Xok-JQ-COO"/>
                                     <constraint firstAttribute="width" constant="343" id="pns-OL-eUA"/>
@@ -604,21 +625,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Ck2-mO-cEh" firstAttribute="top" secondItem="Hal-Oc-Ajb" secondAttribute="bottom" constant="8" id="0Dl-OI-s0P"/>
+                            <constraint firstItem="RGF-n9-scp" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="2WU-Mh-B4Z"/>
                             <constraint firstItem="fP8-Fe-t9R" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="3tz-lg-gj0"/>
                             <constraint firstItem="Xdt-dA-ztu" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="3xx-es-6D4"/>
                             <constraint firstItem="iCS-60-cya" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="5v8-Kx-Gm9"/>
-                            <constraint firstItem="MvQ-jG-Ckg" firstAttribute="top" secondItem="Ck2-mO-cEh" secondAttribute="bottom" constant="8" id="8XP-4O-Jzx"/>
                             <constraint firstItem="5mO-Cb-NXB" firstAttribute="top" secondItem="qz9-rU-I7n" secondAttribute="bottom" constant="8" id="9v7-3B-YHl"/>
+                            <constraint firstItem="RGF-n9-scp" firstAttribute="top" secondItem="Hwq-ud-zk1" secondAttribute="bottom" constant="16" id="AGp-Sy-axo"/>
+                            <constraint firstItem="Hwq-ud-zk1" firstAttribute="top" secondItem="Hal-Oc-Ajb" secondAttribute="bottom" constant="8" id="F5d-iK-RFe"/>
                             <constraint firstItem="JrF-CI-Uc7" firstAttribute="top" secondItem="5mO-Cb-NXB" secondAttribute="bottom" constant="8" id="FeO-tW-CRG"/>
+                            <constraint firstItem="yTX-Qk-9Kj" firstAttribute="top" secondItem="RGF-n9-scp" secondAttribute="bottom" constant="8" id="GsQ-CH-cVz"/>
                             <constraint firstItem="zV9-06-G1X" firstAttribute="top" secondItem="iCS-60-cya" secondAttribute="bottom" constant="8" id="PNv-M5-UJd"/>
                             <constraint firstItem="zV9-06-G1X" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="Qlr-QB-bA4"/>
                             <constraint firstItem="iCS-60-cya" firstAttribute="top" secondItem="yTX-Qk-9Kj" secondAttribute="bottom" constant="8" id="T91-N7-d1v"/>
-                            <constraint firstItem="MvQ-jG-Ckg" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="VsO-Zz-R9e"/>
+                            <constraint firstItem="Hwq-ud-zk1" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="TWr-ZZ-mg7"/>
                             <constraint firstItem="5mO-Cb-NXB" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="XCJ-nO-z8u"/>
                             <constraint firstItem="qz9-rU-I7n" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="bBa-0I-DQw"/>
                             <constraint firstItem="Hal-Oc-Ajb" firstAttribute="top" secondItem="Ld4-Co-aUJ" secondAttribute="bottom" constant="8" id="bbK-J3-OhJ"/>
-                            <constraint firstItem="Ck2-mO-cEh" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="bkC-3Q-kDs"/>
                             <constraint firstItem="l97-zO-83C" firstAttribute="top" secondItem="JrF-CI-Uc7" secondAttribute="bottom" constant="8" id="cqX-u7-NkN"/>
                             <constraint firstItem="JrF-CI-Uc7" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="hDe-1N-ceR"/>
                             <constraint firstItem="qz9-rU-I7n" firstAttribute="top" secondItem="Xdt-dA-ztu" secondAttribute="bottom" constant="8" id="hTi-ka-U7Q"/>
@@ -627,7 +649,6 @@
                             <constraint firstItem="Hal-Oc-Ajb" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="k8L-ev-Fad"/>
                             <constraint firstItem="Xdt-dA-ztu" firstAttribute="top" secondItem="fP8-Fe-t9R" secondAttribute="bottom" constant="8" id="mRM-ro-SnI"/>
                             <constraint firstItem="l97-zO-83C" firstAttribute="centerX" secondItem="fnk-Xq-7Eb" secondAttribute="centerX" id="t62-wM-v2r"/>
-                            <constraint firstItem="yTX-Qk-9Kj" firstAttribute="top" secondItem="MvQ-jG-Ckg" secondAttribute="bottom" constant="8" id="vWN-mC-8fO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Start New Session" id="gCi-1d-GVt">
@@ -644,13 +665,14 @@
                         <outlet property="dateTimeLbl" destination="yTX-Qk-9Kj" id="EjG-7Q-w94"/>
                         <outlet property="gradientPicker" destination="JrF-CI-Uc7" id="mOL-98-SDg"/>
                         <outlet property="locationLbl" destination="iCS-60-cya" id="NWV-Sg-JY1"/>
+                        <outlet property="nameLbl" destination="RGF-n9-scp" id="lUf-MR-j9f"/>
                         <outlet property="whoPicker" destination="fP8-Fe-t9R" id="IaG-Z5-ZjD"/>
                         <segue destination="ZOx-sf-1H7" kind="show" identifier="sessionToAdd" id="ye2-P7-JYl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfq-mK-RCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3374" y="-654"/>
+            <point key="canvasLocation" x="3373.5999999999999" y="-654.42278860569718"/>
         </scene>
         <!--Seaweed TypesVC-->
         <scene sceneID="Vft-C1-2G1">
@@ -769,7 +791,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="7Gf-Wv-qPP" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="88" y="86" width="200" height="150"/>
+                                <rect key="frame" x="88" y="130" width="200" height="150"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
@@ -781,7 +803,7 @@
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Date:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pc3-vg-nOJ">
-                                <rect key="frame" x="16" y="244" width="343" height="20"/>
+                                <rect key="frame" x="16" y="288" width="343" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="UFf-c3-Fyo"/>
                                     <constraint firstAttribute="height" constant="20" id="dVf-Ec-xLS"/>
@@ -791,7 +813,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alternatively, are you finished?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Imf-YV-aDZ">
-                                <rect key="frame" x="16" y="529" width="343" height="15"/>
+                                <rect key="frame" x="16" y="573" width="343" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="MBP-h4-J3b"/>
                                     <constraint firstAttribute="width" constant="343" id="aL4-tb-0qf"/>
@@ -801,7 +823,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mSR-pP-crP" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="67" y="552" width="240" height="44"/>
+                                <rect key="frame" x="67" y="596" width="240" height="44"/>
                                 <color key="backgroundColor" red="0.71674730329949243" green="0.10721881030029679" blue="0.0061925415402922478" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="bH1-Sl-hW7"/>
@@ -816,7 +838,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPS co-ordinates:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kpz-6p-lb8">
-                                <rect key="frame" x="16" y="272" width="343" height="20"/>
+                                <rect key="frame" x="16" y="316" width="343" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="LvN-YW-WtL"/>
                                     <constraint firstAttribute="width" constant="343" id="eeH-nH-M71"/>
@@ -826,7 +848,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q0e-73-pGU">
-                                <rect key="frame" x="0.0" y="20" width="375" height="58"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="CKV-6d-w13"/>
                                     <constraint firstAttribute="height" constant="58" id="yR7-vC-NAB"/>
@@ -837,7 +859,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you wish to save &amp; record more data?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uCg-i3-4d8">
-                                <rect key="frame" x="16.5" y="446" width="343" height="15"/>
+                                <rect key="frame" x="16.5" y="490" width="343" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="YY2-U4-bgb"/>
                                     <constraint firstAttribute="width" constant="343" id="fPf-Fk-SeK"/>
@@ -847,14 +869,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UgE-PB-P2j">
-                                <rect key="frame" x="0.0" y="352" width="375" height="86"/>
+                                <rect key="frame" x="0.0" y="396" width="375" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="86" id="IJA-bv-Kp9"/>
                                     <constraint firstAttribute="width" constant="375" id="coy-Bn-Oen"/>
                                 </constraints>
                             </pickerView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Hog-WG-4O0">
-                                <rect key="frame" x="7" y="300" width="360" height="44"/>
+                                <rect key="frame" x="7" y="344" width="360" height="44"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the type of seaweed?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlB-a0-Kg7">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="44"/>
@@ -880,7 +902,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p1f-7c-hKK" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="67" y="469" width="240" height="44"/>
+                                <rect key="frame" x="67" y="513" width="240" height="44"/>
                                 <color key="backgroundColor" red="0.25098040700000002" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="5r7-Ri-Pve"/>
@@ -966,7 +988,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGv-ik-tBZ">
-                                <rect key="frame" x="16" y="148" width="343" height="499"/>
+                                <rect key="frame" x="16" y="192" width="343" height="455"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Staying safe on the seashore:
 
@@ -988,7 +1010,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="IMPORTANT SAFETY NOTICE" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFX-5g-j60">
-                                <rect key="frame" x="16" y="28" width="343" height="112"/>
+                                <rect key="frame" x="16" y="72" width="343" height="112"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="112" id="caR-yD-Eoo"/>
@@ -1037,13 +1059,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-smaller" translatesAutoresizingMaskIntoConstraints="NO" id="jLH-Ry-1JG">
-                                <rect key="frame" x="16" y="28" width="343" height="149"/>
+                                <rect key="frame" x="16" y="72" width="343" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="149" id="2rL-ab-ugA"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEz-qd-p6l" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="97" y="185" width="181" height="44"/>
+                                <rect key="frame" x="97" y="229" width="181" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="3Ar-V7-oBv"/>
@@ -1059,7 +1081,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BC-h7-fv1" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="97" y="245" width="181" height="44"/>
+                                <rect key="frame" x="97" y="289" width="181" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="181" id="F4F-0y-zgX"/>
@@ -1110,6 +1132,144 @@
             </objects>
             <point key="canvasLocation" x="1673" y="-654"/>
         </scene>
+        <!--Continue Previous Session-->
+        <scene sceneID="22H-OW-qnz">
+            <objects>
+                <viewController id="o1Y-Sg-wOg" customClass="ContinueSessionVC" customModule="The_Big_Seaweed_Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wdO-C8-fjO"/>
+                        <viewControllerLayoutGuide type="bottom" id="ojn-mf-CTa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YrZ-2F-LAo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select a session to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzs-cQ-wDL">
+                                <rect key="frame" x="16" y="72" width="343" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="70U-hP-i7v"/>
+                                    <constraint firstAttribute="width" constant="343" id="nDh-EK-kxw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="165" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wtq-qj-jdC">
+                                <rect key="frame" x="0.0" y="95" width="375" height="572"/>
+                                <color key="backgroundColor" red="0.94891661405563354" green="0.94907897710800171" blue="0.94890636205673218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" rowHeight="165" id="DS3-8y-Xna" customClass="SessionCell" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="165"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DS3-8y-Xna" id="vrW-uI-ang">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="164.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NFj-aE-HS0" customClass="FancyView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="16.5" width="359" height="134"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading" translatesAutoresizingMaskIntoConstraints="NO" id="s3H-6U-UGn">
+                                                            <rect key="frame" x="8" y="8" width="134" height="132.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="134" id="4PJ-ky-8If"/>
+                                                                <constraint firstAttribute="height" constant="132.5" id="olq-HV-4IV"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="YRp-vX-gqI">
+                                                            <rect key="frame" x="150" y="8" width="201" height="118"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7n6-a6-hCZ">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="201" height="18"/>
+                                                                    <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Session Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXL-LM-SUf">
+                                                                    <rect key="frame" x="0.0" y="25" width="201" height="18"/>
+                                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beach Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjU-Hh-TBJ">
+                                                                    <rect key="frame" x="0.0" y="50" width="201" height="18"/>
+                                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gradient" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6C-H0-KCf">
+                                                                    <rect key="frame" x="0.0" y="75" width="201" height="18"/>
+                                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Posts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P0M-nY-ePb">
+                                                                    <rect key="frame" x="0.0" y="100" width="201" height="18"/>
+                                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="s3H-6U-UGn" secondAttribute="bottom" constant="8" id="Ble-Y5-6UH"/>
+                                                        <constraint firstItem="YRp-vX-gqI" firstAttribute="top" secondItem="NFj-aE-HS0" secondAttribute="top" constant="8" id="G4G-XV-8e8"/>
+                                                        <constraint firstAttribute="bottom" secondItem="YRp-vX-gqI" secondAttribute="bottom" constant="8" id="HWW-a0-z43"/>
+                                                        <constraint firstItem="s3H-6U-UGn" firstAttribute="leading" secondItem="NFj-aE-HS0" secondAttribute="leading" constant="8" id="V8A-SI-OP9"/>
+                                                        <constraint firstItem="YRp-vX-gqI" firstAttribute="leading" secondItem="s3H-6U-UGn" secondAttribute="trailing" constant="8" id="Z6R-ph-kwJ"/>
+                                                        <constraint firstItem="s3H-6U-UGn" firstAttribute="top" secondItem="NFj-aE-HS0" secondAttribute="top" constant="8" id="jqD-TG-HX4"/>
+                                                        <constraint firstAttribute="trailing" secondItem="YRp-vX-gqI" secondAttribute="trailing" constant="8" id="yGI-wi-K0I"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="NFj-aE-HS0" firstAttribute="leading" secondItem="vrW-uI-ang" secondAttribute="leadingMargin" id="1CP-q1-iS9"/>
+                                                <constraint firstItem="NFj-aE-HS0" firstAttribute="trailing" secondItem="vrW-uI-ang" secondAttribute="trailingMargin" id="FNj-97-WpR"/>
+                                                <constraint firstItem="NFj-aE-HS0" firstAttribute="top" secondItem="vrW-uI-ang" secondAttribute="topMargin" constant="8" id="ID7-Eh-SSZ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="NFj-aE-HS0" secondAttribute="bottom" constant="8" id="MOV-mg-iWx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLbl" destination="JXL-LM-SUf" id="aQp-dy-Xyb"/>
+                                            <outlet property="gradientLbl" destination="Q6C-H0-KCf" id="Y01-jg-bLE"/>
+                                            <outlet property="nameLbl" destination="7n6-a6-hCZ" id="EHD-cq-zEj"/>
+                                            <outlet property="numberLbl" destination="P0M-nY-ePb" id="h67-8y-ROi"/>
+                                            <outlet property="picture" destination="s3H-6U-UGn" id="O0D-Je-Pxm"/>
+                                            <outlet property="typeLbl" destination="NjU-Hh-TBJ" id="kn1-3D-C2e"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ojn-mf-CTa" firstAttribute="top" secondItem="wtq-qj-jdC" secondAttribute="bottom" id="0BO-LS-nWG"/>
+                            <constraint firstItem="dzs-cQ-wDL" firstAttribute="top" secondItem="wdO-C8-fjO" secondAttribute="bottom" constant="8" id="5bK-P9-XVW"/>
+                            <constraint firstItem="wtq-qj-jdC" firstAttribute="leading" secondItem="YrZ-2F-LAo" secondAttribute="leading" id="Fye-8z-pfh"/>
+                            <constraint firstAttribute="trailing" secondItem="wtq-qj-jdC" secondAttribute="trailing" id="YNE-3f-9hh"/>
+                            <constraint firstItem="wtq-qj-jdC" firstAttribute="top" secondItem="dzs-cQ-wDL" secondAttribute="bottom" constant="8" id="beC-f5-yiT"/>
+                            <constraint firstItem="dzs-cQ-wDL" firstAttribute="centerX" secondItem="YrZ-2F-LAo" secondAttribute="centerX" id="opS-jh-Hnw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Continue Previous Session" id="BsB-kR-8xU">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="5Gz-zu-hvf">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backBtnPressed:" destination="o1Y-Sg-wOg" id="L3W-yZ-vWQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="wtq-qj-jdC" id="S7M-t8-AZo"/>
+                        <segue destination="ZOx-sf-1H7" kind="show" identifier="continuePreviousToAddData" id="EI8-fi-Mje"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elF-9r-FLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2512.8000000000002" y="-1379.4602698650676"/>
+        </scene>
         <!--Add Data Menu-->
         <scene sceneID="v82-Oh-hU0">
             <objects>
@@ -1123,7 +1283,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-smaller" translatesAutoresizingMaskIntoConstraints="NO" id="4rz-Wc-vLk">
-                                <rect key="frame" x="12.5" y="20" width="350" height="149"/>
+                                <rect key="frame" x="12.5" y="64" width="350" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="149" id="DJ9-Sh-V5O"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="149" id="IUz-P6-GD7"/>
@@ -1131,7 +1291,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9x-J8-nlR" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="38" y="177" width="300" height="44"/>
+                                <rect key="frame" x="38" y="221" width="300" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Rjr-7z-YQv"/>
@@ -1147,7 +1307,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIL-Kk-4Dn" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="38" y="237" width="300" height="44"/>
+                                <rect key="frame" x="38" y="281" width="300" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="EIS-IT-i6F"/>
@@ -1163,7 +1323,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please read the safety notice and instructions before continuing." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9i-wb-xcK">
-                                <rect key="frame" x="38" y="297" width="299" height="58"/>
+                                <rect key="frame" x="38" y="341" width="299" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="299" id="7JV-Sq-cqb"/>
                                     <constraint firstAttribute="height" constant="58" id="F4f-7L-ELk"/>
@@ -1173,7 +1333,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="8MW-G0-7c2">
-                                <rect key="frame" x="71.5" y="363" width="232" height="100"/>
+                                <rect key="frame" x="71.5" y="407" width="232" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBq-sY-9qJ">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -1226,6 +1386,8 @@
                         <segue destination="peW-mg-OnI" kind="show" identifier="dataToSafety" id="eCs-qk-gOp"/>
                         <segue destination="r2Q-AM-flM" kind="show" identifier="dataToInfo" id="YBn-WX-fdq"/>
                         <segue destination="ryt-fd-H64" kind="show" identifier="addDataToNewSession" id="OGN-Pr-p8W"/>
+                        <segue destination="o1Y-Sg-wOg" kind="show" identifier="addMenuToContinueSession" id="Wpg-ft-Nl3"/>
+                        <segue destination="GZ3-kx-Gtz" kind="show" identifier="addDataMenuToMainMenu" id="qOa-ms-rup"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4rr-5F-58b" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1245,13 +1407,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-smaller" translatesAutoresizingMaskIntoConstraints="NO" id="E78-UO-kDn">
-                                <rect key="frame" x="16" y="28" width="343" height="100"/>
+                                <rect key="frame" x="16" y="72" width="343" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="NgN-4V-nJ2"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cO3-Fd-oZt">
-                                <rect key="frame" x="97" y="144" width="181" height="376"/>
+                                <rect key="frame" x="97" y="188" width="181" height="376"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QE-Mr-c1U">
                                         <rect key="frame" x="50.5" y="0.0" width="80" height="80"/>
@@ -1547,7 +1709,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled" translatesAutoresizingMaskIntoConstraints="NO" id="xyy-Xi-Oin">
-                                <rect key="frame" x="0.0" y="28" width="375" height="205"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="205"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="205" id="Ary-Lm-N19"/>
                                 </constraints>
@@ -1586,7 +1748,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E2E-yB-bDN">
-                                <rect key="frame" x="0.0" y="28" width="375" height="639"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="The Big Seaweed Search">
@@ -1935,7 +2097,7 @@ Cg
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVK-wX-8f4">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment>
@@ -2018,14 +2180,14 @@ You may request details of personal information which we hold about you under th
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-smaller" translatesAutoresizingMaskIntoConstraints="NO" id="LyI-P4-2bj">
-                                <rect key="frame" x="16" y="28" width="343" height="149"/>
+                                <rect key="frame" x="16" y="72" width="343" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="149" id="dlN-VU-itX"/>
                                     <constraint firstAttribute="height" constant="149" id="gC3-PC-t85"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Ufu-me-L4b">
-                                <rect key="frame" x="97" y="201" width="181" height="164"/>
+                                <rect key="frame" x="97" y="245" width="181" height="164"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRG-WO-xFL" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="181" height="44"/>
@@ -2135,19 +2297,21 @@ You may request details of personal information which we hold about you under th
         <image name="editable" width="128" height="128"/>
         <image name="f" width="352" height="328"/>
         <image name="info" width="189" height="189"/>
+        <image name="loading" width="550" height="550"/>
         <image name="questionmark" width="128" height="128"/>
         <image name="safety" width="189" height="189"/>
         <image name="sign-out" width="92" height="65"/>
         <image name="user1" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="YBn-WX-fdq"/>
         <segue reference="ZhN-qB-KPB"/>
-        <segue reference="aec-GQ-K6C"/>
+        <segue reference="qOa-ms-rup"/>
         <segue reference="Dfs-7Q-3SV"/>
         <segue reference="tUs-dE-eRa"/>
-        <segue reference="Zqa-Uo-83B"/>
-        <segue reference="iyg-cT-VtJ"/>
         <segue reference="9qv-sm-tIH"/>
+        <segue reference="eCs-qk-gOp"/>
+        <segue reference="EI8-fi-Mje"/>
         <segue reference="hSf-Hb-TWL"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

@@ -198,6 +198,16 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
                 DataService.ds.REF_LEADERBOARD.child(userId).child("numberOfPosts").setValue(numbOfPosts)
             })
             
+            //.  Run code to count the number of posts in the given session
+            DataService.ds.REF_SESSIONS.child(sessionId).observeSingleEvent(of: .value, with: { (snapshot) in
+                let value = snapshot.value as? NSDictionary
+                var numbOfPosts = value?["numberOfPosts"] as! Int
+                print("The number of posts in this session is: \(numbOfPosts)")
+                numbOfPosts = numbOfPosts + 1
+                DataService.ds.REF_SESSIONS.child(self.sessionId).child("numberOfPosts").setValue(numbOfPosts)
+            })
+
+            
             //7. Reset form
             imageSelected = false
             imageAdd.image = UIImage(named: "add-image")

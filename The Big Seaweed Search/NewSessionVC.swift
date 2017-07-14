@@ -12,7 +12,7 @@ import SwiftKeychainWrapper
 import MapKit
 import AVFoundation
 
-class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate {
+class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var beachImage: FancyImageView!
     @IBOutlet weak var dateTimeLbl: UILabel!
@@ -20,6 +20,7 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     @IBOutlet weak var gradientPicker: UIPickerView!
     @IBOutlet weak var beachPicker: UIPickerView!
     @IBOutlet weak var whoPicker: UIPickerView!
+    @IBOutlet weak var nameLbl: FancyField!
     
     //Camera & picker view variables
     var imagePicker: UIImagePickerController!
@@ -41,6 +42,8 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     let ref = FIRDatabase.database().reference()
     //Session object
     var imageLink: String!
+    var numberOfPosts: Int = 0
+    var sessionName: String!
 //    var session: Session!
     var sessionId: String!
     
@@ -64,10 +67,16 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         let dateString = "Session Date: \(formatter.string(from: date as Date))"
         dateTimeLbl.text = String(dateString)
         dateAsString = formatter.string(from: date as Date)
+        nameLbl.delegate = self
         }
     
     override func viewDidAppear(_ animated: Bool) {
         locationAuthStatus()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        nameLbl.resignFirstResponder()
+        return false
     }
     
     func locationAuthStatus() {
@@ -132,6 +141,10 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     }
     
     @IBAction func StartCollectingDataPressed(_ sender: Any) {
+        guard let name = nameLbl.text, name != "" else {
+            userAlertDoMore(alert: "Please enter a session name for future reference.  This can be anything you want, but it might be helpful if you include the beach name")
+            return
+        }
         guard let img = beachImage.image, imageSelected == true else {
             userAlertDoMore(alert: "Please upload an image of the beach area you are surveying")
             print("CHASE: An image must be selected")
@@ -171,6 +184,8 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
                 "whoWith": whoSelected as AnyObject,
                 "beachType": beachSelected as AnyObject,
                 "beachGradient": gradientSelected as AnyObject,
+                "numberOfPosts": numberOfPosts as AnyObject,
+                "sessionName": nameLbl.text! as AnyObject,
                 "photoURL": imgUrl as AnyObject
             ]
             
@@ -211,7 +226,8 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //Store variables in session object to pass through
         let userId = FIRAuth.auth()?.currentUser?.uid
-        let newSession = Session(sessionId: sessionId, imgURL: imageLink, userId: userId!, date: dateAsString, whoWith: whoSelected, beachType: beachSelected, beachGradient: gradientSelected)
+        sessionName = nameLbl.text!
+        let newSession = Session(sessionId: sessionId, imgURL: imageLink, userId: userId!, date: dateAsString, whoWith: whoSelected, beachType: beachSelected, beachGradient: gradientSelected, numberOfPosts: numberOfPosts, sessionName: sessionName)
         //Pass session object via segue to new AddDataVC
         if let destinationVC = segue.destination as?
             AddDataVC{

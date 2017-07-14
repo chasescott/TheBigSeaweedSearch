@@ -16,7 +16,7 @@ class SeaweedTypesVC: UIViewController {
     var index = 0
     var imageIndex = 0
     let maxImages = 11
-    var myArray:[String] = ["0.png","1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png","10.png","11.png"]
+//    var myArray:[String] = ["0.png","1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png","10.png","11.png"]
     var imageList:[String] = ["0.png","1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png","9.png","10.png","11.png"]
     
     override func viewDidLoad() {
@@ -59,29 +59,29 @@ class SeaweedTypesVC: UIViewController {
         picture.image = UIImage(named: imageList[imageIndex])
     }
 
-    @IBOutlet weak var lastBtn: FancyButton!
-    @IBAction func LastBtnPressed(_ sender: Any) {
-        if index == 0 {
-            let pictureString:String = self.myArray[index]
-            self.picture.image = UIImage(named: pictureString)
-        } else {
-        let pictureString:String = self.myArray[index]
-        self.picture.image = UIImage(named: pictureString)
-        index = (index < myArray.count-1) ? index-1 : 0
-        }
-    }
-    
-    @IBOutlet weak var NextButtonPressed: FancyButton!
-    @IBAction func nextButtonPressed(_ sender: Any) {
-        let pictureString:String = self.myArray[index]
-        self.picture.image = UIImage(named: pictureString)
-        index = (index < myArray.count-1) ? index+1 : 0
-    }
-    
-    
-    @IBOutlet weak var selectBtn: FancyButton!
-    @IBAction func selectBtnPressed(_ sender: Any) {
-    }
+//    @IBOutlet weak var lastBtn: FancyButton!
+//    @IBAction func LastBtnPressed(_ sender: Any) {
+//        if index == 0 {
+//            let pictureString:String = self.myArray[index]
+//            self.picture.image = UIImage(named: pictureString)
+//        } else {
+//        let pictureString:String = self.myArray[index]
+//        self.picture.image = UIImage(named: pictureString)
+//        index = (index < myArray.count-1) ? index-1 : 0
+//        }
+//    }
+//    
+//    @IBOutlet weak var NextButtonPressed: FancyButton!
+//    @IBAction func nextButtonPressed(_ sender: Any) {
+//        let pictureString:String = self.myArray[index]
+//        self.picture.image = UIImage(named: pictureString)
+//        index = (index < myArray.count-1) ? index+1 : 0
+//    }
+//    
+//    
+//    @IBOutlet weak var selectBtn: FancyButton!
+//    @IBAction func selectBtnPressed(_ sender: Any) {
+//    }
     
     
     @IBAction func dontBtnPressed(_ sender: Any) {
