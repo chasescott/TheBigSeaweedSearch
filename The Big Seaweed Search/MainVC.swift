@@ -29,7 +29,10 @@ class MainVC: UIViewController {
     
     @IBAction func ProfileBtnTapped(_ sender: Any) {
         performSegue(withIdentifier: "mainToProfileOptions", sender: nil)
-        
+    }
+    
+    @IBAction func browseDataTapped(_ sender: Any) {
+        performSegue(withIdentifier: "mainMenuToBrowseData", sender: nil)
     }
     
     @IBAction func signOutTapped(_ sender: Any) {

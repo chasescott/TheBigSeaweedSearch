@@ -65,7 +65,11 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
         imagePicker.delegate = self
         formatter.dateFormat = "dd/MM/yyyy"
         let dateString = "Session Date: \(formatter.string(from: date as Date))"
+        if currentSession.date != ""  {
+            dateLbl.text = "Session Date: \(currentSession.date)"
+        } else {
         dateLbl.text = String(dateString)
+        }
         dateAsString = formatter.string(from: date as Date)
         sessionId = currentSession.sessionId
     }
@@ -92,8 +96,12 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
-        locationLbl.text = ("locations = \(locValue.latitude) \(locValue.longitude)")
-        beachLocation = CLLocation()
+        let x = locValue.latitude
+        let y = Double(round(1000000*x)/1000000)
+        let w = locValue.longitude
+        let z = Double(round(1000000*w)/1000000)
+        locationLbl.text = ("Latitude: \(y) - Longitude: \(z)")
+        beachLocation = CLLocation(latitude: locValue.latitude, longitude: locValue.longitude)
         locationManager.stopUpdatingLocation()
     }
     

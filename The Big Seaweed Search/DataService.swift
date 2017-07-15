@@ -25,6 +25,11 @@ class DataService {
     private var _REF_USERS_PROFILE = DB_BASE.child("users").child("profile")
     private var _REF_SESSIONS = DB_BASE.child("sessions")
     
+    //GeoFire DB References
+    private var _REF_GEOFIRE_POSTS = DB_BASE.child("location").child("posts")
+    
+    private var _REF_GEOFIRE_SESSIONS = DB_BASE.child("location").child("sessions")
+    
     //Storage references
     private var _REF_POST_IMAGES = STORAGE_BASE.child("post-pics")
     private var _REF_PROFILE_IMAGES = STORAGE_BASE.child("profile-pics")
@@ -62,6 +67,14 @@ class DataService {
         return user
     }
     
+    var REF_GEOFIRE_POSTS: FIRDatabaseReference {
+        return _REF_GEOFIRE_POSTS
+    }
+    
+    var REF_GEOFIRE_SESSIONS: FIRDatabaseReference {
+        return _REF_GEOFIRE_SESSIONS
+    }
+    
     var REF_POST_IMAGES: FIRStorageReference {
         return _REF_POST_IMAGES
     }
@@ -90,8 +103,7 @@ class DataService {
         REF_USERS.child(uid).child("profile").updateChildValues(profileData)
     }
     
-    func SetUpFirebaseNumberOfPosts(uid:String) {
-        REF_USERS.child(uid).child("numberOfPosts").setValue(0)
+    func SetUpFirebaseNumberOfPosts(uid:String) {        REF_USERS.child(uid).child("numberOfPosts").setValue(0)
     }
     
     func SetUpFirebaseNumberOfSessions(uid:String) {

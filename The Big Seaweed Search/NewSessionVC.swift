@@ -97,15 +97,23 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
-            locationLbl.text = ("Latitude: \(locValue.latitude) - Longitude: \(locValue.longitude)")
-            beachLocation = CLLocation()
+        let x = locValue.latitude
+        let y = Double(round(1000000*x)/1000000)
+        let w = locValue.longitude
+        let z = Double(round(1000000*w)/1000000)
+            locationLbl.text = ("Latitude: \(y) - Longitude: \(z)")
+            beachLocation = CLLocation(latitude: locValue.latitude, longitude: locValue.longitude)
             locationManager.stopUpdatingLocation()
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if status == CLAuthorizationStatus.authorizedWhenInUse {
             let locValue:CLLocationCoordinate2D = manager.location!.coordinate
-            locationLbl.text = ("locations = \(locValue.latitude) \(locValue.longitude)")
+            let x = locValue.latitude
+            let y = Double(round(1000000*x)/1000000)
+            let w = locValue.longitude
+            let z = Double(round(1000000*w)/1000000)
+            locationLbl.text = ("Latitude: \(y) - Longitude: \(z)")
             beachLocation = CLLocation()
             locationManager.stopUpdatingLocation()
         }

@@ -19,8 +19,15 @@
 		AB57F91E1F11215E00CFB504 /* ViewProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB57F91D1F11215E00CFB504 /* ViewProfileVC.swift */; };
 		AB57F9201F11226B00CFB504 /* FancyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB57F91F1F11226B00CFB504 /* FancyLabel.swift */; };
 		AB57F9221F11263900CFB504 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB57F9211F11263900CFB504 /* UserProfile.swift */; };
+		AB5CE3A91F19485600710BB5 /* UserDataListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE3A81F19485600710BB5 /* UserDataListCell.swift */; };
+		AB5CE3AB1F1953C900710BB5 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE3AA1F1953C900710BB5 /* UserPost.swift */; };
+		AB5CE3AD1F1A55D300710BB5 /* ViewOwnDataPopOverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE3AC1F1A55D300710BB5 /* ViewOwnDataPopOverVC.swift */; };
 		AB6EADB61F128B3D00E2AACB /* AddMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EADB51F128B3D00E2AACB /* AddMenuVC.swift */; };
 		AB6EADB81F1295A000E2AACB /* NewSessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EADB71F1295A000E2AACB /* NewSessionVC.swift */; };
+		ABD180B21F192E3F0071D128 /* BrowseMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD180B11F192E3F0071D128 /* BrowseMenuVC.swift */; };
+		ABD180B41F1937950071D128 /* SelectASessionListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD180B31F1937950071D128 /* SelectASessionListVC.swift */; };
+		ABD180B61F193A3D0071D128 /* SessionListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD180B51F193A3D0071D128 /* SessionListCell.swift */; };
+		ABD180B81F193DA10071D128 /* ViewOwnDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD180B71F193DA10071D128 /* ViewOwnDataVC.swift */; };
 		ABE3B98D1F0D4C480079B099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3B98C1F0D4C480079B099 /* AppDelegate.swift */; };
 		ABE3B98F1F0D4C480079B099 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE3B98E1F0D4C480079B099 /* LoginVC.swift */; };
 		ABE3B9921F0D4C480079B099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE3B9901F0D4C480079B099 /* Main.storyboard */; };
@@ -66,8 +73,15 @@
 		AB57F91D1F11215E00CFB504 /* ViewProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProfileVC.swift; sourceTree = "<group>"; };
 		AB57F91F1F11226B00CFB504 /* FancyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyLabel.swift; sourceTree = "<group>"; };
 		AB57F9211F11263900CFB504 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		AB5CE3A81F19485600710BB5 /* UserDataListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataListCell.swift; sourceTree = "<group>"; };
+		AB5CE3AA1F1953C900710BB5 /* UserPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
+		AB5CE3AC1F1A55D300710BB5 /* ViewOwnDataPopOverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewOwnDataPopOverVC.swift; sourceTree = "<group>"; };
 		AB6EADB51F128B3D00E2AACB /* AddMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMenuVC.swift; sourceTree = "<group>"; };
 		AB6EADB71F1295A000E2AACB /* NewSessionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSessionVC.swift; sourceTree = "<group>"; };
+		ABD180B11F192E3F0071D128 /* BrowseMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseMenuVC.swift; sourceTree = "<group>"; };
+		ABD180B31F1937950071D128 /* SelectASessionListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectASessionListVC.swift; sourceTree = "<group>"; };
+		ABD180B51F193A3D0071D128 /* SessionListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionListCell.swift; sourceTree = "<group>"; };
+		ABD180B71F193DA10071D128 /* ViewOwnDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewOwnDataVC.swift; sourceTree = "<group>"; };
 		ABE3B9891F0D4C480079B099 /* The Big Seaweed Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Big Seaweed Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE3B98C1F0D4C480079B099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABE3B98E1F0D4C480079B099 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -175,6 +189,7 @@
 				AB57F9211F11263900CFB504 /* UserProfile.swift */,
 				ABECB1D21F1533AF00C09DB7 /* Session.swift */,
 				ABECB1D41F15774900C09DB7 /* AddData.swift */,
+				AB5CE3AA1F1953C900710BB5 /* UserPost.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -192,6 +207,8 @@
 				ABE3B9B31F0D94380079B099 /* FancyView.swift */,
 				ABE3B9B51F0D944C0079B099 /* RoundButton.swift */,
 				AB4A71AD1F18F03B0016ED2D /* SessionCell.swift */,
+				ABD180B51F193A3D0071D128 /* SessionListCell.swift */,
+				AB5CE3A81F19485600710BB5 /* UserDataListCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -215,6 +232,10 @@
 				ABECB1D01F1532E500C09DB7 /* AddDataVC.swift */,
 				AB4A71A71F17B0980016ED2D /* SeaweedTypesVC.swift */,
 				AB4A71AB1F1815200016ED2D /* ContinueSessionVC.swift */,
+				ABD180B11F192E3F0071D128 /* BrowseMenuVC.swift */,
+				ABD180B31F1937950071D128 /* SelectASessionListVC.swift */,
+				ABD180B71F193DA10071D128 /* ViewOwnDataVC.swift */,
+				AB5CE3AC1F1A55D300710BB5 /* ViewOwnDataPopOverVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -409,11 +430,14 @@
 			files = (
 				ABE3B9B61F0D944C0079B099 /* RoundButton.swift in Sources */,
 				ABECB1D11F1532E500C09DB7 /* AddDataVC.swift in Sources */,
+				AB5CE3AD1F1A55D300710BB5 /* ViewOwnDataPopOverVC.swift in Sources */,
+				AB5CE3AB1F1953C900710BB5 /* UserPost.swift in Sources */,
 				ABECB1CD1F15211700C09DB7 /* GFGeoHashQuery.m in Sources */,
 				AB6EADB61F128B3D00E2AACB /* AddMenuVC.swift in Sources */,
 				ABECB1CE1F15211700C09DB7 /* GFQuery.m in Sources */,
 				ABE3B9B01F0D937C0079B099 /* DataService.swift in Sources */,
 				ABE3B9AA1F0D8A410079B099 /* SafetyVC.swift in Sources */,
+				ABD180B81F193DA10071D128 /* ViewOwnDataVC.swift in Sources */,
 				ABE3B9BA1F0D94650079B099 /* FancyButton.swift in Sources */,
 				AB57F9161F11097900CFB504 /* InstructionsVC.swift in Sources */,
 				ABE3B98F1F0D4C480079B099 /* LoginVC.swift in Sources */,
@@ -430,7 +454,9 @@
 				ABE3B9BC1F0D94750079B099 /* CircleView.swift in Sources */,
 				ABE3B9B81F0D94580079B099 /* FancyField.swift in Sources */,
 				ABE3B9B21F0D93FC0079B099 /* CustomTextField.swift in Sources */,
+				AB5CE3A91F19485600710BB5 /* UserDataListCell.swift in Sources */,
 				ABE3B9A21F0D6AAF0079B099 /* MainVC.swift in Sources */,
+				ABD180B61F193A3D0071D128 /* SessionListCell.swift in Sources */,
 				ABE3B9B41F0D94380079B099 /* FancyView.swift in Sources */,
 				ABE3B9A41F0D6B220079B099 /* EditProfileVC.swift in Sources */,
 				ABE3B9A81F0D8A280079B099 /* InfoVC.swift in Sources */,
@@ -438,9 +464,11 @@
 				AB4A71AE1F18F03B0016ED2D /* SessionCell.swift in Sources */,
 				ABE3B98D1F0D4C480079B099 /* AppDelegate.swift in Sources */,
 				AB57F9141F10DCF900CFB504 /* FancyImageView.swift in Sources */,
+				ABD180B21F192E3F0071D128 /* BrowseMenuVC.swift in Sources */,
 				AB57F9201F11226B00CFB504 /* FancyLabel.swift in Sources */,
 				ABE3B9AE1F0D93540079B099 /* Constants.swift in Sources */,
 				AB4A71AC1F1815200016ED2D /* ContinueSessionVC.swift in Sources */,
+				ABD180B41F1937950071D128 /* SelectASessionListVC.swift in Sources */,
 				ABECB1CC1F15211700C09DB7 /* GFGeoHash.m in Sources */,
 				ABECB1CB1F15211700C09DB7 /* GFBase32Utils.m in Sources */,
 				AB4A71AA1F17D77D0016ED2D /* AlphaView.swift in Sources */,
