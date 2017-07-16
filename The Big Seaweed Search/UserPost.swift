@@ -66,5 +66,6 @@ class UserPost {
         self._longi = "\(location.coordinate.longitude)"
         self._lati = "\(location.coordinate.latitude)"
     }
+
     
 }

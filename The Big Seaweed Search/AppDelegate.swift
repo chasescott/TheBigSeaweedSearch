@@ -23,6 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //CHASE:  Facebook Login authorisation code requirement
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
+        //Enable persisted data in case no data connection
+        FIRDatabase.database().persistenceEnabled = true
+        
         return true
     }
 

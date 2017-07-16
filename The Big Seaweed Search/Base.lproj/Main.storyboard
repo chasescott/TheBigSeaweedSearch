@@ -1718,6 +1718,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="8mA-od-eQV" kind="show" identifier="browseMenuToDataList" id="3RS-bE-w7v"/>
+                        <segue destination="fBA-Po-mkB" kind="show" identifier="browseDataMenuToViewOwnDataMapVC" id="mpu-LY-FNE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HH2-df-YCQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1891,6 +1892,47 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D15-zk-7YP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3373.5999999999999" y="35.532233883058474"/>
+        </scene>
+        <!--View Own Data - Map-->
+        <scene sceneID="5Ot-Uq-2D0">
+            <objects>
+                <viewController id="fBA-Po-mkB" customClass="ViewOwnDataMapVC" customModule="The_Big_Seaweed_Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ya0-aG-2bz"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bdl-yk-omK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yRp-j4-xaG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsPointsOfInterest="NO" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Vi-pn-v7g">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5Vi-pn-v7g" firstAttribute="top" secondItem="Ya0-aG-2bz" secondAttribute="bottom" id="6iE-9E-3I0"/>
+                            <constraint firstItem="Bdl-yk-omK" firstAttribute="top" secondItem="5Vi-pn-v7g" secondAttribute="bottom" id="fUi-NA-hpF"/>
+                            <constraint firstAttribute="trailing" secondItem="5Vi-pn-v7g" secondAttribute="trailing" id="n6d-Qn-8ex"/>
+                            <constraint firstItem="5Vi-pn-v7g" firstAttribute="leading" secondItem="yRp-j4-xaG" secondAttribute="leading" id="xoh-Fe-3SK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="View Own Data - Map" id="wen-SB-rrW">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="udv-gM-Nk1">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backBtn:" destination="fBA-Po-mkB" id="YtT-93-kTC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mkMapView" destination="5Vi-pn-v7g" id="xyz-en-XFe"/>
+                        <segue destination="lGb-qy-Gz9" kind="presentation" identifier="viewOwnDataOverMapPopover" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="DpN-hp-qoO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C9c-YO-jtO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4225" y="804"/>
         </scene>
         <!--View Data Posts-->
         <scene sceneID="Cg8-4w-QrO">
@@ -2200,6 +2242,109 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v4A-j1-L03" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5072.8000000000002" y="36.431784107946029"/>
+        </scene>
+        <!--View Own Data Map Pop OverVC-->
+        <scene sceneID="dpS-Dk-0KV">
+            <objects>
+                <viewController id="lGb-qy-Gz9" customClass="ViewOwnDataMapPopOverVC" customModule="The_Big_Seaweed_Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cNe-KD-Dz0"/>
+                        <viewControllerLayoutGuide type="bottom" id="CbX-ex-fJe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bai-Fd-aIN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGb-0V-f6O">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5aR-Am-TtQ">
+                                        <rect key="frame" x="34" y="133.5" width="306" height="400"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading" translatesAutoresizingMaskIntoConstraints="NO" id="TvB-Ad-fdq" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="290" height="266"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="266" id="DBN-UK-2Cv"/>
+                                                    <constraint firstAttribute="width" constant="290" id="HnP-1u-cBd"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seaweed Type" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZa-aU-eDl">
+                                                <rect key="frame" x="8" y="282" width="290" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Latitude:" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkh-aR-KbI">
+                                                <rect key="frame" x="8" y="318" width="290" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Longitude:" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3f-6y-QjL">
+                                                <rect key="frame" x="8" y="359" width="290" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="TvB-Ad-fdq" firstAttribute="top" secondItem="5aR-Am-TtQ" secondAttribute="top" constant="8" id="MZy-qz-v7S"/>
+                                            <constraint firstAttribute="height" constant="400" id="NCD-ca-HS5"/>
+                                            <constraint firstAttribute="width" constant="306" id="bio-Wq-wWU"/>
+                                            <constraint firstAttribute="trailing" secondItem="TvB-Ad-fdq" secondAttribute="trailing" constant="8" id="n0E-RX-g0R"/>
+                                            <constraint firstItem="TvB-Ad-fdq" firstAttribute="leading" secondItem="5aR-Am-TtQ" secondAttribute="leading" constant="8" id="oZm-xM-8Ah"/>
+                                        </constraints>
+                                    </view>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VV8-EV-Twg" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                        <rect key="frame" x="123" y="557.5" width="129" height="44"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="HkJ-Ca-151"/>
+                                            <constraint firstAttribute="width" constant="129" id="K2I-uo-dLu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelBtn:" destination="NUE-cg-Qli" eventType="touchUpInside" id="HQS-Th-vJz"/>
+                                            <action selector="cancelBtn:" destination="lGb-qy-Gz9" eventType="touchUpInside" id="Hcc-GJ-8NY"/>
+                                            <action selector="dontBtnPressed:" destination="bGL-vS-kgJ" eventType="touchUpInside" id="RCA-Ie-BAH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5aR-Am-TtQ" firstAttribute="centerY" secondItem="aGb-0V-f6O" secondAttribute="centerY" id="IVz-id-27r"/>
+                                    <constraint firstItem="5aR-Am-TtQ" firstAttribute="centerX" secondItem="aGb-0V-f6O" secondAttribute="centerX" id="Jnp-nL-z7U"/>
+                                    <constraint firstItem="VV8-EV-Twg" firstAttribute="centerX" secondItem="aGb-0V-f6O" secondAttribute="centerX" id="NRW-nM-DI2"/>
+                                    <constraint firstItem="VV8-EV-Twg" firstAttribute="top" secondItem="5aR-Am-TtQ" secondAttribute="bottom" constant="24" id="Wjs-d6-Qnm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CbX-ex-fJe" firstAttribute="top" secondItem="aGb-0V-f6O" secondAttribute="bottom" id="0fy-dz-q30"/>
+                            <constraint firstAttribute="trailing" secondItem="aGb-0V-f6O" secondAttribute="trailing" id="2FC-zv-BAh"/>
+                            <constraint firstItem="aGb-0V-f6O" firstAttribute="leading" secondItem="bai-Fd-aIN" secondAttribute="leading" id="LOe-qO-RMu"/>
+                            <constraint firstItem="aGb-0V-f6O" firstAttribute="top" secondItem="bai-Fd-aIN" secondAttribute="top" id="exB-1X-ouq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="latLbl" destination="Nkh-aR-KbI" id="xoi-l3-4lo"/>
+                        <outlet property="longLbl" destination="Z3f-6y-QjL" id="RaG-W9-yJy"/>
+                        <outlet property="picture" destination="TvB-Ad-fdq" id="dJ6-gw-m1g"/>
+                        <outlet property="typeLbl" destination="oZa-aU-eDl" id="x9i-sc-K5v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vow-X8-x1V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5073" y="804"/>
         </scene>
         <!--Set Up ProfileVC-->
         <scene sceneID="YMG-5H-hIj">
@@ -2958,11 +3103,11 @@ You may request details of personal information which we hold about you under th
         <segue reference="JU9-K3-Gcc"/>
         <segue reference="9qv-sm-tIH"/>
         <segue reference="Zqa-Uo-83B"/>
+        <segue reference="ZhN-qB-KPB"/>
         <segue reference="iyg-cT-VtJ"/>
-        <segue reference="VRD-gh-dnh"/>
+        <segue reference="Dfs-7Q-3SV"/>
         <segue reference="EI8-fi-Mje"/>
         <segue reference="hSf-Hb-TWL"/>
-        <segue reference="FVd-cj-ub6"/>
         <segue reference="wJO-md-pD8"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

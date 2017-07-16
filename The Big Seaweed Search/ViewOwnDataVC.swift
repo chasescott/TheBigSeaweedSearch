@@ -102,6 +102,7 @@ class ViewOwnDataVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let currentUserPost = userposts[indexPath.row]
+        tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "showOwnDataFromList", sender: currentUserPost)
     }
     
@@ -131,7 +132,7 @@ class ViewOwnDataVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
                         let date = postValue?["date"] as? String ?? ""
                         let seaweedType = postValue?["seaweedType"] as? String ?? ""
                         let photoURL = postValue?["photoURL"] as? String ?? ""
-                        let sessionId = self.currentSession.sessionId
+                        let sessionId = postValue?["sessionid"] as? String ?? ""
                     //Go to GeoFire to obtain post co-ordinates and build/append userpost object within this area of code
                         geoFire!.getLocationForKey(anotherKey, withCallback: { (location, error) in
                             if let location = location {

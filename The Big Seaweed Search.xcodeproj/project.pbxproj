@@ -22,6 +22,9 @@
 		AB5CE3A91F19485600710BB5 /* UserDataListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE3A81F19485600710BB5 /* UserDataListCell.swift */; };
 		AB5CE3AB1F1953C900710BB5 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE3AA1F1953C900710BB5 /* UserPost.swift */; };
 		AB5CE3AD1F1A55D300710BB5 /* ViewOwnDataPopOverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE3AC1F1A55D300710BB5 /* ViewOwnDataPopOverVC.swift */; };
+		AB5CE3AF1F1B791000710BB5 /* ViewOwnDataMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE3AE1F1B791000710BB5 /* ViewOwnDataMapVC.swift */; };
+		AB5CE3B11F1B834900710BB5 /* UserPostAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE3B01F1B834900710BB5 /* UserPostAnnotation.swift */; };
+		AB5CE3B31F1BCE4E00710BB5 /* ViewOwnDataMapPopOverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE3B21F1BCE4E00710BB5 /* ViewOwnDataMapPopOverVC.swift */; };
 		AB6EADB61F128B3D00E2AACB /* AddMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EADB51F128B3D00E2AACB /* AddMenuVC.swift */; };
 		AB6EADB81F1295A000E2AACB /* NewSessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EADB71F1295A000E2AACB /* NewSessionVC.swift */; };
 		ABD180B21F192E3F0071D128 /* BrowseMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD180B11F192E3F0071D128 /* BrowseMenuVC.swift */; };
@@ -76,6 +79,9 @@
 		AB5CE3A81F19485600710BB5 /* UserDataListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataListCell.swift; sourceTree = "<group>"; };
 		AB5CE3AA1F1953C900710BB5 /* UserPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
 		AB5CE3AC1F1A55D300710BB5 /* ViewOwnDataPopOverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewOwnDataPopOverVC.swift; sourceTree = "<group>"; };
+		AB5CE3AE1F1B791000710BB5 /* ViewOwnDataMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewOwnDataMapVC.swift; sourceTree = "<group>"; };
+		AB5CE3B01F1B834900710BB5 /* UserPostAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPostAnnotation.swift; sourceTree = "<group>"; };
+		AB5CE3B21F1BCE4E00710BB5 /* ViewOwnDataMapPopOverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewOwnDataMapPopOverVC.swift; sourceTree = "<group>"; };
 		AB6EADB51F128B3D00E2AACB /* AddMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMenuVC.swift; sourceTree = "<group>"; };
 		AB6EADB71F1295A000E2AACB /* NewSessionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSessionVC.swift; sourceTree = "<group>"; };
 		ABD180B11F192E3F0071D128 /* BrowseMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseMenuVC.swift; sourceTree = "<group>"; };
@@ -190,6 +196,7 @@
 				ABECB1D21F1533AF00C09DB7 /* Session.swift */,
 				ABECB1D41F15774900C09DB7 /* AddData.swift */,
 				AB5CE3AA1F1953C900710BB5 /* UserPost.swift */,
+				AB5CE3B01F1B834900710BB5 /* UserPostAnnotation.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -236,6 +243,8 @@
 				ABD180B31F1937950071D128 /* SelectASessionListVC.swift */,
 				ABD180B71F193DA10071D128 /* ViewOwnDataVC.swift */,
 				AB5CE3AC1F1A55D300710BB5 /* ViewOwnDataPopOverVC.swift */,
+				AB5CE3AE1F1B791000710BB5 /* ViewOwnDataMapVC.swift */,
+				AB5CE3B21F1BCE4E00710BB5 /* ViewOwnDataMapPopOverVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -451,8 +460,10 @@
 				ABECB1CA1F15211700C09DB7 /* GeoFire.m in Sources */,
 				AB6EADB81F1295A000E2AACB /* NewSessionVC.swift in Sources */,
 				AB57F91A1F1109C000CFB504 /* PrivacyVC.swift in Sources */,
+				AB5CE3B31F1BCE4E00710BB5 /* ViewOwnDataMapPopOverVC.swift in Sources */,
 				ABE3B9BC1F0D94750079B099 /* CircleView.swift in Sources */,
 				ABE3B9B81F0D94580079B099 /* FancyField.swift in Sources */,
+				AB5CE3B11F1B834900710BB5 /* UserPostAnnotation.swift in Sources */,
 				ABE3B9B21F0D93FC0079B099 /* CustomTextField.swift in Sources */,
 				AB5CE3A91F19485600710BB5 /* UserDataListCell.swift in Sources */,
 				ABE3B9A21F0D6AAF0079B099 /* MainVC.swift in Sources */,
@@ -471,6 +482,7 @@
 				ABD180B41F1937950071D128 /* SelectASessionListVC.swift in Sources */,
 				ABECB1CC1F15211700C09DB7 /* GFGeoHash.m in Sources */,
 				ABECB1CB1F15211700C09DB7 /* GFBase32Utils.m in Sources */,
+				AB5CE3AF1F1B791000710BB5 /* ViewOwnDataMapVC.swift in Sources */,
 				AB4A71AA1F17D77D0016ED2D /* AlphaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

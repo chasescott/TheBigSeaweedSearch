@@ -19,6 +19,7 @@ class BrowseMenuVC: UIViewController {
     }
     
     @IBAction func myDataMap(_ sender: Any) {
+        performSegue(withIdentifier: "browseDataMenuToViewOwnDataMapVC", sender: nil)
     }
     
     @IBAction func allDataList(_ sender: Any) {

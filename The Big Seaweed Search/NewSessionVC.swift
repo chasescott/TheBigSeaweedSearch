@@ -46,6 +46,8 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     var sessionName: String!
 //    var session: Session!
     var sessionId: String!
+    //Firebase ref
+    var rootRef:FIRDatabaseReference!
     
     //picker view arrays for selection
     let gradient = ["Flat","Gently Sloping","Steep"]
@@ -54,6 +56,7 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Picker delegates set to self
         gradientPicker.delegate = self
         gradientPicker.dataSource = self
         beachPicker.delegate = self

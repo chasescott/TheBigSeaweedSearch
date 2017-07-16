@@ -56,6 +56,7 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let existingSession = sessions[indexPath.row]
+        tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "sessionListToViewData", sender: existingSession)
     }
     

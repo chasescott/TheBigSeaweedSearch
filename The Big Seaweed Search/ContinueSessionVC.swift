@@ -57,6 +57,7 @@ class ContinueSessionVC: UIViewController, UITableViewDelegate, UITableViewDataS
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let existingSession = sessions[indexPath.row]
+        tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "continuePreviousToAddData", sender: existingSession)
     }
     

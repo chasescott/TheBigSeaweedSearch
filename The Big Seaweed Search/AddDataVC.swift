@@ -43,6 +43,8 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
     //Firebase reference
     var postsRef: FIRDatabaseReference!
     var numberOfPosts: Int!
+    //Firebase ref
+    var rootRef:FIRDatabaseReference!
     
     //picker view array for selection
     let seaweed = ["Dabberlocks  - (native)", "Sugar Kelp  - (native)", "Serrated Wrack  - (native)", "Bladder Wrack  - (native)", "Knotted Wrack  - (native)", "Spiral Wrack  - (native)", "Channelled Wrack  - (native)", "Thongweed  - (native)", "Wireweed - (non-native)", "Wakame  - (non-native)", "Harpoon Weed - (non-native)", "Bonnemaison's Hook - (non-native)"]
@@ -58,6 +60,7 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Picker delegates set to self
         seaweedPicker.delegate = self
         seaweedPicker.dataSource = self
         imagePicker = UIImagePickerController()
