@@ -23,6 +23,7 @@ class BrowseMenuVC: UIViewController {
     }
     
     @IBAction func allDataList(_ sender: Any) {
+        performSegue(withIdentifier: "browseToViewAllData", sender: nil)
     }
     
     @IBAction func allDataMap(_ sender: Any) {

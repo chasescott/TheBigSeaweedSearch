@@ -173,12 +173,14 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
     func postToFirebase(imgUrl: String) {
         let geoFire = GeoFire(firebaseRef: ref.child("location").child("posts"))
         let sessionIdentity = sessionId as String
+        let numberOfLikes: Int = 0
         if let userId = FIRAuth.auth()?.currentUser?.uid {
             let addData: Dictionary<String, AnyObject> = [
                 "userid": userId as AnyObject,
                 "date": "\(formatter.string(from: date as Date))" as AnyObject, //store date as string in Firebase
                 "seaweedType": seaweedType as AnyObject,
                 "sessionid": sessionId as AnyObject,
+                "numberOfLikes": numberOfLikes as AnyObject,
                 "photoURL": imgUrl as AnyObject
             ]
             //1.  generates an auto ID and then inserts post object above into Firebase

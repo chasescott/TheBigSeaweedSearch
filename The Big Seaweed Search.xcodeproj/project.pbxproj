@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB435C2F1F1BF12400F2510B /* DataPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB435C2E1F1BF12400F2510B /* DataPostCell.swift */; };
+		AB435C311F1BF58F00F2510B /* ViewAllDataOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB435C301F1BF58F00F2510B /* ViewAllDataOneVC.swift */; };
 		AB4A71A81F17B0980016ED2D /* SeaweedTypesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A71A71F17B0980016ED2D /* SeaweedTypesVC.swift */; };
 		AB4A71AA1F17D77D0016ED2D /* AlphaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A71A91F17D77D0016ED2D /* AlphaView.swift */; };
 		AB4A71AC1F1815200016ED2D /* ContinueSessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A71AB1F1815200016ED2D /* ContinueSessionVC.swift */; };
@@ -25,6 +27,8 @@
 		AB5CE3AF1F1B791000710BB5 /* ViewOwnDataMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE3AE1F1B791000710BB5 /* ViewOwnDataMapVC.swift */; };
 		AB5CE3B11F1B834900710BB5 /* UserPostAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE3B01F1B834900710BB5 /* UserPostAnnotation.swift */; };
 		AB5CE3B31F1BCE4E00710BB5 /* ViewOwnDataMapPopOverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE3B21F1BCE4E00710BB5 /* ViewOwnDataMapPopOverVC.swift */; };
+		AB5CE3B51F1BDD8D00710BB5 /* ViewAllDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE3B41F1BDD8D00710BB5 /* ViewAllDataVC.swift */; };
+		AB5CE3B71F1BE69A00710BB5 /* DataPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE3B61F1BE69A00710BB5 /* DataPost.swift */; };
 		AB6EADB61F128B3D00E2AACB /* AddMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EADB51F128B3D00E2AACB /* AddMenuVC.swift */; };
 		AB6EADB81F1295A000E2AACB /* NewSessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EADB71F1295A000E2AACB /* NewSessionVC.swift */; };
 		ABD180B21F192E3F0071D128 /* BrowseMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD180B11F192E3F0071D128 /* BrowseMenuVC.swift */; };
@@ -64,6 +68,8 @@
 /* Begin PBXFileReference section */
 		155C308B9E86F40B5E65DB0E /* Pods-The Big Seaweed Search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Big Seaweed Search.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Big Seaweed Search/Pods-The Big Seaweed Search.release.xcconfig"; sourceTree = "<group>"; };
 		9C763B25A60E0A4A9FCE2869 /* Pods_The_Big_Seaweed_Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Big_Seaweed_Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB435C2E1F1BF12400F2510B /* DataPostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPostCell.swift; sourceTree = "<group>"; };
+		AB435C301F1BF58F00F2510B /* ViewAllDataOneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllDataOneVC.swift; sourceTree = "<group>"; };
 		AB4A71A71F17B0980016ED2D /* SeaweedTypesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeaweedTypesVC.swift; sourceTree = "<group>"; };
 		AB4A71A91F17D77D0016ED2D /* AlphaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaView.swift; sourceTree = "<group>"; };
 		AB4A71AB1F1815200016ED2D /* ContinueSessionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinueSessionVC.swift; sourceTree = "<group>"; };
@@ -82,6 +88,8 @@
 		AB5CE3AE1F1B791000710BB5 /* ViewOwnDataMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewOwnDataMapVC.swift; sourceTree = "<group>"; };
 		AB5CE3B01F1B834900710BB5 /* UserPostAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPostAnnotation.swift; sourceTree = "<group>"; };
 		AB5CE3B21F1BCE4E00710BB5 /* ViewOwnDataMapPopOverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewOwnDataMapPopOverVC.swift; sourceTree = "<group>"; };
+		AB5CE3B41F1BDD8D00710BB5 /* ViewAllDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllDataVC.swift; sourceTree = "<group>"; };
+		AB5CE3B61F1BE69A00710BB5 /* DataPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPost.swift; sourceTree = "<group>"; };
 		AB6EADB51F128B3D00E2AACB /* AddMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMenuVC.swift; sourceTree = "<group>"; };
 		AB6EADB71F1295A000E2AACB /* NewSessionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSessionVC.swift; sourceTree = "<group>"; };
 		ABD180B11F192E3F0071D128 /* BrowseMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseMenuVC.swift; sourceTree = "<group>"; };
@@ -197,6 +205,7 @@
 				ABECB1D41F15774900C09DB7 /* AddData.swift */,
 				AB5CE3AA1F1953C900710BB5 /* UserPost.swift */,
 				AB5CE3B01F1B834900710BB5 /* UserPostAnnotation.swift */,
+				AB5CE3B61F1BE69A00710BB5 /* DataPost.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -216,6 +225,7 @@
 				AB4A71AD1F18F03B0016ED2D /* SessionCell.swift */,
 				ABD180B51F193A3D0071D128 /* SessionListCell.swift */,
 				AB5CE3A81F19485600710BB5 /* UserDataListCell.swift */,
+				AB435C2E1F1BF12400F2510B /* DataPostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -245,6 +255,8 @@
 				AB5CE3AC1F1A55D300710BB5 /* ViewOwnDataPopOverVC.swift */,
 				AB5CE3AE1F1B791000710BB5 /* ViewOwnDataMapVC.swift */,
 				AB5CE3B21F1BCE4E00710BB5 /* ViewOwnDataMapPopOverVC.swift */,
+				AB5CE3B41F1BDD8D00710BB5 /* ViewAllDataVC.swift */,
+				AB435C301F1BF58F00F2510B /* ViewAllDataOneVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -454,14 +466,18 @@
 				ABE3B9A61F0D724A0079B099 /* SetUpProfileVC.swift in Sources */,
 				ABECB1D51F15774900C09DB7 /* AddData.swift in Sources */,
 				ABECB1D31F1533AF00C09DB7 /* Session.swift in Sources */,
+				AB435C311F1BF58F00F2510B /* ViewAllDataOneVC.swift in Sources */,
 				AB57F91C1F111AAB00CFB504 /* ProfileOptionsVC.swift in Sources */,
 				AB4A71A81F17B0980016ED2D /* SeaweedTypesVC.swift in Sources */,
 				AB57F91E1F11215E00CFB504 /* ViewProfileVC.swift in Sources */,
 				ABECB1CA1F15211700C09DB7 /* GeoFire.m in Sources */,
+				AB435C2F1F1BF12400F2510B /* DataPostCell.swift in Sources */,
+				AB5CE3B51F1BDD8D00710BB5 /* ViewAllDataVC.swift in Sources */,
 				AB6EADB81F1295A000E2AACB /* NewSessionVC.swift in Sources */,
 				AB57F91A1F1109C000CFB504 /* PrivacyVC.swift in Sources */,
 				AB5CE3B31F1BCE4E00710BB5 /* ViewOwnDataMapPopOverVC.swift in Sources */,
 				ABE3B9BC1F0D94750079B099 /* CircleView.swift in Sources */,
+				AB5CE3B71F1BE69A00710BB5 /* DataPost.swift in Sources */,
 				ABE3B9B81F0D94580079B099 /* FancyField.swift in Sources */,
 				AB5CE3B11F1B834900710BB5 /* UserPostAnnotation.swift in Sources */,
 				ABE3B9B21F0D93FC0079B099 /* CustomTextField.swift in Sources */,
