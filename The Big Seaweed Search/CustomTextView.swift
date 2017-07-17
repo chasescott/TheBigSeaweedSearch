@@ -10,15 +10,17 @@
 //        assert(blue >= 0 && blue <= 255, "Invalid blue component")
 //        
 //        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
-//    }}
-//    
-//        /** Initializes and sets color by hex value */
-//    convenience init(netHex:Int) {
-//        self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
 //    }
+//    
+////    /** Initializes and sets color by hex value */
+////    convenience init(netHex:Int) {
+////        self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
+////    }
+//    
+//}
 //
 //@IBDesignable
-//class CustomTextField: UITextField {
+//class CustomTextView: UITextView {
 //    
 //    
 //    // MARK: - IBInspectable
@@ -39,10 +41,6 @@
 //        self.layer.borderWidth = 1
 //        self.layer.borderColor = UIColor(red: 255, green: 255, blue: 255).cgColor
 //        
-//        if let phText = self.placeholder {
-//            self.attributedPlaceholder = NSAttributedString(string: phText, attributes: [NSForegroundColorAttributeName: UIColor(netHex: 0xB3B3B3)])
-//        }
-//        
 //        if let fnt = textFont {
 //            self.font = fnt
 //        } else {
@@ -50,14 +48,5 @@
 //        }
 //    }
 //    
-//    // Placeholder text
-//    override func textRect(forBounds bounds: CGRect) -> CGRect {
-//        return bounds.insetBy(dx: 10, dy: 0)
-//    }
-//    
-//    // Editable text
-//    override func editingRect(forBounds bounds: CGRect) -> CGRect {
-//        return bounds.insetBy(dx: 10, dy: 0)
-//    }
 //    
 //}

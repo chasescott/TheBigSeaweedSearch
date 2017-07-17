@@ -15,6 +15,7 @@ class ViewAllDataVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     @IBOutlet weak var tableView: UITableView!
     var dataposts = [DataPost]()
     static var imageCache: NSCache<NSString, UIImage> = NSCache()
+    static var imageCache2: NSCache<NSString, UIImage> = NSCache()
     //Geofire variables
     var geoFire: GeoFire!
     let ref = FIRDatabase.database().reference()
@@ -42,7 +43,7 @@ class ViewAllDataVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         let datapost = dataposts[indexPath.row]
         if let cell = tableView.dequeueReusableCell(withIdentifier: "DataCell", for: indexPath) as? DataPostCell {
             if let img = ViewAllDataVC.imageCache.object(forKey: datapost.photoURL as NSString) {
-                cell.configureCell(datapost: datapost, img: img) }
+                cell.configureCell(datapost: datapost, img: img, img2: img) }
             else {
                 cell.configureCell(datapost: datapost)
             }
@@ -69,16 +70,16 @@ class ViewAllDataVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     func appendData() {
         let geoFire = GeoFire(firebaseRef: ref.child("location").child("posts"))
         var seaweedLocation = CLLocation()
-        if let uid = FIRAuth.auth()?.currentUser?.uid {
-            self.dataposts = []
-//            DataService.ds.REF_POSTS.queryLimited(toFirst: 100).observeSingleEvent(of: .value, with: { snapshot in
+        if (FIRAuth.auth()?.currentUser?.uid) != nil { //amended this to a boolean test...
+               self.dataposts = []
+
         DataService.ds.REF_POSTS.observeSingleEvent(of: .value, with: { snapshot in
                 print (snapshot.childrenCount) //get the expected number of post items
                 let enumerator = snapshot.children //start iterating through post items
                 while let rest = enumerator.nextObject() as? FIRDataSnapshot {
                     print("CHASE: Post KEY - \(rest.key)")
                     let anotherKey: String = rest.key
-                    DataService.ds.REF_POSTS.child(anotherKey).observeSingleEvent(of: .value, with: { (snapshot) in
+                    DataService.ds.REF_POSTS.child(anotherKey).observeSingleEvent(of: .value, with: { (snapshot) in //PREV
                     //Start iterating through posts node on Firebase
                     let postValue = snapshot.value as? Dictionary<String, AnyObject>
                     let date = postValue?["date"] as? String ?? ""
@@ -114,6 +115,7 @@ class ViewAllDataVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     })
     }
     }
+
     
     @IBAction func backBtn(_ sender: Any) {
         _ = navigationController?.popViewController(animated: true)

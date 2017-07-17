@@ -71,7 +71,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yBd-03-Am3" customClass="FancyField" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="95" width="302" height="35"/>
@@ -1982,7 +1982,7 @@
                                                                 <constraint firstAttribute="height" constant="41" id="icc-ac-Kwx"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
-                                                            <color key="textColor" red="0.0" green="0.25490196079999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingbar2" translatesAutoresizingMaskIntoConstraints="NO" id="113-qU-n8C" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
@@ -1999,8 +1999,8 @@
                                                                 <constraint firstAttribute="height" constant="21" id="i5k-ps-3w4"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
-                                                            <color key="textColor" red="0.0" green="0.25490196079999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <color key="highlightedColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seaweed Type" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0C-24-CCp">
                                                             <rect key="frame" x="8" y="249" width="343" height="50"/>
@@ -2102,7 +2102,229 @@
                     <view key="view" contentMode="scaleToFill" id="U7P-Ne-e18">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="Fb5-vu-DlF" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                <rect key="frame" x="8" y="72" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="qL0-f3-7lz"/>
+                                    <constraint firstAttribute="width" constant="60" id="tDp-ZJ-rLo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="ehv-Np-47b" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                <rect key="frame" x="307" y="72" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="anL-cx-Ctq"/>
+                                    <constraint firstAttribute="height" constant="60" id="wtN-hF-zl8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3Y-61-O1Y">
+                                <rect key="frame" x="84" y="74" width="207" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="207" id="CBv-d8-cyq"/>
+                                    <constraint firstAttribute="height" constant="41" id="UQE-ay-QpU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loadingbar2" translatesAutoresizingMaskIntoConstraints="NO" id="7e9-XI-Kzb" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                <rect key="frame" x="8" y="140" width="359" height="150"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="aYQ-CZ-osH"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="aZG-s6-KsV" appends="YES" id="csx-Ne-QGX"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seaweed Type" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iT4-7G-bqy">
+                                <rect key="frame" x="16" y="294" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="AeZ-yd-rtY"/>
+                                    <constraint firstAttribute="height" constant="30" id="Kuc-HS-IVv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="99" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dcO-OX-URD">
+                                <rect key="frame" x="0.0" y="485" width="375" height="182"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="CommentCell" rowHeight="99" id="bos-wx-ziX" customClass="CommentCell" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="99"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bos-wx-ziX" id="REd-4R-4eu">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="98.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8h-ti-0gH" customClass="FancyView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="8" width="359" height="83"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugm-sh-8LJ">
+                                                            <rect key="frame" x="8" y="0.0" width="174" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="174" id="KLV-QW-qBz"/>
+                                                                <constraint firstAttribute="height" constant="21" id="wn3-VF-05Y"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date: Today 5:17pm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIV-8u-0nf">
+                                                            <rect key="frame" x="177" y="0.0" width="174" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="174" id="ERF-FV-HaO"/>
+                                                                <constraint firstAttribute="height" constant="21" id="jxP-q1-Ovt"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="14"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYo-GQ-z4m">
+                                                            <rect key="frame" x="8" y="20" width="343" height="55"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="55" id="Jip-c4-N8f"/>
+                                                                <constraint firstAttribute="width" constant="343" id="bjN-Ky-Dch"/>
+                                                            </constraints>
+                                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                            <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="pIV-8u-0nf" firstAttribute="top" secondItem="G8h-ti-0gH" secondAttribute="top" id="ABS-JG-xod"/>
+                                                        <constraint firstAttribute="trailing" secondItem="pIV-8u-0nf" secondAttribute="trailing" constant="8" id="JDF-rQ-DOC"/>
+                                                        <constraint firstItem="ugm-sh-8LJ" firstAttribute="top" secondItem="G8h-ti-0gH" secondAttribute="top" id="Pt5-32-j8V"/>
+                                                        <constraint firstAttribute="trailing" secondItem="jYo-GQ-z4m" secondAttribute="trailing" constant="8" id="QEb-2g-wzY"/>
+                                                        <constraint firstItem="jYo-GQ-z4m" firstAttribute="leading" secondItem="G8h-ti-0gH" secondAttribute="leading" constant="8" id="dcn-3m-Dx2"/>
+                                                        <constraint firstAttribute="bottom" secondItem="jYo-GQ-z4m" secondAttribute="bottom" constant="8" id="fva-8H-5Fq"/>
+                                                        <constraint firstItem="ugm-sh-8LJ" firstAttribute="leading" secondItem="G8h-ti-0gH" secondAttribute="leading" constant="8" id="r52-y5-4fd"/>
+                                                        <constraint firstItem="jYo-GQ-z4m" firstAttribute="top" secondItem="G8h-ti-0gH" secondAttribute="top" constant="20" id="rov-pC-MlN"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="G8h-ti-0gH" secondAttribute="bottom" constant="8" id="E88-BX-v5g"/>
+                                                <constraint firstAttribute="trailing" secondItem="G8h-ti-0gH" secondAttribute="trailing" constant="8" id="WV7-Ia-EFB"/>
+                                                <constraint firstItem="G8h-ti-0gH" firstAttribute="top" secondItem="REd-4R-4eu" secondAttribute="top" constant="8" id="ysW-IH-s4i"/>
+                                                <constraint firstItem="G8h-ti-0gH" firstAttribute="leading" secondItem="REd-4R-4eu" secondAttribute="leading" constant="8" id="ztX-KX-AOa"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentBox" destination="jYo-GQ-z4m" id="enz-zi-8Gh"/>
+                                            <outlet property="dateLbl" destination="pIV-8u-0nf" id="Kt8-yN-lGh"/>
+                                            <outlet property="usernameLbl" destination="ugm-sh-8LJ" id="qNZ-wy-Nx0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hDL-mq-Fa9">
+                                <rect key="frame" x="16" y="372" width="343" height="2"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="4eE-Nm-8hC"/>
+                                    <constraint firstAttribute="height" constant="2" id="mAU-jR-VLi"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90S-ct-PN5">
+                                <rect key="frame" x="0.0" y="378" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="1Ql-HD-RkT"/>
+                                    <constraint firstAttribute="height" constant="21" id="R1k-We-CRl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wf-fO-LbX" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                <rect key="frame" x="230" y="332" width="129" height="30"/>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AYk-EG-6ai"/>
+                                    <constraint firstAttribute="width" constant="129" id="C5b-do-zLW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="View on map -&gt;">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="viewMapPressed:" destination="Pby-bX-pCh" eventType="touchUpInside" id="Aq7-uF-mhu"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="(Insert comment here)" translatesAutoresizingMaskIntoConstraints="NO" id="GDB-aQ-Rpu" customClass="CustomTextView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                <rect key="frame" x="16" y="407" width="291" height="70"/>
+                                <color key="backgroundColor" red="0.97227032230640986" green="0.97920274172980748" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="64B-NN-kmY"/>
+                                    <constraint firstAttribute="width" constant="291" id="c8N-Ls-0fp"/>
+                                </constraints>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aav-WU-dR6" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                <rect key="frame" x="315" y="420" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="YuO-4F-Rw7"/>
+                                    <constraint firstAttribute="width" constant="44" id="fW2-lu-8q1"/>
+                                </constraints>
+                                <state key="normal" image="add">
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addCommentPressed:" destination="Pby-bX-pCh" eventType="touchUpInside" id="qhf-15-MJV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of likes:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrK-jJ-e0U">
+                                <rect key="frame" x="16" y="336" width="174" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="N6f-Lx-YWg"/>
+                                    <constraint firstAttribute="width" constant="174" id="tgb-JC-gRw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aav-WU-dR6" firstAttribute="top" secondItem="90S-ct-PN5" secondAttribute="bottom" constant="21" id="0uu-vy-R2r"/>
+                            <constraint firstItem="1Wf-fO-LbX" firstAttribute="trailing" secondItem="U7P-Ne-e18" secondAttribute="trailingMargin" id="2MJ-Uk-g0T"/>
+                            <constraint firstItem="GDB-aQ-Rpu" firstAttribute="top" secondItem="90S-ct-PN5" secondAttribute="bottom" constant="8" id="4gY-ZS-LXk"/>
+                            <constraint firstAttribute="trailing" secondItem="ehv-Np-47b" secondAttribute="trailing" constant="8" id="6DI-Ks-Knc"/>
+                            <constraint firstItem="7e9-XI-Kzb" firstAttribute="top" secondItem="ehv-Np-47b" secondAttribute="bottom" constant="8" id="9ju-WW-cxX"/>
+                            <constraint firstItem="pfV-hI-6p1" firstAttribute="top" secondItem="dcO-OX-URD" secondAttribute="bottom" id="BGd-bm-U9j"/>
+                            <constraint firstItem="ehv-Np-47b" firstAttribute="top" secondItem="QaZ-F9-tkm" secondAttribute="bottom" constant="8" id="Fzb-m3-Ra0"/>
+                            <constraint firstItem="iT4-7G-bqy" firstAttribute="top" secondItem="7e9-XI-Kzb" secondAttribute="bottom" constant="4" id="G1D-Dv-0IN"/>
+                            <constraint firstAttribute="trailing" secondItem="7e9-XI-Kzb" secondAttribute="trailing" constant="8" id="Igh-GA-dGp"/>
+                            <constraint firstItem="hDL-mq-Fa9" firstAttribute="centerX" secondItem="U7P-Ne-e18" secondAttribute="centerX" id="JiR-zs-ihA"/>
+                            <constraint firstItem="7e9-XI-Kzb" firstAttribute="leading" secondItem="U7P-Ne-e18" secondAttribute="leading" constant="8" id="LCK-wm-Aaq"/>
+                            <constraint firstItem="Fb5-vu-DlF" firstAttribute="top" secondItem="QaZ-F9-tkm" secondAttribute="bottom" constant="8" id="M2x-ZW-od9"/>
+                            <constraint firstItem="90S-ct-PN5" firstAttribute="top" secondItem="1Wf-fO-LbX" secondAttribute="bottom" constant="16" id="NR2-bb-oIl"/>
+                            <constraint firstItem="dcO-OX-URD" firstAttribute="top" secondItem="GDB-aQ-Rpu" secondAttribute="bottom" constant="8" id="NwJ-gt-uCK"/>
+                            <constraint firstItem="dcO-OX-URD" firstAttribute="leading" secondItem="U7P-Ne-e18" secondAttribute="leading" id="PVe-RS-9js"/>
+                            <constraint firstItem="iT4-7G-bqy" firstAttribute="centerX" secondItem="U7P-Ne-e18" secondAttribute="centerX" id="Re9-cj-X1U"/>
+                            <constraint firstItem="90S-ct-PN5" firstAttribute="centerX" secondItem="U7P-Ne-e18" secondAttribute="centerX" id="STT-S6-nmd"/>
+                            <constraint firstItem="7e9-XI-Kzb" firstAttribute="centerX" secondItem="U7P-Ne-e18" secondAttribute="centerX" id="ULT-Du-Z5G"/>
+                            <constraint firstItem="Fb5-vu-DlF" firstAttribute="leading" secondItem="U7P-Ne-e18" secondAttribute="leading" constant="8" id="UcC-Ec-fKh"/>
+                            <constraint firstItem="hDL-mq-Fa9" firstAttribute="top" secondItem="1Wf-fO-LbX" secondAttribute="bottom" constant="10" id="Wfi-WP-S0z"/>
+                            <constraint firstItem="GDB-aQ-Rpu" firstAttribute="leading" secondItem="U7P-Ne-e18" secondAttribute="leadingMargin" id="YC2-Qz-81i"/>
+                            <constraint firstItem="90S-ct-PN5" firstAttribute="leading" secondItem="U7P-Ne-e18" secondAttribute="leading" id="auo-bv-auN"/>
+                            <constraint firstItem="FrK-jJ-e0U" firstAttribute="top" secondItem="iT4-7G-bqy" secondAttribute="bottom" constant="12" id="dTR-x0-WiU"/>
+                            <constraint firstItem="aav-WU-dR6" firstAttribute="leading" secondItem="GDB-aQ-Rpu" secondAttribute="trailing" constant="8" id="fgV-vB-wbC"/>
+                            <constraint firstItem="1Wf-fO-LbX" firstAttribute="top" secondItem="iT4-7G-bqy" secondAttribute="bottom" constant="8" id="h3q-Kd-Fdf"/>
+                            <constraint firstItem="FrK-jJ-e0U" firstAttribute="leading" secondItem="U7P-Ne-e18" secondAttribute="leadingMargin" id="j8y-uy-1La"/>
+                            <constraint firstItem="s3Y-61-O1Y" firstAttribute="top" secondItem="QaZ-F9-tkm" secondAttribute="bottom" constant="10" id="jR4-L5-hB0"/>
+                            <constraint firstItem="s3Y-61-O1Y" firstAttribute="centerX" secondItem="U7P-Ne-e18" secondAttribute="centerX" id="ntb-0Q-Bxp"/>
+                            <constraint firstItem="iT4-7G-bqy" firstAttribute="centerX" secondItem="U7P-Ne-e18" secondAttribute="centerX" id="ptG-cn-bRF"/>
+                            <constraint firstItem="90S-ct-PN5" firstAttribute="top" secondItem="hDL-mq-Fa9" secondAttribute="bottom" constant="4" id="reD-jb-U4W"/>
+                            <constraint firstItem="aav-WU-dR6" firstAttribute="trailing" secondItem="U7P-Ne-e18" secondAttribute="trailingMargin" id="vAu-ei-a3g"/>
+                            <constraint firstAttribute="trailing" secondItem="dcO-OX-URD" secondAttribute="trailing" id="yKJ-nm-f38"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Data Information" id="qYd-nK-eEd">
                         <barButtonItem key="leftBarButtonItem" title="&lt;" id="gTu-x8-vDf">
@@ -2114,11 +2336,161 @@
                     </navigationItem>
                     <connections>
                         <outlet property="backBtn" destination="gTu-x8-vDf" id="Tuf-qd-lUv"/>
+                        <outlet property="commentTextView" destination="GDB-aQ-Rpu" id="2U6-QH-zf8"/>
+                        <outlet property="likesImg" destination="ehv-Np-47b" id="cVB-vv-fPw"/>
+                        <outlet property="likesLbl" destination="FrK-jJ-e0U" id="MxU-gC-bJc"/>
+                        <outlet property="picture" destination="7e9-XI-Kzb" id="qVU-ba-lIM"/>
+                        <outlet property="profileImg" destination="Fb5-vu-DlF" id="FTt-0e-ayY"/>
+                        <outlet property="tableView" destination="dcO-OX-URD" id="1oz-vd-jp4"/>
+                        <outlet property="titleLbl" destination="iT4-7G-bqy" id="Ncg-lx-YcF"/>
+                        <outlet property="usernameLbl" destination="s3Y-61-O1Y" id="BZR-JS-oZv"/>
+                        <segue destination="aMi-Hf-DyE" kind="presentation" identifier="infoToAllDataPopOverVC" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="kN0-qv-4eq"/>
+                        <segue destination="2sH-j3-bUu" kind="show" identifier="listToViewOnMap" id="GTe-a7-8hU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OBV-jL-kRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="aZG-s6-KsV">
+                    <connections>
+                        <action selector="pictureTapped:" destination="Pby-bX-pCh" id="hYN-J3-XNl"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5073" y="1585"/>
+            <point key="canvasLocation" x="5072.8000000000002" y="1584.5577211394304"/>
+        </scene>
+        <!--View On Map-->
+        <scene sceneID="sqq-YD-fxX">
+            <objects>
+                <viewController id="2sH-j3-bUu" customClass="ViewDataListOnMapVC" customModule="The_Big_Seaweed_Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8MY-up-03u"/>
+                        <viewControllerLayoutGuide type="bottom" id="P0m-AZ-4gG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V68-kS-Jgq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" translatesAutoresizingMaskIntoConstraints="NO" id="R1h-4U-djf">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R1h-4U-djf" firstAttribute="top" secondItem="8MY-up-03u" secondAttribute="bottom" id="EfF-nf-6we"/>
+                            <constraint firstItem="P0m-AZ-4gG" firstAttribute="top" secondItem="R1h-4U-djf" secondAttribute="bottom" id="Tl2-3Y-PNq"/>
+                            <constraint firstAttribute="trailing" secondItem="R1h-4U-djf" secondAttribute="trailing" id="oxc-Sz-SPt"/>
+                            <constraint firstItem="R1h-4U-djf" firstAttribute="leading" secondItem="V68-kS-Jgq" secondAttribute="leading" id="wXt-UA-xt9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="View On Map" id="tF0-AD-Q1h">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="Fpx-w6-Lo9">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backBtn:" destination="2sH-j3-bUu" id="RBN-uD-dYC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapKit" destination="R1h-4U-djf" id="nzd-d1-bvO"/>
+                        <segue destination="aMi-Hf-DyE" kind="presentation" identifier="viewImgOverMapOnList" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="XWX-mQ-OQz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UXY-Lp-Y9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5936.8000000000002" y="2343.7781109445277"/>
+        </scene>
+        <!--View All Data Pop OverVC-->
+        <scene sceneID="Ai2-9k-Zb1">
+            <objects>
+                <viewController id="aMi-Hf-DyE" customClass="ViewAllDataPopOverVC" customModule="The_Big_Seaweed_Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RDY-qr-TbO"/>
+                        <viewControllerLayoutGuide type="bottom" id="6t7-ZB-beb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UUG-T7-Z3B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ut1-kN-j2T">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ba2-4c-MNT">
+                                        <rect key="frame" x="34" y="127.5" width="306" height="412"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading" translatesAutoresizingMaskIntoConstraints="NO" id="lP2-Gd-tUb" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="290" height="348"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="348" id="lfR-SK-GAa"/>
+                                                    <constraint firstAttribute="width" constant="290" id="oeb-q9-dKh"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seaweed Type" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1U7-mt-FWI">
+                                                <rect key="frame" x="8" y="364" width="290" height="28"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="aqy-oa-XfX"/>
+                                                    <constraint firstAttribute="width" constant="290" id="tWO-TS-uZC"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="1U7-mt-FWI" firstAttribute="top" secondItem="lP2-Gd-tUb" secondAttribute="bottom" constant="8" id="45a-Ue-kfQ"/>
+                                            <constraint firstItem="1U7-mt-FWI" firstAttribute="leading" secondItem="Ba2-4c-MNT" secondAttribute="leading" constant="8" id="ISM-1i-uLK"/>
+                                            <constraint firstItem="lP2-Gd-tUb" firstAttribute="top" secondItem="Ba2-4c-MNT" secondAttribute="top" constant="8" id="PfW-cF-FvA"/>
+                                            <constraint firstAttribute="trailing" secondItem="lP2-Gd-tUb" secondAttribute="trailing" constant="8" id="Qmy-Pq-jIE"/>
+                                            <constraint firstAttribute="trailing" secondItem="1U7-mt-FWI" secondAttribute="trailing" constant="8" id="R4I-f6-ae2"/>
+                                            <constraint firstAttribute="height" constant="412" id="Y76-xj-rFS"/>
+                                            <constraint firstItem="lP2-Gd-tUb" firstAttribute="leading" secondItem="Ba2-4c-MNT" secondAttribute="leading" constant="8" id="Yl7-Yg-txi"/>
+                                            <constraint firstAttribute="width" constant="306" id="YrB-DN-4TC"/>
+                                        </constraints>
+                                    </view>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIK-JI-StL" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                        <rect key="frame" x="123" y="563.5" width="129" height="44"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="7NZ-QX-lze"/>
+                                            <constraint firstAttribute="width" constant="129" id="heC-vy-uaZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelBtn:" destination="NUE-cg-Qli" eventType="touchUpInside" id="NLf-jg-5nI"/>
+                                            <action selector="cancelBtn:" destination="lGb-qy-Gz9" eventType="touchUpInside" id="bfA-pK-SaR"/>
+                                            <action selector="cancelBtn:" destination="aMi-Hf-DyE" eventType="touchUpInside" id="dOt-Gn-M2B"/>
+                                            <action selector="dontBtnPressed:" destination="bGL-vS-kgJ" eventType="touchUpInside" id="FlH-ql-bKN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="CIK-JI-StL" firstAttribute="centerX" secondItem="ut1-kN-j2T" secondAttribute="centerX" id="58E-Xp-brJ"/>
+                                    <constraint firstItem="CIK-JI-StL" firstAttribute="top" secondItem="Ba2-4c-MNT" secondAttribute="bottom" constant="24" id="6lR-xo-NpT"/>
+                                    <constraint firstItem="Ba2-4c-MNT" firstAttribute="centerY" secondItem="ut1-kN-j2T" secondAttribute="centerY" id="PWg-j4-bDz"/>
+                                    <constraint firstItem="Ba2-4c-MNT" firstAttribute="centerX" secondItem="ut1-kN-j2T" secondAttribute="centerX" id="UTh-Io-3VF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ut1-kN-j2T" firstAttribute="top" secondItem="UUG-T7-Z3B" secondAttribute="top" id="9eg-xM-dI6"/>
+                            <constraint firstItem="6t7-ZB-beb" firstAttribute="top" secondItem="ut1-kN-j2T" secondAttribute="bottom" id="N46-78-jPH"/>
+                            <constraint firstAttribute="trailing" secondItem="ut1-kN-j2T" secondAttribute="trailing" id="USf-x1-pdG"/>
+                            <constraint firstItem="ut1-kN-j2T" firstAttribute="leading" secondItem="UUG-T7-Z3B" secondAttribute="leading" id="goU-40-63q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="picture" destination="lP2-Gd-tUb" id="ghV-Jf-hbc"/>
+                        <outlet property="typeLbl" destination="1U7-mt-FWI" id="K1U-2V-1kg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OSE-Wh-EOZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5936.8000000000002" y="1584.5577211394304"/>
         </scene>
         <!--View Data Posts-->
         <scene sceneID="Cg8-4w-QrO">
@@ -3274,6 +3646,7 @@ You may request details of personal information which we hold about you under th
         <image name="Logo-small" width="603" height="194"/>
         <image name="Logo-smaller" width="603" height="194"/>
         <image name="Untitled" width="542" height="472"/>
+        <image name="add" width="256" height="256"/>
         <image name="add-image" width="88" height="88"/>
         <image name="beach" width="736" height="707"/>
         <image name="editable" width="128" height="128"/>
@@ -3288,15 +3661,16 @@ You may request details of personal information which we hold about you under th
         <image name="user1" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="JU9-K3-Gcc"/>
-        <segue reference="9qv-sm-tIH"/>
-        <segue reference="Zqa-Uo-83B"/>
         <segue reference="ZhN-qB-KPB"/>
+        <segue reference="JU9-K3-Gcc"/>
+        <segue reference="EnJ-aU-BaS"/>
+        <segue reference="Zqa-Uo-83B"/>
         <segue reference="iyg-cT-VtJ"/>
         <segue reference="Dfs-7Q-3SV"/>
+        <segue reference="XWX-mQ-OQz"/>
+        <segue reference="wJO-md-pD8"/>
         <segue reference="EI8-fi-Mje"/>
         <segue reference="hSf-Hb-TWL"/>
-        <segue reference="wJO-md-pD8"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -19,6 +19,9 @@ class DataPostCell: UITableViewCell {
     @IBOutlet weak var captionLbl: UILabel!
     @IBOutlet weak var likesLbl: UILabel!
     
+    static var imageCache: NSCache<NSString, UIImage> = NSCache()
+    static var imageCache2: NSCache<NSString, UIImage> = NSCache()
+    
     var datapost: DataPost!
     var likesRef: FIRDatabaseReference!
     
@@ -30,7 +33,7 @@ class DataPostCell: UITableViewCell {
         likesImg.isUserInteractionEnabled = true
     }
     
-    func configureCell(datapost:DataPost, img: UIImage? = nil) {
+    func configureCell(datapost:DataPost, img: UIImage? = nil, img2: UIImage? = nil) {
         self.datapost = datapost
         likesRef = DataService.ds.REF_USER_CURRENT.child("likes").child(datapost.postKey)
         self.captionLbl.text = datapost.seaweedType
@@ -39,7 +42,6 @@ class DataPostCell: UITableViewCell {
         
         if img != nil {
             self.postImg.image = img
-            self.profileImg.image = img
         } else {
             let ref1 = FIRStorage.storage().reference(forURL: datapost.photoURL)
             //calculates max image size for most efficient storage capacity
@@ -51,11 +53,15 @@ class DataPostCell: UITableViewCell {
                     if let imgData = data {
                         if let img = UIImage(data: imgData) {
                             self.postImg.image = img
-                            ViewAllDataVC.imageCache.setObject(img, forKey: datapost.photoURL as NSString)
+                            DataPostCell.imageCache.setObject(img, forKey: datapost.photoURL as NSString)
                         }
                     }
                 }
-            })
+            })}
+        
+        if img2 != nil {
+            self.profileImg.image = img2
+        } else {
             let ref2 = FIRStorage.storage().reference(forURL: datapost.userimgURL)
             ref2.data(withMaxSize: 2 * 1024 * 1024, completion: { (data, error) in
                 if error != nil {
@@ -63,9 +69,9 @@ class DataPostCell: UITableViewCell {
                 } else {
                     print("CHASE: Image downloaded from Firebase storage")
                     if let imgData = data {
-                        if let img = UIImage(data: imgData) {
-                            self.profileImg.image = img
-                            ViewAllDataVC.imageCache.setObject(img, forKey: datapost.userimgURL as NSString)
+                        if let img2 = UIImage(data: imgData) {
+                            self.profileImg.image = img2
+                            DataPostCell.imageCache2.setObject(img2, forKey: datapost.userimgURL as NSString)
                         }
                     }
                 }
@@ -88,10 +94,22 @@ class DataPostCell: UITableViewCell {
                 self.likesImg.image = UIImage(named: "filled-heart")
                 self.datapost.adjustLikes(addLike: true)
                 self.likesRef.setValue(true)
+                DataService.ds.REF_POSTS.child(self.datapost.postKey!).observeSingleEvent(of: .value, with: { (snapshot) in
+                    if let postDict = snapshot.value as? Dictionary<String, AnyObject> {
+                        let numberOfLikes = postDict["numberOfLikes"] as! Int
+                        print("CHASE:  \((self.datapost.postKey!)) post noted.  Number of likes: \(numberOfLikes)")
+                        self.likesLbl.text = "Number of Likes: \(numberOfLikes)"
+                    }})
             } else {
                 self.likesImg.image = UIImage(named: "empty-heart")
                 self.datapost.adjustLikes(addLike: false)
                 self.likesRef.removeValue()
+                DataService.ds.REF_POSTS.child(self.datapost.postKey!).observeSingleEvent(of: .value, with: { (snapshot) in
+                    if let postDict = snapshot.value as? Dictionary<String, AnyObject> {
+                        let numberOfLikes = postDict["numberOfLikes"] as! Int
+                        print("CHASE:  \((self.datapost.postKey!)) post noted.  Number of likes: \(numberOfLikes)")
+                        self.likesLbl.text = "Number of Likes: \(numberOfLikes)"
+                    }})
             }
             
         })
