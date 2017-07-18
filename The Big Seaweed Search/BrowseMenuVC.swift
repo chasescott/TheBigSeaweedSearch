@@ -27,6 +27,7 @@ class BrowseMenuVC: UIViewController {
     }
     
     @IBAction func allDataMap(_ sender: Any) {
+        performSegue(withIdentifier: "browseDataToViewAllOnMapVC", sender: nil)
     }
     
     @IBAction func backBtnPressed(_ sender: Any) {

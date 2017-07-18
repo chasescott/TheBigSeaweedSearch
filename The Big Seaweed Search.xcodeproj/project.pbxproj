@@ -14,6 +14,8 @@
 		AB435C371F1D291100F2510B /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB435C361F1D291100F2510B /* CustomTextView.swift */; };
 		AB435C391F1D569200F2510B /* ViewAllDataPopOverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB435C381F1D569200F2510B /* ViewAllDataPopOverVC.swift */; };
 		AB435C3B1F1D5DF000F2510B /* ViewDataListOnMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB435C3A1F1D5DF000F2510B /* ViewDataListOnMapVC.swift */; };
+		AB435C3D1F1E1B1000F2510B /* ViewAllOnMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB435C3C1F1E1B1000F2510B /* ViewAllOnMapVC.swift */; };
+		AB435C3F1F1E24F100F2510B /* DataPostAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB435C3E1F1E24F100F2510B /* DataPostAnnotation.swift */; };
 		AB4A71A81F17B0980016ED2D /* SeaweedTypesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A71A71F17B0980016ED2D /* SeaweedTypesVC.swift */; };
 		AB4A71AA1F17D77D0016ED2D /* AlphaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A71A91F17D77D0016ED2D /* AlphaView.swift */; };
 		AB4A71AC1F1815200016ED2D /* ContinueSessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A71AB1F1815200016ED2D /* ContinueSessionVC.swift */; };
@@ -80,6 +82,8 @@
 		AB435C361F1D291100F2510B /* CustomTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
 		AB435C381F1D569200F2510B /* ViewAllDataPopOverVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllDataPopOverVC.swift; sourceTree = "<group>"; };
 		AB435C3A1F1D5DF000F2510B /* ViewDataListOnMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDataListOnMapVC.swift; sourceTree = "<group>"; };
+		AB435C3C1F1E1B1000F2510B /* ViewAllOnMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllOnMapVC.swift; sourceTree = "<group>"; };
+		AB435C3E1F1E24F100F2510B /* DataPostAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPostAnnotation.swift; sourceTree = "<group>"; };
 		AB4A71A71F17B0980016ED2D /* SeaweedTypesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeaweedTypesVC.swift; sourceTree = "<group>"; };
 		AB4A71A91F17D77D0016ED2D /* AlphaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaView.swift; sourceTree = "<group>"; };
 		AB4A71AB1F1815200016ED2D /* ContinueSessionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinueSessionVC.swift; sourceTree = "<group>"; };
@@ -216,6 +220,7 @@
 				AB5CE3AA1F1953C900710BB5 /* UserPost.swift */,
 				AB5CE3B01F1B834900710BB5 /* UserPostAnnotation.swift */,
 				AB5CE3B61F1BE69A00710BB5 /* DataPost.swift */,
+				AB435C3E1F1E24F100F2510B /* DataPostAnnotation.swift */,
 				AB435C321F1CD26100F2510B /* Comment.swift */,
 			);
 			name = Model;
@@ -246,32 +251,33 @@
 		ABE3B9A01F0D4CB50079B099 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AB57F9171F1109A400CFB504 /* AboutVC.swift */,
+				ABECB1D01F1532E500C09DB7 /* AddDataVC.swift */,
+				AB6EADB51F128B3D00E2AACB /* AddMenuVC.swift */,
+				ABD180B11F192E3F0071D128 /* BrowseMenuVC.swift */,
+				AB4A71AB1F1815200016ED2D /* ContinueSessionVC.swift */,
+				ABE3B9A31F0D6B220079B099 /* EditProfileVC.swift */,
+				ABE3B9A71F0D8A280079B099 /* InfoVC.swift */,
+				AB57F9151F11097900CFB504 /* InstructionsVC.swift */,
 				ABE3B98E1F0D4C480079B099 /* LoginVC.swift */,
 				ABE3B9A11F0D6AAF0079B099 /* MainVC.swift */,
-				ABE3B9A31F0D6B220079B099 /* EditProfileVC.swift */,
-				ABE3B9A51F0D724A0079B099 /* SetUpProfileVC.swift */,
-				ABE3B9A71F0D8A280079B099 /* InfoVC.swift */,
-				ABE3B9A91F0D8A410079B099 /* SafetyVC.swift */,
-				AB57F9151F11097900CFB504 /* InstructionsVC.swift */,
-				AB57F9171F1109A400CFB504 /* AboutVC.swift */,
+				AB6EADB71F1295A000E2AACB /* NewSessionVC.swift */,
 				AB57F9191F1109C000CFB504 /* PrivacyVC.swift */,
 				AB57F91B1F111AAB00CFB504 /* ProfileOptionsVC.swift */,
-				AB57F91D1F11215E00CFB504 /* ViewProfileVC.swift */,
-				AB6EADB51F128B3D00E2AACB /* AddMenuVC.swift */,
-				AB6EADB71F1295A000E2AACB /* NewSessionVC.swift */,
-				ABECB1D01F1532E500C09DB7 /* AddDataVC.swift */,
+				ABE3B9A91F0D8A410079B099 /* SafetyVC.swift */,
 				AB4A71A71F17B0980016ED2D /* SeaweedTypesVC.swift */,
-				AB4A71AB1F1815200016ED2D /* ContinueSessionVC.swift */,
-				ABD180B11F192E3F0071D128 /* BrowseMenuVC.swift */,
 				ABD180B31F1937950071D128 /* SelectASessionListVC.swift */,
-				ABD180B71F193DA10071D128 /* ViewOwnDataVC.swift */,
-				AB5CE3AC1F1A55D300710BB5 /* ViewOwnDataPopOverVC.swift */,
-				AB5CE3AE1F1B791000710BB5 /* ViewOwnDataMapVC.swift */,
-				AB5CE3B21F1BCE4E00710BB5 /* ViewOwnDataMapPopOverVC.swift */,
-				AB5CE3B41F1BDD8D00710BB5 /* ViewAllDataVC.swift */,
+				ABE3B9A51F0D724A0079B099 /* SetUpProfileVC.swift */,
 				AB435C301F1BF58F00F2510B /* ViewAllDataOneVC.swift */,
 				AB435C381F1D569200F2510B /* ViewAllDataPopOverVC.swift */,
+				AB5CE3B41F1BDD8D00710BB5 /* ViewAllDataVC.swift */,
+				AB435C3C1F1E1B1000F2510B /* ViewAllOnMapVC.swift */,
 				AB435C3A1F1D5DF000F2510B /* ViewDataListOnMapVC.swift */,
+				AB5CE3B21F1BCE4E00710BB5 /* ViewOwnDataMapPopOverVC.swift */,
+				AB5CE3AE1F1B791000710BB5 /* ViewOwnDataMapVC.swift */,
+				AB5CE3AC1F1A55D300710BB5 /* ViewOwnDataPopOverVC.swift */,
+				ABD180B71F193DA10071D128 /* ViewOwnDataVC.swift */,
+				AB57F91D1F11215E00CFB504 /* ViewProfileVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -470,6 +476,7 @@
 				AB435C351F1CD40B00F2510B /* CommentCell.swift in Sources */,
 				AB5CE3AB1F1953C900710BB5 /* UserPost.swift in Sources */,
 				AB435C391F1D569200F2510B /* ViewAllDataPopOverVC.swift in Sources */,
+				AB435C3D1F1E1B1000F2510B /* ViewAllOnMapVC.swift in Sources */,
 				ABECB1CD1F15211700C09DB7 /* GFGeoHashQuery.m in Sources */,
 				AB6EADB61F128B3D00E2AACB /* AddMenuVC.swift in Sources */,
 				ABECB1CE1F15211700C09DB7 /* GFQuery.m in Sources */,
@@ -519,6 +526,7 @@
 				ABECB1CC1F15211700C09DB7 /* GFGeoHash.m in Sources */,
 				ABECB1CB1F15211700C09DB7 /* GFBase32Utils.m in Sources */,
 				AB5CE3AF1F1B791000710BB5 /* ViewOwnDataMapVC.swift in Sources */,
+				AB435C3F1F1E24F100F2510B /* DataPostAnnotation.swift in Sources */,
 				AB4A71AA1F17D77D0016ED2D /* AlphaView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
