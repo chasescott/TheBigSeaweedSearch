@@ -44,6 +44,9 @@
 		ABCAEC4A1F1EB60C0031F8EC /* PostRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCAEC491F1EB60C0031F8EC /* PostRanking.swift */; };
 		ABCAEC4C1F1F98830031F8EC /* SessionsLeaderboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCAEC4B1F1F98830031F8EC /* SessionsLeaderboardVC.swift */; };
 		ABCAEC4E1F1F9A750031F8EC /* SessionsLeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCAEC4D1F1F9A750031F8EC /* SessionsLeaderboardCell.swift */; };
+		ABCAEC501F1FA09E0031F8EC /* ViewBadgesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCAEC4F1F1FA09E0031F8EC /* ViewBadgesVC.swift */; };
+		ABCAEC521F1FA9AA0031F8EC /* BadgesPostsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCAEC511F1FA9AA0031F8EC /* BadgesPostsCell.swift */; };
+		ABCAEC541F1FA9BE0031F8EC /* BadgesSessionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCAEC531F1FA9BE0031F8EC /* BadgesSessionsCell.swift */; };
 		ABD180B21F192E3F0071D128 /* BrowseMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD180B11F192E3F0071D128 /* BrowseMenuVC.swift */; };
 		ABD180B41F1937950071D128 /* SelectASessionListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD180B31F1937950071D128 /* SelectASessionListVC.swift */; };
 		ABD180B61F193A3D0071D128 /* SessionListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD180B51F193A3D0071D128 /* SessionListCell.swift */; };
@@ -118,6 +121,9 @@
 		ABCAEC491F1EB60C0031F8EC /* PostRanking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRanking.swift; sourceTree = "<group>"; };
 		ABCAEC4B1F1F98830031F8EC /* SessionsLeaderboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionsLeaderboardVC.swift; sourceTree = "<group>"; };
 		ABCAEC4D1F1F9A750031F8EC /* SessionsLeaderboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionsLeaderboardCell.swift; sourceTree = "<group>"; };
+		ABCAEC4F1F1FA09E0031F8EC /* ViewBadgesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBadgesVC.swift; sourceTree = "<group>"; };
+		ABCAEC511F1FA9AA0031F8EC /* BadgesPostsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgesPostsCell.swift; sourceTree = "<group>"; };
+		ABCAEC531F1FA9BE0031F8EC /* BadgesSessionsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgesSessionsCell.swift; sourceTree = "<group>"; };
 		ABD180B11F192E3F0071D128 /* BrowseMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseMenuVC.swift; sourceTree = "<group>"; };
 		ABD180B31F1937950071D128 /* SelectASessionListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectASessionListVC.swift; sourceTree = "<group>"; };
 		ABD180B51F193A3D0071D128 /* SessionListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionListCell.swift; sourceTree = "<group>"; };
@@ -259,6 +265,8 @@
 				AB435C341F1CD40B00F2510B /* CommentCell.swift */,
 				ABCAEC461F1EB52A0031F8EC /* PostsLeaderboardCell.swift */,
 				ABCAEC4D1F1F9A750031F8EC /* SessionsLeaderboardCell.swift */,
+				ABCAEC511F1FA9AA0031F8EC /* BadgesPostsCell.swift */,
+				ABCAEC531F1FA9BE0031F8EC /* BadgesSessionsCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -296,6 +304,7 @@
 				AB435C401F1E99B500F2510B /* RankingMenuVC.swift */,
 				ABCAEC441F1EAA7B0031F8EC /* PostsLeaderboardVC.swift */,
 				ABCAEC4B1F1F98830031F8EC /* SessionsLeaderboardVC.swift */,
+				ABCAEC4F1F1FA09E0031F8EC /* ViewBadgesVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -489,7 +498,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABE3B9B61F0D944C0079B099 /* RoundButton.swift in Sources */,
+				ABCAEC521F1FA9AA0031F8EC /* BadgesPostsCell.swift in Sources */,
 				ABECB1D11F1532E500C09DB7 /* AddDataVC.swift in Sources */,
+				ABCAEC541F1FA9BE0031F8EC /* BadgesSessionsCell.swift in Sources */,
 				AB5CE3AD1F1A55D300710BB5 /* ViewOwnDataPopOverVC.swift in Sources */,
 				AB435C351F1CD40B00F2510B /* CommentCell.swift in Sources */,
 				ABCAEC471F1EB52A0031F8EC /* PostsLeaderboardCell.swift in Sources */,
@@ -524,6 +535,7 @@
 				AB57F91A1F1109C000CFB504 /* PrivacyVC.swift in Sources */,
 				AB5CE3B31F1BCE4E00710BB5 /* ViewOwnDataMapPopOverVC.swift in Sources */,
 				ABE3B9BC1F0D94750079B099 /* CircleView.swift in Sources */,
+				ABCAEC501F1FA09E0031F8EC /* ViewBadgesVC.swift in Sources */,
 				ABCAEC4E1F1F9A750031F8EC /* SessionsLeaderboardCell.swift in Sources */,
 				AB5CE3B71F1BE69A00710BB5 /* DataPost.swift in Sources */,
 				ABE3B9B81F0D94580079B099 /* FancyField.swift in Sources */,

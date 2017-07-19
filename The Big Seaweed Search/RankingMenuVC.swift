@@ -23,6 +23,7 @@ class RankingMenuVC: UIViewController {
     }
     
     @IBAction func viewBadges(_ sender: Any) {
+        performSegue(withIdentifier: "rankingMenuToBadges", sender: nil)
     }
     
     @IBAction func backBtnPressed(_ sender: Any) {

@@ -49,6 +49,7 @@ class SessionsLeaderboardVC: UIViewController, UITableViewDelegate, UITableViewD
         let postranking = postrankings[indexPath.row]
         if let cell = tableView.dequeueReusableCell(withIdentifier: "SessionsLeaderboardCell", for: indexPath) as? SessionsLeaderboardCell {
             if let img = SessionsLeaderboardVC.imageCache.object(forKey: postranking.userImgURL as NSString) {
+                cell.picture.image = nil
                 cell.configureCell(postranking: postranking, img: img)
             } else {
                 cell.configureCell(postranking: postranking)

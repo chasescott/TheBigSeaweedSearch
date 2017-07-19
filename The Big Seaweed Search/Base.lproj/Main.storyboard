@@ -170,7 +170,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-small" translatesAutoresizingMaskIntoConstraints="NO" id="vgC-9p-GTP">
-                                <rect key="frame" x="108" y="72" width="158" height="100"/>
+                                <rect key="frame" x="108" y="28" width="158" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="158" id="5lw-u5-gJT"/>
                                     <constraint firstAttribute="height" constant="100" id="Kcy-t8-TY9"/>
@@ -194,7 +194,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F0F-t8-WHu">
-                                <rect key="frame" x="16" y="180" width="343" height="346"/>
+                                <rect key="frame" x="16" y="136" width="343" height="346"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="qWc-w7-8bu" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="96.5" y="0.0" width="150" height="150"/>
@@ -289,7 +289,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-small" translatesAutoresizingMaskIntoConstraints="NO" id="VwW-RB-YPQ">
-                                <rect key="frame" x="108" y="64" width="158" height="100"/>
+                                <rect key="frame" x="108" y="20" width="158" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="158" id="9an-P6-jK0"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="Ey2-Y6-5c8"/>
@@ -298,7 +298,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Esi-hv-7jf">
-                                <rect key="frame" x="32.5" y="172" width="310.5" height="395"/>
+                                <rect key="frame" x="32.5" y="128" width="310.5" height="395"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap image to edit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4u-Z4-D9N">
                                         <rect key="frame" x="83.5" y="0.0" width="143.5" height="35"/>
@@ -462,7 +462,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Hwq-ud-zk1">
-                                <rect key="frame" x="25.5" y="95" width="324" height="112.5"/>
+                                <rect key="frame" x="25.5" y="51" width="324" height="112.5"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach" translatesAutoresizingMaskIntoConstraints="NO" id="Ck2-mO-cEh" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="112.5"/>
@@ -515,7 +515,7 @@
                                 </constraints>
                             </stackView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a session name (i.e. Beachy Head)" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RGF-n9-scp" customClass="FancyField" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="22.5" y="223.5" width="330" height="35"/>
+                                <rect key="frame" x="22.5" y="179.5" width="330" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="deX-0B-Nmy"/>
                                     <constraint firstAttribute="width" constant="330" id="fvZ-Av-Ylv"/>
@@ -525,7 +525,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTX-Qk-9Kj">
-                                <rect key="frame" x="16" y="266.5" width="343" height="20"/>
+                                <rect key="frame" x="16" y="222.5" width="343" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="1iJ-K2-cih"/>
                                     <constraint firstAttribute="height" constant="20" id="ome-fX-CBg"/>
@@ -535,7 +535,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPS co-ordinates:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCS-60-cya">
-                                <rect key="frame" x="16" y="294.5" width="343" height="20"/>
+                                <rect key="frame" x="16" y="250.5" width="343" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="0HT-sV-IoM"/>
                                     <constraint firstAttribute="width" constant="343" id="FVL-CH-g7j"/>
@@ -545,7 +545,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who are you with?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zV9-06-G1X">
-                                <rect key="frame" x="16" y="322.5" width="343" height="15"/>
+                                <rect key="frame" x="16" y="278.5" width="343" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="QGY-wP-LUM"/>
                                     <constraint firstAttribute="width" constant="343" id="yTo-bf-LWN"/>
@@ -555,7 +555,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l97-zO-83C" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="56" y="607.5" width="262" height="44"/>
+                                <rect key="frame" x="56" y="563.5" width="262" height="44"/>
                                 <color key="backgroundColor" red="0.30955404043197632" green="0.56216949224472046" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="262" id="cGE-Rg-eCy"/>
@@ -572,7 +572,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the beach gradient?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mO-Cb-NXB">
-                                <rect key="frame" x="16" y="512.5" width="343" height="15"/>
+                                <rect key="frame" x="16" y="468.5" width="343" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="BYc-vQ-PCY"/>
                                     <constraint firstAttribute="height" constant="15" id="ExT-YS-Scv"/>
@@ -582,14 +582,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fP8-Fe-t9R">
-                                <rect key="frame" x="0.0" y="345.5" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="301.5" width="375" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="n01-gW-BcA"/>
                                     <constraint firstAttribute="height" constant="64" id="u4M-7K-ORG"/>
                                 </constraints>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is the type of beach?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xdt-dA-ztu">
-                                <rect key="frame" x="16" y="417.5" width="343" height="15"/>
+                                <rect key="frame" x="16" y="373.5" width="343" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="8FO-a6-ZKd"/>
                                     <constraint firstAttribute="height" constant="15" id="gmC-4l-HpB"/>
@@ -599,21 +599,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qz9-rU-I7n">
-                                <rect key="frame" x="0.0" y="440.5" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="396.5" width="375" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="68c-Le-4sL"/>
                                     <constraint firstAttribute="width" constant="375" id="eXK-OC-yXi"/>
                                 </constraints>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JrF-CI-Uc7">
-                                <rect key="frame" x="0.0" y="535.5" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="491.5" width="375" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="iCD-vx-RDH"/>
                                     <constraint firstAttribute="width" constant="375" id="uJC-w2-Pk3"/>
                                 </constraints>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please photo the survey area of beach" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hal-Oc-Ajb">
-                                <rect key="frame" x="16" y="72" width="343" height="15"/>
+                                <rect key="frame" x="16" y="28" width="343" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="Xok-JQ-COO"/>
                                     <constraint firstAttribute="width" constant="343" id="pns-OL-eUA"/>
@@ -1233,11 +1233,184 @@
                     <connections>
                         <segue destination="M8z-ag-xwo" kind="show" identifier="rankingMenuToPostsLeaderboardVC" id="CKa-ky-VZ6"/>
                         <segue destination="ocL-Sl-cVu" kind="show" identifier="rankingToSessionsVC" id="30v-6Q-cqV"/>
+                        <segue destination="Ac0-Yw-RHe" kind="show" identifier="rankingMenuToBadges" id="TE1-YD-WJT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UJo-5f-Q3U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3374" y="1585"/>
+        </scene>
+        <!--Badges Earned-->
+        <scene sceneID="gcm-jd-bos">
+            <objects>
+                <viewController id="Ac0-Yw-RHe" customClass="ViewBadgesVC" customModule="The_Big_Seaweed_Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ozT-2a-p7q"/>
+                        <viewControllerLayoutGuide type="bottom" id="abQ-Rq-Odv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kex-Db-7nF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bC2-ZC-LaP">
+                                <rect key="frame" x="16" y="332.5" width="343" height="2"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Vbg-xK-EMT"/>
+                                    <constraint firstAttribute="height" constant="2" id="e7X-5R-LqP"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Posts Badges " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GIB-IR-UsC">
+                                <rect key="frame" x="108" y="72" width="159" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="vy0-FO-RCX"/>
+                                    <constraint firstAttribute="height" constant="22" id="zoI-qQ-oDK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sessions Badges " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EwF-5h-4eD">
+                                <rect key="frame" x="108" y="342" width="159" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="2c6-JY-DEa"/>
+                                    <constraint firstAttribute="width" constant="159" id="lVU-Ao-CKa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                                <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qum-l1-vI9">
+                                <rect key="frame" x="0.0" y="102" width="375" height="223"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LCw-Wr-jpg">
+                                    <size key="itemSize" width="110" height="110"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PostCell" id="iYG-mh-kIh" customClass="BadgesPostsCell" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4xq-EB-bbm" customClass="FancyView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                                    <rect key="frame" x="4" y="4" width="102" height="107"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading" translatesAutoresizingMaskIntoConstraints="NO" id="asg-2A-xcG" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                                            <rect key="frame" x="8" y="8" width="86" height="91"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="asg-2A-xcG" firstAttribute="centerX" secondItem="4xq-EB-bbm" secondAttribute="centerX" id="6xH-ni-NJw"/>
+                                                        <constraint firstItem="asg-2A-xcG" firstAttribute="leading" secondItem="4xq-EB-bbm" secondAttribute="leading" constant="8" id="HeO-oh-2Vo"/>
+                                                        <constraint firstAttribute="bottom" secondItem="asg-2A-xcG" secondAttribute="bottom" constant="8" id="I6i-Pu-fxK"/>
+                                                        <constraint firstAttribute="trailing" secondItem="asg-2A-xcG" secondAttribute="trailing" constant="8" id="Zk2-j0-47s"/>
+                                                        <constraint firstItem="asg-2A-xcG" firstAttribute="centerY" secondItem="4xq-EB-bbm" secondAttribute="centerY" id="hTd-0c-Ki1"/>
+                                                        <constraint firstItem="asg-2A-xcG" firstAttribute="top" secondItem="4xq-EB-bbm" secondAttribute="top" constant="8" id="rHr-w2-aWL"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="4xq-EB-bbm" secondAttribute="bottom" constant="4" id="V9p-Cd-8gN"/>
+                                            <constraint firstItem="4xq-EB-bbm" firstAttribute="top" secondItem="iYG-mh-kIh" secondAttribute="top" constant="4" id="b1w-1z-MdS"/>
+                                            <constraint firstAttribute="trailing" secondItem="4xq-EB-bbm" secondAttribute="trailing" constant="4" id="hdU-Zg-0Ek"/>
+                                            <constraint firstItem="4xq-EB-bbm" firstAttribute="leading" secondItem="iYG-mh-kIh" secondAttribute="leading" constant="4" id="x8W-Gc-9Ws"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="picture" destination="asg-2A-xcG" id="5RT-0K-iPn"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <collectionView clipsSubviews="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OeB-OV-AhO">
+                                <rect key="frame" x="0.0" y="372" width="375" height="295"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="Mue-PO-LdW">
+                                    <size key="itemSize" width="110" height="110"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SessionCell" id="k3Z-tP-Iqh" customClass="BadgesSessionsCell" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3uc-S2-Au6" customClass="FancyView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                                    <rect key="frame" x="4" y="4" width="102" height="107"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading" translatesAutoresizingMaskIntoConstraints="NO" id="V3A-2H-etj" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                                            <rect key="frame" x="8" y="8" width="86" height="91"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="V3A-2H-etj" firstAttribute="centerX" secondItem="3uc-S2-Au6" secondAttribute="centerX" id="Msf-J1-lTF"/>
+                                                        <constraint firstAttribute="trailing" secondItem="V3A-2H-etj" secondAttribute="trailing" constant="8" id="bK6-OT-GNO"/>
+                                                        <constraint firstItem="V3A-2H-etj" firstAttribute="centerY" secondItem="3uc-S2-Au6" secondAttribute="centerY" id="bRI-kJ-zL3"/>
+                                                        <constraint firstAttribute="bottom" secondItem="V3A-2H-etj" secondAttribute="bottom" constant="8" id="gpZ-Kt-QN4"/>
+                                                        <constraint firstItem="V3A-2H-etj" firstAttribute="leading" secondItem="3uc-S2-Au6" secondAttribute="leading" constant="8" id="j1e-z0-IF5"/>
+                                                        <constraint firstItem="V3A-2H-etj" firstAttribute="top" secondItem="3uc-S2-Au6" secondAttribute="top" constant="8" id="u6C-G3-z90"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="3uc-S2-Au6" secondAttribute="bottom" constant="4" id="7uU-tW-lE1"/>
+                                            <constraint firstItem="3uc-S2-Au6" firstAttribute="leading" secondItem="k3Z-tP-Iqh" secondAttribute="leading" constant="4" id="EfW-nc-7HZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="3uc-S2-Au6" secondAttribute="trailing" constant="4" id="Qxq-wb-m52"/>
+                                            <constraint firstItem="3uc-S2-Au6" firstAttribute="top" secondItem="k3Z-tP-Iqh" secondAttribute="top" constant="4" id="sey-bC-VMK"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="picture" destination="V3A-2H-etj" id="meF-Ws-ElI"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bC2-ZC-LaP" firstAttribute="top" secondItem="qum-l1-vI9" secondAttribute="bottom" constant="8" id="7tG-P5-asx"/>
+                            <constraint firstItem="OeB-OV-AhO" firstAttribute="leading" secondItem="kex-Db-7nF" secondAttribute="leading" id="HVK-6M-RBb"/>
+                            <constraint firstItem="OeB-OV-AhO" firstAttribute="top" secondItem="EwF-5h-4eD" secondAttribute="bottom" constant="8" id="NPt-z1-eAl"/>
+                            <constraint firstItem="EwF-5h-4eD" firstAttribute="centerX" secondItem="kex-Db-7nF" secondAttribute="centerX" id="S2V-y5-vjr"/>
+                            <constraint firstItem="GIB-IR-UsC" firstAttribute="top" secondItem="ozT-2a-p7q" secondAttribute="bottom" constant="8" id="VjE-oE-N9r"/>
+                            <constraint firstAttribute="trailing" secondItem="qum-l1-vI9" secondAttribute="trailing" id="XNa-5L-Dyv"/>
+                            <constraint firstItem="EwF-5h-4eD" firstAttribute="top" secondItem="bC2-ZC-LaP" secondAttribute="bottom" constant="8" id="Zib-yl-9IT"/>
+                            <constraint firstItem="GIB-IR-UsC" firstAttribute="centerX" secondItem="kex-Db-7nF" secondAttribute="centerX" id="dCC-6l-mqT"/>
+                            <constraint firstItem="bC2-ZC-LaP" firstAttribute="centerX" secondItem="kex-Db-7nF" secondAttribute="centerX" id="dnr-N1-nPZ"/>
+                            <constraint firstItem="abQ-Rq-Odv" firstAttribute="top" secondItem="OeB-OV-AhO" secondAttribute="bottom" id="kCM-m4-ygg"/>
+                            <constraint firstItem="qum-l1-vI9" firstAttribute="top" secondItem="GIB-IR-UsC" secondAttribute="bottom" constant="8" id="oUj-Ci-yqz"/>
+                            <constraint firstItem="bC2-ZC-LaP" firstAttribute="centerY" secondItem="kex-Db-7nF" secondAttribute="centerY" id="pIl-nT-t7i"/>
+                            <constraint firstItem="qum-l1-vI9" firstAttribute="leading" secondItem="kex-Db-7nF" secondAttribute="leading" id="yMO-U5-RqT"/>
+                            <constraint firstAttribute="trailing" secondItem="OeB-OV-AhO" secondAttribute="trailing" id="zvz-Pz-mkY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Badges Earned" id="5Ig-pT-0Wf">
+                        <barButtonItem key="leftBarButtonItem" title="&lt;" id="XsZ-uO-2fR">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="backBtn:" destination="Ac0-Yw-RHe" id="d0G-vT-UWl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="CollectionViewPosts" destination="qum-l1-vI9" id="RbY-dE-RP3"/>
+                        <outlet property="CollectionViewSessions" destination="OeB-OV-AhO" id="jZa-kW-P7X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8cd-dd-6uQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2512.8000000000002" y="2345.577211394303"/>
         </scene>
         <!--Posts Leaderboard-->
         <scene sceneID="hzq-RO-VYZ">
@@ -1510,13 +1683,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-smaller" translatesAutoresizingMaskIntoConstraints="NO" id="jLH-Ry-1JG">
-                                <rect key="frame" x="16" y="72" width="343" height="149"/>
+                                <rect key="frame" x="16" y="28" width="343" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="149" id="2rL-ab-ugA"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEz-qd-p6l" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="97" y="229" width="181" height="44"/>
+                                <rect key="frame" x="97" y="185" width="181" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="3Ar-V7-oBv"/>
@@ -1532,7 +1705,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BC-h7-fv1" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="97" y="289" width="181" height="44"/>
+                                <rect key="frame" x="97" y="245" width="181" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="181" id="F4F-0y-zgX"/>
@@ -1596,7 +1769,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select a session to continue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzs-cQ-wDL">
-                                <rect key="frame" x="16" y="72" width="343" height="15"/>
+                                <rect key="frame" x="16" y="28" width="343" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="70U-hP-i7v"/>
                                     <constraint firstAttribute="width" constant="343" id="nDh-EK-kxw"/>
@@ -1606,7 +1779,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="165" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wtq-qj-jdC">
-                                <rect key="frame" x="0.0" y="95" width="375" height="572"/>
+                                <rect key="frame" x="0.0" y="51" width="375" height="616"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" rowHeight="165" id="DS3-8y-Xna" customClass="SessionCell" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
@@ -1733,7 +1906,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-smaller" translatesAutoresizingMaskIntoConstraints="NO" id="4rz-Wc-vLk">
-                                <rect key="frame" x="12.5" y="64" width="350" height="149"/>
+                                <rect key="frame" x="12.5" y="20" width="350" height="149"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="149" id="DJ9-Sh-V5O"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="149" id="IUz-P6-GD7"/>
@@ -1741,7 +1914,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9x-J8-nlR" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="38" y="221" width="300" height="44"/>
+                                <rect key="frame" x="38" y="177" width="300" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="Rjr-7z-YQv"/>
@@ -1757,7 +1930,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIL-Kk-4Dn" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
-                                <rect key="frame" x="38" y="281" width="300" height="44"/>
+                                <rect key="frame" x="38" y="237" width="300" height="44"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="EIS-IT-i6F"/>
@@ -1773,7 +1946,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please read the safety notice and instructions before continuing." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9i-wb-xcK">
-                                <rect key="frame" x="38" y="341" width="299" height="58"/>
+                                <rect key="frame" x="38" y="297" width="299" height="58"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="299" id="7JV-Sq-cqb"/>
                                     <constraint firstAttribute="height" constant="58" id="F4f-7L-ELk"/>
@@ -1783,7 +1956,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="8MW-G0-7c2">
-                                <rect key="frame" x="71.5" y="407" width="232" height="100"/>
+                                <rect key="frame" x="71.5" y="363" width="232" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBq-sY-9qJ">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -3828,7 +4001,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled" translatesAutoresizingMaskIntoConstraints="NO" id="xyy-Xi-Oin">
-                                <rect key="frame" x="0.0" y="72" width="375" height="205"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="205"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="205" id="Ary-Lm-N19"/>
                                 </constraints>
