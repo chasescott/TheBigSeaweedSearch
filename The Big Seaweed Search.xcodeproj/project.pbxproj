@@ -16,6 +16,7 @@
 		AB435C3B1F1D5DF000F2510B /* ViewDataListOnMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB435C3A1F1D5DF000F2510B /* ViewDataListOnMapVC.swift */; };
 		AB435C3D1F1E1B1000F2510B /* ViewAllOnMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB435C3C1F1E1B1000F2510B /* ViewAllOnMapVC.swift */; };
 		AB435C3F1F1E24F100F2510B /* DataPostAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB435C3E1F1E24F100F2510B /* DataPostAnnotation.swift */; };
+		AB435C411F1E99B500F2510B /* RankingMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB435C401F1E99B500F2510B /* RankingMenuVC.swift */; };
 		AB4A71A81F17B0980016ED2D /* SeaweedTypesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A71A71F17B0980016ED2D /* SeaweedTypesVC.swift */; };
 		AB4A71AA1F17D77D0016ED2D /* AlphaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A71A91F17D77D0016ED2D /* AlphaView.swift */; };
 		AB4A71AC1F1815200016ED2D /* ContinueSessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4A71AB1F1815200016ED2D /* ContinueSessionVC.swift */; };
@@ -38,6 +39,9 @@
 		AB5CE3B71F1BE69A00710BB5 /* DataPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE3B61F1BE69A00710BB5 /* DataPost.swift */; };
 		AB6EADB61F128B3D00E2AACB /* AddMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EADB51F128B3D00E2AACB /* AddMenuVC.swift */; };
 		AB6EADB81F1295A000E2AACB /* NewSessionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6EADB71F1295A000E2AACB /* NewSessionVC.swift */; };
+		ABCAEC451F1EAA7B0031F8EC /* PostsLeaderboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCAEC441F1EAA7B0031F8EC /* PostsLeaderboardVC.swift */; };
+		ABCAEC471F1EB52A0031F8EC /* PostsLeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCAEC461F1EB52A0031F8EC /* PostsLeaderboardCell.swift */; };
+		ABCAEC4A1F1EB60C0031F8EC /* PostRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCAEC491F1EB60C0031F8EC /* PostRanking.swift */; };
 		ABD180B21F192E3F0071D128 /* BrowseMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD180B11F192E3F0071D128 /* BrowseMenuVC.swift */; };
 		ABD180B41F1937950071D128 /* SelectASessionListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD180B31F1937950071D128 /* SelectASessionListVC.swift */; };
 		ABD180B61F193A3D0071D128 /* SessionListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD180B51F193A3D0071D128 /* SessionListCell.swift */; };
@@ -84,6 +88,7 @@
 		AB435C3A1F1D5DF000F2510B /* ViewDataListOnMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDataListOnMapVC.swift; sourceTree = "<group>"; };
 		AB435C3C1F1E1B1000F2510B /* ViewAllOnMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllOnMapVC.swift; sourceTree = "<group>"; };
 		AB435C3E1F1E24F100F2510B /* DataPostAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPostAnnotation.swift; sourceTree = "<group>"; };
+		AB435C401F1E99B500F2510B /* RankingMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankingMenuVC.swift; sourceTree = "<group>"; };
 		AB4A71A71F17B0980016ED2D /* SeaweedTypesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeaweedTypesVC.swift; sourceTree = "<group>"; };
 		AB4A71A91F17D77D0016ED2D /* AlphaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaView.swift; sourceTree = "<group>"; };
 		AB4A71AB1F1815200016ED2D /* ContinueSessionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContinueSessionVC.swift; sourceTree = "<group>"; };
@@ -106,6 +111,9 @@
 		AB5CE3B61F1BE69A00710BB5 /* DataPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPost.swift; sourceTree = "<group>"; };
 		AB6EADB51F128B3D00E2AACB /* AddMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMenuVC.swift; sourceTree = "<group>"; };
 		AB6EADB71F1295A000E2AACB /* NewSessionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewSessionVC.swift; sourceTree = "<group>"; };
+		ABCAEC441F1EAA7B0031F8EC /* PostsLeaderboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsLeaderboardVC.swift; sourceTree = "<group>"; };
+		ABCAEC461F1EB52A0031F8EC /* PostsLeaderboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsLeaderboardCell.swift; sourceTree = "<group>"; };
+		ABCAEC491F1EB60C0031F8EC /* PostRanking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRanking.swift; sourceTree = "<group>"; };
 		ABD180B11F192E3F0071D128 /* BrowseMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseMenuVC.swift; sourceTree = "<group>"; };
 		ABD180B31F1937950071D128 /* SelectASessionListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectASessionListVC.swift; sourceTree = "<group>"; };
 		ABD180B51F193A3D0071D128 /* SessionListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionListCell.swift; sourceTree = "<group>"; };
@@ -222,6 +230,7 @@
 				AB5CE3B61F1BE69A00710BB5 /* DataPost.swift */,
 				AB435C3E1F1E24F100F2510B /* DataPostAnnotation.swift */,
 				AB435C321F1CD26100F2510B /* Comment.swift */,
+				ABCAEC491F1EB60C0031F8EC /* PostRanking.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -244,6 +253,7 @@
 				AB5CE3A81F19485600710BB5 /* UserDataListCell.swift */,
 				AB435C2E1F1BF12400F2510B /* DataPostCell.swift */,
 				AB435C341F1CD40B00F2510B /* CommentCell.swift */,
+				ABCAEC461F1EB52A0031F8EC /* PostsLeaderboardCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -278,6 +288,8 @@
 				AB5CE3AC1F1A55D300710BB5 /* ViewOwnDataPopOverVC.swift */,
 				ABD180B71F193DA10071D128 /* ViewOwnDataVC.swift */,
 				AB57F91D1F11215E00CFB504 /* ViewProfileVC.swift */,
+				AB435C401F1E99B500F2510B /* RankingMenuVC.swift */,
+				ABCAEC441F1EAA7B0031F8EC /* PostsLeaderboardVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -474,6 +486,7 @@
 				ABECB1D11F1532E500C09DB7 /* AddDataVC.swift in Sources */,
 				AB5CE3AD1F1A55D300710BB5 /* ViewOwnDataPopOverVC.swift in Sources */,
 				AB435C351F1CD40B00F2510B /* CommentCell.swift in Sources */,
+				ABCAEC471F1EB52A0031F8EC /* PostsLeaderboardCell.swift in Sources */,
 				AB5CE3AB1F1953C900710BB5 /* UserPost.swift in Sources */,
 				AB435C391F1D569200F2510B /* ViewAllDataPopOverVC.swift in Sources */,
 				AB435C3D1F1E1B1000F2510B /* ViewAllOnMapVC.swift in Sources */,
@@ -482,6 +495,7 @@
 				ABECB1CE1F15211700C09DB7 /* GFQuery.m in Sources */,
 				ABE3B9B01F0D937C0079B099 /* DataService.swift in Sources */,
 				ABE3B9AA1F0D8A410079B099 /* SafetyVC.swift in Sources */,
+				AB435C411F1E99B500F2510B /* RankingMenuVC.swift in Sources */,
 				ABD180B81F193DA10071D128 /* ViewOwnDataVC.swift in Sources */,
 				ABE3B9BA1F0D94650079B099 /* FancyButton.swift in Sources */,
 				AB57F9161F11097900CFB504 /* InstructionsVC.swift in Sources */,
@@ -494,6 +508,7 @@
 				AB435C311F1BF58F00F2510B /* ViewAllDataOneVC.swift in Sources */,
 				AB57F91C1F111AAB00CFB504 /* ProfileOptionsVC.swift in Sources */,
 				AB4A71A81F17B0980016ED2D /* SeaweedTypesVC.swift in Sources */,
+				ABCAEC4A1F1EB60C0031F8EC /* PostRanking.swift in Sources */,
 				AB57F91E1F11215E00CFB504 /* ViewProfileVC.swift in Sources */,
 				ABECB1CA1F15211700C09DB7 /* GeoFire.m in Sources */,
 				AB435C2F1F1BF12400F2510B /* DataPostCell.swift in Sources */,
@@ -511,6 +526,7 @@
 				ABD180B61F193A3D0071D128 /* SessionListCell.swift in Sources */,
 				ABE3B9B41F0D94380079B099 /* FancyView.swift in Sources */,
 				ABE3B9A41F0D6B220079B099 /* EditProfileVC.swift in Sources */,
+				ABCAEC451F1EAA7B0031F8EC /* PostsLeaderboardVC.swift in Sources */,
 				AB435C371F1D291100F2510B /* CustomTextView.swift in Sources */,
 				ABE3B9A81F0D8A280079B099 /* InfoVC.swift in Sources */,
 				AB57F9181F1109A400CFB504 /* AboutVC.swift in Sources */,

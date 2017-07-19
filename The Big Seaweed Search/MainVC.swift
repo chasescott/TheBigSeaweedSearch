@@ -35,6 +35,12 @@ class MainVC: UIViewController {
         performSegue(withIdentifier: "mainMenuToBrowseData", sender: nil)
     }
     
+    @IBOutlet weak var rankBtn: FancyButton!
+    @IBAction func rankBtnTapped(_ sender: Any) {
+        performSegue(withIdentifier: "mainToRankingMenu", sender: nil)
+    }
+    
+    
     @IBAction func signOutTapped(_ sender: Any) {
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         print("CHASE: ID removed from keychain \(keychainResult)")
