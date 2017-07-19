@@ -18,6 +18,13 @@ class RankingMenuVC: UIViewController {
         performSegue(withIdentifier: "rankingMenuToPostsLeaderboardVC", sender: nil)
     }
     
+    @IBAction func sessionsTapped(_ sender: Any) {
+        performSegue(withIdentifier: "rankingToSessionsVC", sender: nil)
+    }
+    
+    @IBAction func viewBadges(_ sender: Any) {
+    }
+    
     @IBAction func backBtnPressed(_ sender: Any) {
         _ = navigationController?.popViewController(animated: true)
         dismiss(animated: true, completion: nil)

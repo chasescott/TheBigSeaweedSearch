@@ -42,6 +42,8 @@
 		ABCAEC451F1EAA7B0031F8EC /* PostsLeaderboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCAEC441F1EAA7B0031F8EC /* PostsLeaderboardVC.swift */; };
 		ABCAEC471F1EB52A0031F8EC /* PostsLeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCAEC461F1EB52A0031F8EC /* PostsLeaderboardCell.swift */; };
 		ABCAEC4A1F1EB60C0031F8EC /* PostRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCAEC491F1EB60C0031F8EC /* PostRanking.swift */; };
+		ABCAEC4C1F1F98830031F8EC /* SessionsLeaderboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCAEC4B1F1F98830031F8EC /* SessionsLeaderboardVC.swift */; };
+		ABCAEC4E1F1F9A750031F8EC /* SessionsLeaderboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCAEC4D1F1F9A750031F8EC /* SessionsLeaderboardCell.swift */; };
 		ABD180B21F192E3F0071D128 /* BrowseMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD180B11F192E3F0071D128 /* BrowseMenuVC.swift */; };
 		ABD180B41F1937950071D128 /* SelectASessionListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD180B31F1937950071D128 /* SelectASessionListVC.swift */; };
 		ABD180B61F193A3D0071D128 /* SessionListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD180B51F193A3D0071D128 /* SessionListCell.swift */; };
@@ -114,6 +116,8 @@
 		ABCAEC441F1EAA7B0031F8EC /* PostsLeaderboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsLeaderboardVC.swift; sourceTree = "<group>"; };
 		ABCAEC461F1EB52A0031F8EC /* PostsLeaderboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsLeaderboardCell.swift; sourceTree = "<group>"; };
 		ABCAEC491F1EB60C0031F8EC /* PostRanking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRanking.swift; sourceTree = "<group>"; };
+		ABCAEC4B1F1F98830031F8EC /* SessionsLeaderboardVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionsLeaderboardVC.swift; sourceTree = "<group>"; };
+		ABCAEC4D1F1F9A750031F8EC /* SessionsLeaderboardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionsLeaderboardCell.swift; sourceTree = "<group>"; };
 		ABD180B11F192E3F0071D128 /* BrowseMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseMenuVC.swift; sourceTree = "<group>"; };
 		ABD180B31F1937950071D128 /* SelectASessionListVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectASessionListVC.swift; sourceTree = "<group>"; };
 		ABD180B51F193A3D0071D128 /* SessionListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionListCell.swift; sourceTree = "<group>"; };
@@ -254,6 +258,7 @@
 				AB435C2E1F1BF12400F2510B /* DataPostCell.swift */,
 				AB435C341F1CD40B00F2510B /* CommentCell.swift */,
 				ABCAEC461F1EB52A0031F8EC /* PostsLeaderboardCell.swift */,
+				ABCAEC4D1F1F9A750031F8EC /* SessionsLeaderboardCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 				AB57F91D1F11215E00CFB504 /* ViewProfileVC.swift */,
 				AB435C401F1E99B500F2510B /* RankingMenuVC.swift */,
 				ABCAEC441F1EAA7B0031F8EC /* PostsLeaderboardVC.swift */,
+				ABCAEC4B1F1F98830031F8EC /* SessionsLeaderboardVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -493,6 +499,7 @@
 				ABECB1CD1F15211700C09DB7 /* GFGeoHashQuery.m in Sources */,
 				AB6EADB61F128B3D00E2AACB /* AddMenuVC.swift in Sources */,
 				ABECB1CE1F15211700C09DB7 /* GFQuery.m in Sources */,
+				ABCAEC4C1F1F98830031F8EC /* SessionsLeaderboardVC.swift in Sources */,
 				ABE3B9B01F0D937C0079B099 /* DataService.swift in Sources */,
 				ABE3B9AA1F0D8A410079B099 /* SafetyVC.swift in Sources */,
 				AB435C411F1E99B500F2510B /* RankingMenuVC.swift in Sources */,
@@ -517,6 +524,7 @@
 				AB57F91A1F1109C000CFB504 /* PrivacyVC.swift in Sources */,
 				AB5CE3B31F1BCE4E00710BB5 /* ViewOwnDataMapPopOverVC.swift in Sources */,
 				ABE3B9BC1F0D94750079B099 /* CircleView.swift in Sources */,
+				ABCAEC4E1F1F9A750031F8EC /* SessionsLeaderboardCell.swift in Sources */,
 				AB5CE3B71F1BE69A00710BB5 /* DataPost.swift in Sources */,
 				ABE3B9B81F0D94580079B099 /* FancyField.swift in Sources */,
 				AB5CE3B11F1B834900710BB5 /* UserPostAnnotation.swift in Sources */,
