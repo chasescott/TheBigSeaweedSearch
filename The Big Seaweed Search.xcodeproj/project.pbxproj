@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB1020271F20A7ED0044635D /* DataCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1020261F20A7ED0044635D /* DataCounter.swift */; };
+		AB1020291F20A9380044635D /* BadgePopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1020281F20A9380044635D /* BadgePopUpVC.swift */; };
+		AB10202B1F20D8D30044635D /* AddDataBadgePopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB10202A1F20D8D30044635D /* AddDataBadgePopUpVC.swift */; };
 		AB435C2F1F1BF12400F2510B /* DataPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB435C2E1F1BF12400F2510B /* DataPostCell.swift */; };
 		AB435C311F1BF58F00F2510B /* ViewAllDataOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB435C301F1BF58F00F2510B /* ViewAllDataOneVC.swift */; };
 		AB435C331F1CD26100F2510B /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB435C321F1CD26100F2510B /* Comment.swift */; };
@@ -84,6 +87,9 @@
 /* Begin PBXFileReference section */
 		155C308B9E86F40B5E65DB0E /* Pods-The Big Seaweed Search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Big Seaweed Search.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Big Seaweed Search/Pods-The Big Seaweed Search.release.xcconfig"; sourceTree = "<group>"; };
 		9C763B25A60E0A4A9FCE2869 /* Pods_The_Big_Seaweed_Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Big_Seaweed_Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1020261F20A7ED0044635D /* DataCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCounter.swift; sourceTree = "<group>"; };
+		AB1020281F20A9380044635D /* BadgePopUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgePopUpVC.swift; sourceTree = "<group>"; };
+		AB10202A1F20D8D30044635D /* AddDataBadgePopUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDataBadgePopUpVC.swift; sourceTree = "<group>"; };
 		AB435C2E1F1BF12400F2510B /* DataPostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPostCell.swift; sourceTree = "<group>"; };
 		AB435C301F1BF58F00F2510B /* ViewAllDataOneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllDataOneVC.swift; sourceTree = "<group>"; };
 		AB435C321F1CD26100F2510B /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -241,6 +247,7 @@
 				AB435C3E1F1E24F100F2510B /* DataPostAnnotation.swift */,
 				AB435C321F1CD26100F2510B /* Comment.swift */,
 				ABCAEC491F1EB60C0031F8EC /* PostRanking.swift */,
+				AB1020261F20A7ED0044635D /* DataCounter.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -305,6 +312,8 @@
 				ABCAEC441F1EAA7B0031F8EC /* PostsLeaderboardVC.swift */,
 				ABCAEC4B1F1F98830031F8EC /* SessionsLeaderboardVC.swift */,
 				ABCAEC4F1F1FA09E0031F8EC /* ViewBadgesVC.swift */,
+				AB1020281F20A9380044635D /* BadgePopUpVC.swift */,
+				AB10202A1F20D8D30044635D /* AddDataBadgePopUpVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -503,6 +512,7 @@
 				ABCAEC541F1FA9BE0031F8EC /* BadgesSessionsCell.swift in Sources */,
 				AB5CE3AD1F1A55D300710BB5 /* ViewOwnDataPopOverVC.swift in Sources */,
 				AB435C351F1CD40B00F2510B /* CommentCell.swift in Sources */,
+				AB1020271F20A7ED0044635D /* DataCounter.swift in Sources */,
 				ABCAEC471F1EB52A0031F8EC /* PostsLeaderboardCell.swift in Sources */,
 				AB5CE3AB1F1953C900710BB5 /* UserPost.swift in Sources */,
 				AB435C391F1D569200F2510B /* ViewAllDataPopOverVC.swift in Sources */,
@@ -539,6 +549,7 @@
 				ABCAEC4E1F1F9A750031F8EC /* SessionsLeaderboardCell.swift in Sources */,
 				AB5CE3B71F1BE69A00710BB5 /* DataPost.swift in Sources */,
 				ABE3B9B81F0D94580079B099 /* FancyField.swift in Sources */,
+				AB1020291F20A9380044635D /* BadgePopUpVC.swift in Sources */,
 				AB5CE3B11F1B834900710BB5 /* UserPostAnnotation.swift in Sources */,
 				ABE3B9B21F0D93FC0079B099 /* CustomTextField.swift in Sources */,
 				AB5CE3A91F19485600710BB5 /* UserDataListCell.swift in Sources */,
@@ -564,6 +575,7 @@
 				AB5CE3AF1F1B791000710BB5 /* ViewOwnDataMapVC.swift in Sources */,
 				AB435C3F1F1E24F100F2510B /* DataPostAnnotation.swift in Sources */,
 				AB4A71AA1F17D77D0016ED2D /* AlphaView.swift in Sources */,
+				AB10202B1F20D8D30044635D /* AddDataBadgePopUpVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -48,6 +48,9 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
     var sessionId: String!
     //Firebase ref
     var rootRef:FIRDatabaseReference!
+    //DataCounter for badge pop up
+    var dataCounter: DataCounter!
+    var newSession: Session!
     
     //picker view arrays for selection
     let gradient = ["Flat","Gently Sloping","Steep"]
@@ -218,18 +221,48 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
             DataService.ds.REF_USERS.child(userId).observeSingleEvent(of: .value, with: { (snapshot) in
                 let value = snapshot.value as? NSDictionary
                 var numbOfSessions = value?["numberOfSessions"] as! Int
-                print("The number of posts is: \(numbOfSessions)")
                 numbOfSessions = numbOfSessions + 1
+                print("The number of posts is: \(numbOfSessions)")
                 DataService.ds.REF_USERS.child(userId).child("numberOfSessions").setValue(numbOfSessions)
                 //Upload number of posts to Leaderboard FB nodes
                 DataService.ds.REF_LEADERBOARD.child(userId).child("numberOfSessions").setValue(numbOfSessions)
+                self.checkBadges(numbOfSessions: numbOfSessions)
             })
-
-            
-            imageSelected = false
+//            imageSelected = false
             //beachImage.image = UIImage(named: "beach")
-            userAlertSuccess(alert: "Your session has now been activated.  Please continue to collect data")
+//            userAlertSuccess(alert: "Your session has now been activated.  Please continue to collect data")
             print("CHASE: New Session Activated")
+        }
+    }
+    
+    func checkBadges (numbOfSessions: Int) {
+        if numbOfSessions == 1 {
+            imageSelected = false
+            self.dataCounter = DataCounter(count: numbOfSessions, isPostType: false)
+            performSegue(withIdentifier: "sessionToBadgePopUpVC", sender: self)
+        } else if numbOfSessions == 5 {
+            imageSelected = false
+            self.dataCounter = DataCounter(count: numbOfSessions, isPostType: false)
+            performSegue(withIdentifier: "sessionToBadgePopUpVC", sender: self)
+        } else if numbOfSessions == 10 {
+            imageSelected = false
+            self.dataCounter = DataCounter(count: numbOfSessions, isPostType: false)
+            performSegue(withIdentifier: "sessionToBadgePopUpVC", sender: self)
+        } else if numbOfSessions == 15 {
+            imageSelected = false
+            self.dataCounter = DataCounter(count: numbOfSessions, isPostType: false)
+            performSegue(withIdentifier: "sessionToBadgePopUpVC", sender: self)
+        } else if numbOfSessions == 20 {
+            imageSelected = false
+            self.dataCounter = DataCounter(count: numbOfSessions, isPostType: false)
+            performSegue(withIdentifier: "sessionToBadgePopUpVC", sender: self)
+        } else if numbOfSessions == 25 {
+            imageSelected = false
+            self.dataCounter = DataCounter(count: numbOfSessions, isPostType: false)
+            performSegue(withIdentifier: "sessionToBadgePopUpVC", sender: self)
+        } else {
+            imageSelected = false
+            userAlertSuccess(alert: "Your session has now been activated.  Please continue to collect data")
         }
     }
     
@@ -238,12 +271,15 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         //Store variables in session object to pass through
         let userId = FIRAuth.auth()?.currentUser?.uid
         sessionName = nameLbl.text!
-        let newSession = Session(sessionId: sessionId, imgURL: imageLink, userId: userId!, date: dateAsString, whoWith: whoSelected, beachType: beachSelected, beachGradient: gradientSelected, numberOfPosts: numberOfPosts, sessionName: sessionName)
+        self.newSession = Session(sessionId: sessionId, imgURL: imageLink, userId: userId!, date: dateAsString, whoWith: whoSelected, beachType: beachSelected, beachGradient: gradientSelected, numberOfPosts: numberOfPosts, sessionName: sessionName)
         //Pass session object via segue to new AddDataVC
         if let destinationVC = segue.destination as?
-            AddDataVC{
+            AddDataVC {
             destinationVC.currentSession = newSession
-            }
+        } else if let destinationVC = segue.destination as? BadgePopUpVC {
+            destinationVC.dataCounter = dataCounter
+            destinationVC.currentSession = newSession
+        }
         }
     
     //User alert windows to warn of issue that needs attention before proceeding
@@ -263,7 +299,7 @@ class NewSessionVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSour
         let alertController = UIAlertController(title: "Success!", message: alert, preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler:
             {
-            action in self.performSegue(withIdentifier: "sessionToAdd", sender: nil)
+            action in self.performSegue(withIdentifier: "sessionToAdd", sender: self)
         }
         ))
         

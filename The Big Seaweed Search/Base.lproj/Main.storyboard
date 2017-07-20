@@ -45,13 +45,13 @@
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-smaller" translatesAutoresizingMaskIntoConstraints="NO" id="2Qv-vk-Opu">
-                                <rect key="frame" x="16" y="72" width="343" height="148"/>
+                                <rect key="frame" x="16" y="28" width="343" height="148"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="148" id="BiJ-Uo-xCV"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="W56-mc-iVb">
-                                <rect key="frame" x="36.5" y="379" width="302" height="189"/>
+                                <rect key="frame" x="36.5" y="335" width="302" height="189"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Or" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Z4-Fh-UCw">
                                         <rect key="frame" x="0.0" y="0.0" width="302" height="30"/>
@@ -101,7 +101,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="vyt-Lx-vwp">
-                                <rect key="frame" x="137.5" y="271" width="100" height="100"/>
+                                <rect key="frame" x="137.5" y="227" width="100" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9N-gB-3tA" customClass="RoundButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -118,7 +118,7 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Select a sign in method" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b6-k0-tya">
-                                <rect key="frame" x="79.5" y="228" width="216" height="35"/>
+                                <rect key="frame" x="79.5" y="184" width="216" height="35"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="gSx-PM-tx9"/>
@@ -196,7 +196,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F0F-t8-WHu">
                                 <rect key="frame" x="16" y="136" width="343" height="346"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="qWc-w7-8bu" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="qWc-w7-8bu" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="96.5" y="0.0" width="150" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="ZUf-b5-z2S"/>
@@ -274,7 +274,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mmT-Ku-rFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="41" y="-1415"/>
+            <point key="canvasLocation" x="30" y="-1762"/>
         </scene>
         <!--Edit Profile-->
         <scene sceneID="Lhi-my-Oeq">
@@ -309,7 +309,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="jS1-Gj-5ye" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="jS1-Gj-5ye" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="80" y="43" width="150.5" height="150"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -447,7 +447,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="31" y="-654"/>
+            <point key="canvasLocation" x="41" y="-778"/>
         </scene>
         <!--Start New Session-->
         <scene sceneID="l25-zs-l4n">
@@ -464,7 +464,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Hwq-ud-zk1">
                                 <rect key="frame" x="25.5" y="51" width="324" height="112.5"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach" translatesAutoresizingMaskIntoConstraints="NO" id="Ck2-mO-cEh" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach" translatesAutoresizingMaskIntoConstraints="NO" id="Ck2-mO-cEh" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="112.5"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="112.5" id="IQd-UA-N0c"/>
@@ -668,6 +668,7 @@
                         <outlet property="nameLbl" destination="RGF-n9-scp" id="lUf-MR-j9f"/>
                         <outlet property="whoPicker" destination="fP8-Fe-t9R" id="IaG-Z5-ZjD"/>
                         <segue destination="ZOx-sf-1H7" kind="show" identifier="sessionToAdd" id="ye2-P7-JYl"/>
+                        <segue destination="ocj-eF-IFc" kind="show" identifier="sessionToBadgePopUpVC" id="djD-Db-XbZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfq-mK-RCZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -692,7 +693,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="du3-l8-mWO">
                                         <rect key="frame" x="37" y="146" width="300" height="375"/>
                                         <subviews>
-                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="8bb-iD-JXS" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="8bb-iD-JXS">
                                                 <rect key="frame" x="8" y="8" width="284" height="318"/>
                                                 <gestureRecognizers/>
                                                 <constraints>
@@ -777,6 +778,167 @@
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="5073" y="-654"/>
+        </scene>
+        <!--Congratulations-->
+        <scene sceneID="OKN-81-h4N">
+            <objects>
+                <viewController title="Congratulations" id="ocj-eF-IFc" customClass="BadgePopUpVC" customModule="The_Big_Seaweed_Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aFb-nV-606"/>
+                        <viewControllerLayoutGuide type="bottom" id="f9N-m7-dAO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aoi-QQ-h5e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dE9-MF-OEh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIb-5X-vJI" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                        <rect key="frame" x="123" y="565.5" width="129" height="44"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="129" id="eul-qs-z7e"/>
+                                            <constraint firstAttribute="height" constant="44" id="g3b-nZ-dk7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="OK">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelBtn:" destination="ocj-eF-IFc" eventType="touchUpInside" id="dBB-IE-4jd"/>
+                                            <action selector="dontBtnPressed:" destination="bGL-vS-kgJ" eventType="touchUpInside" id="cji-ut-E2U"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKs-ci-wtw">
+                                        <rect key="frame" x="29" y="125.5" width="316" height="416"/>
+                                        <subviews>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading" translatesAutoresizingMaskIntoConstraints="NO" id="YDd-c4-9xK" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="300" height="400"/>
+                                                <gestureRecognizers/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="YDd-c4-9xK" secondAttribute="bottom" constant="8" id="TiP-Q7-WzK"/>
+                                            <constraint firstAttribute="height" constant="416" id="Xem-c2-Fd2"/>
+                                            <constraint firstItem="YDd-c4-9xK" firstAttribute="centerX" secondItem="uKs-ci-wtw" secondAttribute="centerX" id="a70-ZN-YPb"/>
+                                            <constraint firstItem="YDd-c4-9xK" firstAttribute="top" secondItem="uKs-ci-wtw" secondAttribute="top" constant="8" id="gdr-wa-7D7"/>
+                                            <constraint firstItem="YDd-c4-9xK" firstAttribute="centerY" secondItem="uKs-ci-wtw" secondAttribute="centerY" id="nzo-aA-6hO"/>
+                                            <constraint firstAttribute="trailing" secondItem="YDd-c4-9xK" secondAttribute="trailing" constant="8" id="oIo-ew-cNP"/>
+                                            <constraint firstAttribute="width" constant="316" id="uZT-mp-k4E"/>
+                                            <constraint firstItem="YDd-c4-9xK" firstAttribute="leading" secondItem="uKs-ci-wtw" secondAttribute="leading" constant="8" id="vnP-nD-7IA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.62435787669999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="uKs-ci-wtw" firstAttribute="centerY" secondItem="dE9-MF-OEh" secondAttribute="centerY" id="6WA-qB-Maa"/>
+                                    <constraint firstItem="EIb-5X-vJI" firstAttribute="centerX" secondItem="dE9-MF-OEh" secondAttribute="centerX" id="S0O-5Q-RIJ"/>
+                                    <constraint firstItem="uKs-ci-wtw" firstAttribute="centerX" secondItem="dE9-MF-OEh" secondAttribute="centerX" id="c38-jX-47a"/>
+                                    <constraint firstItem="EIb-5X-vJI" firstAttribute="top" secondItem="uKs-ci-wtw" secondAttribute="bottom" constant="24" id="rr8-pY-Vg2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dE9-MF-OEh" secondAttribute="trailing" id="LX9-yZ-3Vg"/>
+                            <constraint firstItem="dE9-MF-OEh" firstAttribute="top" secondItem="aoi-QQ-h5e" secondAttribute="top" id="TB9-MS-GbL"/>
+                            <constraint firstItem="f9N-m7-dAO" firstAttribute="top" secondItem="dE9-MF-OEh" secondAttribute="bottom" id="a5N-7h-H6y"/>
+                            <constraint firstItem="dE9-MF-OEh" firstAttribute="leading" secondItem="aoi-QQ-h5e" secondAttribute="leading" id="qNQ-lL-Bzl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Congratulations!" id="F4e-sk-8zI"/>
+                    <connections>
+                        <outlet property="picture" destination="YDd-c4-9xK" id="ozk-Hi-6eT"/>
+                        <segue destination="ZOx-sf-1H7" kind="show" identifier="badgePopUpToAddDataVC" id="0vl-7C-pTn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cOd-3A-Jou" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3374" y="-1415"/>
+        </scene>
+        <!--Add Data Badge Pop UpVC-->
+        <scene sceneID="uSw-xR-uwh">
+            <objects>
+                <viewController id="Lof-fA-O3f" customClass="AddDataBadgePopUpVC" customModule="The_Big_Seaweed_Search" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z5b-BR-TEq"/>
+                        <viewControllerLayoutGuide type="bottom" id="YUa-K5-1rZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ewL-Q1-eCC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hk1-7h-y7h">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hiX-Uz-ZTT" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                        <rect key="frame" x="123" y="565.5" width="129" height="44"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="5wA-FN-ePy"/>
+                                            <constraint firstAttribute="width" constant="129" id="IzC-31-6vV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="22"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="OK">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelBtn:" destination="ocj-eF-IFc" eventType="touchUpInside" id="asg-UP-jsW"/>
+                                            <action selector="dontBtnPressed:" destination="bGL-vS-kgJ" eventType="touchUpInside" id="ueN-ku-P0e"/>
+                                            <action selector="okBtnPressed:" destination="Lof-fA-O3f" eventType="touchUpInside" id="q9Z-f2-JaL"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BbN-1c-Ssr">
+                                        <rect key="frame" x="29" y="125.5" width="316" height="416"/>
+                                        <subviews>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading" translatesAutoresizingMaskIntoConstraints="NO" id="wMr-UI-IXh" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="300" height="400"/>
+                                                <gestureRecognizers/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="wMr-UI-IXh" firstAttribute="leading" secondItem="BbN-1c-Ssr" secondAttribute="leading" constant="8" id="0rq-RX-GEb"/>
+                                            <constraint firstAttribute="height" constant="416" id="7ns-bV-IMd"/>
+                                            <constraint firstAttribute="trailing" secondItem="wMr-UI-IXh" secondAttribute="trailing" constant="8" id="Ipd-L9-ma6"/>
+                                            <constraint firstItem="wMr-UI-IXh" firstAttribute="centerX" secondItem="BbN-1c-Ssr" secondAttribute="centerX" id="QlV-fr-rMp"/>
+                                            <constraint firstAttribute="width" constant="316" id="UcC-2K-2HP"/>
+                                            <constraint firstItem="wMr-UI-IXh" firstAttribute="centerY" secondItem="BbN-1c-Ssr" secondAttribute="centerY" id="Wgt-Nk-Kdz"/>
+                                            <constraint firstItem="wMr-UI-IXh" firstAttribute="top" secondItem="BbN-1c-Ssr" secondAttribute="top" constant="8" id="b6E-fV-63K"/>
+                                            <constraint firstAttribute="bottom" secondItem="wMr-UI-IXh" secondAttribute="bottom" constant="8" id="jpm-WI-E6e"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.62435787669999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hiX-Uz-ZTT" firstAttribute="top" secondItem="BbN-1c-Ssr" secondAttribute="bottom" constant="24" id="P2B-Uh-cxJ"/>
+                                    <constraint firstItem="hiX-Uz-ZTT" firstAttribute="centerX" secondItem="hk1-7h-y7h" secondAttribute="centerX" id="PWy-tO-3dU"/>
+                                    <constraint firstItem="BbN-1c-Ssr" firstAttribute="centerX" secondItem="hk1-7h-y7h" secondAttribute="centerX" id="Pd9-OW-fwo"/>
+                                    <constraint firstItem="BbN-1c-Ssr" firstAttribute="centerY" secondItem="hk1-7h-y7h" secondAttribute="centerY" id="diI-Nu-vIK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YUa-K5-1rZ" firstAttribute="top" secondItem="hk1-7h-y7h" secondAttribute="bottom" id="129-80-d3N"/>
+                            <constraint firstItem="hk1-7h-y7h" firstAttribute="top" secondItem="ewL-Q1-eCC" secondAttribute="top" id="C37-ml-Gbl"/>
+                            <constraint firstAttribute="trailing" secondItem="hk1-7h-y7h" secondAttribute="trailing" id="nlB-rP-ivx"/>
+                            <constraint firstItem="hk1-7h-y7h" firstAttribute="leading" secondItem="ewL-Q1-eCC" secondAttribute="leading" id="rxL-fb-ZEo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="picture" destination="wMr-UI-IXh" id="Qfg-wO-UbY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9zk-N0-TdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4196" y="-1415"/>
         </scene>
         <!--Add Data-->
         <scene sceneID="WYt-LJ-s3V">
@@ -964,6 +1126,7 @@
                         <segue destination="pvS-uj-2jn" kind="show" identifier="addDataVCtoAddDataMenu" id="VRD-gh-dnh"/>
                         <segue destination="dV0-P5-erj" kind="show" identifier="addDataToInstructions" id="hSf-Hb-TWL"/>
                         <segue destination="bGL-vS-kgJ" kind="presentation" identifier="showSeaweedTypes" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="XQs-Kd-jO3"/>
+                        <segue destination="Lof-fA-O3f" kind="presentation" identifier="showDataPopOverVC" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="N57-OK-nhN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nR8-wx-EDl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1754,7 +1917,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="icy-b4-qg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="809" y="-654"/>
+            <point key="canvasLocation" x="809" y="-779"/>
         </scene>
         <!--Continue Previous Session-->
         <scene sceneID="22H-OW-qnz">
@@ -2180,7 +2343,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CgV-Pn-gGt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1673" y="36"/>
+            <point key="canvasLocation" x="1671" y="36"/>
         </scene>
         <!--Browse Data-->
         <scene sceneID="R6Y-k1-22A">
@@ -2899,7 +3062,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AjE-MP-nYA" customClass="FancyView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                                     <rect key="frame" x="8" y="8" width="359" height="336"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="Rqd-Lf-NHF">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="Rqd-Lf-NHF">
                                                             <rect key="frame" x="8" y="8" width="60" height="60"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="60" id="ep2-qy-Iwf"/>
@@ -3041,7 +3204,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="Fb5-vu-DlF" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="Fb5-vu-DlF" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                 <rect key="frame" x="8" y="72" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="qL0-f3-7lz"/>
@@ -3941,7 +4104,7 @@
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="kaR-00-doh" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="kaR-00-doh" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                 <rect key="frame" x="112" y="151" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.87374571919999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
@@ -4000,18 +4163,156 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled" translatesAutoresizingMaskIntoConstraints="NO" id="xyy-Xi-Oin">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled" translatesAutoresizingMaskIntoConstraints="NO" id="xyy-Xi-Oin" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="205"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="205" id="Ary-Lm-N19"/>
                                 </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach" translatesAutoresizingMaskIntoConstraints="NO" id="3gC-PO-xvK" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="454" width="375" height="205"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="205" id="2VO-BG-mib"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1qQ-fD-TS9">
+                                <rect key="frame" x="0.0" y="241" width="375" height="205"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Step 1">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Avenir-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Select your survey area - a five metre wide plot that runs from the top of the shore down to the sea.  There is no need for a tape measure, five meters is approximately five adult paces.
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Step 2">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Avenir-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Start a new session and fill out the details on the session form.  
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Step 3">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Avenir-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Standing at the bottom of the shore, take a photo of your plot (with your back to the sea) as per the example below using the 'Open Camera' button.  Once all fields are completed, please select 'Start Collecting Data'.
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Step 4">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Avenir-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+Walk away from the sea, carefully exploring the entire area of your plot.  Aim to cover the whole of your plot within 1 hour.  
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Step 5">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Avenir-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+When you locate seaweed, take a photo by clicking on the camera icon on the 'Add Data' screen.  Click on the '?' button to open the seaweed menu to establish the type of seaweed, and select it.
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Step 6">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Avenir-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+If you wish to save the data and collect more, click 'Save &amp; Add More Data'.  Alternatively, when you wish to end the session, select 'Save and End Session'.
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Step 7">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Avenir-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">If you need to quit the app at any time during a session, you can reopen that session at any time by selecting 'Continue Previous Session'.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="Avenir-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="1qQ-fD-TS9" firstAttribute="leading" secondItem="C6b-ei-x6K" secondAttribute="leading" id="ACm-mp-sfT"/>
+                            <constraint firstItem="1qQ-fD-TS9" firstAttribute="top" secondItem="xyy-Xi-Oin" secondAttribute="bottom" constant="8" id="BeJ-Ts-6Z1"/>
                             <constraint firstItem="xyy-Xi-Oin" firstAttribute="leading" secondItem="C6b-ei-x6K" secondAttribute="leading" id="Cjl-qz-n0F"/>
+                            <constraint firstAttribute="trailing" secondItem="1qQ-fD-TS9" secondAttribute="trailing" id="FWb-vJ-YaF"/>
+                            <constraint firstItem="3gC-PO-xvK" firstAttribute="leading" secondItem="C6b-ei-x6K" secondAttribute="leading" id="Ke3-m3-PAY"/>
                             <constraint firstAttribute="trailing" secondItem="xyy-Xi-Oin" secondAttribute="trailing" id="QzT-qr-Cj0"/>
+                            <constraint firstItem="REI-Ta-EsM" firstAttribute="top" secondItem="3gC-PO-xvK" secondAttribute="bottom" constant="8" id="c75-tg-2Fp"/>
                             <constraint firstItem="xyy-Xi-Oin" firstAttribute="top" secondItem="WX3-C6-AQF" secondAttribute="bottom" constant="8" id="es2-AD-lqd"/>
+                            <constraint firstItem="3gC-PO-xvK" firstAttribute="top" secondItem="1qQ-fD-TS9" secondAttribute="bottom" constant="8" id="fSQ-qr-MEd"/>
+                            <constraint firstAttribute="trailing" secondItem="3gC-PO-xvK" secondAttribute="trailing" id="gku-kp-qqV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Instructions" id="EuF-Ik-IZo">
@@ -4025,7 +4326,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJk-Dy-RQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="41" y="1585"/>
+            <point key="canvasLocation" x="40.799999999999997" y="1584.5577211394304"/>
         </scene>
         <!--About The Big Seaweed Search-->
         <scene sceneID="Ayq-Vx-LaD">
@@ -4641,17 +4942,17 @@ You may request details of personal information which we hold about you under th
         <image name="user1" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EnJ-aU-BaS"/>
-        <segue reference="JU9-K3-Gcc"/>
+        <segue reference="VRD-gh-dnh"/>
+        <segue reference="ye2-P7-JYl"/>
+        <segue reference="hSf-Hb-TWL"/>
+        <segue reference="qOa-ms-rup"/>
         <segue reference="Zqa-Uo-83B"/>
         <segue reference="iyg-cT-VtJ"/>
-        <segue reference="G6K-X6-hi9"/>
+        <segue reference="RIj-5u-dXt"/>
         <segue reference="kN0-qv-4eq"/>
+        <segue reference="9qv-sm-tIH"/>
         <segue reference="FVd-cj-ub6"/>
         <segue reference="wJO-md-pD8"/>
-        <segue reference="VRD-gh-dnh"/>
-        <segue reference="EI8-fi-Mje"/>
-        <segue reference="hSf-Hb-TWL"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

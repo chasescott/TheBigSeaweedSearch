@@ -14,6 +14,7 @@ class MainVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
     }
 
     @IBAction func infoBtnTapped(_ sender: UIButton) {

@@ -45,6 +45,7 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
     var numberOfPosts: Int!
     //Firebase ref
     var rootRef:FIRDatabaseReference!
+    var dataCounter: DataCounter!
     
     //picker view array for selection
     let seaweed = ["Dabberlocks  - (native)", "Sugar Kelp  - (native)", "Serrated Wrack  - (native)", "Bladder Wrack  - (native)", "Knotted Wrack  - (native)", "Spiral Wrack  - (native)", "Channelled Wrack  - (native)", "Thongweed  - (native)", "Wireweed - (non-native)", "Wakame  - (non-native)", "Harpoon Weed - (non-native)", "Bonnemaison's Hook - (non-native)"]
@@ -162,15 +163,15 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
                     let downloadURL = metadata?.downloadURL()?.absoluteString
                     if let url = downloadURL {
                         self.imageLink = url
-                        self.postToFirebase(imgUrl: url)
+                        self.postToFirebase(imgUrl: url, endAlert: false)
                     }
                 }
             }
         }
-        userAlertSuccess(alert: "Data added successfully! Please press ok to continue and add more")
+        //userAlertSuccess(alert: "Data added successfully! Please press ok to continue and add more")
     }
     
-    func postToFirebase(imgUrl: String) {
+    func postToFirebase(imgUrl: String, endAlert: Bool) {
         let geoFire = GeoFire(firebaseRef: ref.child("location").child("posts"))
         let sessionIdentity = sessionId as String
         let numberOfLikes: Int = 0
@@ -203,15 +204,21 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
             //6. Run code to increase by 1 the number of posts the user has created against the USER node in Firebase
             DataService.ds.REF_USERS.child(userId).observeSingleEvent(of: .value, with: { (snapshot) in
                 let value = snapshot.value as? NSDictionary
-                var numbOfPosts = value?["numberOfPosts"] as! Int
-                print("The number of posts is: \(numbOfPosts)")
-                numbOfPosts = numbOfPosts + 1
-                DataService.ds.REF_USERS.child(userId).child("numberOfPosts").setValue(numbOfPosts)
+                self.numberOfPosts = value?["numberOfPosts"] as! Int
+                self.numberOfPosts = self.numberOfPosts + 1
+                print("The number of posts is: \(self.numberOfPosts!)")
+                DataService.ds.REF_USERS.child(userId).child("numberOfPosts").setValue(self.numberOfPosts)
                 //Upload number of posts to Leaderboard FB nodes
-                DataService.ds.REF_LEADERBOARD.child(userId).child("numberOfPosts").setValue(numbOfPosts)
+                DataService.ds.REF_LEADERBOARD.child(userId).child("numberOfPosts").setValue(self.numberOfPosts)
+                //Run badge check to see if new badge to be awarded, if so, present congratulatory message
+                if endAlert == true {
+                    self.checkBadges(numberOfPosts: self.numberOfPosts, endAlert: true)
+                } else if endAlert == false {
+                    self.checkBadges(numberOfPosts: self.numberOfPosts, endAlert: false)
+                }
             })
             
-            //.  Run code to count the number of posts in the given session
+            //.7  Run code to count the number of posts in the given session and add number of posts data to sessions node
             DataService.ds.REF_SESSIONS.child(sessionId).observeSingleEvent(of: .value, with: { (snapshot) in
                 let value = snapshot.value as? NSDictionary
                 var numbOfPosts = value?["numberOfPosts"] as! Int
@@ -220,8 +227,7 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
                 DataService.ds.REF_SESSIONS.child(self.sessionId).child("numberOfPosts").setValue(numbOfPosts)
             })
 
-            
-            //7. Reset form
+            //8. Reset form
             imageSelected = false
             imageAdd.image = UIImage(named: "add-image")
             print("CHASE: New Post Successful")
@@ -248,7 +254,7 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
         }
         if let imgData = UIImageJPEGRepresentation(img, 0.2) {
             
-            //creates a string to unique identify items
+            //creates a unique string to identify items
             let imgUid = NSUUID().uuidString
             
             let metadata = FIRStorageMetadata()
@@ -264,16 +270,87 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
                     let downloadURL = metadata?.downloadURL()?.absoluteString
                     if let url = downloadURL {
                         self.imageLink = url
-                        self.postToFirebase(imgUrl: url)
+                        self.postToFirebase(imgUrl: url, endAlert: true)
                     }
                 }
             }
         }
-        userAlertFinishCheck()
+        //userAlertFinishCheck()
+    }
+    
+    func checkBadges(numberOfPosts: Int, endAlert: Bool) {
+        if numberOfPosts == 1 {
+            imageSelected = false
+            self.dataCounter = DataCounter(count: numberOfPosts, isPostType: true)
+            performSegue(withIdentifier: "showDataPopOverVC", sender: self)
+            if endAlert == false {
+                userAlertSuccess(alert: "Congratulations you've earned a badge!  Your data added successfully. Please press ok to continue")
+            } else {
+                userAlertFinishCheck()
+            }
+        } else if numberOfPosts == 5 {
+            imageSelected = false
+            self.dataCounter = DataCounter(count: numberOfPosts, isPostType: true)
+            performSegue(withIdentifier: "showDataPopOverVC", sender: self)
+            if endAlert == false {
+                userAlertSuccess(alert: "Congratulations you've earned a badge!  Your data added successfully. Please press ok to continue")
+            } else {
+                userAlertFinishCheck()
+            }
+        } else if numberOfPosts == 10 {
+            imageSelected = false
+            self.dataCounter = DataCounter(count: numberOfPosts, isPostType: true)
+            performSegue(withIdentifier: "showDataPopOverVC", sender: self)
+            if endAlert == false {
+                userAlertSuccess(alert: "Congratulations you've earned a badge!  Your data added successfully. Please press ok to continue")
+            } else {
+                userAlertFinishCheck()
+            }
+        } else if numberOfPosts == 15 {
+            imageSelected = false
+            self.dataCounter = DataCounter(count: numberOfPosts, isPostType: true)
+            performSegue(withIdentifier: "showDataPopOverVC", sender: self)
+            if endAlert == false {
+                userAlertSuccess(alert: "Congratulations you've earned a badge!  Your data added successfully. Please press ok to continue")
+            } else {
+                userAlertFinishCheck()
+            }
+        } else if numberOfPosts == 20 {
+            imageSelected = false
+            self.dataCounter = DataCounter(count: numberOfPosts, isPostType: true)
+            performSegue(withIdentifier: "showDataPopOverVC", sender: self)
+            if endAlert == false {
+                userAlertSuccess(alert: "Congratulations you've earned a badge!  Your data added successfully. Please press ok to continue")
+            } else {
+                userAlertFinishCheck()
+            }
+        } else if numberOfPosts == 25 {
+            imageSelected = false
+            self.dataCounter = DataCounter(count: numberOfPosts, isPostType: true)
+            performSegue(withIdentifier: "showDataPopOverVC", sender: self)
+            if endAlert == false {
+                userAlertSuccess(alert: "Congratulations you've earned a badge!  Your data added successfully. Please press ok to continue")
+            } else {
+                userAlertFinishCheck()
+            }
+        } else {
+            imageSelected = false
+            if endAlert == false {
+            userAlertSuccess(alert: "Data added successfully! Please press ok to continue and add more")
+            } else {
+                userAlertFinishCheck()
+            }
+    }
     }
     
     @IBAction func helpBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: "showSeaweedTypes", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destinationVC = segue.destination as? AddDataBadgePopUpVC {
+            destinationVC.dataCounter = dataCounter
+        }
     }
     
     //User alert windows to warn of issue that needs attention before proceeding
