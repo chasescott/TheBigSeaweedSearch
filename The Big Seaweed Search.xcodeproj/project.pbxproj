@@ -10,6 +10,12 @@
 		AB1020271F20A7ED0044635D /* DataCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1020261F20A7ED0044635D /* DataCounter.swift */; };
 		AB1020291F20A9380044635D /* BadgePopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1020281F20A9380044635D /* BadgePopUpVC.swift */; };
 		AB10202B1F20D8D30044635D /* AddDataBadgePopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB10202A1F20D8D30044635D /* AddDataBadgePopUpVC.swift */; };
+		AB10202E1F211EC80044635D /* GroupsMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB10202D1F211EC80044635D /* GroupsMenuVC.swift */; };
+		AB1020301F2123ED0044635D /* MyGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB10202F1F2123ED0044635D /* MyGroupsVC.swift */; };
+		AB1020321F21277E0044635D /* MyGroupInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1020311F21277E0044635D /* MyGroupInfoVC.swift */; };
+		AB1020341F212D6E0044635D /* SetupGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1020331F212D6E0044635D /* SetupGroupVC.swift */; };
+		AB1020361F2131DA0044635D /* BrowseGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1020351F2131DA0044635D /* BrowseGroupsVC.swift */; };
+		AB1020381F2139070044635D /* GroupRankingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1020371F2139070044635D /* GroupRankingVC.swift */; };
 		AB435C2F1F1BF12400F2510B /* DataPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB435C2E1F1BF12400F2510B /* DataPostCell.swift */; };
 		AB435C311F1BF58F00F2510B /* ViewAllDataOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB435C301F1BF58F00F2510B /* ViewAllDataOneVC.swift */; };
 		AB435C331F1CD26100F2510B /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB435C321F1CD26100F2510B /* Comment.swift */; };
@@ -90,6 +96,12 @@
 		AB1020261F20A7ED0044635D /* DataCounter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataCounter.swift; sourceTree = "<group>"; };
 		AB1020281F20A9380044635D /* BadgePopUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgePopUpVC.swift; sourceTree = "<group>"; };
 		AB10202A1F20D8D30044635D /* AddDataBadgePopUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDataBadgePopUpVC.swift; sourceTree = "<group>"; };
+		AB10202D1F211EC80044635D /* GroupsMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupsMenuVC.swift; sourceTree = "<group>"; };
+		AB10202F1F2123ED0044635D /* MyGroupsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGroupsVC.swift; sourceTree = "<group>"; };
+		AB1020311F21277E0044635D /* MyGroupInfoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyGroupInfoVC.swift; sourceTree = "<group>"; };
+		AB1020331F212D6E0044635D /* SetupGroupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetupGroupVC.swift; sourceTree = "<group>"; };
+		AB1020351F2131DA0044635D /* BrowseGroupsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseGroupsVC.swift; sourceTree = "<group>"; };
+		AB1020371F2139070044635D /* GroupRankingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupRankingVC.swift; sourceTree = "<group>"; };
 		AB435C2E1F1BF12400F2510B /* DataPostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPostCell.swift; sourceTree = "<group>"; };
 		AB435C301F1BF58F00F2510B /* ViewAllDataOneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAllDataOneVC.swift; sourceTree = "<group>"; };
 		AB435C321F1CD26100F2510B /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
@@ -198,6 +210,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AB10202C1F211C7A0044635D /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				AB10202D1F211EC80044635D /* GroupsMenuVC.swift */,
+				AB10202F1F2123ED0044635D /* MyGroupsVC.swift */,
+				AB1020311F21277E0044635D /* MyGroupInfoVC.swift */,
+				AB1020331F212D6E0044635D /* SetupGroupVC.swift */,
+				AB1020351F2131DA0044635D /* BrowseGroupsVC.swift */,
+				AB1020371F2139070044635D /* GroupRankingVC.swift */,
+			);
+			name = Groups;
+			sourceTree = "<group>";
+		};
 		ABE3B9801F0D4C480079B099 = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +250,7 @@
 				ABE3B99E1F0D4C780079B099 /* Model */,
 				ABE3B99F1F0D4CAA0079B099 /* View */,
 				ABE3B9A01F0D4CB50079B099 /* Controller */,
+				AB10202C1F211C7A0044635D /* Groups */,
 				ABE3B9901F0D4C480079B099 /* Main.storyboard */,
 				ABE3B9931F0D4C480079B099 /* Assets.xcassets */,
 				ABE3B9951F0D4C480079B099 /* LaunchScreen.storyboard */,
@@ -523,9 +549,12 @@
 				ABCAEC4C1F1F98830031F8EC /* SessionsLeaderboardVC.swift in Sources */,
 				ABE3B9B01F0D937C0079B099 /* DataService.swift in Sources */,
 				ABE3B9AA1F0D8A410079B099 /* SafetyVC.swift in Sources */,
+				AB1020361F2131DA0044635D /* BrowseGroupsVC.swift in Sources */,
 				AB435C411F1E99B500F2510B /* RankingMenuVC.swift in Sources */,
+				AB1020381F2139070044635D /* GroupRankingVC.swift in Sources */,
 				ABD180B81F193DA10071D128 /* ViewOwnDataVC.swift in Sources */,
 				ABE3B9BA1F0D94650079B099 /* FancyButton.swift in Sources */,
+				AB10202E1F211EC80044635D /* GroupsMenuVC.swift in Sources */,
 				AB57F9161F11097900CFB504 /* InstructionsVC.swift in Sources */,
 				ABE3B98F1F0D4C480079B099 /* LoginVC.swift in Sources */,
 				AB57F9221F11263900CFB504 /* UserProfile.swift in Sources */,
@@ -547,11 +576,13 @@
 				ABE3B9BC1F0D94750079B099 /* CircleView.swift in Sources */,
 				ABCAEC501F1FA09E0031F8EC /* ViewBadgesVC.swift in Sources */,
 				ABCAEC4E1F1F9A750031F8EC /* SessionsLeaderboardCell.swift in Sources */,
+				AB1020301F2123ED0044635D /* MyGroupsVC.swift in Sources */,
 				AB5CE3B71F1BE69A00710BB5 /* DataPost.swift in Sources */,
 				ABE3B9B81F0D94580079B099 /* FancyField.swift in Sources */,
 				AB1020291F20A9380044635D /* BadgePopUpVC.swift in Sources */,
 				AB5CE3B11F1B834900710BB5 /* UserPostAnnotation.swift in Sources */,
 				ABE3B9B21F0D93FC0079B099 /* CustomTextField.swift in Sources */,
+				AB1020341F212D6E0044635D /* SetupGroupVC.swift in Sources */,
 				AB5CE3A91F19485600710BB5 /* UserDataListCell.swift in Sources */,
 				ABE3B9A21F0D6AAF0079B099 /* MainVC.swift in Sources */,
 				ABD180B61F193A3D0071D128 /* SessionListCell.swift in Sources */,
@@ -564,6 +595,7 @@
 				AB4A71AE1F18F03B0016ED2D /* SessionCell.swift in Sources */,
 				ABE3B98D1F0D4C480079B099 /* AppDelegate.swift in Sources */,
 				AB57F9141F10DCF900CFB504 /* FancyImageView.swift in Sources */,
+				AB1020321F21277E0044635D /* MyGroupInfoVC.swift in Sources */,
 				ABD180B21F192E3F0071D128 /* BrowseMenuVC.swift in Sources */,
 				AB57F9201F11226B00CFB504 /* FancyLabel.swift in Sources */,
 				ABE3B9AE1F0D93540079B099 /* Constants.swift in Sources */,
