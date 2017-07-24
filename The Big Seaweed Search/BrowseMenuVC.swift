@@ -7,13 +7,31 @@
 //
 
 import UIKit
+import Firebase
 
 class BrowseMenuVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let uid = FIRAuth.auth()?.currentUser?.uid {
+            DataService.ds.REF_USERS.child(uid).observe(.value, with: { snapshot in
+                let sessionsValue = snapshot.value as? Dictionary<String,AnyObject>
+                let numberOfSessions = sessionsValue?["numberOfSessions"] as! Int
+                let numberOfPosts = sessionsValue?["numberOfPosts"] as! Int
+                if numberOfSessions == 0 && numberOfPosts == 0 {
+                    self.myList.isEnabled = false
+                    self.myMap.isEnabled = false
+                } else {
+                    self.myList.isEnabled = true
+                    self.myMap.isEnabled = true
+                }
+            })
+        }
     }
 
+    @IBOutlet weak var myList: FancyButton!
+    @IBOutlet weak var myMap: FancyButton!
+    
     @IBAction func myDataList(_ sender: Any) {
         performSegue(withIdentifier: "browseMenuToDataList", sender: nil)
     }

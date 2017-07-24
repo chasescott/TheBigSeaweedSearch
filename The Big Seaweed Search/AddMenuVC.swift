@@ -17,7 +17,8 @@ class AddMenuVC: UIViewController {
         DataService.ds.REF_USERS.child(uid).observe(.value, with: { snapshot in
         let sessionsValue = snapshot.value as? Dictionary<String,AnyObject>
         let numberOfSessions = sessionsValue?["numberOfSessions"] as! Int
-            if numberOfSessions == 0 {
+        let numberOfPosts = sessionsValue?["numberOfPosts"] as! Int
+            if numberOfSessions == 0 && numberOfPosts == 0  {
                 self.continuePrevSession.isEnabled = false
                 self.continuePrevSession.isHidden = true
             } else {

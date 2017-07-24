@@ -3936,6 +3936,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="myList" destination="8qj-bB-KAA" id="8tz-dr-PjR"/>
+                        <outlet property="myMap" destination="Zf4-4X-VQS" id="sT2-hG-bAb"/>
                         <segue destination="8mA-od-eQV" kind="show" identifier="browseMenuToDataList" id="3RS-bE-w7v"/>
                         <segue destination="fBA-Po-mkB" kind="show" identifier="browseDataMenuToViewOwnDataMapVC" id="mpu-LY-FNE"/>
                         <segue destination="Bvz-qB-KZB" kind="show" identifier="browseToViewAllData" id="uS1-ff-7oF"/>
