@@ -96,7 +96,7 @@ class ViewAllOnMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     func appendMapAnnotations() {
         let geoFire = GeoFire(firebaseRef: ref.child("location").child("posts"))
         var seaweedLocation = CLLocation()
-        if let uid = FIRAuth.auth()?.currentUser?.uid {
+        if (FIRAuth.auth()?.currentUser?.uid) != nil {
             self.locations = []
         DataService.ds.REF_POSTS.observeSingleEvent(of: .value, with: { snapshot in
             print (snapshot.childrenCount) //get the expected number of post items
@@ -114,7 +114,7 @@ class ViewAllOnMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDele
                 let userId = postValue?["userid"] as? String ?? ""
                 let numberOfLikes = postValue?["numberOfLikes"] as! Int
             
-            DataService.ds.REF_LEADERBOARD.child(uid).observeSingleEvent(of: .value, with: { snapshot in
+            DataService.ds.REF_LEADERBOARD.child(userId).observeSingleEvent(of: .value, with: { snapshot in
                 let userValue = snapshot.value as? Dictionary<String, AnyObject>
                 let username = userValue?["username"] as? String ?? ""
                 let userImgURL = userValue?["photoURL"] as? String ?? ""

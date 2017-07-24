@@ -77,7 +77,7 @@ class ViewAllDataVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
                 print (snapshot.childrenCount) //get the expected number of post items
                 let enumerator = snapshot.children //start iterating through post items
                 while let rest = enumerator.nextObject() as? FIRDataSnapshot {
-                    print("CHASE: Post KEY - \(rest.key)")
+                    //print("CHASE: Post KEY - \(rest.key)")
                     let anotherKey: String = rest.key
                     DataService.ds.REF_POSTS.child(anotherKey).observeSingleEvent(of: .value, with: { (snapshot) in //PREV
                     //Start iterating through posts node on Firebase
@@ -88,28 +88,39 @@ class ViewAllDataVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
                     let sessionId = postValue?["sessionid"] as? String ?? ""
                     let userId = postValue?["userid"] as? String ?? ""
                     let numberOfLikes = postValue?["numberOfLikes"] as! Int
-                    //Go to GeoFire to obtain post co-ordinates and build/append userpost object within this area of code
-                    geoFire!.getLocationForKey(anotherKey, withCallback: { (location, error) in
-                        if let location = location {
-                            seaweedLocation = location
-                            print("CHASE: Geofire Location stored")
-                            print("Seaweed Lat: \(seaweedLocation.coordinate.latitude)")
-                            print("Seaweed Lon: \(seaweedLocation.coordinate.longitude)")
+//                    //Go to GeoFire to obtain post co-ordinates and build/append userpost object within this area of code
+//                    geoFire!.getLocationForKey(anotherKey, withCallback: { (location, error) in
+//                        if let location = location {
+//                            seaweedLocation = location
+//                            print("CHASE: Geofire Location stored")
+//                            print("CHASE: Post KEY - \(rest.key)")
+//                            print("Seaweed Lat: \(seaweedLocation.coordinate.latitude)")
+//                            print("Seaweed Lon: \(seaweedLocation.coordinate.longitude)")
                     //get user photo url and username from leaderboard firebase nodes
                             DataService.ds.REF_LEADERBOARD.child(userId).observe(.value, with: { (snapshot) in
                                 let userValue = snapshot.value as? Dictionary<String, AnyObject>
                                 let username = userValue?["username"] as? String ?? ""
                                 let userphotoURL = userValue?["photoURL"] as? String ?? ""
+                                //Go to GeoFire to obtain post co-ordinates and build/append userpost object within this area of code
+                                geoFire!.getLocationForKey(anotherKey, withCallback: { (location, error) in
+                                    if let location = location {
+                                        seaweedLocation = location
+                                        print("CHASE: Geofire Location stored")
+                                        print("CHASE: Post KEY - \(rest.key)")
+                                        print("Seaweed Lat: \(seaweedLocation.coordinate.latitude)")
+                                        print("Seaweed Lon: \(seaweedLocation.coordinate.longitude)")
                             //plug in all variables into datapost object
                                 let newPost = DataPost(postKey: anotherKey, date: date, userId: userId, seaweedType: seaweedType, photoURL: photoURL, sessionId: sessionId, location: seaweedLocation, username: username, userimgURL: userphotoURL, likes: numberOfLikes)
                                 //SORT THE LIKES OUT!!!
                                 print("CHASE: New Data post appended: \(newPost.postKey!)")
+                                print("CHASE: New Data post Latitude: \(newPost.location.coordinate.latitude)")
+                                print("CHASE: New Data post Longitude: \(newPost.location.coordinate.longitude)")
                                 self.dataposts.append(newPost)
                                 self.tableView.reloadData()
-                            })
+                                    }})
         
     }
-    })
+    )
     })
     }
     })
