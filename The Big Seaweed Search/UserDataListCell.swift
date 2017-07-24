@@ -24,6 +24,7 @@ class UserDataListCell: UITableViewCell {
 
     func configureCell(userpost: UserPost, img: UIImage? = nil) {
         self.userpost = userpost
+        self.picture.image = #imageLiteral(resourceName: "loading")
         self.seaweedLbl.text = "Seaweed type: \(userpost.seaweedType!)"
         let x = Double(userpost.lati)
         let y = Double(round(10000000*x!)/10000000)

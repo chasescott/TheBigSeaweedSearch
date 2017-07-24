@@ -34,6 +34,8 @@ class DataPostCell: UITableViewCell {
     }
     
     func configureCell(datapost:DataPost, img: UIImage? = nil, img2: UIImage? = nil) {
+        self.profileImg.image = #imageLiteral(resourceName: "loading")
+        self.postImg.image = #imageLiteral(resourceName: "loadingbar")
         self.datapost = datapost
         likesRef = DataService.ds.REF_USER_CURRENT.child("likes").child(datapost.postKey)
         self.captionLbl.text = datapost.seaweedType

@@ -87,7 +87,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                     ]
                     self.createUserProfile(id: user.uid, profileData: profileData)
                     //perform segue
-                    self.performSegue(withIdentifier: "goToMain", sender: nil)
+                    self.performSegue(withIdentifier: "goToSetUp", sender: nil)
                 }
             }
         })

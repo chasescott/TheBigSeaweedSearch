@@ -27,6 +27,7 @@ class SessionListCell: UITableViewCell {
 
     func configureCell(session: Session, img: UIImage? = nil) {
         self.session = session
+        self.picture.image = #imageLiteral(resourceName: "loading")
         self.nameLbl.text = "Session: \(session.sessionName)"
         self.dateLbl.text = "Date: \(session.date)"
         self.typeLbl.text = "Beach Type:\(session.beachType)"

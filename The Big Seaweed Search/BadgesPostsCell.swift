@@ -20,6 +20,7 @@ class BadgesPostsCell: UICollectionViewCell {
     
     func configureCell(img: UIImage? = nil)
     {
+        self.picture.image = #imageLiteral(resourceName: "loading")
         if img != nil {
         self.picture.image = img
     }

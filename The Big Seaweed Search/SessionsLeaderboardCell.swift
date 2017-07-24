@@ -27,6 +27,7 @@ class SessionsLeaderboardCell: UITableViewCell {
         self.usernameLbl.text = "\(postranking.username)"
         self.rankLbl.text = "\(postranking.rank)"
         self.postsLbl.text = "\(postranking.numberOfPosts)"
+        self.picture.image = #imageLiteral(resourceName: "loading")
         
         
         if img != nil {
