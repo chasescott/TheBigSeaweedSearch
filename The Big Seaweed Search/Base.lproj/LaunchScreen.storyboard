@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-small" translatesAutoresizingMaskIntoConstraints="NO" id="knV-QY-Ulm">
-                                <rect key="frame" x="8" y="240" width="359" height="207"/>
+                                <rect key="frame" x="8" y="173" width="359" height="194"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MarineConservationSocietyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="UiN-ig-lfp">
                                 <rect key="frame" x="8" y="543" width="359" height="100"/>
@@ -34,11 +34,9 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="knV-QY-Ulm" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="8" id="03d-Lm-197"/>
-                            <constraint firstItem="knV-QY-Ulm" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="8" id="8Cz-5e-F2p"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="knV-QY-Ulm" secondAttribute="bottom" constant="220" id="D9d-sl-9Ig"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="knV-QY-Ulm" secondAttribute="bottom" constant="300" id="D9d-sl-9Ig"/>
                             <constraint firstAttribute="trailing" secondItem="UiN-ig-lfp" secondAttribute="trailing" constant="8" id="I89-se-Ya7"/>
                             <constraint firstItem="knV-QY-Ulm" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="KoK-ak-iCn"/>
-                            <constraint firstItem="knV-QY-Ulm" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="220" id="RUe-Og-qpR"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="UiN-ig-lfp" secondAttribute="bottom" constant="24" id="VWJ-Am-5UR"/>
                             <constraint firstAttribute="trailing" secondItem="knV-QY-Ulm" secondAttribute="trailing" constant="8" id="bMk-Ar-Hyv"/>
                             <constraint firstItem="UiN-ig-lfp" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="8" id="oTr-6I-STD"/>

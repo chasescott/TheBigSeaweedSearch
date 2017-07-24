@@ -1228,7 +1228,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="F0F-t8-WHu">
                                 <rect key="frame" x="16" y="136" width="343" height="346"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="qWc-w7-8bu" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading" translatesAutoresizingMaskIntoConstraints="NO" id="qWc-w7-8bu" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="96.5" y="0.0" width="150" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="ZUf-b5-z2S"/>
@@ -1341,7 +1341,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user1" translatesAutoresizingMaskIntoConstraints="NO" id="jS1-Gj-5ye" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading" translatesAutoresizingMaskIntoConstraints="NO" id="jS1-Gj-5ye" customClass="FancyImageView" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="80" y="43" width="150.5" height="150"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -3565,7 +3565,7 @@ Cg
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="8MW-G0-7c2">
                                 <rect key="frame" x="71.5" y="363" width="232" height="100"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBq-sY-9qJ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBq-sY-9qJ" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="ClT-1z-K4U"/>
@@ -3576,7 +3576,7 @@ Cg
                                             <action selector="safetyBtnPressed:" destination="pvS-uj-2jn" eventType="touchUpInside" id="4Jr-yC-PSg"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYv-mC-lpQ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYv-mC-lpQ" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                         <rect key="frame" x="132" y="0.0" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="d0P-Ln-dR9"/>
@@ -3649,7 +3649,7 @@ Cg
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="aru-Kq-3mC">
                                         <rect key="frame" x="0.0" y="0.0" width="184" height="80"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNv-Zm-vwa">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNv-Zm-vwa" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="McD-KW-GVQ"/>
@@ -3662,7 +3662,7 @@ Cg
                                                     <action selector="infoBtnTapped:" destination="GZ3-kx-Gtz" eventType="touchUpInside" id="qId-wY-zw4"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QE-Mr-c1U">
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QE-Mr-c1U" customClass="FancyButton" customModule="The_Big_Seaweed_Search" customModuleProvider="target">
                                                 <rect key="frame" x="104" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="UCQ-xy-LET"/>
@@ -6420,17 +6420,17 @@ You may request details of personal information which we hold about you under th
         <image name="user1" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZhN-qB-KPB"/>
-        <segue reference="aec-GQ-K6C"/>
         <segue reference="FVd-cj-ub6"/>
         <segue reference="wJO-md-pD8"/>
-        <segue reference="Zqa-Uo-83B"/>
-        <segue reference="iyg-cT-VtJ"/>
+        <segue reference="qOa-ms-rup"/>
+        <segue reference="VRD-gh-dnh"/>
+        <segue reference="EI8-fi-Mje"/>
+        <segue reference="hSf-Hb-TWL"/>
+        <segue reference="eCs-qk-gOp"/>
+        <segue reference="YBn-WX-fdq"/>
         <segue reference="RIj-5u-dXt"/>
         <segue reference="kN0-qv-4eq"/>
         <segue reference="EnJ-aU-BaS"/>
-        <segue reference="EI8-fi-Mje"/>
-        <segue reference="hSf-Hb-TWL"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

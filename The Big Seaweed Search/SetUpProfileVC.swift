@@ -27,6 +27,7 @@ class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavi
         imagePicker.delegate = self
         nameField.delegate = self
         locationField.delegate = self
+        userAlertWelcome(alert: "Thank you for joining the Big Seaweed Search.  Your contributions to this project will prove invaluable in our fight to protect the coastal waters of the UK.  \r\n \r\n Just a few points before you start... \r\n \r\n Firstly, please complete the details on this page to allow us to set up a profile for you.  \r\n \r\n Secondly, please read the safety information in the main menu. \r\n \r\n Thirdly, please read the instructions before proceeding to collect data. \r\n \r\n Happy Seaweed Searching!")
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -117,7 +118,7 @@ class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavi
                 "photoURL": imgUrl as AnyObject
             ]
         DataService.ds.setUpUserOnLeaderboard(uid: userId, userData: userData)
-        userAlert(alert: "Thank you.  Your profile has been updated")
+        userAlert(alert: "Thank you, your profile has been set up.  Please proceed to the main menu")
         print("CHASE: User Profile Updated")
         }
     }
@@ -126,6 +127,18 @@ class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavi
     func userAlertDoMore (alert: String) {
         let alertController = UIAlertController(title: "The Big SeaWeed Search", message: alert, preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil))
+        
+        let alertWindow = UIWindow(frame: UIScreen.main.bounds)
+        alertWindow.rootViewController = UIViewController()
+        alertWindow.windowLevel = UIWindowLevelAlert + 1;
+        alertWindow.makeKeyAndVisible()
+        alertWindow.rootViewController?.present(alertController, animated: true, completion: nil)
+    }
+    
+    //Welcome User alert windows to say thank you and explain next steps
+    func userAlertWelcome (alert: String) {
+        let alertController = UIAlertController(title: "Welcome!", message: alert, preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addAction(UIAlertAction(title: "Ok, lets proceed!", style: UIAlertActionStyle.cancel, handler: nil))
         
         let alertWindow = UIWindow(frame: UIScreen.main.bounds)
         alertWindow.rootViewController = UIViewController()
