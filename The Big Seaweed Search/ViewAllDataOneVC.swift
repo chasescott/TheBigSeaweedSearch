@@ -11,6 +11,7 @@ import Firebase
 import SwiftKeychainWrapper
 import MapKit
 
+///View All Data on one single view controller as a table view list
 class ViewAllDataOneVC: UIViewController, UITextViewDelegate, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var profileImg: UIImageView!
@@ -129,6 +130,9 @@ class ViewAllDataOneVC: UIViewController, UITextViewDelegate, UITextFieldDelegat
         return CommentCell()
         }
     
+    /// Method to run when a 'heart' representing a like is tapped or untapped
+    ///
+    /// - Parameter sender: UI gesture recognizer
     func likeTapped(sender: UITapGestureRecognizer){
         likesRef.observeSingleEvent(of: .value, with: { (snapshot) in
             if let _ = snapshot.value as? NSNull {
@@ -183,6 +187,9 @@ class ViewAllDataOneVC: UIViewController, UITextViewDelegate, UITextFieldDelegat
         }
     }
     
+    /// Method to run when comment added.  Get users name from Firebase and store it.  Create a comment dictionary object ready for upload to Firebase.  Upload the comment, store the comment key/id, store the comment key under the user and against the post node of the relevant post. Resent comment field.
+    ///
+    /// - Parameter sender: Comment data
     @IBAction func addCommentPressed(_ sender: Any) {
         if let uid = FIRAuth.auth()?.currentUser?.uid {
         guard let comment = commentTextView.text, comment != "", comment != "(Insert comment here)" else {
@@ -222,6 +229,7 @@ class ViewAllDataOneVC: UIViewController, UITextViewDelegate, UITextFieldDelegat
     }
     }
     
+    /// Uses a .observe Firebase method which acts as a listener for new comments.  The method iterates through the comments of a given post and ensures any fresh comments are updated.  Code first run at ViewDidLoad() so comments ready by run time.
     func appendCommentsData() {
         if (FIRAuth.auth()?.currentUser?.uid) != nil {
             //Listener for new comment posts
@@ -249,7 +257,9 @@ class ViewAllDataOneVC: UIViewController, UITextViewDelegate, UITextFieldDelegat
         performSegue(withIdentifier: "listToViewOnMap", sender: currentData)
     }
     
-    //User alert to advise of success
+    ///User alert windows to advise of success and segue to the next screen.
+    ///
+    /// - Parameter alert: String to represent congratulations that needs to pop up
     func userAlertSuccess (alert: String) {
         let alertController = UIAlertController(title: "Success!", message: alert, preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil
@@ -262,7 +272,9 @@ class ViewAllDataOneVC: UIViewController, UITextViewDelegate, UITextFieldDelegat
         alertWindow.rootViewController?.present(alertController, animated: true, completion: nil)
     }
     
-    //User alert windows to warn of issue that needs attention before proceeding
+    ///User alert windows to warn of issue that needs attention before proceeding
+    ///
+    /// - Parameter alert:  String to represent the problem that requires attention from the user.
     func userAlertDoMore (alert: String) {
         let alertController = UIAlertController(title: "Wait a minute...", message: alert, preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil))

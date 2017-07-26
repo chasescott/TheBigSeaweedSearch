@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AddDataVC Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/AddDataVC" class="dashAnchor"></a>
+    <a title="AddDataVC Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (25% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AddDataVC Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AddDataBadgePopUpVC.html">AddDataBadgePopUpVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AddDataVC.html">AddDataVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BadgePopUpVC.html">BadgePopUpVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/CommentCell.html">CommentCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ContinueSessionVC.html">ContinueSessionVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DataPostCell.html">DataPostCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EditProfileVC.html">EditProfileVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/LoginVC.html">LoginVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MainVC.html">MainVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NewSessionVC.html">NewSessionVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PostsLeaderboardCell.html">PostsLeaderboardCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/PostsLeaderboardVC.html">PostsLeaderboardVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SeaweedTypesVC.html">SeaweedTypesVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SelectASessionListVC.html">SelectASessionListVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SessionCell.html">SessionCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SessionListCell.html">SessionListCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SessionsLeaderboardCell.html">SessionsLeaderboardCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SessionsLeaderboardVC.html">SessionsLeaderboardVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SetUpProfileVC.html">SetUpProfileVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserDataListCell.html">UserDataListCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ViewAllDataOneVC.html">ViewAllDataOneVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C22The_Big_Seaweed_Search20ViewAllDataPopOverVC">ViewAllDataPopOverVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ViewAllDataVC.html">ViewAllDataVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ViewAllOnMapVC.html">ViewAllOnMapVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ViewBadgesVC.html">ViewBadgesVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ViewDataListOnMapVC.html">ViewDataListOnMapVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ViewOwnDataMapVC.html">ViewOwnDataMapVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ViewOwnDataVC.html">ViewOwnDataVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ViewProfileVC.html">ViewProfileVC</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AddDataVC</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">class</span> <span class="kt">AddDataVC</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="kt">UIPickerViewDelegate</span><span class="p">,</span> <span class="kt">UIPickerViewDataSource</span><span class="p">,</span> <span class="kt">UIImagePickerControllerDelegate</span><span class="p">,</span> <span class="kt">UINavigationControllerDelegate</span><span class="p">,</span> <span class="kt">CLLocationManagerDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>AddDataVC View Controller Class for &lsquo;Add Data&rsquo; section of app</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC22The_Big_Seaweed_Search9AddDataVC18locationAuthStatusFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/locationAuthStatus()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC22The_Big_Seaweed_Search9AddDataVC18locationAuthStatusFT_T_">locationAuthStatus()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method to ensure the app only lets the location be collated when app is in use, not in the background as that will drain the battery life quickly.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">locationAuthStatus</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC22The_Big_Seaweed_Search9AddDataVC15locationManagerFTCSo17CLLocationManager18didUpdateLocationsGSaCSo10CLLocation__T_"></a>
+                    <a name="//apple_ref/swift/Method/locationManager(_:didUpdateLocations:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC22The_Big_Seaweed_Search9AddDataVC15locationManagerFTCSo17CLLocationManager18didUpdateLocationsGSaCSo10CLLocation__T_">locationManager(_:didUpdateLocations:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method to obtain location of user, store the GPS coordinates in the beachLocation variable, display the coordinates in the label on the view and stop the location manager from constantly updating in the background, thus saving battery.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="n">_</span> <span class="nv">manager</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="p">,</span> <span class="n">didUpdateLocations</span> <span class="nv">locations</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocation</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>manager</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>CLLocationManager object to obtain exact coordinates</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>locations</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Array of CLLocation objects to store location info</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC22The_Big_Seaweed_Search9AddDataVC15locationManagerFTCSo17CLLocationManager22didChangeAuthorizationOSC21CLAuthorizationStatus_T_"></a>
+                    <a name="//apple_ref/swift/Method/locationManager(_:didChangeAuthorization:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC22The_Big_Seaweed_Search9AddDataVC15locationManagerFTCSo17CLLocationManager22didChangeAuthorizationOSC21CLAuthorizationStatus_T_">locationManager(_:didChangeAuthorization:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Determine if location authorization status changes at any time during use.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="n">_</span> <span class="nv">manager</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="p">,</span> <span class="n">didChangeAuthorization</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">CLAuthorizationStatus</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>manager</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Stores CLLocationManager object to obtain exact coordinates</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>status</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Obtains CLAuthorizationStatus status to determine if the authorization status of the user changes</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC22The_Big_Seaweed_Search9AddDataVC12imageCaptureFP_T_"></a>
+                    <a name="//apple_ref/swift/Method/imageCapture(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC22The_Big_Seaweed_Search9AddDataVC12imageCaptureFP_T_">imageCapture(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Capture image using the device&rsquo;s camera</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">imageCapture</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Any - Data from the camera</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC22The_Big_Seaweed_Search9AddDataVC21imagePickerControllerFTCSo23UIImagePickerController29didFinishPickingMediaWithInfoGVs10DictionarySSP___T_"></a>
+                    <a name="//apple_ref/swift/Method/imagePickerController(_:didFinishPickingMediaWithInfo:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC22The_Big_Seaweed_Search9AddDataVC21imagePickerControllerFTCSo23UIImagePickerController29didFinishPickingMediaWithInfoGVs10DictionarySSP___T_">imagePickerController(_:didFinishPickingMediaWithInfo:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check to see if image picker media has been selected</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">imagePickerController</span><span class="p">(</span><span class="n">_</span> <span class="nv">picker</span><span class="p">:</span> <span class="kt">UIImagePickerController</span><span class="p">,</span> <span class="n">didFinishPickingMediaWithInfo</span> <span class="nv">info</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>picker</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The UIImagePicker</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>info</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>What info is currently being stored in the UIImagePicker</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC22The_Big_Seaweed_Search9AddDataVC14saveBtnPressedFP_T_"></a>
+                    <a name="//apple_ref/swift/Method/saveBtnPressed(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC22The_Big_Seaweed_Search9AddDataVC14saveBtnPressedFP_T_">saveBtnPressed(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method to run when the Save button is pressed.  Take the image in the picker viewer, create a string to unique identify the image, upload the image to Firebase storage and then run the postToFirebase method.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">saveBtnPressed</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Data relating to the image.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC22The_Big_Seaweed_Search9AddDataVC14postToFirebaseFT6imgUrlSS8endAlertSb_T_"></a>
+                    <a name="//apple_ref/swift/Method/postToFirebase(imgUrl:endAlert:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC22The_Big_Seaweed_Search9AddDataVC14postToFirebaseFT6imgUrlSS8endAlertSb_T_">postToFirebase(imgUrl:endAlert:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method to post all data to Firebase nodes as Dictionary object (including GeoFire coordinates).</p>
+
+<ol>
+<li>generates an auto ID and then inserts post object above into Firebase</li>
+<li>takes the firebasePost auto ID key and stores in firebaseKey constant</li>
+<li>stores key in user section of firebase under &lsquo;posts&rsquo;</li>
+<li>stores post key under &lsquo;sessions&rsquo; section of firebase</li>
+<li>Store CL coordinates for post in firebase&hellip;</li>
+<li>Run code to increase by 1 the number of posts the user has created against the USER node in Firebase</li>
+<li>Upload number of posts to Leaderboard FB nodes</li>
+<li>Run badge check to see if new badge to be awarded, if so, present congratulatory message</li>
+<li>Run code to count the number of posts in the given session and add number of posts data to sessions node</li>
+<li>Reset visible elements/fields within the view.</li>
+</ol>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">postToFirebase</span><span class="p">(</span><span class="nv">imgUrl</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">endAlert</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>imgUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The URL of the image storage location on Firebase</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>endAlert</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Data to pass through to checkBadges() method</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC22The_Big_Seaweed_Search9AddDataVC19adjustNumberOfPostsFT7addPostSb_T_"></a>
+                    <a name="//apple_ref/swift/Method/adjustNumberOfPosts(addPost:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC22The_Big_Seaweed_Search9AddDataVC19adjustNumberOfPostsFT7addPostSb_T_">adjustNumberOfPosts(addPost:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method to adjust the total number of posts for the user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">adjustNumberOfPosts</span><span class="p">(</span><span class="nv">addPost</span><span class="p">:</span><span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>addPost</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Bool to state increase (i.e. true) or decrease (i.e. false)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC22The_Big_Seaweed_Search9AddDataVC20endSessionBtnPressedFP_T_"></a>
+                    <a name="//apple_ref/swift/Method/endSessionBtnPressed(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC22The_Big_Seaweed_Search9AddDataVC20endSessionBtnPressedFP_T_">endSessionBtnPressed(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method to run when the End session button is pressed.  Take the image in the picker viewer, create a string to unique identify the image, upload the image to Firebase storage and then run the postToFirebase method.  Finally, run alert to close session.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@IBAction</span> <span class="kd">func</span> <span class="nf">endSessionBtnPressed</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Data relating to the image.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC22The_Big_Seaweed_Search9AddDataVC11checkBadgesFT13numberOfPostsSi8endAlertSb_T_"></a>
+                    <a name="//apple_ref/swift/Method/checkBadges(numberOfPosts:endAlert:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC22The_Big_Seaweed_Search9AddDataVC11checkBadgesFT13numberOfPostsSi8endAlertSb_T_">checkBadges(numberOfPosts:endAlert:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check the number of posts a user has uploaded.  If number is equal to the value of a badge, then pop up modal segue to imageView with a badge awarding user</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">checkBadges</span><span class="p">(</span><span class="nv">numberOfPosts</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">endAlert</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>numberOfPosts</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Int - the total number of posts a user has uploaded</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>endAlert</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String representing the alert to show the user - i.e. <q>Congratulations you&rsquo;ve earned a badge!  Your data added successfully. Please press ok to continue</q></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC22The_Big_Seaweed_Search9AddDataVC7prepareFT3forCSo17UIStoryboardSegue6senderGSqP___T_"></a>
+                    <a name="//apple_ref/swift/Method/prepare(for:sender:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC22The_Big_Seaweed_Search9AddDataVC7prepareFT3forCSo17UIStoryboardSegue6senderGSqP___T_">prepare(for:sender:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Prepare for segue to push dataCounter object to badge pop up view to show how many posts a user has created and thus which badge is to be awarded</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">prepare</span><span class="p">(</span><span class="k">for</span> <span class="nv">segue</span><span class="p">:</span> <span class="kt">UIStoryboardSegue</span><span class="p">,</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>segue</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The id of the segue to be initiated</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The data that is to be sent.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC22The_Big_Seaweed_Search9AddDataVC15userAlertDoMoreFT5alertSS_T_"></a>
+                    <a name="//apple_ref/swift/Method/userAlertDoMore(alert:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC22The_Big_Seaweed_Search9AddDataVC15userAlertDoMoreFT5alertSS_T_">userAlertDoMore(alert:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User alert windows to warn of issue that needs attention before proceeding</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">userAlertDoMore</span> <span class="p">(</span><span class="nv">alert</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>alert</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String to represent warning that needs to pop up</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC22The_Big_Seaweed_Search9AddDataVC16userAlertSuccessFT5alertSS_T_"></a>
+                    <a name="//apple_ref/swift/Method/userAlertSuccess(alert:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC22The_Big_Seaweed_Search9AddDataVC16userAlertSuccessFT5alertSS_T_">userAlertSuccess(alert:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User alert windows to advise of success</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">userAlertSuccess</span> <span class="p">(</span><span class="nv">alert</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>alert</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String to represent congratulations that needs to pop up</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC22The_Big_Seaweed_Search9AddDataVC20userAlertFinishCheckFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/userAlertFinishCheck()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC22The_Big_Seaweed_Search9AddDataVC20userAlertFinishCheckFT_T_">userAlertFinishCheck()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>User alert windows to warn session ended and segue back to the main screen.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">userAlertFinishCheck</span> <span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>alert</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String to represent warning that needs to pop up</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2017-07-26)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

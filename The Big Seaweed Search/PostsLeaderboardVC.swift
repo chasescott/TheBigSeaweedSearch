@@ -9,6 +9,7 @@ import Firebase
 import SwiftKeychainWrapper
 import UIKit
 
+///Posts leaderboard view controller class
 class PostsLeaderboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var positionLbl: UILabel!
@@ -58,6 +59,7 @@ class PostsLeaderboardVC: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
     
+    ///Method called at viewDidLoad() that pulls all leaderboard and post data from Firebase for all users before inserting into array and calculating the users rank.
     func appendPostRankingData() {
         if (FIRAuth.auth()?.currentUser?.uid) != nil {
             self.postrankings = []

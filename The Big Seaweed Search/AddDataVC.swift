@@ -12,6 +12,7 @@ import SwiftKeychainWrapper
 import MapKit
 import AVFoundation
 
+///AddDataVC View Controller Class for 'Add Data' section of app
 class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLLocationManagerDelegate {
 
     private var _currentSession: Session!
@@ -50,7 +51,7 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
     //picker view array for selection
     let seaweed = ["Dabberlocks  - (native)", "Sugar Kelp  - (native)", "Serrated Wrack  - (native)", "Bladder Wrack  - (native)", "Knotted Wrack  - (native)", "Spiral Wrack  - (native)", "Channelled Wrack  - (native)", "Thongweed  - (native)", "Wireweed - (non-native)", "Wakame  - (non-native)", "Harpoon Weed - (non-native)", "Bonnemaison's Hook - (non-native)"]
     
-    //getters & setters for Session object
+    //Getters & Setters for currentSession object passed through from 'NewSessionVC' or 'ContinueSessionVC'
     var currentSession: Session {
         get {
             return _currentSession
@@ -82,8 +83,8 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
         locationAuthStatus()
     }
     
+    /// Method to ensure the app only lets the location be collated when app is in use, not in the background as that will drain the battery life quickly.
     func locationAuthStatus() {
-        //Only let location be collated when app is in use, not in the background as that will drain the battery life quickly.
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             if CLLocationManager.locationServicesEnabled() {
                 locationManager.delegate = self
@@ -98,6 +99,12 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
         }
     }
 
+    
+    /// Method to obtain location of user, store the GPS coordinates in the beachLocation variable, display the coordinates in the label on the view and stop the location manager from constantly updating in the background, thus saving battery.
+    ///
+    /// - Parameters:
+    ///   - manager: CLLocationManager object to obtain exact coordinates
+    ///   - locations: Array of CLLocation objects to store location info
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         let x = locValue.latitude
@@ -109,6 +116,11 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
         locationManager.stopUpdatingLocation()
     }
     
+    /// Determine if location authorization status changes at any time during use.
+    ///
+    /// - Parameters:
+    ///   - manager: Stores CLLocationManager object to obtain exact coordinates
+    ///   - status: Obtains CLAuthorizationStatus status to determine if the authorization status of the user changes
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if status == CLAuthorizationStatus.authorizedWhenInUse {
             let locValue:CLLocationCoordinate2D = manager.location!.coordinate
@@ -118,6 +130,9 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
         }
     }
     
+    /// Capture image using the device's camera
+    ///
+    /// - Parameter sender: Any - Data from the camera
     @IBAction func imageCapture(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
             imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
@@ -125,7 +140,11 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
         }
     }
     
-    //CHASE:  Select Image function
+    /// Check to see if image picker media has been selected
+    ///
+    /// - Parameters:
+    ///   - picker: The UIImagePicker
+    ///   - info: What info is currently being stored in the UIImagePicker
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             imageAdd.image = image
@@ -139,6 +158,9 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
     }
 
     
+    /// Method to run when the Save button is pressed.  Take the image in the picker viewer, create a string to unique identify the image, upload the image to Firebase storage and then run the postToFirebase method.
+    ///
+    /// - Parameter sender: Data relating to the image.
     @IBAction func saveBtnPressed(_ sender: Any) {
         guard let img = imageAdd.image, imageSelected == true else {
             userAlertDoMore(alert: "Please capture an image of the seaweed you are recording")
@@ -171,6 +193,21 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
         //userAlertSuccess(alert: "Data added successfully! Please press ok to continue and add more")
     }
     
+    /// Method to post all data to Firebase nodes as Dictionary object (including GeoFire coordinates).
+    ///1.  generates an auto ID and then inserts post object above into Firebase
+    ///2.  takes the firebasePost auto ID key and stores in firebaseKey constant
+    ///3.  stores key in user section of firebase under 'posts'
+    ///4.  stores post key under 'sessions' section of firebase
+    ///5. Store CL coordinates for post in firebase...
+    ///6. Run code to increase by 1 the number of posts the user has created against the USER node in Firebase
+    ///7. Upload number of posts to Leaderboard FB nodes
+    ///8. Run badge check to see if new badge to be awarded, if so, present congratulatory message
+    ///9. Run code to count the number of posts in the given session and add number of posts data to sessions node
+    ///10. Reset visible elements/fields within the view.
+    ///
+    /// - Parameters:
+    ///   - imgUrl: The URL of the image storage location on Firebase
+    ///   - endAlert: Data to pass through to checkBadges() method
     func postToFirebase(imgUrl: String, endAlert: Bool) {
         let geoFire = GeoFire(firebaseRef: ref.child("location").child("posts"))
         let sessionIdentity = sessionId as String
@@ -234,6 +271,9 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
         }
     }
     
+    /// Method to adjust the total number of posts for the user
+    ///
+    /// - Parameter addPost: Bool to state increase (i.e. true) or decrease (i.e. false)
     func adjustNumberOfPosts(addPost:Bool){
         if let userId = FIRAuth.auth()?.currentUser?.uid {
         if addPost {
@@ -247,6 +287,9 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
 }
 
     
+    /// Method to run when the End session button is pressed.  Take the image in the picker viewer, create a string to unique identify the image, upload the image to Firebase storage and then run the postToFirebase method.  Finally, run alert to close session.
+    ///
+    /// - Parameter sender: Data relating to the image.
     @IBAction func endSessionBtnPressed(_ sender: Any) {
         guard let img = imageAdd.image, imageSelected == true else {
                 userAlertFinishCheck()
@@ -278,6 +321,12 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
         //userAlertFinishCheck()
     }
     
+    
+    /// Check the number of posts a user has uploaded.  If number is equal to the value of a badge, then pop up modal segue to imageView with a badge awarding user
+    ///
+    /// - Parameters:
+    ///   - numberOfPosts: Int - the total number of posts a user has uploaded
+    ///   - endAlert: String representing the alert to show the user - i.e. "Congratulations you've earned a badge!  Your data added successfully. Please press ok to continue"
     func checkBadges(numberOfPosts: Int, endAlert: Bool) {
         if numberOfPosts == 1 {
             imageSelected = false
@@ -347,13 +396,20 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
         performSegue(withIdentifier: "showSeaweedTypes", sender: nil)
     }
     
+    /// Prepare for segue to push dataCounter object to badge pop up view to show how many posts a user has created and thus which badge is to be awarded
+    ///
+    /// - Parameters:
+    ///   - segue: The id of the segue to be initiated
+    ///   - sender: The data that is to be sent.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationVC = segue.destination as? AddDataBadgePopUpVC {
             destinationVC.dataCounter = dataCounter
         }
     }
     
-    //User alert windows to warn of issue that needs attention before proceeding
+    ///User alert windows to warn of issue that needs attention before proceeding
+    ///
+    /// - Parameter alert: String to represent warning that needs to pop up
     func userAlertDoMore (alert: String) {
         let alertController = UIAlertController(title: "Problem!", message: alert, preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil))
@@ -365,7 +421,9 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
         alertWindow.rootViewController?.present(alertController, animated: true, completion: nil)
     }
     
-    //User alert to advise of success
+    ///User alert windows to advise of success
+    ///
+    /// - Parameter alert: String to represent congratulations that needs to pop up
     func userAlertSuccess (alert: String) {
         let alertController = UIAlertController(title: "Success!", message: alert, preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil
@@ -378,7 +436,9 @@ class AddDataVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,
         alertWindow.rootViewController?.present(alertController, animated: true, completion: nil)
     }
     
-    //User alert to advise session ended and perform segue back to main screen
+    ///User alert windows to warn session ended and segue back to the main screen.
+    ///
+    /// - Parameter alert: String to represent warning that needs to pop up
     func userAlertFinishCheck () {
         let alertController = UIAlertController(title: "End Session", message: "Are you sure you want to finish?", preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "Yes", style: UIAlertActionStyle.default, handler: {

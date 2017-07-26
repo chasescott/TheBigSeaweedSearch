@@ -1,0 +1,2707 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AboutVC.swift",
+      "line": 12,
+      "symbol": "AboutVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddData.swift",
+      "line": 12,
+      "symbol": "AddData",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataBadgePopUpVC.swift",
+      "line": 14,
+      "symbol": "AddDataBadgePopUpVC.picture",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataBadgePopUpVC.swift",
+      "line": 17,
+      "symbol": "AddDataBadgePopUpVC.img",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataBadgePopUpVC.swift",
+      "line": 37,
+      "symbol": "AddDataBadgePopUpVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataBadgePopUpVC.swift",
+      "line": 64,
+      "symbol": "AddDataBadgePopUpVC.okBtnPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 19,
+      "symbol": "AddDataVC.imageAdd",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 20,
+      "symbol": "AddDataVC.dateLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 21,
+      "symbol": "AddDataVC.locationLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 22,
+      "symbol": "AddDataVC.seaweedPicker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 25,
+      "symbol": "AddDataVC.imagePicker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 26,
+      "symbol": "AddDataVC.imageCache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 27,
+      "symbol": "AddDataVC.imageSelected",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 29,
+      "symbol": "AddDataVC.date",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 30,
+      "symbol": "AddDataVC.formatter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 31,
+      "symbol": "AddDataVC.dateAsString",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 33,
+      "symbol": "AddDataVC.locationManager",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 34,
+      "symbol": "AddDataVC.beachLocation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 36,
+      "symbol": "AddDataVC.seaweedType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 38,
+      "symbol": "AddDataVC.geoFire",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 39,
+      "symbol": "AddDataVC.ref",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 41,
+      "symbol": "AddDataVC.imageLink",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 42,
+      "symbol": "AddDataVC.postId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 43,
+      "symbol": "AddDataVC.sessionId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 45,
+      "symbol": "AddDataVC.postsRef",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 46,
+      "symbol": "AddDataVC.numberOfPosts",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 48,
+      "symbol": "AddDataVC.rootRef",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 49,
+      "symbol": "AddDataVC.dataCounter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 52,
+      "symbol": "AddDataVC.seaweed",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 55,
+      "symbol": "AddDataVC.currentSession",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 63,
+      "symbol": "AddDataVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 82,
+      "symbol": "AddDataVC.viewDidAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 395,
+      "symbol": "AddDataVC.helpBtnPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 457,
+      "symbol": "AddDataVC.numberOfComponents(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 461,
+      "symbol": "AddDataVC.pickerView(_:numberOfRowsInComponent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 465,
+      "symbol": "AddDataVC.pickerView(_:titleForRow:forComponent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 469,
+      "symbol": "AddDataVC.pickerView(_:didSelectRow:inComponent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 473,
+      "symbol": "AddDataVC.instructionsBtnPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddDataVC.swift",
+      "line": 476,
+      "symbol": "AddDataVC.backBtnPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AddMenuVC.swift",
+      "line": 13,
+      "symbol": "AddMenuVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AlphaView.swift",
+      "line": 11,
+      "symbol": "AlphaView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/AppDelegate.swift",
+      "line": 14,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/BadgePopUpVC.swift",
+      "line": 15,
+      "symbol": "BadgePopUpVC.picture",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/BadgePopUpVC.swift",
+      "line": 18,
+      "symbol": "BadgePopUpVC.img",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/BadgePopUpVC.swift",
+      "line": 38,
+      "symbol": "BadgePopUpVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/BadgePopUpVC.swift",
+      "line": 83,
+      "symbol": "BadgePopUpVC.cancelBtn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/BadgesPostsCell.swift",
+      "line": 11,
+      "symbol": "BadgesPostsCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/BadgesSessionsCell.swift",
+      "line": 11,
+      "symbol": "BadgesSessionsCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/BrowseGroupsVC.swift",
+      "line": 11,
+      "symbol": "BrowseGroupsVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/BrowseMenuVC.swift",
+      "line": 12,
+      "symbol": "BrowseMenuVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/CircleView.swift",
+      "line": 11,
+      "symbol": "CircleView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/Comment.swift",
+      "line": 12,
+      "symbol": "Comment",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/CommentCell.swift",
+      "line": 14,
+      "symbol": "CommentCell.usernameLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/CommentCell.swift",
+      "line": 15,
+      "symbol": "CommentCell.dateLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/CommentCell.swift",
+      "line": 16,
+      "symbol": "CommentCell.commentBox",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/CommentCell.swift",
+      "line": 18,
+      "symbol": "CommentCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/CommentCell.swift",
+      "line": 22,
+      "symbol": "CommentCell.comment",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/Constants.swift",
+      "line": 11,
+      "symbol": "SHADOW_GRAY",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/Constants.swift",
+      "line": 13,
+      "symbol": "KEY_UID",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ContinueSessionVC.swift",
+      "line": 16,
+      "symbol": "ContinueSessionVC.tableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ContinueSessionVC.swift",
+      "line": 18,
+      "symbol": "ContinueSessionVC.sessions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ContinueSessionVC.swift",
+      "line": 19,
+      "symbol": "ContinueSessionVC.imageCache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ContinueSessionVC.swift",
+      "line": 21,
+      "symbol": "ContinueSessionVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ContinueSessionVC.swift",
+      "line": 32,
+      "symbol": "ContinueSessionVC.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ContinueSessionVC.swift",
+      "line": 36,
+      "symbol": "ContinueSessionVC.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ContinueSessionVC.swift",
+      "line": 40,
+      "symbol": "ContinueSessionVC.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ContinueSessionVC.swift",
+      "line": 58,
+      "symbol": "ContinueSessionVC.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ContinueSessionVC.swift",
+      "line": 119,
+      "symbol": "ContinueSessionVC.backBtnPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/DataCounter.swift",
+      "line": 11,
+      "symbol": "DataCounter",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/DataPost.swift",
+      "line": 12,
+      "symbol": "DataPost",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/DataPostAnnotation.swift",
+      "line": 13,
+      "symbol": "DataPostAnnotation",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/DataPostCell.swift",
+      "line": 15,
+      "symbol": "DataPostCell.profileImg",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/DataPostCell.swift",
+      "line": 16,
+      "symbol": "DataPostCell.userNameLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/DataPostCell.swift",
+      "line": 17,
+      "symbol": "DataPostCell.likesImg",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/DataPostCell.swift",
+      "line": 18,
+      "symbol": "DataPostCell.postImg",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/DataPostCell.swift",
+      "line": 19,
+      "symbol": "DataPostCell.viewInfo",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/DataPostCell.swift",
+      "line": 20,
+      "symbol": "DataPostCell.captionLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/DataPostCell.swift",
+      "line": 21,
+      "symbol": "DataPostCell.likesLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/DataPostCell.swift",
+      "line": 23,
+      "symbol": "DataPostCell.imageCache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/DataPostCell.swift",
+      "line": 24,
+      "symbol": "DataPostCell.imageCache2",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/DataPostCell.swift",
+      "line": 26,
+      "symbol": "DataPostCell.datapost",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/DataPostCell.swift",
+      "line": 27,
+      "symbol": "DataPostCell.likesRef",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/DataPostCell.swift",
+      "line": 29,
+      "symbol": "DataPostCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/DataService.swift",
+      "line": 13,
+      "symbol": "DB_BASE",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/DataService.swift",
+      "line": 14,
+      "symbol": "STORAGE_BASE",
+      "symbol_kind": "source.lang.swift.decl.var.global",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/DataService.swift",
+      "line": 16,
+      "symbol": "DataService",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/EditProfileVC.swift",
+      "line": 16,
+      "symbol": "EditProfileVC.userField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/EditProfileVC.swift",
+      "line": 17,
+      "symbol": "EditProfileVC.locationField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/EditProfileVC.swift",
+      "line": 18,
+      "symbol": "EditProfileVC.imageAdd",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/EditProfileVC.swift",
+      "line": 20,
+      "symbol": "EditProfileVC.imagePicker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/EditProfileVC.swift",
+      "line": 21,
+      "symbol": "EditProfileVC.imageCache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/EditProfileVC.swift",
+      "line": 22,
+      "symbol": "EditProfileVC.imageSelected",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/EditProfileVC.swift",
+      "line": 24,
+      "symbol": "EditProfileVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/EditProfileVC.swift",
+      "line": 61,
+      "symbol": "EditProfileVC.backBtnPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/EditProfileVC.swift",
+      "line": 66,
+      "symbol": "EditProfileVC.photoTapped(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/EditProfileVC.swift",
+      "line": 70,
+      "symbol": "EditProfileVC.editNameTapped(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/EditProfileVC.swift",
+      "line": 76,
+      "symbol": "EditProfileVC.editLocationTapped(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/FancyButton.swift",
+      "line": 11,
+      "symbol": "FancyButton",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/FancyField.swift",
+      "line": 11,
+      "symbol": "FancyField",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/FancyImageView.swift",
+      "line": 10,
+      "symbol": "FancyImageView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/FancyLabel.swift",
+      "line": 11,
+      "symbol": "FancyLabel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/FancyView.swift",
+      "line": 11,
+      "symbol": "FancyView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/GroupRankingVC.swift",
+      "line": 11,
+      "symbol": "GroupRankingVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/GroupsMenuVC.swift",
+      "line": 11,
+      "symbol": "GroupsMenuVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/InfoVC.swift",
+      "line": 11,
+      "symbol": "InfoVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/InstructionsVC.swift",
+      "line": 11,
+      "symbol": "InstructionsVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/LoginVC.swift",
+      "line": 18,
+      "symbol": "LoginVC.emailField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/LoginVC.swift",
+      "line": 19,
+      "symbol": "LoginVC.pwdField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/LoginVC.swift",
+      "line": 20,
+      "symbol": "LoginVC.signInTapBtn",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/LoginVC.swift",
+      "line": 23,
+      "symbol": "LoginVC.plainProfileImg",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/LoginVC.swift",
+      "line": 25,
+      "symbol": "LoginVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/LoginVC.swift",
+      "line": 33,
+      "symbol": "LoginVC.textFieldShouldReturn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/LoginVC.swift",
+      "line": 40,
+      "symbol": "LoginVC.viewDidAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/MainVC.swift",
+      "line": 17,
+      "symbol": "MainVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/MainVC.swift",
+      "line": 22,
+      "symbol": "MainVC.infoBtnTapped(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/MainVC.swift",
+      "line": 26,
+      "symbol": "MainVC.safetyBtnTapped",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/MainVC.swift",
+      "line": 28,
+      "symbol": "MainVC.safetyButtonTapped(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/MainVC.swift",
+      "line": 32,
+      "symbol": "MainVC.socialBtnTapped(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/MainVC.swift",
+      "line": 36,
+      "symbol": "MainVC.ProfileBtnTapped(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/MainVC.swift",
+      "line": 40,
+      "symbol": "MainVC.browseDataTapped(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/MainVC.swift",
+      "line": 44,
+      "symbol": "MainVC.rankBtn",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/MainVC.swift",
+      "line": 45,
+      "symbol": "MainVC.rankBtnTapped(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/MainVC.swift",
+      "line": 60,
+      "symbol": "MainVC.addDataBtnPressed",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/MainVC.swift",
+      "line": 62,
+      "symbol": "MainVC.addDataButtonPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/MyGroupInfoVC.swift",
+      "line": 11,
+      "symbol": "MyGroupInfoVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/MyGroupsVC.swift",
+      "line": 11,
+      "symbol": "MyGroupsVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 18,
+      "symbol": "NewSessionVC.beachImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 19,
+      "symbol": "NewSessionVC.dateTimeLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 20,
+      "symbol": "NewSessionVC.locationLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 21,
+      "symbol": "NewSessionVC.gradientPicker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 22,
+      "symbol": "NewSessionVC.beachPicker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 23,
+      "symbol": "NewSessionVC.whoPicker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 24,
+      "symbol": "NewSessionVC.nameLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 27,
+      "symbol": "NewSessionVC.imagePicker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 28,
+      "symbol": "NewSessionVC.imageCache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 29,
+      "symbol": "NewSessionVC.imageSelected",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 31,
+      "symbol": "NewSessionVC.date",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 32,
+      "symbol": "NewSessionVC.formatter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 33,
+      "symbol": "NewSessionVC.dateAsString",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 35,
+      "symbol": "NewSessionVC.locationManager",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 36,
+      "symbol": "NewSessionVC.beachLocation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 38,
+      "symbol": "NewSessionVC.beachSelected",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 39,
+      "symbol": "NewSessionVC.gradientSelected",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 40,
+      "symbol": "NewSessionVC.whoSelected",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 42,
+      "symbol": "NewSessionVC.geoFire",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 43,
+      "symbol": "NewSessionVC.ref",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 45,
+      "symbol": "NewSessionVC.imageLink",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 46,
+      "symbol": "NewSessionVC.numberOfPosts",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 47,
+      "symbol": "NewSessionVC.sessionName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 49,
+      "symbol": "NewSessionVC.sessionId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 51,
+      "symbol": "NewSessionVC.rootRef",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 53,
+      "symbol": "NewSessionVC.dataCounter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 54,
+      "symbol": "NewSessionVC.newSession",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 57,
+      "symbol": "NewSessionVC.gradient",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 58,
+      "symbol": "NewSessionVC.beach",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 59,
+      "symbol": "NewSessionVC.whoP",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 61,
+      "symbol": "NewSessionVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 80,
+      "symbol": "NewSessionVC.viewDidAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 84,
+      "symbol": "NewSessionVC.textFieldShouldReturn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 365,
+      "symbol": "NewSessionVC.numberOfComponents(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 376,
+      "symbol": "NewSessionVC.pickerView(_:numberOfRowsInComponent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 387,
+      "symbol": "NewSessionVC.pickerView(_:titleForRow:forComponent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 398,
+      "symbol": "NewSessionVC.pickerView(_:didSelectRow:inComponent:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/NewSessionVC.swift",
+      "line": 408,
+      "symbol": "NewSessionVC.backPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostRanking.swift",
+      "line": 12,
+      "symbol": "PostRanking",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostsLeaderboardCell.swift",
+      "line": 15,
+      "symbol": "PostsLeaderboardCell.picture",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostsLeaderboardCell.swift",
+      "line": 16,
+      "symbol": "PostsLeaderboardCell.usernameLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostsLeaderboardCell.swift",
+      "line": 17,
+      "symbol": "PostsLeaderboardCell.rankLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostsLeaderboardCell.swift",
+      "line": 18,
+      "symbol": "PostsLeaderboardCell.postsLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostsLeaderboardCell.swift",
+      "line": 20,
+      "symbol": "PostsLeaderboardCell.postranking",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostsLeaderboardCell.swift",
+      "line": 22,
+      "symbol": "PostsLeaderboardCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostsLeaderboardVC.swift",
+      "line": 15,
+      "symbol": "PostsLeaderboardVC.positionLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostsLeaderboardVC.swift",
+      "line": 16,
+      "symbol": "PostsLeaderboardVC.postsLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostsLeaderboardVC.swift",
+      "line": 17,
+      "symbol": "PostsLeaderboardVC.tableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostsLeaderboardVC.swift",
+      "line": 19,
+      "symbol": "PostsLeaderboardVC.postrankings",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostsLeaderboardVC.swift",
+      "line": 20,
+      "symbol": "PostsLeaderboardVC.userPostArray",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostsLeaderboardVC.swift",
+      "line": 22,
+      "symbol": "PostsLeaderboardVC.imageCache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostsLeaderboardVC.swift",
+      "line": 23,
+      "symbol": "PostsLeaderboardVC.uid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostsLeaderboardVC.swift",
+      "line": 25,
+      "symbol": "PostsLeaderboardVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostsLeaderboardVC.swift",
+      "line": 40,
+      "symbol": "PostsLeaderboardVC.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostsLeaderboardVC.swift",
+      "line": 44,
+      "symbol": "PostsLeaderboardVC.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostsLeaderboardVC.swift",
+      "line": 48,
+      "symbol": "PostsLeaderboardVC.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PostsLeaderboardVC.swift",
+      "line": 94,
+      "symbol": "PostsLeaderboardVC.backBtnPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/PrivacyVC.swift",
+      "line": 11,
+      "symbol": "PrivacyVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ProfileOptionsVC.swift",
+      "line": 11,
+      "symbol": "ProfileOptionsVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/RankingMenuVC.swift",
+      "line": 11,
+      "symbol": "RankingMenuVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/RoundButton.swift",
+      "line": 11,
+      "symbol": "RoundButton",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SafetyVC.swift",
+      "line": 11,
+      "symbol": "SafetyVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SeaweedTypesVC.swift",
+      "line": 14,
+      "symbol": "SeaweedTypesVC.picture",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SeaweedTypesVC.swift",
+      "line": 17,
+      "symbol": "SeaweedTypesVC.index",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SeaweedTypesVC.swift",
+      "line": 18,
+      "symbol": "SeaweedTypesVC.imageIndex",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SeaweedTypesVC.swift",
+      "line": 19,
+      "symbol": "SeaweedTypesVC.maxImages",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SeaweedTypesVC.swift",
+      "line": 21,
+      "symbol": "SeaweedTypesVC.imageList",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SeaweedTypesVC.swift",
+      "line": 23,
+      "symbol": "SeaweedTypesVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SeaweedTypesVC.swift",
+      "line": 70,
+      "symbol": "SeaweedTypesVC.dontBtnPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SelectASessionListVC.swift",
+      "line": 16,
+      "symbol": "SelectASessionListVC.tableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SelectASessionListVC.swift",
+      "line": 18,
+      "symbol": "SelectASessionListVC.sessions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SelectASessionListVC.swift",
+      "line": 19,
+      "symbol": "SelectASessionListVC.imageCache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SelectASessionListVC.swift",
+      "line": 21,
+      "symbol": "SelectASessionListVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SelectASessionListVC.swift",
+      "line": 33,
+      "symbol": "SelectASessionListVC.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SelectASessionListVC.swift",
+      "line": 37,
+      "symbol": "SelectASessionListVC.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SelectASessionListVC.swift",
+      "line": 41,
+      "symbol": "SelectASessionListVC.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SelectASessionListVC.swift",
+      "line": 58,
+      "symbol": "SelectASessionListVC.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SelectASessionListVC.swift",
+      "line": 121,
+      "symbol": "SelectASessionListVC.backPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/Session.swift",
+      "line": 12,
+      "symbol": "Session",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionCell.swift",
+      "line": 16,
+      "symbol": "SessionCell.picture",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionCell.swift",
+      "line": 18,
+      "symbol": "SessionCell.nameLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionCell.swift",
+      "line": 19,
+      "symbol": "SessionCell.dateLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionCell.swift",
+      "line": 20,
+      "symbol": "SessionCell.typeLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionCell.swift",
+      "line": 21,
+      "symbol": "SessionCell.gradientLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionCell.swift",
+      "line": 22,
+      "symbol": "SessionCell.numberLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionCell.swift",
+      "line": 24,
+      "symbol": "SessionCell.session",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionCell.swift",
+      "line": 26,
+      "symbol": "SessionCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionListCell.swift",
+      "line": 16,
+      "symbol": "SessionListCell.picture",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionListCell.swift",
+      "line": 17,
+      "symbol": "SessionListCell.gradientLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionListCell.swift",
+      "line": 18,
+      "symbol": "SessionListCell.typeLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionListCell.swift",
+      "line": 19,
+      "symbol": "SessionListCell.dateLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionListCell.swift",
+      "line": 20,
+      "symbol": "SessionListCell.nameLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionListCell.swift",
+      "line": 21,
+      "symbol": "SessionListCell.postsLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionListCell.swift",
+      "line": 23,
+      "symbol": "SessionListCell.session",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionListCell.swift",
+      "line": 25,
+      "symbol": "SessionListCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionsLeaderboardCell.swift",
+      "line": 15,
+      "symbol": "SessionsLeaderboardCell.picture",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionsLeaderboardCell.swift",
+      "line": 16,
+      "symbol": "SessionsLeaderboardCell.usernameLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionsLeaderboardCell.swift",
+      "line": 17,
+      "symbol": "SessionsLeaderboardCell.rankLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionsLeaderboardCell.swift",
+      "line": 18,
+      "symbol": "SessionsLeaderboardCell.postsLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionsLeaderboardCell.swift",
+      "line": 20,
+      "symbol": "SessionsLeaderboardCell.postranking",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionsLeaderboardCell.swift",
+      "line": 22,
+      "symbol": "SessionsLeaderboardCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionsLeaderboardVC.swift",
+      "line": 16,
+      "symbol": "SessionsLeaderboardVC.positionLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionsLeaderboardVC.swift",
+      "line": 17,
+      "symbol": "SessionsLeaderboardVC.postsLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionsLeaderboardVC.swift",
+      "line": 18,
+      "symbol": "SessionsLeaderboardVC.tableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionsLeaderboardVC.swift",
+      "line": 20,
+      "symbol": "SessionsLeaderboardVC.postrankings",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionsLeaderboardVC.swift",
+      "line": 21,
+      "symbol": "SessionsLeaderboardVC.userPostArray",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionsLeaderboardVC.swift",
+      "line": 23,
+      "symbol": "SessionsLeaderboardVC.imageCache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionsLeaderboardVC.swift",
+      "line": 24,
+      "symbol": "SessionsLeaderboardVC.uid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionsLeaderboardVC.swift",
+      "line": 26,
+      "symbol": "SessionsLeaderboardVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionsLeaderboardVC.swift",
+      "line": 41,
+      "symbol": "SessionsLeaderboardVC.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionsLeaderboardVC.swift",
+      "line": 45,
+      "symbol": "SessionsLeaderboardVC.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionsLeaderboardVC.swift",
+      "line": 49,
+      "symbol": "SessionsLeaderboardVC.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SessionsLeaderboardVC.swift",
+      "line": 95,
+      "symbol": "SessionsLeaderboardVC.backBtnTapped(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SetUpProfileVC.swift",
+      "line": 16,
+      "symbol": "SetUpProfileVC.imageAdd",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SetUpProfileVC.swift",
+      "line": 17,
+      "symbol": "SetUpProfileVC.nameField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SetUpProfileVC.swift",
+      "line": 18,
+      "symbol": "SetUpProfileVC.locationField",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SetUpProfileVC.swift",
+      "line": 20,
+      "symbol": "SetUpProfileVC.imagePicker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SetUpProfileVC.swift",
+      "line": 21,
+      "symbol": "SetUpProfileVC.imageCache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SetUpProfileVC.swift",
+      "line": 22,
+      "symbol": "SetUpProfileVC.imageSelected",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SetUpProfileVC.swift",
+      "line": 24,
+      "symbol": "SetUpProfileVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SetUpProfileVC.swift",
+      "line": 34,
+      "symbol": "SetUpProfileVC.viewDidAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SetUpProfileVC.swift",
+      "line": 39,
+      "symbol": "SetUpProfileVC.textFieldShouldReturn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SetUpProfileVC.swift",
+      "line": 62,
+      "symbol": "SetUpProfileVC.addImageTapped(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/SetupGroupVC.swift",
+      "line": 11,
+      "symbol": "SetupGroupVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/UserDataListCell.swift",
+      "line": 15,
+      "symbol": "UserDataListCell.picture",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/UserDataListCell.swift",
+      "line": 16,
+      "symbol": "UserDataListCell.seaweedLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/UserDataListCell.swift",
+      "line": 17,
+      "symbol": "UserDataListCell.latiLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/UserDataListCell.swift",
+      "line": 18,
+      "symbol": "UserDataListCell.longiLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/UserDataListCell.swift",
+      "line": 20,
+      "symbol": "UserDataListCell.userpost",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/UserDataListCell.swift",
+      "line": 22,
+      "symbol": "UserDataListCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/UserPost.swift",
+      "line": 11,
+      "symbol": "UserPost",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/UserPostAnnotation.swift",
+      "line": 12,
+      "symbol": "UserPostAnnotation",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/UserProfile.swift",
+      "line": 12,
+      "symbol": "UserProfile",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 17,
+      "symbol": "ViewAllDataOneVC.profileImg",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 18,
+      "symbol": "ViewAllDataOneVC.likesImg",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 19,
+      "symbol": "ViewAllDataOneVC.picture",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 20,
+      "symbol": "ViewAllDataOneVC.titleLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 21,
+      "symbol": "ViewAllDataOneVC.likesLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 22,
+      "symbol": "ViewAllDataOneVC.commentTextView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 23,
+      "symbol": "ViewAllDataOneVC.tableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 24,
+      "symbol": "ViewAllDataOneVC.usernameLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 26,
+      "symbol": "ViewAllDataOneVC.comments",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 29,
+      "symbol": "ViewAllDataOneVC.imageCache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 30,
+      "symbol": "ViewAllDataOneVC.img",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 32,
+      "symbol": "ViewAllDataOneVC.date",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 33,
+      "symbol": "ViewAllDataOneVC.formatter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 34,
+      "symbol": "ViewAllDataOneVC.dateAsString",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 35,
+      "symbol": "ViewAllDataOneVC.dateString",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 37,
+      "symbol": "ViewAllDataOneVC.commentId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 39,
+      "symbol": "ViewAllDataOneVC.likesRef",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 41,
+      "symbol": "ViewAllDataOneVC.currentData",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 49,
+      "symbol": "ViewAllDataOneVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 115,
+      "symbol": "ViewAllDataOneVC.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 119,
+      "symbol": "ViewAllDataOneVC.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 123,
+      "symbol": "ViewAllDataOneVC.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 162,
+      "symbol": "ViewAllDataOneVC.textViewDidBeginEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 166,
+      "symbol": "ViewAllDataOneVC.textView(_:shouldChangeTextIn:replacementText:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 174,
+      "symbol": "ViewAllDataOneVC.pictureTapped(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 178,
+      "symbol": "ViewAllDataOneVC.prepare(for:sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 256,
+      "symbol": "ViewAllDataOneVC.viewMapPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 289,
+      "symbol": "ViewAllDataOneVC.backBtn",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataOneVC.swift",
+      "line": 290,
+      "symbol": "ViewAllDataOneVC.backBtnPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataPopOverVC.swift",
+      "line": 16,
+      "symbol": "ViewAllDataPopOverVC.picture",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataPopOverVC.swift",
+      "line": 17,
+      "symbol": "ViewAllDataPopOverVC.typeLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataPopOverVC.swift",
+      "line": 20,
+      "symbol": "ViewAllDataPopOverVC.imageCache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataPopOverVC.swift",
+      "line": 21,
+      "symbol": "ViewAllDataPopOverVC.img",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataPopOverVC.swift",
+      "line": 24,
+      "symbol": "ViewAllDataPopOverVC.locationManager",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataPopOverVC.swift",
+      "line": 25,
+      "symbol": "ViewAllDataPopOverVC.beachLocation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataPopOverVC.swift",
+      "line": 28,
+      "symbol": "ViewAllDataPopOverVC.currentDataPost",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataPopOverVC.swift",
+      "line": 37,
+      "symbol": "ViewAllDataPopOverVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataPopOverVC.swift",
+      "line": 63,
+      "symbol": "ViewAllDataPopOverVC.cancelBtn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataVC.swift",
+      "line": 16,
+      "symbol": "ViewAllDataVC.tableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataVC.swift",
+      "line": 17,
+      "symbol": "ViewAllDataVC.dataposts",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataVC.swift",
+      "line": 18,
+      "symbol": "ViewAllDataVC.imageCache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataVC.swift",
+      "line": 19,
+      "symbol": "ViewAllDataVC.imageCache2",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataVC.swift",
+      "line": 21,
+      "symbol": "ViewAllDataVC.geoFire",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataVC.swift",
+      "line": 22,
+      "symbol": "ViewAllDataVC.ref",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataVC.swift",
+      "line": 23,
+      "symbol": "ViewAllDataVC.img",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataVC.swift",
+      "line": 26,
+      "symbol": "ViewAllDataVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataVC.swift",
+      "line": 35,
+      "symbol": "ViewAllDataVC.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataVC.swift",
+      "line": 39,
+      "symbol": "ViewAllDataVC.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataVC.swift",
+      "line": 43,
+      "symbol": "ViewAllDataVC.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataVC.swift",
+      "line": 57,
+      "symbol": "ViewAllDataVC.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataVC.swift",
+      "line": 63,
+      "symbol": "ViewAllDataVC.prepare(for:sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllDataVC.swift",
+      "line": 134,
+      "symbol": "ViewAllDataVC.backBtn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllOnMapVC.swift",
+      "line": 17,
+      "symbol": "ViewAllOnMapVC.mapView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllOnMapVC.swift",
+      "line": 18,
+      "symbol": "ViewAllOnMapVC.regionRadius",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllOnMapVC.swift",
+      "line": 20,
+      "symbol": "ViewAllOnMapVC.locationManager",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllOnMapVC.swift",
+      "line": 21,
+      "symbol": "ViewAllOnMapVC.userLocation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllOnMapVC.swift",
+      "line": 23,
+      "symbol": "ViewAllOnMapVC.imageCache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllOnMapVC.swift",
+      "line": 24,
+      "symbol": "ViewAllOnMapVC.img",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllOnMapVC.swift",
+      "line": 26,
+      "symbol": "ViewAllOnMapVC.locations",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllOnMapVC.swift",
+      "line": 28,
+      "symbol": "ViewAllOnMapVC.geoFire",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllOnMapVC.swift",
+      "line": 29,
+      "symbol": "ViewAllOnMapVC.ref",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllOnMapVC.swift",
+      "line": 31,
+      "symbol": "ViewAllOnMapVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllOnMapVC.swift",
+      "line": 42,
+      "symbol": "ViewAllOnMapVC.viewDidAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewAllOnMapVC.swift",
+      "line": 205,
+      "symbol": "ViewAllOnMapVC.backBtn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewBadgesVC.swift",
+      "line": 16,
+      "symbol": "ViewBadgesVC.CollectionViewPosts",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewBadgesVC.swift",
+      "line": 18,
+      "symbol": "ViewBadgesVC.CollectionViewSessions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewBadgesVC.swift",
+      "line": 20,
+      "symbol": "ViewBadgesVC.posts",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewBadgesVC.swift",
+      "line": 21,
+      "symbol": "ViewBadgesVC.sessions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewBadgesVC.swift",
+      "line": 23,
+      "symbol": "ViewBadgesVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewBadgesVC.swift",
+      "line": 128,
+      "symbol": "ViewBadgesVC.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewBadgesVC.swift",
+      "line": 151,
+      "symbol": "ViewBadgesVC.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewBadgesVC.swift",
+      "line": 155,
+      "symbol": "ViewBadgesVC.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewBadgesVC.swift",
+      "line": 162,
+      "symbol": "ViewBadgesVC.backBtn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewDataListOnMapVC.swift",
+      "line": 17,
+      "symbol": "ViewDataListOnMapVC.mapKit",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewDataListOnMapVC.swift",
+      "line": 18,
+      "symbol": "ViewDataListOnMapVC.regionRadius",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewDataListOnMapVC.swift",
+      "line": 20,
+      "symbol": "ViewDataListOnMapVC.locationManager",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewDataListOnMapVC.swift",
+      "line": 21,
+      "symbol": "ViewDataListOnMapVC.userLocation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewDataListOnMapVC.swift",
+      "line": 23,
+      "symbol": "ViewDataListOnMapVC.imageCache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewDataListOnMapVC.swift",
+      "line": 24,
+      "symbol": "ViewDataListOnMapVC.img",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewDataListOnMapVC.swift",
+      "line": 28,
+      "symbol": "ViewDataListOnMapVC.currentDataPost",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewDataListOnMapVC.swift",
+      "line": 36,
+      "symbol": "ViewDataListOnMapVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewDataListOnMapVC.swift",
+      "line": 47,
+      "symbol": "ViewDataListOnMapVC.viewDidAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewDataListOnMapVC.swift",
+      "line": 120,
+      "symbol": "ViewDataListOnMapVC.mapView(_:annotationView:calloutAccessoryControlTapped:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewDataListOnMapVC.swift",
+      "line": 124,
+      "symbol": "ViewDataListOnMapVC.prepare(for:sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewDataListOnMapVC.swift",
+      "line": 133,
+      "symbol": "ViewDataListOnMapVC.backBtn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataMapPopOverVC.swift",
+      "line": 13,
+      "symbol": "ViewOwnDataMapPopOverVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataMapVC.swift",
+      "line": 18,
+      "symbol": "ViewOwnDataMapVC.mkMapView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataMapVC.swift",
+      "line": 19,
+      "symbol": "ViewOwnDataMapVC.regionRadius",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataMapVC.swift",
+      "line": 21,
+      "symbol": "ViewOwnDataMapVC.locations",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataMapVC.swift",
+      "line": 23,
+      "symbol": "ViewOwnDataMapVC.imageCache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataMapVC.swift",
+      "line": 25,
+      "symbol": "ViewOwnDataMapVC.locationManager",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataMapVC.swift",
+      "line": 26,
+      "symbol": "ViewOwnDataMapVC.userLocation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataMapVC.swift",
+      "line": 28,
+      "symbol": "ViewOwnDataMapVC.geoFire",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataMapVC.swift",
+      "line": 29,
+      "symbol": "ViewOwnDataMapVC.ref",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataMapVC.swift",
+      "line": 30,
+      "symbol": "ViewOwnDataMapVC.img",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataMapVC.swift",
+      "line": 32,
+      "symbol": "ViewOwnDataMapVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataMapVC.swift",
+      "line": 45,
+      "symbol": "ViewOwnDataMapVC.viewDidAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataMapVC.swift",
+      "line": 210,
+      "symbol": "ViewOwnDataMapVC.backBtn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataPopOverVC.swift",
+      "line": 13,
+      "symbol": "ViewOwnDataPopOverVC",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 18,
+      "symbol": "ViewOwnDataVC.tableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 19,
+      "symbol": "ViewOwnDataVC.sessionLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 20,
+      "symbol": "ViewOwnDataVC.nameLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 21,
+      "symbol": "ViewOwnDataVC.dateLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 22,
+      "symbol": "ViewOwnDataVC.beachTypeLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 23,
+      "symbol": "ViewOwnDataVC.gradientLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 24,
+      "symbol": "ViewOwnDataVC.numberLbl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 25,
+      "symbol": "ViewOwnDataVC.picture",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 28,
+      "symbol": "ViewOwnDataVC.userposts",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 29,
+      "symbol": "ViewOwnDataVC.imageCache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 31,
+      "symbol": "ViewOwnDataVC.locationManager",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 33,
+      "symbol": "ViewOwnDataVC.geoFire",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 34,
+      "symbol": "ViewOwnDataVC.ref",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 35,
+      "symbol": "ViewOwnDataVC.img",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 38,
+      "symbol": "ViewOwnDataVC.currentSession",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 46,
+      "symbol": "ViewOwnDataVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 82,
+      "symbol": "ViewOwnDataVC.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 86,
+      "symbol": "ViewOwnDataVC.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 90,
+      "symbol": "ViewOwnDataVC.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 104,
+      "symbol": "ViewOwnDataVC.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewOwnDataVC.swift",
+      "line": 189,
+      "symbol": "ViewOwnDataVC.backBtn(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewProfileVC.swift",
+      "line": 16,
+      "symbol": "ViewProfileVC.profileImg",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewProfileVC.swift",
+      "line": 17,
+      "symbol": "ViewProfileVC.profileUsername",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewProfileVC.swift",
+      "line": 18,
+      "symbol": "ViewProfileVC.profileLocation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewProfileVC.swift",
+      "line": 20,
+      "symbol": "ViewProfileVC.imageCache",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewProfileVC.swift",
+      "line": 22,
+      "symbol": "ViewProfileVC.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewProfileVC.swift",
+      "line": 27,
+      "symbol": "ViewProfileVC.backBtnPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Chase/Desktop/The Big Seaweed Search/The Big Seaweed Search/ViewProfileVC.swift",
+      "line": 70,
+      "symbol": "ViewProfileVC.editBtnPressed(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/Chase/Desktop/The Big Seaweed Search"
+}

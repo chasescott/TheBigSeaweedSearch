@@ -8,6 +8,7 @@
 
 import UIKit
 
+//AboutVC View Controller Class for 'About' section of app
 class AboutVC: UIViewController {
 
     override func viewDidLoad() {

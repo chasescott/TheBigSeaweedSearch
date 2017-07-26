@@ -8,6 +8,7 @@
 
 import UIKit
 
+///Modal pop up view controller for data badge
 class AddDataBadgePopUpVC: UIViewController {
 
     @IBOutlet weak var picture: FancyImageView!
@@ -15,7 +16,7 @@ class AddDataBadgePopUpVC: UIViewController {
     private var _currentSession: Session!
     var img: UIImage? = nil
     
-    //Getters & setters for Data Counter object
+    ///Getters & setters for Data Counter object
     var dataCounter: DataCounter {
         get {
             return _dataCounter!
@@ -24,7 +25,7 @@ class AddDataBadgePopUpVC: UIViewController {
         }
     }
     
-    //getters & setters for Session object
+    ///Getters & setters for Session object
     var currentSession: Session {
         get {
             return _currentSession
@@ -40,6 +41,7 @@ class AddDataBadgePopUpVC: UIViewController {
         selectRewardImage()
     }
     
+        /// Select a reward image depending on the number of posts/sessions a user has achieved.
     func selectRewardImage() {
         if dataCounter.isPostType == true {
             let totalCount = dataCounter.count

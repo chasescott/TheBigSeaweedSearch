@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 
+//AddMenuVC View Controller Class for 'Add Data Menu'
 class AddMenuVC: UIViewController {
 
     override func viewDidLoad() {

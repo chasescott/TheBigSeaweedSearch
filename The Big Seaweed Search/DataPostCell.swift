@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 
+/// DataPostCell class for cells in Tableview in ViewAllDataVC
 class DataPostCell: UITableViewCell {
     
     @IBOutlet weak var profileImg: UIImageView!
@@ -33,6 +34,11 @@ class DataPostCell: UITableViewCell {
         likesImg.isUserInteractionEnabled = true
     }
     
+    /// Configure the cell
+    ///
+    /// - Parameters:
+    ///   - datapost: DataPost object
+    ///   - img: UIImage for the picture label
     func configureCell(datapost:DataPost, img: UIImage? = nil, img2: UIImage? = nil) {
         self.profileImg.image = #imageLiteral(resourceName: "loading")
         self.postImg.image = #imageLiteral(resourceName: "loadingbar")
@@ -90,6 +96,10 @@ class DataPostCell: UITableViewCell {
         
     }
     
+    
+    /// Function for when the 'Like' heart image is tapped
+    ///
+    /// - Parameter sender: UI Tap Gesture Recognizer 
     func likeTapped(sender: UITapGestureRecognizer){
         likesRef.observeSingleEvent(of: .value, with: { (snapshot) in
             if let _ = snapshot.value as? NSNull {

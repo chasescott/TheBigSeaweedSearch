@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
+///View badges view controller class
 class ViewBadgesVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var CollectionViewPosts: UICollectionView!
@@ -31,6 +32,7 @@ class ViewBadgesVC: UIViewController, UICollectionViewDelegate, UICollectionView
         appendSessionsBadges()
     }
     
+    ///Method to check number of user posts on Firebase and then display the relevant badges in an array for UICollectionView
     func appendPostsBadges() {
     if let uid = FIRAuth.auth()?.currentUser?.uid {
         DataService.ds.REF_USERS.child(uid).observeSingleEvent(of: .value, with: { snapshot in
@@ -77,6 +79,7 @@ class ViewBadgesVC: UIViewController, UICollectionViewDelegate, UICollectionView
         }
     }
     
+    ///Method to check number of user posts on Firebase and then display the relevant badges in an array for UICollectionView
     func appendSessionsBadges() {
         if let uid = FIRAuth.auth()?.currentUser?.uid {
             DataService.ds.REF_USERS.child(uid).observeSingleEvent(of: .value, with: { snapshot in

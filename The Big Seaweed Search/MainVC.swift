@@ -10,6 +10,8 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
+
+///Main screen view controller
 class MainVC: UIViewController {
 
     override func viewDidLoad() {
@@ -45,6 +47,9 @@ class MainVC: UIViewController {
     }
     
     
+    /// When sign out tapped, sign out from Firebase authentication and remove key from the Keychain Wrapper to prevent logging back in.
+    ///
+    /// - Parameter sender: User Id info
     @IBAction func signOutTapped(_ sender: Any) {
         let keychainResult = KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         print("CHASE: ID removed from keychain \(keychainResult)")

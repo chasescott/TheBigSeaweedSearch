@@ -8,6 +8,7 @@
 
 import UIKit
 
+///Pop over view showing images of types of seaweed for the user to choose from
 class SeaweedTypesVC: UIViewController {
 
     @IBOutlet weak var picture: UIImageView!
@@ -25,6 +26,9 @@ class SeaweedTypesVC: UIViewController {
         picture.image = UIImage(named:"0.png")
     }
     
+    /// Swipe right through images
+    ///
+    /// - Parameter sender: Swipe gesture
     @IBAction func swiping(_ sender: Any) {
         //swiping right
         print("User swiped right")
@@ -41,6 +45,9 @@ class SeaweedTypesVC: UIViewController {
         picture.image = UIImage(named: imageList[imageIndex])
     }
     
+    /// Swipe left through images
+    ///
+    /// - Parameter sender: Swipe gesture
     @IBAction func swipeLeft(_ sender: Any) {
         print("User swiped Left")
         
@@ -58,30 +65,6 @@ class SeaweedTypesVC: UIViewController {
         
         picture.image = UIImage(named: imageList[imageIndex])
     }
-
-//    @IBOutlet weak var lastBtn: FancyButton!
-//    @IBAction func LastBtnPressed(_ sender: Any) {
-//        if index == 0 {
-//            let pictureString:String = self.myArray[index]
-//            self.picture.image = UIImage(named: pictureString)
-//        } else {
-//        let pictureString:String = self.myArray[index]
-//        self.picture.image = UIImage(named: pictureString)
-//        index = (index < myArray.count-1) ? index-1 : 0
-//        }
-//    }
-//    
-//    @IBOutlet weak var NextButtonPressed: FancyButton!
-//    @IBAction func nextButtonPressed(_ sender: Any) {
-//        let pictureString:String = self.myArray[index]
-//        self.picture.image = UIImage(named: pictureString)
-//        index = (index < myArray.count-1) ? index+1 : 0
-//    }
-//    
-//    
-//    @IBOutlet weak var selectBtn: FancyButton!
-//    @IBAction func selectBtnPressed(_ sender: Any) {
-//    }
     
     
     @IBAction func dontBtnPressed(_ sender: Any) {

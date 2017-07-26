@@ -18,6 +18,10 @@ class BadgesPostsCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     
+    /// Configure the cell to display post badges
+    ///
+    /// - Parameters:
+    ///   - img: UIImage for the picture label
     func configureCell(img: UIImage? = nil)
     {
         self.picture.image = #imageLiteral(resourceName: "loading")

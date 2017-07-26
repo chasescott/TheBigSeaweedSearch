@@ -11,6 +11,7 @@ import MapKit
 import Firebase
 import SwiftKeychainWrapper
 
+///View all data on one map view controller
 class ViewAllOnMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
@@ -42,6 +43,7 @@ class ViewAllOnMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         locationAuthStatus()
     }
     
+        /// Method to ensure the app only lets the location be collated when app is in use, not in the background as that will drain the battery life quickly.
     func locationAuthStatus() {
         //Only let location be collated when app is in use, not in the background as that will drain the battery life quickly.
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
@@ -58,12 +60,22 @@ class ViewAllOnMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }
     }
     
+    /// Method to obtain location of user, store the GPS coordinates in the beachLocation variable, display the coordinates in the label on the view and stop the location manager from constantly updating in the background, thus saving battery.
+    ///
+    /// - Parameters:
+    ///   - manager: CLLocationManager object to obtain exact coordinates
+    ///   - locations: Array of CLLocation objects to store location info
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         userLocation = CLLocation(latitude: locValue.latitude, longitude: locValue.longitude)
         locationManager.stopUpdatingLocation()
     }
     
+    /// Determine if location authorization status changes at any time during use.
+    ///
+    /// - Parameters:
+    ///   - manager: Stores CLLocationManager object to obtain exact coordinates
+    ///   - status: Obtains CLAuthorizationStatus status to determine if the authorization status of the user changes
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if status == CLAuthorizationStatus.authorizedWhenInUse {
             let locValue:CLLocationCoordinate2D = manager.location!.coordinate
@@ -72,12 +84,23 @@ class ViewAllOnMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         }
     }
     
+    
+    /// Centers map on user's location
+    ///
+    /// - Parameter location: Users location as CLLocation object
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
                                                                   regionRadius * 2.0, regionRadius * 2.0)
         mapView.setRegion(coordinateRegion, animated: true)
     }
     
+    
+    /// Creates annotations for map view pins
+    ///
+    /// - Parameters:
+    ///   - mapView: mapView
+    ///   - annotation: The annotation object
+    /// - Returns: the annotation view object
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         // 3
         let identifier = "pin"
@@ -91,8 +114,9 @@ class ViewAllOnMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         return view
     }
     
-    //prepare for segue and calloutaccessorycontroltapped
 
+
+    /// Annotations added to the map.  Run at viewDidLoad() and looks to Firebase to run GeoFire query and locate the nearest post objects around the users location and then returns the top X values.  The post and user data is pulled from Firebase and attached to the annotation objects array.
     func appendMapAnnotations() {
         let geoFire = GeoFire(firebaseRef: ref.child("location").child("posts"))
         var seaweedLocation = CLLocation()
@@ -140,6 +164,13 @@ class ViewAllOnMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
    }
     
+    
+    /// MapView annotation pin tapped action
+    ///
+    /// - Parameters:
+    ///   - mapView: map view object
+    ///   - view: the view used in the pin annotation
+    ///   - control: the type of control object
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         let annotation = view.annotation as! DataPostAnnotation
         let postKey = annotation.postKey
@@ -156,6 +187,11 @@ class ViewAllOnMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         performSegue(withIdentifier: "viewAllDataMapVCtoViewDataInformationVC", sender: dataPost)
     }
     
+    ///Pass through session object containing session data to add data VC
+    ///
+    /// - Parameters:
+    ///   - segue: The id of the segue to be initiated
+    ///   - sender: The data that is to be sent.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? ViewAllDataOneVC {
             if let currentData = sender as? DataPost {

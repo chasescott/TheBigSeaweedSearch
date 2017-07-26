@@ -12,6 +12,7 @@ import Firebase
 import FBSDKLoginKit
 import SwiftKeychainWrapper
 
+///Login View Controller Class for the first class to appear, the login screen
 class LoginVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailField: FancyField!
@@ -34,15 +35,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         pwdField.resignFirstResponder()
         return false
     }
-    
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool{
-//        if textField == self.emailField {
-//            self.pwdField.becomeFirstResponder()
-//        }else{
-//            self.signInTapBtn.becomeFirstResponder()
-//        }
-//        return true
-//    }
+
     
     override func viewDidAppear(_ animated: Bool) {
         //checks if key exists in keychain, then do foo
@@ -52,7 +45,9 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         }
     }
     
-    //CHASE:  Facebook log in action
+    /// Facebook log in method using Firebase and Facebook authorisation tools.
+    ///
+    /// - Parameter sender: Facebook credentials
     @IBAction func fbBtnTapped(_ sender: Any) {
         
         let facebookLogin  = FBSDKLoginManager()
@@ -70,7 +65,9 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         }
     }
 
-    //CHASE:  Code required to authorise user with Firebase
+    ///  Code required to authorise user with Firebase using email and address method only
+    ///
+    /// - Parameter credential: Credential user information
     func firebaseAuth(_ credential: FIRAuthCredential) {
         FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
             if error != nil {
@@ -93,7 +90,11 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         })
     }
     
-    //CHASE:  Code to run when sign in button is hit...
+
+    /// Sign in button tapped.  Check if email/password not nil and run Firebase authentication code.
+    /// If user does not exist, create new user profile and authentication using inputted password/email.
+    ///
+    /// - Parameter sender: User credential data
     @IBAction func signInTapped(_ sender: Any) {
         if let email = emailField.text, let pwd = pwdField.text {
             FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
@@ -136,14 +137,22 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         }
     }
     
-    //CHASE:  Complete the sign in process method for use in above methods...
+    /// Stores the username and password in the devices Keychain so that the user doesn't need to log in each time the app loads.
+    ///
+    /// - Parameters:
+    ///   - id: the user id
+    ///   - userData: user id and password stored in String Dictionary
     func completeSignIn(id: String, userData: Dictionary<String, String>) {
         DataService.ds.createFirebaseDBUser(uid: id, userData: userData)
         let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
         print("CHASE: Data saved to keychain \(keychainResult)")
     }
 
-    //Automatically create user profile based upon
+    /// Automatically create user profile if new user
+    ///
+    /// - Parameters:
+    ///   - id: user Id
+    ///   - profileData: Dictionary of profileData to be uploaded to Firebase
     func createUserProfile(id: String, profileData: Dictionary<String, AnyObject>) {
         DataService.ds.createFirebaseDBUserProfile(uid: id, profileData: profileData)
         print("CHASE: User Profile Created")

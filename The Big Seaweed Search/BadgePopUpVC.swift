@@ -9,6 +9,7 @@
 import UIKit
 import SwiftKeychainWrapper
 
+///Modal pop up class for when a new is badge is awarded
 class BadgePopUpVC: UIViewController {
 
     @IBOutlet weak var picture: FancyImageView!
@@ -16,7 +17,7 @@ class BadgePopUpVC: UIViewController {
     private var _currentSession: Session!
     var img: UIImage? = nil
     
-    //Getters & setters for Data Counter object
+    ///Getters & setters for Data Counter object
     var dataCounter: DataCounter {
         get {
             return _dataCounter!
@@ -25,7 +26,7 @@ class BadgePopUpVC: UIViewController {
         }
     }
     
-    //getters & setters for Session object
+    ///getters & setters for Session object
     var currentSession: Session {
         get {
             return _currentSession
@@ -41,6 +42,8 @@ class BadgePopUpVC: UIViewController {
         selectRewardImage()
     }
     
+    
+    /// Select a reward image depending on the number of posts/sessions a user has achieved.
     func selectRewardImage () {
         if dataCounter.isPostType == true {
             let totalCount = dataCounter.count
@@ -81,13 +84,20 @@ class BadgePopUpVC: UIViewController {
         userAlertSuccess(alert: "Your session has now been activated.  Please continue to collect data")
     }
 
+    ///Pass through session object containing session data to new view
+    ///
+    /// - Parameters:
+    ///   - segue: The id of the segue to be initiated
+    ///   - sender: The data that is to be sent.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationVC = segue.destination as? AddDataVC {
             destinationVC.currentSession = currentSession
         }
     }
-    
-    //User alert to advise of success and perform segue to next screen
+
+    ///User alert windows to advise of success and segue to the next screen.
+    ///
+    /// - Parameter alert: String to represent congratulations that needs to pop up
     func userAlertSuccess (alert: String) {
         let alertController = UIAlertController(title: "Success!", message: alert, preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler:

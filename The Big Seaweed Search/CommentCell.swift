@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// CommentCell class for cells in Tableview in ViewAllDataOneVC
 class CommentCell: UITableViewCell {
 
     @IBOutlet weak var usernameLbl: UILabel!
@@ -20,6 +21,10 @@ class CommentCell: UITableViewCell {
     
     var comment: Comment!
     
+    /// Configure the comment cell
+    ///
+    /// - Parameters:
+    ///   - comment: Comment object
     func configureCell(comment: Comment) {
         self.comment = comment
         self.dateLbl.text = comment.date

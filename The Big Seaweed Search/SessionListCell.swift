@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
+/// SessionListCell class for cells in Tableview in SelectASessionListVC
 class SessionListCell: UITableViewCell {
 
     @IBOutlet weak var picture: UIImageView!
@@ -25,6 +26,11 @@ class SessionListCell: UITableViewCell {
         super.awakeFromNib()
     }
 
+    /// Configure the cell
+    ///
+    /// - Parameters:
+    ///   - session: Session object
+    ///   - img: UIImage for the picture label
     func configureCell(session: Session, img: UIImage? = nil) {
         self.session = session
         self.picture.image = #imageLiteral(resourceName: "loading")

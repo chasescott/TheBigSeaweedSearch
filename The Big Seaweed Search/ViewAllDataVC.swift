@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
+///View all data view controller class
 class ViewAllDataVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
@@ -67,6 +68,8 @@ class ViewAllDataVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         }
     }
     
+    
+    /// Append data method called at viewDidLoad() and appends all posts data to array of post objects that are then loaded into the table.
     func appendData() {
         let geoFire = GeoFire(firebaseRef: ref.child("location").child("posts"))
         var seaweedLocation = CLLocation()

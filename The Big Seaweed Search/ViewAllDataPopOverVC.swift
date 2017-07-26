@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
+///Modal pop over class to show selected data in more detail/close up.
 class ViewAllDataPopOverVC: UIViewController {
 
     @IBOutlet weak var picture: UIImageView!
@@ -23,6 +24,7 @@ class ViewAllDataPopOverVC: UIViewController {
     let locationManager = CLLocationManager()
     var beachLocation = CLLocation()
     
+    //Getters & Setters for currentDataPost object passed through from DataList view controllers
     var currentDataPost: DataPost {
         get {
             return _currentDataPost

@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
+///Class for the Edit Profile view controller
 class EditProfileVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var userField: FancyField!
@@ -30,12 +31,21 @@ class EditProfileVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         locationField.delegate = self
     }
 
+    /// Enables responsive text fields
+    ///
+    /// - Parameter textField: The textfield in question
+    /// - Returns: Bool
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         userField.resignFirstResponder()
         locationField.resignFirstResponder()
         return false
     }
     
+    /// Image Pickert Controller enables user to select image from library
+    ///
+    /// - Parameters:
+    ///   - picker: picker object
+    ///   - info: data stored within the image picker
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             imageAdd.image = image
@@ -69,6 +79,9 @@ class EditProfileVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         locationField.text = ""
     }
     
+    /// Method to run when the Save button is pressed.  Take the image in the picker viewer, create a string to unique identify the image, upload the image to Firebase storage and then run the postToFirebase method.
+    ///
+    /// - Parameter sender: Data relating to the image.
     @IBAction func saveBtnPressed(_ sender: Any) {
         guard let name = userField.text, name != "" else {
             userAlertDoMore(alert: "Please enter a username")
@@ -109,6 +122,10 @@ class EditProfileVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         }
     }
     
+    
+    /// Method to post all user data to Firebase.
+    ///1. Store user data in dictionary and store data against user node on Firebase.
+    /// - Parameter imgUrl: the image URL of the profile picture storage location on Firebase
     func postToFirebase(imgUrl: String) {
         if let userId = FIRAuth.auth()?.currentUser?.uid{
             let profileData: Dictionary<String,AnyObject> = [
@@ -127,6 +144,9 @@ class EditProfileVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         }
     }
 
+    /// Apply the Firebase User Data already in Firebase to populate the fields with the current data so the user can see whether or not they want to edit it.
+    ///
+    /// - Parameter img: UIImage
     func applyFirebaseUserInfo(img: UIImage? = nil) {
         let uid = FIRAuth.auth()?.currentUser?.uid
         DataService.ds.REF_USERS.child(uid!).child("profile").observeSingleEvent(of: .value, with: { (snapshot) in
@@ -163,7 +183,9 @@ class EditProfileVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         }
     }
   
-    //User alert windows to warn of issue that needs attention before proceeding
+    ///User alert windows to warn of issue that needs attention before proceeding
+    ///
+    /// - Parameter alert:  String to represent the problem that requires attention from the user.  
     func userAlertDoMore (alert: String) {
         let alertController = UIAlertController(title: "The Big SeaWeed Search", message: alert, preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil))
@@ -175,7 +197,9 @@ class EditProfileVC: UIViewController, UIImagePickerControllerDelegate, UINaviga
         alertWindow.rootViewController?.present(alertController, animated: true, completion: nil)
     }
     
-    //User alert to advise of success and perform segue to next screen
+    ///User alert windows to advise of success and segue to the next screen.
+    ///
+    /// - Parameter alert: String to represent congratulations that needs to pop up
     func userAlert (alert: String) {
         let alertController = UIAlertController(title: "The Big SeaWeed Search", message: alert, preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: {

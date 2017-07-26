@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 
+/// UserDataListCell class for cells in Tableview in ViewOwnDataVC
 class UserDataListCell: UITableViewCell {
 
     @IBOutlet weak var picture: UIImageView!
@@ -22,6 +23,11 @@ class UserDataListCell: UITableViewCell {
         super.awakeFromNib()
     }
 
+    /// Configure the cell
+    ///
+    /// - Parameters:
+    ///   - userpost: UserPost object
+    ///   - img: UIImage for the picture label
     func configureCell(userpost: UserPost, img: UIImage? = nil) {
         self.userpost = userpost
         self.picture.image = #imageLiteral(resourceName: "loading")

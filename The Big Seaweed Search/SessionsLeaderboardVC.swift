@@ -10,6 +10,7 @@ import UIKit
 import SwiftKeychainWrapper
 import Firebase
 
+///Sessions leaderboard view controller class
 class SessionsLeaderboardVC: UIViewController, UITableViewDelegate, UITableViewDataSource  {
 
     @IBOutlet weak var positionLbl: UILabel!
@@ -60,6 +61,7 @@ class SessionsLeaderboardVC: UIViewController, UITableViewDelegate, UITableViewD
         }
     }
     
+        ///Method called at viewDidLoad() that pulls all leaderboard and post data from Firebase for all users before inserting into array and calculating the users rank.
     func appendPostRankingData() {
         if (FIRAuth.auth()?.currentUser?.uid) != nil {
             self.postrankings = []

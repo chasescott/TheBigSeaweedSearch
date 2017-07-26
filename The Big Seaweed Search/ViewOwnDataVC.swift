@@ -11,6 +11,7 @@ import MapKit
 import Firebase
 import SwiftKeychainWrapper
 
+///View own data view controller class
 class ViewOwnDataVC: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
 
     private var _currentSession: Session!
@@ -106,6 +107,11 @@ class ViewOwnDataVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         performSegue(withIdentifier: "showOwnDataFromList", sender: currentUserPost)
     }
     
+    ///Pass through session object containing session data to the next view controller
+    ///
+    /// - Parameters:
+    ///   - segue: The id of the segue to be initiated
+    ///   - sender: The data that is to be sent.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? ViewOwnDataPopOverVC {
             if let currentUserPost = sender as? UserPost {
@@ -114,6 +120,8 @@ class ViewOwnDataVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         }
     }
     
+    
+    ///Obtain all the individual user's post data from Firebase, create a new post object and append to a posts array that is reloaded for the purpose of the table.
     func appendUserPostsData() {
         let geoFire = GeoFire(firebaseRef: ref.child("location").child("posts"))
         var seaweedLocation = CLLocation()
@@ -162,7 +170,9 @@ class ViewOwnDataVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         }
     }
         
-        //User alert windows to warn of issue that needs attention before proceeding
+    ///User alert windows to warn of issue that needs attention before proceeding
+    ///
+    /// - Parameter alert: String to represent warning that needs to pop up
         func userAlertDoMore (alert: String) {
             let alertController = UIAlertController(title: "Problem!", message: alert, preferredStyle: UIAlertControllerStyle.alert)
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil))

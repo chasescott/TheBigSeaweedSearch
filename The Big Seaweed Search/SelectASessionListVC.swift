@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
+///Select a session from the list of sessions view controller
 class SelectASessionListVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
@@ -60,6 +61,11 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
         performSegue(withIdentifier: "sessionListToViewData", sender: existingSession)
     }
     
+    ///Pass through session object containing session data to ViewOwnDataVC
+    ///
+    /// - Parameters:
+    ///   - segue: The id of the segue to be initiated
+    ///   - sender: The data that is to be sent.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? ViewOwnDataVC {
             if let existingSession = sender as? Session {
@@ -68,7 +74,8 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
         }
     }
 
-
+    /// Method that iterates through all sessions Ids stored under users UID node on Firebase.
+    ///When session Id has been obtained, code goes to session Id under sessions node on Firebase and obtains all the information necessary to build a Session object.  That object is then appended to an array of Sessions objects which are then used to build a table of cells where each cell represents one session object.  Tableview data is then reloaded.
     func appendSessionsData() {
         if let uid = FIRAuth.auth()?.currentUser?.uid {
             self.sessions = []

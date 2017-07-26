@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
+///View profile view controller class
 class ViewProfileVC: UIViewController {
 
     @IBOutlet weak var profileImg: UIImageView!
@@ -28,10 +29,12 @@ class ViewProfileVC: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    ///Method pulls all the user profile data from Firebase and stores against each of the relevant fields at viewDidLoad() so it is ready for view immediately by the user.
+    ///
+    /// - Parameter img: UIImage
     func applyFirebaseUserInfo(img: UIImage? = nil) {
         let uid = FIRAuth.auth()?.currentUser?.uid
         DataService.ds.REF_USERS.child(uid!).child("profile").observeSingleEvent(of: .value, with: { (snapshot) in
-        //DataService.ds.REF_USERS.child(uid!).child("Profile").observe(.value, with: { (snapshot) in
             let value = snapshot.value as? NSDictionary
             let usernam = value?["username"] as? String ?? ""
             let locat = value?["location"] as? String ?? ""

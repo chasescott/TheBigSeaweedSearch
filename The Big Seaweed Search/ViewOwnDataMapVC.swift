@@ -11,6 +11,7 @@ import Firebase
 import MapKit
 import SwiftKeychainWrapper
 
+///View own data on a map view controller
 class ViewOwnDataMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     //Map view variables
@@ -45,6 +46,7 @@ class ViewOwnDataMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDe
         locationAuthStatus()
     }
     
+            /// Method to ensure the app only lets the location be collated when app is in use, not in the background as that will drain the battery life quickly.
     func locationAuthStatus() {
         //Only let location be collated when app is in use, not in the background as that will drain the battery life quickly.
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
@@ -61,12 +63,22 @@ class ViewOwnDataMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDe
         }
     }
     
+    /// Method to obtain location of user, store the GPS coordinates in the beachLocation variable, display the coordinates in the label on the view and stop the location manager from constantly updating in the background, thus saving battery.
+    ///
+    /// - Parameters:
+    ///   - manager: CLLocationManager object to obtain exact coordinates
+    ///   - locations: Array of CLLocation objects to store location info
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
             userLocation = CLLocation(latitude: locValue.latitude, longitude: locValue.longitude)
         locationManager.stopUpdatingLocation()
     }
     
+    /// Determine if location authorization status changes at any time during use.
+    ///
+    /// - Parameters:
+    ///   - manager: Stores CLLocationManager object to obtain exact coordinates
+    ///   - status: Obtains CLAuthorizationStatus status to determine if the authorization status of the user changes
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if status == CLAuthorizationStatus.authorizedWhenInUse {
             let locValue:CLLocationCoordinate2D = manager.location!.coordinate
@@ -75,12 +87,21 @@ class ViewOwnDataMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDe
         }
     }
 
+    /// Centers map on user's location
+    ///
+    /// - Parameter location: Users location as CLLocation object
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
             regionRadius * 2.0, regionRadius * 2.0)
         mkMapView.setRegion(coordinateRegion, animated: true)
     }
     
+    /// Creates annotations for map view pins
+    ///
+    /// - Parameters:
+    ///   - mapView: mapView
+    ///   - annotation: The annotation object
+    /// - Returns: the annotation view object
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
             // 3
             let identifier = "pin"
@@ -94,11 +115,22 @@ class ViewOwnDataMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDe
         return view
         }
     
+    /// MapView annotation pin tapped action
+    ///
+    /// - Parameters:
+    ///   - mapView: map view object
+    ///   - view: the view used in the pin annotation
+    ///   - control: the type of control object
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
             let annotation = view.annotation as! UserPostAnnotation
             performSegue(withIdentifier: "viewOwnDataOverMapPopover", sender: annotation)
         }
     
+    ///Pass through session object containing session data to the next view controller
+    ///
+    /// - Parameters:
+    ///   - segue: The id of the segue to be initiated
+    ///   - sender: The data that is to be sent.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? ViewOwnDataMapPopOverVC {
             if let currentUserAnnotation = sender as? UserPostAnnotation {
@@ -107,6 +139,7 @@ class ViewOwnDataMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDe
         }
         }
 
+        /// Annotations added to the map.  Run at viewDidLoad() and looks to Firebase to run GeoFire query and locate the nearest post objects around the users location and then returns the top X values.  The post and user data is pulled from Firebase and attached to the annotation objects array.
     func appendUserPostsDataMapAnnotations() {
         let geoFire = GeoFire(firebaseRef: ref.child("location").child("posts"))
         var seaweedLocation = CLLocation()
@@ -158,7 +191,9 @@ class ViewOwnDataMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDe
         }
     }
 
-    //User alert windows to warn of issue that needs attention before proceeding
+    ///User alert windows to warn of issue that needs attention before proceeding
+    ///
+    /// - Parameter alert: String to represent warning that needs to pop up
     func userAlertDoMore (alert: String) {
         let alertController = UIAlertController(title: "Sorry!", message: alert, preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil))

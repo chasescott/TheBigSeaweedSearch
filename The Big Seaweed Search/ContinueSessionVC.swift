@@ -10,6 +10,7 @@ import UIKit
 import SwiftKeychainWrapper
 import Firebase
 
+///ContinueSessionVC view controller class that enables a user to continue to add data an existing previously instantiated session
 class ContinueSessionVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
@@ -39,7 +40,6 @@ class ContinueSessionVC: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let session = sessions[indexPath.row]
         if let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath) as? SessionCell {
-//        if let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell") as? SessionCell {
             if let img = ContinueSessionVC.imageCache.object(forKey: session.imgURL as NSString) {
                 print("CHASE: CELL Configured 1")
                 cell.configureCell(session: session, img: img)
@@ -61,6 +61,11 @@ class ContinueSessionVC: UIViewController, UITableViewDelegate, UITableViewDataS
         performSegue(withIdentifier: "continuePreviousToAddData", sender: existingSession)
     }
     
+    /// Prepare for segue
+    ///
+    /// - Parameters:
+    ///   - segue: Id of the segue to perform
+    ///   - sender: The data to be sent
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? AddDataVC {
             if let existingSession = sender as? Session {
@@ -69,6 +74,8 @@ class ContinueSessionVC: UIViewController, UITableViewDelegate, UITableViewDataS
         }
     }
 
+    /// Method that iterates through all sessions Ids stored under users UID node on Firebase.  
+    ///When session Id has been obtained, code goes to session Id under sessions node on Firebase and obtains all the information necessary to build a Session object.  That object is then appended to an array of Sessions objects which are then used to build a table of cells where each cell represents one session object.  Tableview data is then reloaded.
     func appendSessionsData() {
         if let uid = FIRAuth.auth()?.currentUser?.uid {
             self.sessions = []

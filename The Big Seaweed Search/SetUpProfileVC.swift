@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
+///Set up profile view controller - only seen when user is new and signing in for the first time.
 class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var imageAdd: FancyImageView!
@@ -41,7 +42,11 @@ class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavi
         return false
     }
 
-
+    /// Image Pickert Controller enables user to select image from library
+    ///
+    /// - Parameters:
+    ///   - picker: picker object
+    ///   - info: data stored within the image picker
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             imageAdd.image = image
@@ -58,6 +63,9 @@ class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavi
         present(imagePicker, animated: true, completion: nil)
     }
     
+    /// Method to run when the Save button is pressed.  Take the image in the picker viewer, create a string to unique identify the image, upload the image to Firebase storage and then run the postToFirebase method.
+    ///
+    /// - Parameter sender: Data relating to the image.
     @IBAction func postBtnTapped(_ sender: Any) {
         guard let name = nameField.text, name != "" else {
             userAlertDoMore(alert: "Please enter a username")
@@ -100,6 +108,9 @@ class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavi
         //performSegue(withIdentifier: "setUpToMain", sender: nil)
     }
     
+    /// Method to post all user data to Firebase.
+    ///1. Store user data in dictionary and store data against user node on Firebase.
+    /// - Parameter imgUrl: the image URL of the profile picture storage location on Firebase
     func postToFirebase(imgUrl: String) {
         if let userId = FIRAuth.auth()?.currentUser?.uid{
         let profileData: Dictionary<String,AnyObject> = [
@@ -123,7 +134,9 @@ class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavi
         }
     }
     
-    //User alert windows to warn of issue that needs attention before proceeding
+    ///User alert windows to warn of issue that needs attention before proceeding
+    ///
+    /// - Parameter alert:  String to represent the problem that requires attention from the user.
     func userAlertDoMore (alert: String) {
         let alertController = UIAlertController(title: "The Big SeaWeed Search", message: alert, preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: nil))
@@ -135,7 +148,9 @@ class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavi
         alertWindow.rootViewController?.present(alertController, animated: true, completion: nil)
     }
     
-    //Welcome User alert windows to say thank you and explain next steps
+    ///User alert to welcome the user and alert of the next steps.  This is used in the viewDidLoad() function so is the first object a user will see and interact with.
+    ///
+    /// - Parameter alert:  String to represent the welcome message.
     func userAlertWelcome (alert: String) {
         let alertController = UIAlertController(title: "Welcome!", message: alert, preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "Ok, lets proceed!", style: UIAlertActionStyle.cancel, handler: nil))
@@ -147,7 +162,9 @@ class SetUpProfileVC: UIViewController,  UIImagePickerControllerDelegate, UINavi
         alertWindow.rootViewController?.present(alertController, animated: true, completion: nil)
     }
 
-    //User alert to advise of success and perform segue to next screen
+    ///User alert windows to advise of success and segue to the next screen.
+    ///
+    /// - Parameter alert: String to represent congratulations that needs to pop up
     func userAlert (alert: String) {
         let alertController = UIAlertController(title: "The Big SeaWeed Search", message: alert, preferredStyle: UIAlertControllerStyle.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: {

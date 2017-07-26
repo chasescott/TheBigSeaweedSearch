@@ -11,6 +11,7 @@ import MapKit
 import Firebase
 import SwiftKeychainWrapper
 
+///View data from list on a map view controller
 class ViewDataListOnMapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var mapKit: MKMapView!
@@ -47,6 +48,7 @@ class ViewDataListOnMapVC: UIViewController, MKMapViewDelegate, CLLocationManage
         locationAuthStatus()
     }
     
+        /// Method to ensure the app only lets the location be collated when app is in use, not in the background as that will drain the battery life quickly.
     func locationAuthStatus() {
         //Only let location be collated when app is in use, not in the background as that will drain the battery life quickly.
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
@@ -63,12 +65,22 @@ class ViewDataListOnMapVC: UIViewController, MKMapViewDelegate, CLLocationManage
         }
     }
     
+    /// Method to obtain location of user, store the GPS coordinates in the beachLocation variable, display the coordinates in the label on the view and stop the location manager from constantly updating in the background, thus saving battery.
+    ///
+    /// - Parameters:
+    ///   - manager: CLLocationManager object to obtain exact coordinates
+    ///   - locations: Array of CLLocation objects to store location info
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
         userLocation = CLLocation(latitude: locValue.latitude, longitude: locValue.longitude)
         locationManager.stopUpdatingLocation()
     }
     
+    /// Determine if location authorization status changes at any time during use.
+    ///
+    /// - Parameters:
+    ///   - manager: Stores CLLocationManager object to obtain exact coordinates
+    ///   - status: Obtains CLAuthorizationStatus status to determine if the authorization status of the user changes
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if status == CLAuthorizationStatus.authorizedWhenInUse {
             let locValue:CLLocationCoordinate2D = manager.location!.coordinate
@@ -77,12 +89,21 @@ class ViewDataListOnMapVC: UIViewController, MKMapViewDelegate, CLLocationManage
         }
     }
     
+    /// Centers map on user's location
+    ///
+    /// - Parameter location: Users location as CLLocation object
     func centerMapOnLocation(location: CLLocation) {
         let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
                                                                   regionRadius * 2.0, regionRadius * 2.0)
         mapKit.setRegion(coordinateRegion, animated: true)
     }
     
+    /// Creates annotations for map view pins
+    ///
+    /// - Parameters:
+    ///   - mapView: mapView
+    ///   - annotation: The annotation object
+    /// - Returns: the annotation view object
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         // 3
         let identifier = "pin"
@@ -97,7 +118,6 @@ class ViewDataListOnMapVC: UIViewController, MKMapViewDelegate, CLLocationManage
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-//      let annotation = view.annotation as! UserPostAnnotation
         performSegue(withIdentifier: "viewImgOverMapOnList", sender: self.currentDataPost)
     }
     

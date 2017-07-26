@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 
+/// PostsLeaderboardCell class for cells in Tableview in PostsLeaderboardVC
 class PostsLeaderboardCell: UITableViewCell {
 
     @IBOutlet weak var picture: FancyImageView!
@@ -22,6 +23,11 @@ class PostsLeaderboardCell: UITableViewCell {
         super.awakeFromNib()
         }
     
+    /// Configure the cell
+    ///
+    /// - Parameters:
+    ///   - postranking: PostRanking object
+    ///   - img: UIImage for the picture label
     func configureCell(postranking: PostRanking, img: UIImage? = nil) {
         self.postranking = postranking
         self.usernameLbl.text = "\(postranking.username)"
